@@ -1,0 +1,17 @@
+{
+  "name": "cloud9ide-documentation",
+  "version": "0.0.0",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/c9/cloud9ide-documentation.git"
+  },
+  "engines": {
+    "node": "~0.6.0"
+  },
+  "dependencies": {
+    "panda-docs": "~0.2.2",
+    "jade": "~0.20.0",
+  },
+  "devDependencies": {}
+}
