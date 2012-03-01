@@ -1,0 +1,46 @@
+!!! 5
+
+-var codeHighlightTheme = manifest.codeHighlightTheme || 'github'
+
+html
+	head
+		meta(http-equiv="content-type", content="text/html", charset=utf-8")
+		
+		title #{options.title}
+		
+		link(type="text/css", rel="stylesheet", href="http://fonts.googleapis.com/css?family=Droid+Sans&subset=latin")
+		link(type="text/css", rel="stylesheet", href="./assets/csses/reset.css")
+		link(type="text/css", rel="stylesheet", href="./assets/csses/docs.css")
+		link(type="text/css", rel="stylesheet", href="./assets/csses/print.css", media="print")
+		link(type="text/css", rel="stylesheet", href="http://yandex.st/highlightjs/6.1/styles/#{codeHighlightTheme}.min.css")
+
+		if manifest.css
+			link(type="text/css", rel="stylesheet", href="#{manifest.css}")
+
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
+		<script type="text/javascript" src="http://yandex.st/highlightjs/6.1/highlight.min.js"></script>
+		
+		if manifest.embedly
+			<script type="text/javascript" src="http://scripts.embed.ly/jquery.embedly.min.js"></script>
+			<script type="text/javascript">$(function(){$('#content p:not(.disable-embedly) a:only-child').parent().embedly({key:'<%= @manifest.embedly %>',maxWidth: 700});});</script>
+
+		<script type="text/javascript" src="#{options.baseUrl}/js/viewer.js"></script>
+
+	body
+		div#page
+			a(name="top")
+			
+			if !options.noHeader
+				header#header
+					h1 Panda: Readme
+
+			article#content!= content
+
+			footer#footer
+				From <a href="http://github.com/gjtorikian/panda">github.com/gjtorikian/panda</a> -
+				<a href="#top">Back to top</a> - <a href="#{options.baseUrl}/all.html">Everything on a single page</a>
+				<a href="?print=1">Print current page</a> - <a href="#{options.baseUrl}/all.html?print=1">Print all pages</a>
+				
+
+				if manifest.github
+					a(href="https://github.com/#{manifest.github}", id="fork-me-on-github") Fork me on Github
