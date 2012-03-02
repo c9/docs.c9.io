@@ -2,7 +2,7 @@
 
 Creating an account for the Cloud9 IDE can be done in a few simple steps:
 
-1. First, sign up for an account on [the Cloud9 homepage](/pricing), by filling in your desired username and email address, then pressing the **Sign me up** button: 
+1. First, sign up for an account on [the Cloud9 homepage](/site/pricing/), by filling in your desired username and email address, then pressing the **Sign me up** button: 
 
 ![Sign-up Box](./images/signUp.png)
 
@@ -16,4 +16,4 @@ You'll see a message indicating that we sent you an email to the address you pro
 
 3. Click on **Activate**.
 
-Congratulations! You are now the proud owner of a Cloud9 account. Now, go ahead and [create your first project](lesson2.html). Happy coding!
+Congratulations! You are now the proud owner of a Cloud9 account. Now, go ahead and [create your first project](creating_new_project.html). Happy coding!

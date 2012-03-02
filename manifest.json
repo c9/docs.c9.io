@@ -1,3 +1,4 @@
 {
-	"files": [ "./src/developer", "./src/faq", "./src/features", "./src/ide-components", "./src/tutorials" ]
+	"files": [ "./src/developer", "./src/faq", "./src/features", "./src/ide-components", "./src/tutorials", "./src/troubleshooting", "./src/tips" ],
+    "resources" : [ "./resources/images", "./resources/icons" ]
 }

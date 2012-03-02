@@ -10,7 +10,7 @@
     "node": "~0.6.0"
   },
   "dependencies": {
-    "panda-docs": "~0.2.2",
+    "panda-docs": "~0.2.3",
     "jade": "~0.20.0",
   },
   "devDependencies": {}

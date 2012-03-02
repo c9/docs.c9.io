@@ -4,9 +4,9 @@ For this tutorial, you'll need to first create a git project in Cloud9. Then, cl
 
 	git clone git://github.com/fjakobs/cloud9-coffeescript-example.git
 
-#### A Simple CoffeeScript App in Cloud9 IDE
+### A Simple CoffeeScript App in Cloud9 IDE
 
-After cloning the project, you'll find three different files in the tree: _server.js<_, _app.coffee<_, and _README.md_.
+After cloning the project, you'll find three different files in the tree: _server.js_, _app.coffee<_, and _README.md_.
 
 The _README.md_ file contains instructions to install coffee-script using the Node Package Manager. We've integrated Node Package Manager into Cloud9 IDE to enable users to install Node programs. Thus, from the Cloud9 IDE command line, type the following command to install the Coffeescript module:
 
@@ -18,17 +18,16 @@ Now, let's look at what the CoffeeScript file does. It creates an HTTP server wi
 
 	http = require "http"
 
-	module.exports = http.createServer((req, res) -&gt;
+	module.exports = http.createServer((req, res) ->
 	    res.writeHead 200, 'Content-Type': 'text/plain'
 	    res.end 'Hello World\n'
-	)
 
 Next, run the _server.js_ file and open the URL indicated in the console:
 
-![Messages in the console about the server](consoleServerMessage.png)
+![Messages in the console about the server](./images/consoleServerMessage.png)
 
 The result is:
 
-![Messages in the console about the server](coffescriptServer.png)
+![Messages in the console about the server](./images/coffescriptServer.png)
 
-To stop your application, go back to the editor and click on the **stop** button in the Menu.
+To stop your application, go back to the editor and click on the {:stopButton} button in the Menu.

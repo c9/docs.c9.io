@@ -28,9 +28,9 @@ Now, just click **Start Editing** to get started!
 
 #### Clone from URL
 
-The second option for creating a new project is to clone one from url. The url would be, for example, the url of a Github project such as [cloud9-coffeescript-example](https://github.com/fjakobs/cloud9-coffeescript-example)
+The second option for creating a new project is to clone one from URL. The URL would be, for example, the URL of a Github project such as [this one](https://github.com/fjakobs/cloud9-coffeescript-example)
 
-Let's clone this project. When you click on **Clone from URL**, you are taken to this screen:
+Let's clone this project. When you click on **Clone from URL**, you're taken to this screen:
 ![Options for cloning a project](./images/cloneProjectOptions.png)
 
 Paste the above GitHub URL in the textbox labeled **Source URL**. If you have a premium account, you can choose who has access to your project. For regular users, the new project will be public.
