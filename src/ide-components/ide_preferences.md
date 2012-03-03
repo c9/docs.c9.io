@@ -69,7 +69,7 @@ JS Beautify
 Language Support
 : This section controls language analysis options:
 
- * Enable JSHint: Turns on JSHint for your Javascript code
- * Variable instance highlighting: 
- * Mark undeclared variables: Provides warnings if a variable has not been declared yet
- * Mark unused function arguments: Creates a strikethrough for arguments in a function that are not being used
+ * Enable JSHint Rules: enables a layer of [JSHint warnings](http://www.jshint.com/) for your Javascript code
+ * Highlight Instance Variables: highlights instance variables in your code
+ * Mark Undeclared Cariables: provides warnings if a variable has not been declared yet
+ * Mark Unused Function Arguments: creates a strikethrough for arguments in a function that are not being used
