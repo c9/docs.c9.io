@@ -1,6 +1,6 @@
 ## Cloning Git Repositories from BitBucket 
 
-In October, 2011, BitBucket began offering Git support. However, as of this writing, Cloud9 IDE assumes that any repository that you want to clone from BitBucket is a Mercurial repository. As a result, if you have a Git repository in BitBucket and try to clone to edit this project from the dashboard, the cloning will fail.
+In October 2011, BitBucket began offering Git support. However, as of this writing, Cloud9 IDE assumes that any repository that you want to clone from BitBucket is a Mercurial repository. As a result, if you have a Git repository in BitBucket and try to clone to edit this project from the dashboard, the cloning will fail.
 
 You can get around this problem easily by fixing the url that Cloud9 IDE generates when you attempt to clone. When cloning a BitBucket repository, Cloud9 IDE uses a source url like the following:
 

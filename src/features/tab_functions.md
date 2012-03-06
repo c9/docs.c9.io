@@ -21,5 +21,12 @@ There are also a number of keyboard shortcuts you can perform, including:
  
 ### Tab Sessions 
 
+Tab sessions is a unique feature that is useful when dealing with projects that involve juggling between many tabs. Here's a video highlighting its use:
 
 <iframe width="480" height="360" src="http://www.youtube.com/embed/agUno6WDkAM" frameborder="0" allowfullscreen></iframe>
+
+Essentially, tab sessions lets you save the current state of the tabs. You can close your workspace, switch to a different branch, and instantly reload your previously opened files. You'll no longer need to work with opening and closing multiple files.
+
+To use tab sessions, select **Save Tab Sessions** from the tab menu. Give it a unique name. When you're ready to restore your tab sessions, just select **Load Tab Sessions**. 
+
+If you find that you've got too many tab sessions defined, you can always choose to delete them from the same tab menu.

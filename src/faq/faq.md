@@ -48,3 +48,6 @@ How can I deploy Mercurial projects to Heroku?
 	git push heroku master
 
 : `git_heroku_address_of_repo` is the git link, which you can find on the Heroku page. After enterting these, your project will be deployed to Heroku.
+
+Why can't I run code that spawns a child process?
+:  Cloud9 blocks the creation of child processes for security reasons, since you are running your code in a shared environment. In the future, we will offer private run environments in which you will be able to create child processes.
