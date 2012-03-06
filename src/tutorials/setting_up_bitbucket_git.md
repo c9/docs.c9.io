@@ -1,4 +1,6 @@
-## Pushing Code to Bitbucket
+Author: Daniela Gavidia
+
+## Setting Up a Git Project (on BitBucket)
 
 In this article, we'll explain the steps needed to push a Cloud9 IDE project to Bitbucket. For this article, we're assuming that you have created a git project in Cloud9. Let's see how you can push this project to Bitbucket.
 

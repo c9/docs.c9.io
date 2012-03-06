@@ -1,3 +1,5 @@
+Author: Daniela Gavidia
+
 ## Creating a New Project
 
 There are various choices to be made when creating a new project in Cloud9 IDE. In this article, we'll walk you through the creation of a new project and describe the choices you encounter.

@@ -1,1 +1,1 @@
-## Applying Themes
+## Status Bar

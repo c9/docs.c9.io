@@ -1,3 +1,5 @@
+Author: Daniela Gavidia
+
 ## Rename a Cloned Project
 
 When you clone a project, the project created in your account inherits the name of the original project. At the moment, Cloud9 IDE does not allow users to change the name of a project once it is already created. However, you can get around this problem by cloning a project twice.

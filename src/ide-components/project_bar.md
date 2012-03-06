@@ -1,3 +1,5 @@
+Author: Garen J. Torikian
+
 ## About the Project Bar
 
 The project bar is the leftmost content area in the Cloud9 IDE. It controls the behavior of your IDE, as well as the presentation of your code to help you design in the style you like:

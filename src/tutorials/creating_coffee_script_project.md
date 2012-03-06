@@ -1,3 +1,5 @@
+Author: Daniela Gavidia
+
 ## Create a CoffeeScript Project
 
 For this tutorial, you'll need to first create a git project in Cloud9. Then, clone an existing Coffescript project on GitHub that was written by one of our developers. You do this by issuing the following command in the console:

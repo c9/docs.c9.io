@@ -1,3 +1,5 @@
+Author: Daniela Gavidia
+
 ## The Editor
 
 Cloud9 IDE can be thought of as being divided in the following components:

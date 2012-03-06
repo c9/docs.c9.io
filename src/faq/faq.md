@@ -1,3 +1,5 @@
+Author: Detmar ter Huurne
+
 ## FAQ
 
 What is Cloud9 IDE?
@@ -26,7 +28,7 @@ My Username Was Duplicated; How Could This Happen?
 : Next, find **Delete your account** under your account settings within the dashboard and delete the `username_1` account.
 : Finally, log in to your original account using your username (or email address) and password and you can [link to GitHub](using_git.html).
 
-Console Commands Don't Work. Why?
+Why Don't Console Commands Don't Work?
 : Before submitting a support request about the console not working, please consider this:  
 1. Are you behing a proxy or firewall? It's possible that it might be blocking our xhr polling. If you can use Cloud9 IDE at home, but can't get it to work properly while at the office, this might be the cause.
 2. Are you running an anti-virus? The anti-virus software might be blocking some requests. Lately, we have experienced this issue with Avast anti-virus. For some users, disabling this software was enough to get Cloud9 IDE to work properly again. For others, uninstalling Avast was necessary. We are working on finding a solution for this.
@@ -35,3 +37,14 @@ Console Commands Don't Work. Why?
  
 When I try to Use GitHub Access, a Message Says: "Another account is already linked to Github account 'username'"
 : You've created multiple accounts. See above to see how to solve this issue.
+
+How can I deploy Mercurial projects to Heroku?
+: You can use the command line to initialize git and use it to deploy your project to Heroku like this:
+
+	git init 
+	git add . 
+	git commit -m "message" 
+	git remote add heroku git_heroku_address_of_repo
+	git push heroku master
+
+: `git_heroku_address_of_repo` is the git link, which you can find on the Heroku page. After enterting these, your project will be deployed to Heroku.

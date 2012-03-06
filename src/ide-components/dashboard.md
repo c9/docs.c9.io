@@ -1,3 +1,5 @@
+Author: Daniela Gavidia
+
 ### The Dashboard
 
 From the dashboard you can edit your profile and manage projects and organization.

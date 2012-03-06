@@ -1,3 +1,5 @@
+Author: Detmar ter Huurne
+
 ## Deploying to Heroku
 
 This article will show you how to deploy your applications to Heroku. Heroku is cloud based application platform for easy deployment of your applications. The integration with Cloud9 IDE makes your development process even more agile. If you don't have a Heroku account, visit [their website](htttp://www.heroku.com) to create one for free. 

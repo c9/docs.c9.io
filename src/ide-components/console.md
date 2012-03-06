@@ -1,3 +1,5 @@
+Author: Daniela Gavidia
+
 ## The Console
 
 In this article, you'll learn about the functionality of Cloud9's command-line interface. 

@@ -1,3 +1,5 @@
+Author: Daniela Gavidia
+
 ## File Handling
 
 Cloud9 IDE provides a unique combination of file handling features, combining the best of browser-based management with typical desktop file navigation.

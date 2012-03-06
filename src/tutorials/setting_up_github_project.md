@@ -1,3 +1,5 @@
+Author: Daniela Gavidia
+
 ## Setting Up a Git Project (on GitHub)
 
 GitHub is a code hosting service which offers you a lot of features to manage your public and private git repositories. For more information about GitHub and how to use it, visit [www.github.com](https://github.com/).
