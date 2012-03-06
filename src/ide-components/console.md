@@ -2,11 +2,10 @@ Author: Daniela Gavidia
 
 ## The Console
 
-In this article, you'll learn about the functionality of Cloud9's command-line interface. 
-
-The command-line is placed at the bottom of the IDE and shows the console when it is expanded. The console. in turn, displays valuable information and response from the system on actions performed by you. The command-line also interface enables the user to interact with the system. You can type commands to perform a typical task.
+The console is at the bottom of the IDE. It's where you can enter command line input, view output from your program, and manipulate your projects between your code repositories. 
 
 ### Available Commands
+
 You can use most Unix commands, such as `ls` and `mkdir`, in the console space. To preview the full list of basic commands in the console, you can type `help` and press Enter. For every command, a description is provided:
 
 ![Screenshot of the available commands](./images/availableCommands.png)
@@ -23,9 +22,11 @@ To use mercurial commands on the project you are working on, you must have a mer
 
 These articles also explain how to use the command-line to commit your work.
 
+In addition, the console also has shortcuts for much of Cloud9 IDE's functionality. For example, `gotofile` launches the filename you provide, while `revealtab` opens the current file in the project tree. Again, typing `help` shows you which commands are available.
+
 ### Output
 
-The output tab in the console shows information whenever a user is running or debugging a program. The content is similar to the output of a terminal you are used to but it will be in the same window as your editor. No need to juggle between windows anymore!
+The output tab in the console shows information whenever a user is running or debugging a program. The content is similar to the output of a desktop terminal, except it's in the same window as your editor. No need to juggle between windows anymore!
 
 ![Screenshot of program output](./images/consoleOutput.png)
 

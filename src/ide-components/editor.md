@@ -13,7 +13,7 @@ Throughout the documentation, we'll refer to these sections by name. We can iden
 * The panel displays views according to what's been selected in the project bar
 * The toolbar is on the far right, where you can find tools to check the call stack, monitor variables, and breakpoints. This is only activated when [debugging your code](./running_and_debugging_your_code.html).
 * The code editor is the main area where you write your code.
-* The console is the bottom area of the window. It's an expandable area that can act like a desktop terminal to enter command line input (like `ls` or `mkdir`). It also displays output printed from your program's `console()` or `print()` statements, as well as providing an area for search results
+* The console is the bottom area of the window. It's an expandable area that can act like a desktop terminal to enter command line input (like `ls` or `mkdir`). It also displays output provided by your program's print statements (like `console.log()`), as well as providing an area for search results
 
 The [Project Bar](./project_bar.html), [Tool Bar](./toolbar.html), and [Console](./console.html) are powerful features, so their documentation is provided separately. We'll talk about the rest of the editor below:
 

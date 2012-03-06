@@ -11,28 +11,28 @@ General
 
  * Enable UI Animations: enables or disables fluid animations for various UI elements, such as the Project Bar
  * Warn before exiting: Provides a dialog asking if you _really_ want to leave when closing your browser running Cloud9 IDE
- * Runtime: identifies the default runtime for your Node.js code. "Auto" is based on whatever is in the _package.json_ file, while "Default" reverts to Node 0.4.x.
- * On Save, Strip Whitespace: when saving a file, this will remove all extraneous whitespace from your code lines
+ * Runtime: [defines the default runtime for your Node.js code. "Auto" is based on whatever is in the _package.json_ file, while "Default" reverts to Node 0.4.x.]{: #nodejsRuntime}
+ * On Save, Strip Whitespace: when saving a file, you can remove [all extraneous whitespace from your code lines]{: #stripWhitespace}
 
 Code Editor
 : This section controls the IDE editor while you're coding:
 
-* Auto pair Quotes, Brackets, etc.: when enabled, typing ", (,  or [ will actually make two characters appear. In addition, whenever you highlight a word and type one of these characters, it is surrounded by that character (e.g. words becomes "words")
-* Code Folding: when enabled, allows you to show or hide "blocks" of code
-* Full Line Selection: when highlighting lines, this option will highlight all ending whitespace, until the end of the editor window
-* Highlight Active Line: presents a colored background to indicate which line you're currently on
-* Show Invisible Characters: shows invisibles characters in the editor, like spaces, tabs, and line breaks
-* Show Gutter: shows the gutter in the editor, which indicates line numbers, warnings, and errors
-* Highlight Selected Word: when this is enabled, and if you highlight a word, this will highlight all matching words in the editor
-* Auto-hide Horizontal Scroll: when this is enabled, this will hide the horizontal scroll bar in the editor. Note that this has no effect in Mac OS X 10.7 (Lion), since all scrollbars, by default, auto-hide.
-* Font Size: changes the font size of the code in the editor
-* Show print margin: shows (and defines) the number of characters possible in line, before it wraps
-* Soft tabs: indicates how many spaces a single tab represents
-* Mouse Scroll speed: defines the speed of the mouse scrolls
-* Vim mode: when enabled, allows you to use vi keybindings
+* Auto-pair Quotes, Brackets, etc.: [when enabled, typing ", (,  or [ will actually make two characters appear. In addition, whenever you highlight a word and type one of these characters, it is surrounded by that character (_e.g._ words becomes "words")]{: #autoPair}
+* Code Folding: [when enabled, allows you to show or hide "blocks" of code]{: #codeFolding}
+* Full Line Selection: [when highlighting lines, this option will highlight all ending whitespace, until the end of the editor window]{: #fullLineSelection}
+* Highlight Active Line: [presents a darker background to indicate which line you're currently on]{: #highlightActiveLine}
+* Show Invisible Characters: [shows invisibles characters in the editor, like spaces, tabs, and line breaks]{: #invisibleChars}
+* Show Gutter: [shows the gutter in the editor, which indicates line numbers, warnings, and errors]{: #showGutter}
+* Highlight Selected Word: [when this is enabled, and if you highlight a word, this highlights all matching words in the editor]{: #highlightSelectedWord}
+* Auto-hide Horizontal Scroll: w[hen this is enabled, this will hide the horizontal scroll bar in the editor. Note that this has no effect in Mac OS X 10.7 (Lion), since all scrollbars, by default, auto-hide.]{: #autoHideHorizontalScroll}
+* Font Size: [changes the font size of the code in the editor]{: #fontSize}
+* Show print margin: [shows (and defines) the number of characters possible in line, before it wraps]{: #showPrintMargin}
+* Soft tabs: [indicates how many spaces a single tab represents]{: #softTabs}
+* Mouse Scroll Speed: [defines the speed of the mouse scrolls]{: #mouseScrollSpeed}
+* [Vim mode: when enabled, allows you to use vi keybindings]{: #vimModeDef}
 
-JS Beautify
-: These options control the behavior of the code formatting tool found in **Edit | Beautify Selection**.  
+[JS Beautify]{: #JSBeautify}
+: These options control the behavior of the code formatting tool found in [the status bar](./status_bar.html).  
 
 * Preserve empty lines: if enabled, the editor keeps any new lines without text
 * Keep array indention: when checked, tabs and newlines in arrays are preserved. For example, the follow array would remain as-is with this option:
