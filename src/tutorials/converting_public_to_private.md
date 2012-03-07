@@ -10,4 +10,4 @@ You can get around this limitation by using a code-hosting site like GitHub or B
 4. Go to the Cloud9 Dashboard and select "clone from url" with the URL from the new private repository at the code-hosting site; select "Only the people I specify (premium feature)". That would create a new private project from the repository you provide in the url.
 5. Delete the old public project in Cloud9.
 
-If you're not sure how to link your projects to Bitbucket, [this article on "Pushing to Bitbucket" might be useful](pushing_to_bitbucket.html).
+If you're not sure how to link your projects to Bitbucket, [this article on "Setting Up a Git Project (on BitBucket)" might be useful](setting_up_bitbucket_git.html).

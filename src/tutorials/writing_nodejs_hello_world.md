@@ -18,13 +18,13 @@ What you just wrote is a Node.js HTTP server that returns a simple 'Hello World'
 
 #### Running your program
 
-With Cloud9 IDE, you can run your Node.js applications in a test environment and see the results of your program. To run your "Hello, World" application, click on the **Run** button in the project bar. All you need to do now is double-click the name of your new file to get it running:
+With Cloud9 IDE, you can run your Node.js applications in a test environment and see the results of your program. To run your "Hello, World" application, click on the **Run** button in the project bar. All you need to do now is double-click the name of your new file to get it running:  
 ![A new run configuration pop-up](./images/newRunConfiguration.png)
 
-Your application will be deployed to one of our servers, and you will immediately see some output in the console similar to the one below:
+Your application will be deployed to one of our servers, and you will immediately see some output in the console similar to the one below:  
 ![Console run output](./images/RunOutput.png)
 
-To see your application in action, click on the link created for your project. You should see your "Hello World" application open up in a new browser tab:
+To see your application in action, click on the link created for your project. You should see your "Hello World" application open up in a new browser tab:  
 ![Node.js Hello World in the Browser](./images/helloWorld.png).
 
 To stop your application, go back to the editor and click on the [![Icon of the Stop Button](./icons/stop_button.png)]{: #stopButton} button in the menu bar.

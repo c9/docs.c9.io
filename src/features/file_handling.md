@@ -14,7 +14,7 @@ Let's take a look at the file menu on the Menu Bar:
 Here's what they mean:
 
 * **Revert to Saved** lets you to revert the current file to its last saved version. This is only possible if you have a changed file you haven't saved yet.
-* **Save** (including **Save As** and **Save All**) allow you to: 
+* **Save** (including **Save As** and **Save All**) allow you to: 
  * Save the file you are currently working on (**Save**)
  * Save your current file with a different name and/or in a different location (**Save As...**)
  * Save all your open files (**Save All**)

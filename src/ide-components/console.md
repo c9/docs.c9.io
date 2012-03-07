@@ -38,4 +38,4 @@ The console also displays information about files containing search terms:
 
 ![Screenshot of search results](./images/searchResults.png)
 
-You can expand each result to see the line number of where a match was found. Clicking on a match also opens the file in the IDE.
+You can expand each result to see the line number of where a match was found. Clicking on a match opens the file in the IDE.

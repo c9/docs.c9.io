@@ -36,18 +36,17 @@ You'll have access to the following capabilities:
 
 * Breakpoints: at any point during your coding rush, you can click on the gutter to apply a breakpoint. When debugging your code, the process pauses at your established breakpoints, so that you can inspect closely what's going on in a certain part of the code.
 
-* Debugging Navigation: this is a set of tools you can use to move around your code while debugging: ![Debugging navigation tools](./icons/debug_navigation.png) You can step into, over, and out of your code, or simply press play to run the process until the next breakpoint.
-
-* Callstack ![Icon for the callstack](./icons/callStackIcon.png): this is a structured list of information about the sequences of your code--basically, which functions are calling what, and where you are in the current process. It also stores local variables and function arguments, if present. You can use this feature to check how your code is running:  
+[* Debugging Navigation: this is a set of tools you can use to move around your code while debugging. You can step into, over, and out of your code, or simply press play to run the process until the next breakpoint.]{: #debugNavigation}
+![Debugging navigation tools](./icons/debug_navigation.png)
+[* Callstack ![Icon for the callstack](./icons/callStackIcon.png): this is a structured list of information about the sequences of your code--basically, which functions are calling what, and where you are in the current process. It also stores local variables and function arguments, if present. You can use this feature to check how your code is running:  ]{: #callStack}  
 ![Callstack menu window](./images/callStack.png)
 
-* Interactive Mode ![Icon for interactive mode](./icons/interactiveIcon.png): lets you evaluate a piece of code, such as expressions or the values and properties of variables. The text field allows you to type any code you want, in case you discover a way to fix you problem:  
+[* Interactive Mode ![Icon for interactive mode](./icons/interactiveIcon.png): lets you evaluate a piece of code, such as expressions or the values and properties of variables. The text field allows you to type any code you want, in case you discover a way to fix you problem:  ]{: #interactive}
 ![Interactive mode window](./images/interactiveMenu.png)
 
-* Variable Inspection ![Icon for variable inspection](./icons/variablesIcon.png): this shows all the related variables (including functions) that are present in the current context:  
+[* Variable Inspection ![Icon for variable inspection](./icons/variablesIcon.png): this shows all the related variables (including functions) that are present in the current context:  ]{: #inspection}
 ![Variable inspection window](./images/variablesMenu.png)  
 While debugging, you also have the power of the live inspector. While hovering over a piece of code in the editor, you'll instantly get some floating text that describes the values of that variable.
 
-* Breakpoint List ![Icon for breakpoint list](./icons/breakpointsIcon.png): this section lists all the breakpoints in your project:  
+[* Breakpoint List ![Icon for breakpoint list](./icons/breakpointsIcon.png): this section lists all the breakpoints in your project:  ]{: #breakpointList}
 ![Breakpoint list window](./images/breakpointsMenu.png)
-
