@@ -25,6 +25,7 @@ In this section, you can find the usual menus for creating and saving files, cha
 
 In the middle of the menu bar you'll find the **debug** button: ![The debug button](./icons/debugButton.png). For more information, see [the section on "Running and Debugging Your Code".](./running_and_debugging_your_code.html).
 
+<a id="previewButton"></a>
 The preview button ![The preview button](./icons/previewButton.png) provides you with a look at what the currently active file would look like in the browser. For HTML files, it actual renders the markup into a real page. For mose other files, it provides plaintext view of the source code.
 
 On the far right of the menu, near the Cloud9 IDE logo, there are two more icons: one to return to [the dashboard](./dashboard.html), and one to return to the Cloud9 IDE homepage.

@@ -10,4 +10,4 @@ We offer tight integration with the following environments:
 * [Joyent](deploying_to_joyent.html)
 * [Windows Azure](deploying_to_windows_azure.html)
 
-Following any of those links will provide you with more information on code deployment. Keep in mind that you'll already need an account at those hosting providers before you can deploy your code to them!
+Following any of those links will provide you with more information on code deployment. You can deploy your code to as many services and servers as you like. Keep in mind that you'll already need an account at those hosting providers before you can deploy your app to them!
