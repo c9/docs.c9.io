@@ -4,4 +4,4 @@ The listing of your projects from GitHub and Mercurial is reloaded whenever you 
 
 You can get around this by pressing the reload button in the lower-left corner of the Dashboard:
 
-![Add-on Services Box](reloadProjects.png)
+![Add-on Services Box](./images/reloadProjects.png)

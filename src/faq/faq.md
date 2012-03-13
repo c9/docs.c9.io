@@ -26,7 +26,7 @@ My Username Was Duplicated; How Could This Happen?
 
 : To link your first account with your original username to your GitHub account, you should remove the second account. You can do so by logging in to Cloud9 IDE using the GitHub (click on the GitHub icon in the log in screen).
 : Next, find **Delete your account** under your account settings within the dashboard and delete the `username_1` account.
-: Finally, log in to your original account using your username (or email address) and password and you can [link to GitHub](using_git.html).
+: Finally, log in to your original account using your username (or email address) and password and you can [link to GitHub](setting_up_github_project.html).
 
 Why Don't Console Commands Don't Work?
 : Before submitting a support request about the console not working, please consider this:  

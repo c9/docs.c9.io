@@ -17,8 +17,8 @@ After clicking on **Create a new project**, you're taken to the screen below:
 
 Enter a project name. You have three choices for the type of project you wish to create:
 
-* **Git project** allows you to run `git` commands from the console and push your changes to [a GitHub repo](setting_up_github_project), or [a Bitbucket git repo](./setting_up_bitbucket_git.html).
-* **Mercurial** allows you to run `hg` commands form the console and push your changes to [a Mercurial Bitbucket repo](./setting_up_bitbucket_mercurial.html)
+* **Git project** allows you to run `git` commands from the console and push your changes to [a GitHub repo](setting_up_github_project), or [a Bitbucket git repo](./setting_up_bitbucket_project.html).
+* **Mercurial** allows you to run `hg` commands form the console and push your changes to [a Mercurial Bitbucket repo](./setting_up_bitbucket_project.html)
 * **FTP** allows you to [upload your files directly to an FTP server](./ftp_projects.html) you have access to.
 
 Make a choice for the type of project and press **Create**. That's it! You can now see your new project in the dashboard:

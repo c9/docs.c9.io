@@ -2,7 +2,7 @@ Author: Daniela Gavidia
 
 ## Writing a Node.js Hello World program
 
-In this article, we'll walk you through the creation of a simple Hello World program. If you followed our last two lessons, you already have a Cloud9 IDE account and you know how to create a project. To get started with this lesson, you'll need to first create a (GitHub or Mercurial) project. If you need a refresher on how to do this, please refer to [Creating a New Project](creating_a_new_project.html).
+In this article, we'll walk you through the creation of a simple Hello World program. If you followed our last two lessons, you already have a Cloud9 IDE account and you know how to create a project. To get started with this lesson, you'll need to first create a (GitHub or Mercurial) project. If you need a refresher on how to do this, please refer to [Creating a New Project](creating_new_project.html).
 
 #### A Simple Node.js HTTP Server
 

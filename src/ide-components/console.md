@@ -17,7 +17,7 @@ You can also use mercurial commands (`hg`) and git commands (`git`) to communica
 
 To use mercurial commands on the project you are working on, you must have a mercurial project set up; the same holds true for git. Follow these links to learn more about how to set up these project in Cloud9:
 
-* [Setting up a Mercurial Project](./setting_up_bitbucket_mercurial.html)
+* [Setting up a Mercurial Project](./setting_up_bitbucket_project.html)
 * [Setting up a Git project (on GitHub)](./setting_up_github_project.html)
 
 These articles also explain how to use the command-line to commit your work.

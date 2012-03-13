@@ -32,6 +32,7 @@ Code Editor
 * Mouse Scroll Speed: [defines the speed of the mouse scrolls]{: #mouseScrollSpeed}
 
 <a id="JSBeautify"></a>
+
 JS Beautify
 : These options control the behavior of the code formatting tool found in [the status bar](./status_bar.html).  
 

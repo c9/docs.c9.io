@@ -20,7 +20,7 @@ After the file has uploaded, click on **Create new** to create a new hosted serv
 You can set a few configuration options such as the number of instances to use, its host OS, and where the data center is located. Selecting "Enable RDP" and providing a username and password enables remote desktop for your deployment.
 
 Your new Windows Azure server will appear in the Deploy list:  
-![Windows Azure information](./images/windowsAzureList.png)
+![Windows Azure information](./images/windowsAzureInfo.png)
 
 Go ahead and click on **DEPLOY**. If this is the first time you're trying to deploy this project to Windows Azure, you'll receive three prompts:
 

@@ -4,7 +4,7 @@ Author: Daniela Gavidia
 
 Creating an account for the Cloud9 IDE can be done in a few simple steps:
 
-First, sign up for an account on [the Cloud9 homepage](/site/pricing/), by filling in your desired username and email address, then pressing the **Sign me up** button: 
+First, sign up for an account on [the Cloud9 homepage](http://c9.io/site/pricing), by filling in your desired username and email address, then pressing the **Sign me up** button: 
 
 ![Sign-up Box](./images/signUp.png)
 
