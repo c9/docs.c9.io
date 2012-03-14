@@ -4,7 +4,7 @@ The status bar is designed to provide you with all sorts of information about yo
 
 You can find the status bar in the lower-right corner of the editor: ![The status bar in its natural, shortened state](./icons/statusBarCollapsed.png). Keep in mind that the status bar is transparent, so it's able to camoflauge well with light or dark themes.
 
-There's three pieces of crucial information available at all times: your current row, your current column, and, if you're highlighting characters, the number of characters currently selected.
+There's three pieces of crucial information available at all times: your current row, your current column, and, if you're highlighting characters, the status bar displays the number of bytes currently selected.
 
 If you click on the status bar, it expands into a menu with additional options: ![The status bar, expanded](./icons/statusBarExpanded.png).
 
