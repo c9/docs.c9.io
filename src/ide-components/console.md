@@ -6,7 +6,7 @@ The console is at the bottom of the IDE. It's where you can enter command line i
 
 ### Available Commands
 
-You can use most Unix commands, such as `ls` and `mkdir`, in the console space. To preview the full list of basic commands in the console, you can type `help` and press Enter. For every command, a description is provided:
+You can use many common Unix commands, such as `ls` and `mkdir`, in the console space. To preview the full list of basic commands in the console, you can type `help` and press Enter. For every command, a description is provided:
 
 ![Screenshot of the available commands](./images/availableCommands.png)
 
@@ -17,25 +17,21 @@ You can also use mercurial commands (`hg`) and git commands (`git`) to communica
 
 To use mercurial commands on the project you are working on, you must have a mercurial project set up; the same holds true for git. Follow these links to learn more about how to set up these project in Cloud9:
 
-* [Setting up a Mercurial Project](./setting_up_bitbucket_project.html)
-* [Setting up a Git project (on GitHub)](./setting_up_github_project.html)
+* [Setting up a Mercurial Project](./setting_up_bitbucket_workspace.html)
+* [Setting up a Git project (on GitHub)](./setting_up_github_workspace.html)
 
-These articles also explain how to use the command-line to commit your work.
+Those articles also explain how to use the command-line to commit your work.
 
 In addition, the console also has shortcuts for much of Cloud9 IDE's functionality. For example, `gotofile` launches the filename you provide, while `revealtab` opens the current file in the project tree. Again, typing `help` shows you which commands are available.
 
 ### Output
 
-The output tab in the console shows information whenever a user is running or debugging a program. The content is similar to the output of a desktop terminal, except it's in the same window as your editor. No need to juggle between windows anymore!
+The output tab in the console shows information whenever a user is running or debugging a program. The content is similar to the output of a desktop terminal.
 
 ![Screenshot of program output](./images/consoleOutput.png)
 
 The output tab also displays the error and additional information that can improve your coding quality. You can use the console to output results from your running application, just like a regular terminal.
 
-### Search
+As your process runs, you'll see a message similar to this one indicating that Cloud9 is running something in the background: ![Running process](./images/runningProcess.png)
 
-The console also displays information about files containing search terms:
-
-![Screenshot of search results](./images/searchResults.png)
-
-You can expand each result to see the line number of where a match was found. Clicking on a match opens the file in the IDE.
+If you hover over this message, you can opt to cancel the process by clicking on the button: ![Cancelling a process](./images/cancellingProcess.png)

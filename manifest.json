@@ -1,4 +1,12 @@
 {
-	"files": [ "./src/developer", "./src/faq", "./src/features", "./src/ide-components", "./src/tutorials", "./src/troubleshooting" ],
-    "resources" : [ "./resources/images", "./resources/icons" ]
+    "files": [ 
+        "./src/deploying", 
+        "./src/developer", 
+        "./src/faq", 
+        "./src/features", 
+        "./src/ide-components", 
+        "./src/tutorials", 
+        "./src/workflows"
+        ],
+    "resources" : [ "./resources/anims", "./resources/images", "./resources/icons" ]
 }

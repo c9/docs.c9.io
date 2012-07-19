@@ -14,7 +14,7 @@ How Can I Delete My Account?
   3. Please give us feedback. Any information to improve the product is usefull.
 
 FTP Projects Don't Work. Am I Doing Something Wrong?
-: First of all, make sure you read the article about [setting up an FTP project](ftp_projects.html).
+: First of all, make sure you read the article about [setting up an FTP project](ftp_workspaces.html).
 : Next, be aware that we only support passive FTP, not SFTP or FTPS.
 : Also, please make sure you succeed the login test when creating a project. If you didn't try it when creating the project, just click **FTP Settings** (next to **Start Editing**) in the dashboard. In the pop-up window, you can do the login test again.
 : Another possible problem is a wrong "Initial Path". Did you set the "Initial Path" in the FTP project? If so, it's possible that unseting it migt help. Some users seem to be having problems with it when the path they put doesn't exist or is a relative path. This is not a bug, but a misunderstanding of absolute versus relative paths. If you put a relative path (that is, if the initial path does not start with a `/`), then Cloud9 assumes that you want to start from the folder your FTP server leaves you after login (home or default folder). If you put an initial path that leaves you in a location where you don't have write privileges, that could cause problems too.
@@ -26,7 +26,7 @@ My Username Was Duplicated; How Could This Happen?
 
 : To link your first account with your original username to your GitHub account, you should remove the second account. You can do so by logging in to Cloud9 IDE using the GitHub (click on the GitHub icon in the log in screen).
 : Next, find **Delete your account** under your account settings within the dashboard and delete the `username_1` account.
-: Finally, log in to your original account using your username (or email address) and password and you can [link to GitHub](setting_up_github_project.html).
+: Finally, log in to your original account using your username (or email address) and password and you can [link to GitHub](setting_up_github_workspace.html).
 
 Why Don't Console Commands Don't Work?
 : Before submitting a support request about the console not working, please consider this:  

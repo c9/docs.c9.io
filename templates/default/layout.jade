@@ -1,45 +1,52 @@
-!!! 5
-
--var codeHighlightTheme = manifest.codeHighlightTheme || 'github'
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
 html
-	head
-		meta(http-equiv="content-type", content="text/html", charset=utf-8")
-		
-		title #{options.title}
-		
-		link(type="text/css", rel="stylesheet", href="http://fonts.googleapis.com/css?family=Droid+Sans&subset=latin")
-		link(type="text/css", rel="stylesheet", href="./assets/csses/reset.css")
-		link(type="text/css", rel="stylesheet", href="./assets/csses/docs.css")
-		link(type="text/css", rel="stylesheet", href="./assets/csses/print.css", media="print")
-		link(type="text/css", rel="stylesheet", href="http://yandex.st/highlightjs/6.1/styles/#{codeHighlightTheme}.min.css")
-
-		if manifest.css
-			link(type="text/css", rel="stylesheet", href="#{manifest.css}")
-
-		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
-		<script type="text/javascript" src="http://yandex.st/highlightjs/6.1/highlight.min.js"></script>
-		
-		if manifest.embedly
-			<script type="text/javascript" src="http://scripts.embed.ly/jquery.embedly.min.js"></script>
-			<script type="text/javascript">$(function(){$('#content p:not(.disable-embedly) a:only-child').parent().embedly({key:'<%= @manifest.embedly %>',maxWidth: 700});});</script>
-
-		<script type="text/javascript" src="#{options.baseUrl}/js/viewer.js"></script>
-
-	body
-		include toc
-		div#page
-			a(name="top")
-			
-			if !options.noHeader
-				header#header
-					h1 Panda: Readme
-
-			article#content!= content
-
-			footer#footer
-				From a(href="http://github.com/gjtorikian/panda") github.com/gjtorikian/panda
-				
-
-				if manifest.github
-					a(href="https://github.com/#{manifest.github}", id="fork-me-on-github") Fork me on Github
+    head.
+        <title>Cloud9 IDE | Online IDE &#8211; Your code anywhere, anytime</title>
+        <META NAME="ROBOTS" CONTENT="INDEX, FOLLOW" />
+        <!-- <meta name="robots" content="index, follow" /> -->
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+        
+        <link rel="apple-touch-icon-precomposed"                     href="https://c9.io/site/wp-content/themes/cloud9/img/apple-touch-icon-precomposed.png" />
+        <link rel="apple-touch-icon-precomposed" sizes="57x57"         href="https://c9.io/site/wp-content/themes/cloud9/img/apple-touch-icon-57x57-precomposed.png" />
+        <link rel="apple-touch-icon-precomposed" sizes="72x72"         href="https://c9.io/site/wp-content/themes/cloud9/img/apple-touch-icon-72x72-precomposed.png" />
+        <link rel="apple-touch-icon-precomposed" sizes="114x114"     href="https://c9.io/site/wp-content/themes/cloud9/img/apple-touch-icon-114x114-precomposed.png" />
+        
+        <link rel="shortcut icon" type="image/x-icon" href="https://c9.io/site/wp-content/themes/cloud9/favicon.ico" /> 
+        <link rel="icon" type="image/x-icon" href="https://c9.io/site/wp-content/themes/cloud9/favicon.ico" />
+    
+        <script type="text/javascript" src="/auth/check.js"></script>
+    
+        <link rel='stylesheet' id='c9-style-css'  href='https://c9.io/site/wp-content/themes/cloud9/css/style.css?ver=3' type='text/css' media='screen' />
+        <link rel='stylesheet' id='c9-fonts-css'  href='https://c9.io/site/wp-content/themes/cloud9/css/fonts.css?ver=1' type='text/css' media='screen' />
+        <link rel='stylesheet' id='jquery-cb-css'  href='https://c9.io/site/wp-content/themes/cloud9/css/jquery.checkbox.css?ver=1' type='text/css' media='screen' />
+        <link rel='stylesheet' id='c9-menu-css'  href='https://c9.io/site/wp-content/themes/cloud9/css/menu.css?ver=1' type='text/css' media='screen' />
+        <link rel='stylesheet' id='prettyPhoto-css'  href='https://c9.io/site/wp-content/themes/cloud9/js/prettyPhoto/css/prettyPhoto.css?ver=1' type='text/css' media='screen' />
+        <link rel='stylesheet' id='aviaSlider-css'  href='https://c9.io/site/wp-content/themes/cloud9/css/aviaslider.css?ver=1' type='text/css' media='screen' />
+        <link rel='stylesheet' id='popupc9-css'  href='https://c9.io/site/wp-content/themes/cloud9/css/popup.c9.css?ver=1' type='text/css' media='screen' />
+        <link rel='stylesheet' id='tnswc-css-css'  href='https://c9.io/site/wp-content/plugins/TNW-Social-Count/frontend/css/tnwsc.css?ver=1340893164' type='text/css' media='all' />
+        <link rel='stylesheet' id='c9-docs-css'  href='./assets/csses/docs.css' type='text/css' media='screen' />
+        <link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://c9.io/site/xmlrpc.php?rsd" />
+        <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://c9.io/site/wp-includes/wlwmanifest.xml" /> 
+        <link rel='index' title='Cloud9 IDE | Online IDE &#8211; Your code anywhere, anytime' href='https://c9.io/site/' />
+        <meta name="generator" content="WordPress 3.2.3" />
+        <link rel='shortlink' href='http://wp.me/2mnak' />
+        
+    body
+       div.wrapper
+         div.header
+            div.wrapper
+               div.content-container
+         div.content-container.page-body
+            include toc
+            div.content
+              div.page-content
+                != content
+        
+            div.clear
+        
+        
+         div.footer
+           div.footer-content.footer-top

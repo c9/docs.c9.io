@@ -6,12 +6,10 @@
     "type": "git",
     "url": "git://github.com/c9/cloud9ide-documentation.git"
   },
-  "engines": {
-    "node": "~0.6.0"
-  },
+  "engines": { "node": "~0.6.0" },
   "dependencies": {
-    "panda-docs": "~0.2.4",
-    "jade": "~0.20.0",
+    "panda-docs": ">=0.2.4",
+    "jade": ">=0.20.0"
   },
   "devDependencies": {}
 }
