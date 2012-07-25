@@ -1,6 +1,6 @@
 Author: Garen J. Torikian
 
-## Applying Themes and Syntax Highlighting
+# Applying Themes and Syntax Highlighting
 
 <!-- add video here -->
 

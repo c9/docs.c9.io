@@ -1,6 +1,6 @@
 Author: Garen J. Torikian
 
-## Color Picker
+# Color Picker
 
 <iframe width="480" height="360" src="http://www.youtube.com/embed/T0FAFF6fQi4" frameborder="0" allowfullscreen></iframe>
 

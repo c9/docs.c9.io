@@ -1,6 +1,6 @@
 Author: Detmar ter Huurne
 
-## FAQ
+# FAQ
 
 What is Cloud9 IDE?
 :   Cloud9 IDE is, at its core, an online code editor. Specifically, it's an IDE for Javascript that uses Node.js as a backend. Cloud9 IDE supports the ability to import projects from GitHub, Bitbucket, and FTP, collaborative development, and syntax highlight for a variety of languages. It's simple, fast, and extremely powerful, with tabbed file browsing, autocompletion of methods and properties, searching across project files, and many other features you'd expect from a terrific editor.

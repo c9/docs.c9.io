@@ -1,4 +1,4 @@
-## Running and Debugging Your Code
+# Running and Debugging Your Code
 
 Cloud9 IDE provides several ways to run and debug your code. We'll explore each of them in this article.
 

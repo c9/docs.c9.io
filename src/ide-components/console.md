@@ -1,6 +1,6 @@
 Author: Daniela Gavidia
 
-## The Console
+# The Console
 
 The console is at the bottom of the IDE. It's where you can enter command line input, view output from your program, and manipulate your projects between your code repositories. 
 

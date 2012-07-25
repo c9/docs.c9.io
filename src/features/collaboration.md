@@ -1,7 +1,7 @@
 Author: Garen J. Torikian
 
 <!-- video -->
-## Collaboration
+# Collaboration
 
 Collaboration with Cloud9 IDE is an amazing feature that lets you share your projects with any other Cloud9 user. You can grant someone access to change files in your workspace, or just let them view the workspace without any other rights.
 

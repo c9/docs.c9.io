@@ -1,6 +1,6 @@
 Author: Daniela Gavidia
 
-## Creating a New Workspace
+# Creating a New Workspace
 
 There are various choices to be made when creating a new workspace in Cloud9 IDE. In this article, we'll walk you through the creation of a new workspace and describe the choices you encounter.
 

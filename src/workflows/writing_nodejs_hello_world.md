@@ -1,6 +1,6 @@
 Author: Daniela Gavidia
 
-## Writing and Running a Node.js Hello World program
+# Writing and Running a Node.js Hello World program
 
 In this article, we'll walk you through the creation of a simple Hello World program. To get started with this lesson, you'll need to first create a (GitHub or Mercurial) project. If you need a refresher on how to do this, please refer to [Creating a New Workspace](creating_new_workspace.html).
 

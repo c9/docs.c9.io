@@ -1,4 +1,4 @@
-## Deploying Your Code
+# Deploying Your Code
 
 Cloud9 IDE offers many different ways to get your code from your editor to your production server. To deploy your code, click on the **Deploy** button in the Project Bar:
 

@@ -1,6 +1,6 @@
 Author: Daniela Gavidia
 
-## Creating a New Account
+# Creating a New Account
 
 Creating an account for the Cloud9 IDE can be done in a few simple steps:
 

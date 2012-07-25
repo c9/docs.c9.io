@@ -1,6 +1,6 @@
 Author: Garen J. Torikian
 
-## Running Python Code
+# Running Python Code
 
 While using Cloud9 IDE, you have access to the Python runtime. Accessing the command is no different than the way you'd use Python on your computer; just open the command line and type `python`. Currently, we run version 2.6.6.
 

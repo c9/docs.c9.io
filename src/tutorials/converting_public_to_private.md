@@ -1,4 +1,4 @@
-## Converting your Public Projects into Private Projects
+# Converting your Public Projects into Private Projects
 
 One of the premium features offered by Cloud9 IDE is the ability to create private projects. You might decide later on to turn an existing public project into a private one. At the moment, we don't have an easy way to turn public Cloud9 projects into private projects.
 

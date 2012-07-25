@@ -1,6 +1,6 @@
 Author: Daniela Gavidia
 
-## The Dashboard
+# The Dashboard
 
 After you have logged into Cloud9, you are placed into your account's dashboard. From here, you can edit your profile and manage workspaces you have access to.
 

@@ -1,6 +1,6 @@
 Author: Garen J. Torikian
 
-## The Project Bar
+# The Project Bar
 
 The project bar is located towards the left of the Cloud9 IDE: ![The Project Bar](./images/project_bar.png)
 

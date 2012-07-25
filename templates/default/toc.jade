@@ -1,100 +1,170 @@
-#js-sidebar.sidebar-shell
-    .js-toggle-list.sidebar-module.expandable
-        ul
-          li.js-topic
-            h3
-              a.js-expand-btn.collapsed(href='#')
-              a(href='#') Features
-            ul.js-guides
-              li
-                a(href='applying_themes.html') Applying Themes and Syntax Highlighting
-              li
-                a(href='collaboration.html') Collaboration
-              li
-                a(href='colorpicker.html') Color Picker
-              li
-                a(href='multiple_cursors.html') Multiple Cursors
-              li
-                a(href='revisions.html') Revisions
-              li
-                a(href='tab_functions.html') Tab Functions
-              li
-                a(href='uploading_downloading.html') Uploading Files and Downloading Your Project
-              li
-                a(href='zen_mode.html') Zen Mode
-          li.js-topic
-            h3
-              a.js-expand-btn.collapsed(href='#')
-              a(href='#') IDE Components
-            ul.js-guides
-              li
-                a(href='editor.html') Editor Overview
-              li
-                a(href='console.html') Console
-              li
-                a(href='dashboard.html') Dashboard
-              li
-                a(href='ide_preferences.html') IDE Preferences   
-              li
-                a(href='project_bar.html') Project Bar
-              li
-                a(href='status_bar.html') Status Bar    
-          li.js-topic
-            h3
-              a.js-expand-btn.collapsed(href='#')
-              a(href='#') Tutorials
-            ul.js-guides
-              li
-                a(href='creating_new_account.html') Creating a New Account
-              li
-                a(href='creating_new_workspace.html') Creating a New Workspace
-              li
-                a(href='setting_up_github_workspace.html') Setting up a GitHub Workspace  
-              li
-                a(href='setting_up_bitbucket_workspace.html') Setting up a Bitbucket Workspace
-              li
-                a(href='ftp_workspaces.html') Creating an FTP Workspace
-              li
-                a(href='running_and_debugging_code.html') Running and Debugging Your Code     
-              li
-                a(href='converting_public_to_private.html') Converting Public Projects to Private
-             
-          li.js-topic
-            h3
-              a.js-expand-btn.collapsed(href='#')
-              a(href='#') Workflows
-            ul.js-guides
-              li
-                a(href='writing_nodejs_hello_world.html') Writing and Running a Node.js Hello World
-              li
-                a(href='creating_coffeescript_app.html') Creating Coffeescript Applications
-              li
-                a(href='editing_wordpress_sites.html') Editing Wordpress Sites
-              li
-                a(href='installing_npm_modules.html') Installing NPM Modules
-              li
-                a(href='running_python_code.html') Running Python Code
-              li
-                a(href='running_ruby_code.html') Running Ruby Code
-              li
-                a(href='running_php_code.html') Running PHP Code
-              li
-                a(href='run_your_own_vm.html') Run your own VM
-          li.js-topic
-            h3
-              a.js-expand-btn.collapsed(href='#')
-              a(href='#') Deploying
-            ul.js-guides
-              li
-                a(href='deploying_code.html') Deploying Your Code          
-              li
-                a(href='deploying_to_heroku.html') Deploying to Heroku
-              li
-                a(href='deploying_to_windows_azure.html') Deploying to Windows Azure Sites
-          li.js-topic
-            h3
-              a.js-expand-btn.collapsed(href='#')
-              a(href='#') FAQ
-            ul.js-guides
-              li
-                a(href='faq.html') FAQ
+.sidebar-nav
+  #side-nav.col-3(itemscope='itemscope', itemtype='http://schema.org/SiteNavigationElement')
+    #doc-nav.scroll-pane
+      a.totop(href='#top', data-g-event='left-nav-top') to top
+      ul#nav
+        li.nav-section
+          .nav-section-header
+            a(href='javascript:void(0)')
+              span Features
+          ul
+            li
+              a(href='applying_themes.html')
+                span
+                  | Applying Themes and Syntax
+                  | Highlighting
+            li
+              a(href='collaboration.html')
+                span Collaboration
+            li
+              a(href='colorpicker.html')
+                span Color Picker
+            li
+              a(href='multiple_cursors.html')
+                span Multiple Cursors
+            li
+              a(href='revisions.html')
+                span Revisions
+            li
+              a(href='tab_functions.html')
+                span Tab Functions
+            li
+              a(href='uploading_downloading.html')
+                span
+                  | Uploading Files and
+                  | Downloading Your Project
+            li
+              a(href='zen_mode.html')
+                span Zen Mode
+        li.nav-section
+          .nav-section-header
+            a(href='javascript:void(0)')
+              span IDE Components
+          ul
+            li
+              a(href='editor.html')
+                span Editor Overview
+            li
+              a(href='console.html')
+                span Console
+            li
+              a(href='dashboard.html')
+                span Dashboard
+            li
+              a(href='ide_preferences.html')
+                span IDE Preferences
+            li
+              a(href='project_bar.html')
+                span Project Bar
+            li
+              a(href='status_bar.html')
+                span Status Bar
+        li.nav-section
+          .nav-section-header
+            a(href='javascript:void(0)')
+              span Tutorials
+          ul
+            li
+              a(href='creating_new_account.html')
+                span
+                  | Creating a New
+                  | Account
+            li
+              a(href='creating_new_workspace.html')
+                span
+                  | Creating a New
+                  | Workspace
+            li
+              a(href='setting_up_github_workspace.html')
+                span
+                  | Setting up a
+                  | GitHub Workspace
+            li
+              a(href='setting_up_bitbucket_workspace.html')
+                span
+                  | Setting up a
+                  | Bitbucket Workspace
+            li
+              a(href='ftp_workspaces.html')
+                span
+                  | Creating an FTP
+                  | Workspace
+            li
+              a(href='running_and_debugging_code.html')
+                span
+                  | Running and
+                  | Debugging Your Code
+            li
+              a(href='converting_public_to_private.html')
+                span
+                  | Converting Public
+                  | Projects to Private
+        li.nav-section
+          .nav-section-header
+            a(href='javascript:void(0)')
+              span Workflows
+          ul
+            li
+              a(href='writing_nodejs_hello_world.html')
+                span
+                  | Writing and Running a
+                  | Node.js Hello World
+            li
+              a(href='creating_coffeescript_app.html')
+                span
+                  | Creating Coffeescript
+                  | Applications
+            li
+              a(href='editing_wordpress_sites.html')
+                span
+                  | Editing Wordpress
+                  | Sites
+            li
+              a(href='installing_npm_modules.html')
+                span
+                  | Installing NPM
+                  | Modules
+            li
+              a(href='running_python_code.html')
+                span
+                  | Running Python
+                  | Code
+            li
+              a(href='running_ruby_code.html')
+                span
+                  | Running Ruby
+                  | Code
+            li
+              a(href='running_php_code.html')
+                span Running PHP Code
+            li
+              a(href='run_your_own_vm.html')
+                span
+                  | Run your own
+                  | Server
+        li.nav-section
+          .nav-section-header
+            a(href='javascript:void(0)')
+              span Deploying
+          ul
+            li
+              a(href='deploying_code.html')
+                span Deploying Your Code
+            li
+              a(href='deploying_to_heroku.html')
+                span
+                  | Deploying to
+                  | Heroku
+            li
+              a(href='deploying_to_windows_azure.html')
+                span
+                  | Deploying to Windows
+                  | Azure Sites
+        li.nav-section
+          .nav-section-header
+            a(href='javascript:void(0)')
+              span FAQ
+          ul
+            li
+              a(href='faq.html')
+                span FAQ

@@ -1,6 +1,6 @@
 Author: Daniela Gavidia
 
-## Tab Functions
+# Tab Functions
 
 Cloud9 IDE offers advanced tab features to make working with multiple files easy. These feature include:
 

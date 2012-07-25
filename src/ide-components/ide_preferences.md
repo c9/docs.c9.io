@@ -1,6 +1,6 @@
 Author: Garen J. Torikian
 
-## IDE Preferences
+# IDE Preferences
 
 There are many different ways to configure the IDE. Below is a list of the options available, and what they do.
 
