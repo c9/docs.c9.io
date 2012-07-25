@@ -12,11 +12,11 @@ Once you're in the editor, create a new file called `server.js`. Type the follow
     http.createServer(function (req, res) {
         res.writeHead(200, {'Content-Type': 'text/plain'});
         res.end('Hello World\n');
-    }).listen(process.env.PORT);
+    }).listen(process.env.PORT, process.env.IP);
         
 What you just wrote is a Node.js HTTP server that returns a simple 'Hello World' page for every request. In short, you are creating an HTTP server with a callback function that is called for each request.
 
-In the callback function, you create a response with a status code of `200` (indicating that the request was fulfilled successfully) and the message "Hello World". Finally, you specify which port the server listens to. When Node.js projects run within Cloud9 IDE, you can retrieve the port information with the `process.env.PORT` variable.
+In the callback function, you create a response with a status code of `200` (indicating that the request was fulfilled successfully) and the message "Hello World". Finally, you specify which port and IP address the server runs on. When Cloud9 IDE runs servers, you set and retrieve the IP address and port number with the `process.env.IP` and `process.env.PORT` variables.
 
 #### Running your program
 
@@ -31,4 +31,4 @@ To see your application in action, click on the link created for your project. Y
 
 To stop your application, go back to the editor and click on the [![Icon of the Stop Button](./icons/stop_button.png)]{: #stopButton} button in the menu bar.
 
-For more information on running and debugging your projects, see [this article](./running_and_debugging_your_code.html) on the different debugging options available.
+For more information on running and debugging your projects, see [this article](./running_and_debugging_code.html) on the different debugging options available.

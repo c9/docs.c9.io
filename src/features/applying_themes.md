@@ -11,32 +11,32 @@ By default, files are highlighted based on their file extension. You can change 
 As a general reference, the IDE supports themes for these following languages:
 
 <div style="-moz-column-count: 2; -moz-column-gap: 20px; -webkit-column-count: 2; -webkit-column-gap: 20px; column-count: 2; column-gap: 20px;">
-
-* C#
-* C/C++
-* Clojure
-* Coffescript
-* Coldfusion
-* CSS
-* Groovy
-* Java
-* Javascript
-* Latex
-* Lua
-* Markdown
-* OCaml
-* PHP
-* Perl
-* Powershell
-* Python
-* Ruby
-* Scala
-* SCSS
-* SQL
-* Textile
-* X(HTML)
-* XML
-
+<ul>
+<li>C#</li>
+<li>C/C++</li>
+<li>Clojure</li>
+<li>Coffescript</li>
+<li>Coldfusion</li>
+<li>CSS</li>
+<li>Groovy</li>
+<li>Java</li>
+<li>Javascript</li>
+<li>Latex</li>
+<li>Lua</li>
+<li>Markdown</li>
+<li>OCaml</li>
+<li>PHP</li>
+<li>Perl</li>
+<li>Powershell</li>
+<li>Python</li>
+<li>Ruby</li>
+<li>Scala</li>
+<li>SCSS</li>
+<li>SQL</li>
+<li>Textile</li>
+<li>X(HTML)</li>
+<li>XML</li>
+</ul>
 </div>
 
-We are always adding new themes and new languages to support, so check back often!
+We are always adding new themes and new languages to support, so check often!

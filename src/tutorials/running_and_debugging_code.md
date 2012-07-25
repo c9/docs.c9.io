@@ -12,7 +12,7 @@ At the bottom of the run panel, you'll notice a few more options you can set:
 
 * **Name**: the name of your run scenario
 * **File Path**: the location of your running file in your project
-* **Runtime**: {:nodejsRuntime}
+* **Runtime**: defines how you want your code to be run. Currently, you can run Node.js code, as well as Python, Ruby, and PHP
 * **Cmd Line Args**: any additional command line arguments you want to pass to your app
 
 You can also save your run scenarios. Just click on the **add** button at the top of the panel. When you're ready to run a scenario, click on its name in the list. Finally, to remove a run scenario, click on its name in the run panel list, and then click on the **remove** button. 

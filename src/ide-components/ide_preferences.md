@@ -71,7 +71,7 @@ Note: All of these options are on a per-project basis. Changing them in one proj
     }];
     </pre>
   </li>
-  <li>**JSLint Strict Whitespace**: if selected, all new brackets are indented by a space; for example `if(x){` becomes `if (x) {`, and `function(arg){` becomes `function (arg) {`</li>
+  <li>**JSLint Strict Whitespace**: if selected, all brackets are preceded by a space; for example `if(x){` becomes `if (x) {`, and `function(arg){` becomes `function (arg) {`</li>
    <li>**Braces**: these options control how braces are handled in the IDE:
    <ul>
    <li>**Braces with control statement**: braces are left "in-line" alongside the code statements. For example, code is formatted like this:

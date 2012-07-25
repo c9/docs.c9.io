@@ -6,19 +6,10 @@ You can find the status bar in the lower-right corner of the editor: ![The statu
 
 There's three pieces of crucial information available at all times: your current row, your current column, and, if you're highlighting characters, the status bar displays the number of bytes currently selected.
 
-If you click on the status bar, it expands into a menu with additional options: ![The status bar, expanded](./icons/statusBarExpanded.png).
-
-The first menu controls various ways of coding within the IDE. These are:
-
-* {:vimModeDef}
-* Beautify Selection: reformats the highlighted code to the rules you've chosen from [the JSBeautify section of the IDE preferences](./ide_preferences.html#JSBeautify)
-* Strip Whitespace: removes {:stripWhitespace}
-* Rename variable: when selecting a variable, choosing this option renames the current variable, and all references to that variable in the same file. 
-
-The second menu specifies several visual formatting rules for the IDE. These are:
+If you click on the status bar, it expands into a menu that provides a smaller set of [the full ide preferences](ide_preferences.html). Mostly, these options deal with visual formatting for the IDE:
 
 * Show Invisibles: {:invisibleChars}
-* Wraps Lines: wraps lines according to the line margin define. Otherwise, lines run on horizontally
+* Wraps Lines: wraps lines according to the line margin defined, or your browser's window. Otherwise, lines run off the current viewport.
 * Code Folding: {:codeFolding}
 * Full Line Selection: {:fullLineSelection}
 * Highlight Active Line: {:highlightActiveLine}
@@ -30,5 +21,3 @@ The second menu specifies several visual formatting rules for the IDE. These are
 * Show Print Margin: {:showPrintMargin}
 * Soft Tabs: {:softTabs}
 * Mouse Scroll Speed: {:mouseScrollSpeed}
-
-You'll notice that some of these options already exist in [the IDE preferences panel](./ide_preferences.html).

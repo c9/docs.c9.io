@@ -11,11 +11,11 @@ Throughout the documentation, we'll refer to these sections by name. We can iden
 * The top menu bar is the uppermost area, with easy access to a variety of menus
 * The project bar on the left lets you manipulate various aspects of your project, including its active files, preferences, and choices for deployment
 * The panel displays views according to what's been selected in the project bar
-* The toolbar is on the far right, where you can find tools used when [debugging your code](./running_and_debugging_your_code.html). Projects that are being [collaborated on](./collaboration.html) also make use of this panel for chatting.
+* The toolbar is on the far right, where you can find tools used when [debugging your code](./running_and_debugging_code.html). Projects that are being [collaborated on](./collaboration.html) also make use of this panel for chatting.
 * The code editor is the main area where you write your code.
 * The console is the bottom area of the window. It's an expandable area that can act like a desktop terminal to enter command line input (like `ls` or `mkdir`). It also displays output provided by your program's print statements (like `console.log()`), as well as providing an area for search results
 
-The [Project Bar](./project_bar.html), [Tool Bar](./toolbar.html), and [Console](./console.html) are powerful features, so their documentation is provided separately. We'll talk about the rest of the editor below:
+The [Project Bar](./project_bar.html), [Tool Bar](./running_and_debugging_code.html), and [Console](./console.html) are powerful features, so their documentation is provided separately. We'll talk about the rest of the editor below:
 
 Remember: nearly every UI element can be collapsed, in order to provided a more harmonious coding experience. For example, clicking on the buttons in the upper left of the editor allows you to hide the panels and top menu bar:  
 ![Hiding panel elements](./anims/collapsingbars.gif)
@@ -26,7 +26,7 @@ Remember: nearly every UI element can be collapsed, in order to provided a more 
 
 In this section, you can find the usual menus for creating and saving files, changing your view, [applying a new theme for the editor](./applying_themes.html), and switching between windows.
 
-In the middle of the menu bar you'll find the **debug** button: ![The debug button](./icons/debugButton.png). This is used for running and debugging your code. For more information, see [the section on "Running and Debugging Your Code".](./running_and_debugging_your_code.html).
+In the middle of the menu bar you'll find the **debug** button: ![The debug button](./icons/debugButton.png). This is used for running and debugging your code. For more information, see [the section on "Running and Debugging Your Code".](./running_and_debugging_code.html).
 
 <a id="previewButton"></a>
 

@@ -1,7 +1,6 @@
 {
     "files": [ 
         "./src/deploying", 
-        "./src/developer", 
         "./src/faq", 
         "./src/features", 
         "./src/ide-components", 
