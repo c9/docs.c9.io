@@ -53,6 +53,14 @@ Note: All of these options are on a per-project basis. Changing them in one proj
   <li>**Newline Mode**: specifies the newline mode for the IDE</li>
 </dd>
 <dd>
+<dt>Terminal</dt>
+<dd>This section controls the the UI for [the terminal](./terminal.html):
+<ul>
+  <li>**Scrollback**: sets the scrollback buffer for the terminal</li>
+  <li>**Font Family**: sets the font for the terminal</li>
+  <li>**Font Size**: sets the font size for the terminal</li>
+  <li>**Blinking Cursor**: specifies whether or not you want the cursor to blink</li>
+</dd>
 <dt>Code Tools</dt>
 <dd>This section controls the various tools that are available in the IDE:
 <ul>

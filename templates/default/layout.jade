@@ -24,7 +24,7 @@ html(xmlns='http://www.w3.org/1999/xhtml')
     title #{pageTitle} | Cloud9 Documentation
     link(href='./assets/csses/docs.css', rel='stylesheet', type='text/css')
     link(href='./assets/csses/bootstrap.css', rel='stylesheet', type='text/css')
-  body.gc-documentation.develop(itemscope='itemscope', itemtype='http://schema.org/Article')
+  body
     a#top(name='top')
     .container-fluid
       .row-fluid
@@ -32,7 +32,7 @@ html(xmlns='http://www.w3.org/1999/xhtml')
           include toc
         .span9.documentationContainer
           #content
-            .jd-descr(itemprop='articleBody')
+            .jd-descr
                h1 #{pageTitle}
                span Last modified:&nbsp;
                  mixin format_date(mtime)
@@ -42,5 +42,4 @@ html(xmlns='http://www.w3.org/1999/xhtml')
             #copyright
             #footerlinks
       script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js')
-      script(src='./assets/javascripts/jquery.jscrollpane.min.js', type='text/javascript')
       script(src='./assets/javascripts/docs.js', type='text/javascript')

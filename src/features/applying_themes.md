@@ -2,7 +2,7 @@ Author: Garen J. Torikian
 
 # Applying Themes and Syntax Highlighting
 
-<!-- add video here -->
+<!-- video  -->
 
 Cloud9 IDE supports over two dozen different themes for highlighting your code. You can change your current theme by going to **View | Themes**, and selecting from one of the options. Note that by hovering over the menu items, you'll be able to get a preview of the theme. To activate a theme you like, just click on its name.
 

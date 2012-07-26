@@ -2,7 +2,7 @@
 
 This is the source documentation for the [Cloud9 IDE User Documentation](http://www.nodemanual.org). 
 
-The build system relies on the [Panda-Docs](https://github.com/gjtorikian/panda-docs) Node.js module.n the website.
+The build system relies on the [Panda-Docs](https://github.com/gjtorikian/panda-docs) Node.js module.
 
 # Running a Build
 

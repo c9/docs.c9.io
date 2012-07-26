@@ -9,6 +9,7 @@ To demonstrate the power of NPM, we'll build and run a quick [express](http://ex
 1. Launch the command line by hitting `Shift-Escape`. You can also go to **View | Command Line** if it's not visible.
 2. Type `npm install express`, and wait for the npm install process to complete.
 3. Create a new Javascript file, and paste the following code:
+
 ```
 var express = require('express'),
     app = express.createServer();
