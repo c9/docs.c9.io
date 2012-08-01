@@ -20,7 +20,7 @@ Enter a workspace name. Depending on whether you have a free of premium account,
 * **Git workspace** allows you to run `git` commands from the console and push your changes to [a GitHub repo](./setting_up_github_workspace.html) or [a Bitbucket git repo](./setting_up_bitbucket_workspace.html).
 * **Mercurial** allows you to run `hg` commands form the console and push your changes to [a Mercurial Bitbucket repo](./setting_up_bitbucket_workspace.html)
 * **FTP** allows you to [upload your files directly to an FTP server](./ftp_workspaces.html) you have access to
-* **SSH**, also called the "bring your own server" feature, lets you [log into a server you own](./run_your_own_vm.html) and run Cloud9 from there
+* **SSH**, also called the "bring your own server" feature, lets you [log into a server you own](./run_your_own_workspace.html) and run Cloud9 from there
 
 Make a choice for the type of workspace and press **Create**. That's it! You can now see your new workspace in the dashboard:
 

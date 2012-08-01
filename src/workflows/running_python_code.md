@@ -17,4 +17,6 @@ As a quick demonstration, open a new file, and paste this Python code into it:
 print "Hello World!";
 ```
 
-When you hit the **run** button in the menu bar, the console will print out the statement.
+When you hit the ![The Run Button](./icons/runButton.png) button in the menu bar, the console will print out the statement.
+
+Note: Currently, you can't debug Python applications, but we are working on adding this feature.

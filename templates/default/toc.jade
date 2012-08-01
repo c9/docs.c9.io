@@ -1,4 +1,8 @@
+
 .sidebar-nav
+    #search-header
+       input#search-box.input.focused(name='search', type='text', autocomplete='off', value='', placeholder='Search the docs')
+
     #doc-nav.scroll-pane
       a.totop(href='#top', data-g-event='left-nav-top') to top
       ul#nav
@@ -109,6 +113,9 @@
             li
               a(href='running_php_code.html')
                 span Running PHP Code
+            li
+              a(href='run_your_own_workspace.html')
+                span Running Your Own Workspace
         li.nav-section
           .nav-section-header
             a(href='javascript:void(0)')

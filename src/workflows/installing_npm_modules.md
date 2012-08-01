@@ -24,4 +24,4 @@ app.listen(process.env.PORT);
 console.log('Express server started on port %s', process.env.PORT);
 ```
 
-To launch your express server, click on the **run** button in the menu bar.
+To launch your express server, click on the ![The Run Button](./icons/runButton.png) button in the menu bar.

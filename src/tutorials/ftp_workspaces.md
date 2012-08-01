@@ -6,7 +6,7 @@ Author: Daniela Gavidia
 
 In this article, we'll show you how to set up an FTP project. Before attempting to create an FTP project, please be aware that Cloud9 IDE currently support only passive FTP. Active FTP, SFTP and FTPS are **not yet supported**.
 
-To create an FTP project, do the following: in the *Projects* tab on the Dashboard, click on the ![Project Add Icon](./icons/workspacePlusIcon.png) next to **MY PROJECTS** and choose the option to **Create a new project** (see "[Creating a New Project](./creating_new_workspace.html)" if you need to review the steps to create a new project):  
+To create an FTP project, go to the Dashboard and click on the ![Project Add Icon](./icons/workspacePlusIcon.png) next to **MY PROJECTS**. Choose the option to **Create a new project** (see "[Creating a New Project](./creating_new_workspace.html)" if you need to review the steps to create a new project):  
 ![New workspace creation](./images/newWorkspace.png)
 
 In the pop-up window that appears, select **FTP** for the project type:
@@ -15,7 +15,7 @@ In the pop-up window that appears, select **FTP** for the project type:
 
 Let's review the options available for your FTP project:
 
-* **Hostname**: the domain address or IP address of the machine running your FTP server.
+* **Hostname**: the domain name or IP address of the machine running your FTP server.
 * **Username**: your username for the FTP server.
 * **Password**: your password for the FTP server.
 * **Initial path**: this is an optional parameter. You can set it as an absolute (starts with `/`) path. Otherwise, it'll be set to a relative path, and Cloud9 assumes that you want to start from the folder your FTP server leaves you after login (_home_ or _default_ folder).

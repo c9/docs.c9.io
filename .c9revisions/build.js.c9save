@@ -1,4 +1,0 @@
-{"ts":1342476422016,"silentsave":true,"restoring":false,"patch":[[{"diffs":[[1,"var panda = require(\"panda-docs\");\n\npanda.make([\"./manifest.json\", \"-t\", \"Cloud9 Documentation\"], function(err) {\n    if (err) console.error(err);\n});"]],"start1":0,"start2":0,"length1":0,"length2":150}]],"length":150}
-{"contributors":[],"silentsave":false,"ts":1343199704025,"patch":[[{"diffs":[[0,"r(err);\n"],[1,"    return;\n"],[0,"});"]],"start1":139,"start2":139,"length1":11,"length2":23}]],"length":162,"saved":false}
-{"ts":1343199766791,"patch":[[{"diffs":[[0,"r(err);\n"],[1,"    console.log(\"ALL DONE\");\n"],[0,"    retu"]],"start1":139,"start2":139,"length1":16,"length2":45}]],"length":191,"saved":false}
-{"ts":1343199787013,"patch":[[{"diffs":[[0,"r);\n"],[-1,"    console.log(\"ALL DONE\");\n"],[0,"    "]],"start1":143,"start2":143,"length1":37,"length2":8}]],"length":162,"saved":false}

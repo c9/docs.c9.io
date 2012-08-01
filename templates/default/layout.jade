@@ -22,8 +22,11 @@ html(xmlns='http://www.w3.org/1999/xhtml')
   head
     meta(http-equiv='Content-Type', content='text/html; charset=us-ascii')
     title #{pageTitle} | Cloud9 Documentation
+    link(href='./assets/csses/bootstrap.min.css', rel='stylesheet', type='text/css')
     link(href='./assets/csses/docs.css', rel='stylesheet', type='text/css')
-    link(href='./assets/csses/bootstrap.css', rel='stylesheet', type='text/css')
+    link(rel="stylesheet", href="http://yandex.st/highlightjs/7.0/styles/magula.min.css")
+    script(src="http://yandex.st/highlightjs/7.0/highlight.min.js")
+    <script>hljs.initHighlightingOnLoad();</script>
   body
     a#top(name='top')
     .container-fluid
@@ -34,12 +37,13 @@ html(xmlns='http://www.w3.org/1999/xhtml')
           #content
             .jd-descr
                h1 #{pageTitle}
-               span Last modified:&nbsp;
+               p.meta Last modified:&nbsp;
                  mixin format_date(mtime)
                div
                  != content
           #footer.wrap
             #copyright
+                p.copyright.pull-right &copy; <a href="http://www.c9.io">Cloud9 IDE</a>
             #footerlinks
       script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js')
       script(src='./assets/javascripts/docs.js', type='text/javascript')

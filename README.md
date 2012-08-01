@@ -4,9 +4,16 @@ This is the source documentation for the [Cloud9 IDE User Documentation](http://
 
 The build system relies on the [Panda-Docs](https://github.com/gjtorikian/panda-docs) Node.js module.
 
-# Running a Build
+# Creating a Build
 
-To run the build, open your command prompt and type:
+First, check out this repository. Then, run
+
+    npm install
+    
+to grab all the required dependencies.
+
+
+To create a build, open your command prompt and type:
 
     node build.js
 

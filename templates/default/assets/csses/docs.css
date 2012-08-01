@@ -20,7 +20,7 @@
 #doc-nav {
   outline:none;
   width:auto;
-  margin: 20px 0 0; }
+  }
   
 #doc-nav h2 {
   border:0;
@@ -60,7 +60,8 @@ a:active {
   #nav .nav-section-header {
     position: relative;
     margin-bottom: 1px;
-    padding: 0 30px 0 0; }
+    padding: 0 30px 0 0; 
+    cursor: pointer;}
   #nav li.selected a, #nav li.selected > .nav-section-header > a {
     color: #09C;
   }
@@ -286,4 +287,61 @@ a:active {
 .jspCorner {
   float: left;
   height: 100%;
+}
+
+p {
+  font-size: 14px;
+  line-height: 20px;
+  margin: 15px 0;
+}
+
+p.meta {
+    color: #999;
+    font-size: 11px;
+    font-style: italic;
+    margin: 0 0 8px 0;
+}
+
+#content {
+    padding: 25px;
+background: white;
+-webkit-border-radius: 15px;
+border-radius: 15px;
+width: 1000px;
+float: none;
+}
+
+body {
+    background: #F0F0F0;
+}
+
+code {
+    color: #333;
+}
+
+ul, ol {
+    font-size: 14px;
+}
+
+i.headerLinkIcon.icon-hand-right {
+    position: absolute;
+     display: none;
+     margin-left: -25px;
+padding-top: 10px;
+}
+
+img {
+    vertical-align: inherit;
+}
+
+#search-header {
+    margin: 25px 0 0 6px;
+}
+
+#search-box {
+    width: 97%
+}
+
+#footer {
+    width: 80%;
 }

@@ -12,31 +12,43 @@ As a general reference, the IDE supports themes for these following languages:
 
 <div style="-moz-column-count: 2; -moz-column-gap: 20px; -webkit-column-count: 2; -webkit-column-gap: 20px; column-count: 2; column-gap: 20px;">
 <ul>
+<li>CoffeeScript</li>
+<li>ColdFusion</li>
 <li>C#</li>
+<li>CSS</li>
+<li>Go</li>
+<li>Groovy</li>
+<li>haXe</li>
+<li>HTML</li>
 <li>C/C++</li>
 <li>Clojure</li>
-<li>Coffescript</li>
-<li>Coldfusion</li>
-<li>CSS</li>
-<li>Groovy</li>
 <li>Java</li>
-<li>Javascript</li>
-<li>Latex</li>
+<li>JavaScript</li>
+<li>JSON</li>
+<li>LaTeX</li>
+<li>LESS</li>
+<li>Liquid</li>
 <li>Lua</li>
 <li>Markdown</li>
 <li>OCaml</li>
-<li>PHP</li>
 <li>Perl</li>
+<li>pgSQL</li>
+<li>PHP</li>
 <li>Powershell</li>
 <li>Python</li>
 <li>Ruby</li>
+<li>OpenSCAD</li>
 <li>Scala</li>
 <li>SCSS</li>
+<li>SH</li>
 <li>SQL</li>
+<li>SVG</li>
+<li>Text</li>
 <li>Textile</li>
-<li>X(HTML)</li>
 <li>XML</li>
+<li>XQuery</li>
+<li>YAML</li>
 </ul>
 </div>
 
-We are always adding new themes and new languages to support, so check often!
+We are always adding new themes and new languages to support, so check the menu often!
