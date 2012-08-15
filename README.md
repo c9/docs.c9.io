@@ -1,6 +1,6 @@
 # Introduction
 
-This is the source documentation for the [Cloud9 IDE User Documentation](http://www.nodemanual.org). 
+This is the source documentation for the [Cloud9 IDE ](https://www.c9.io) User Documentation. 
 
 The build system relies on the [Panda-Docs](https://github.com/gjtorikian/panda-docs) Node.js module.
 
