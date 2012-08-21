@@ -2,7 +2,6 @@
     "files": [ 
     	"./src/index.md",
         "./src/deploying", 
-        "./src/faq", 
         "./src/features", 
         "./src/ide-components", 
         "./src/tutorials", 

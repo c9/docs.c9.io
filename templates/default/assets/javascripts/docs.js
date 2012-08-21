@@ -1,10 +1,62 @@
-
-/******  ON LOAD SET UP STUFF *********/
-
 var navBarIsFixed = false;
+
+var h2s;
+var h2positions = [];
+var h2poslen = 0;
+
+var scrollPosUpdateTOH = 62;
+
+function getH2s() {
+    h2s = $("#content h2");
+    h2positions = [];
+    for (var i = 0; i < h2s.length; i++) {
+        h2positions[i] = $(h2s[i]).position().top;
+    }
+
+    h2poslen = h2positions.length;
+}
+
+function toggleTOH(el) {
+    if ($("#tocHolder").is(":visible")) {
+        $(el).removeClass("active");
+        $("#tocHolder").hide();
+        $(".documentationContainer").removeClass("span8").addClass("span10");
+        updateTOHButtonPosition($(window).scrollTop());
+    }
+    else {
+        $(".documentationContainer").removeClass("span10").addClass("span8");
+        $(el).addClass("active");
+        setTimeout(function() {
+            $("#tocHolder").show();
+            updateTOHButtonPosition($(window).scrollTop());
+        }, 150);
+    }
+
+}
+
+function updateTOHButtonPosition(scrollTop) {
+    if (scrollTop > scrollPosUpdateTOH) {
+        $("#toh_btn").css({
+            "position" : "fixed",
+            "top" : "19px",
+            "right" : ($($(".tocContainer.level_1")[0]).outerWidth() + 15) + "px"
+        });
+    }
+    else {
+        $("#toh_btn").css({
+            "position" : "absolute",
+            "top" : "10px",
+            "right" : "10px"
+        });
+    }
+}
+
 $(document).ready(function() {
   // prep nav expands
   var pagePath = document.location.pathname.substring(document.location.pathname.lastIndexOf("/") + 1);
+
+  if (pagePath === "")
+    pagePath = "index.html";
 
   // select current page in sidenav and set up prev/next links if they exist
   var $selNavLink = $('#nav').find('a[href="' + pagePath + '"]');
@@ -18,12 +70,25 @@ $(document).ready(function() {
     $selListItem.closest('li.nav-section').parent().closest('ul').show();
   }
 
+   $("a.heading_anchor").children("i").addClass("icon-hand-right");
+    
+   $("h2, h3, h4, h5, h6").hover(
+        function () {
+            $(this).find("i").css({"opacity": "1"});
+            $(this).find("a").css({"margin-left": "-30px"});
+        }, 
+        function () {
+             $(this).find("i").css({"opacity": "0"});
+             $(this).find("a").css({"margin-left": "-35px"});
+        }
+    );
+  
   // Set up expand/collapse behavior
   $('#nav li.nav-section .nav-section-header').click(function() {
     var section = $(this).closest('li.nav-section');
     if (section.hasClass('expanded')) {
       // hide me
-      section.children('ul').slideUp(250, function() {
+      section.children('ul').slideUp(100, 'swing', function() {
         section.closest('li').removeClass('expanded');
         resizeNav();
       });
@@ -35,7 +100,7 @@ $(document).ready(function() {
       
       // now expand me
       section.closest('li').addClass('expanded');
-      section.children('ul').slideDown(250, function() {
+      section.children('ul').slideDown(100, 'swing', function() {
         resizeNav();
       });
     }
@@ -48,30 +113,70 @@ $(document).ready(function() {
 
   /* Resize nav height when window height changes */
   $(window).resize(function() {
+    getH2s();
+    updateTOHButtonPosition($(window).scrollTop());
     if ($('#side-nav').length == 0) return;
     var stylesheet = $('link[rel="stylesheet"][class="fullscreen"]');
 
     resizeNav();
   });
   
+  // Get the positions of all the H2s
+  getH2s();
+  
   // Set up fixed navbar
   var prevScrollLeft = 0; // used to compare current position to previous position of horiz scroll
+
   $(window).scroll(function(event) {
+    var scrollTop = $(window).scrollTop();    
+    
+    $($(".tocContainer.level_1").children()).removeClass("highlight");
+    for (var i = 0; i < h2poslen; i++) {
+       if(scrollTop + $(window).height() == $(document).height()) {
+           $($(".tocContainer.level_1").children()[h2poslen - 2]).removeClass("highlight");
+           $($(".tocContainer.level_1").children()[h2poslen - 1]).addClass("highlight");
+           break;
+       }
+        if (scrollTop > (h2positions[i]-50)) {
+            if (h2positions[i+1] && scrollTop < h2positions[i+1]) {
+                $($(".tocContainer.level_1").children()[i]).addClass("highlight");
+                break;
+            }
+            
+            else if (i === (h2poslen - 1)) {
+                $($(".tocContainer.level_1").children()[i]).addClass("highlight");
+            }
+        }
+    }
+
+    if (scrollTop > scrollPosUpdateTOH) {
+        $("#tocHolder > ol.tocContainer").css({
+            "position" : "fixed",
+            "top": "8px"
+        });
+    }
+    else {
+        $("#tocHolder > ol.tocContainer").css({
+            "position" : "absolute",
+            "top": "70px"
+        });
+    }
+
+    updateTOHButtonPosition(scrollTop);
+
     if ($('#side-nav').length == 0) return;
     if (event.target.nodeName == "DIV") {
       // Dump scroll event if the target is a DIV, because that means the event is coming
       // from a scrollable div and so there's no need to make adjustments to our layout
       return;
     }
-    var scrollTop = $(window).scrollTop();    
     var headerHeight = $('#header').outerHeight();
     var subheaderHeight = $('#nav-x').outerHeight();
     var searchResultHeight = $('#searchResults').is(":visible") ? 
                              $('#searchResults').outerHeight() : 0;
     var totalHeaderHeight = headerHeight + subheaderHeight + searchResultHeight;
     var navBarShouldBeFixed = scrollTop > totalHeaderHeight;
-   
-    
+
     // Don't continue if the header is sufficently far away 
     // (to avoid intensive resizing that slows scrolling)
     if (navBarIsFixed && navBarShouldBeFixed) {

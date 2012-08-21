@@ -6,6 +6,10 @@ iframe {
   border: 0;
 }
 
+img {
+  vertical-align: baseline;
+}
+
 .tocContainer ol {
     padding: 0;
     margin: 0 0 0 12px;
@@ -130,7 +134,7 @@ a:active {
   /* 3rd level ul */
     padding:0 10px;
   }
-  #nav li > ul {
+  #nav li.nav-section > ul {
       display:none;
   }
   #nav li ul {
@@ -221,7 +225,7 @@ div#content p.meta {
     line-height: 21px;
 }
 
-#content p, #content ul, #content ol {
+#content p, #content ul, #content ol,  #content dt, #content dd {
     font-family: Georgia;
     font-size: 15px;
 }
@@ -478,4 +482,17 @@ li .tocNavArrow {
 
 #search-box {
   margin-top: 20px;
+}
+
+#footer {
+  padding-bottom: 10px;
+}
+
+#nav div.alert {
+  margin-top: 5px;
+}
+
+#nav div.alert a {
+  color: #33B5E5;
+  text-decoration: underline;
 }
