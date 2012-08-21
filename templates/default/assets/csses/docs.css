@@ -1,5 +1,24 @@
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 400;
+}
+
+iframe {
+  border: 0;
+}
+
+.tocContainer ol {
+    padding: 0;
+    margin: 0 0 0 12px;
+}
+
+.alert h4 {
+   font-weight: bold;   
+}
+
 .documentationContainer {
     margin-top: 20px;
+    -webkit-transition: width 0.15s;
+    -moz-transition: width 0.15s;
 }
 
 #nav-container {
@@ -13,6 +32,10 @@
   padding:0 0 30px;
 }
 
+#nav li ul > ul {
+    margin: 5px 0;
+}
+
 #side-nav {
   min-height:5px; /* silly way to avoid doc floating left when nav goes fixed */
   margin-bottom:1px;
@@ -20,7 +43,7 @@
 #doc-nav {
   outline:none;
   width:auto;
-  }
+}
   
 #doc-nav h2 {
   border:0;
@@ -31,13 +54,11 @@
   margin:0;
   top: 20px; }
 
-#content {
-  width: 760px;
-  float: left; }
-
 a:hover,
 acronym:hover {
-  color: #7aa1b0 !important; }
+  color: #7aa1b0 !important;
+  text-decoration: none;
+}
 
 a:focus,
 a:active {
@@ -56,12 +77,16 @@ a:active {
     line-height: 15px; }
   #nav a {
     color: #555555;
-    text-decoration: none; }
+    text-decoration: none;
+    -webkit-transition: color 0.2s;
+    -moz-transition: color 0.2s;
+  }
   #nav .nav-section-header {
+    cursor: pointer;
     position: relative;
     margin-bottom: 1px;
-    padding: 0 30px 0 0; 
-    cursor: pointer;}
+    margin-top: 5px;
+    padding: 0 30px 0 0; }
   #nav li.selected a, #nav li.selected > .nav-section-header > a {
     color: #09C;
   }
@@ -77,15 +102,6 @@ a:active {
       color: #333333;
       font-weight: 500;
       padding: 10px 0 10px 10px; }
-    #nav .nav-section-header:after {
-      content: '';
-      background: transparent url(../img/nav_down.png) no-repeat scroll 50% 50%;
-      width: 34px;
-      height: 34px;
-      display: block;
-      position: absolute;
-      top: 0;
-      right: 0; }
     #nav .nav-section-header.empty:after {
       display: none; }
     /* nested nav headers */
@@ -98,7 +114,8 @@ a:active {
       display:block;
       font-weight: normal;
       text-transform: none;
-      padding: 7px 5px 7px 10px;
+      padding: 5px 5px 5px 10px;
+      font-size: 13px;
        }
     #nav .nav-section li li a {
     /* second gen child (3rd level li) */
@@ -113,13 +130,10 @@ a:active {
   /* 3rd level ul */
     padding:0 10px;
   }
-    #nav li.expanded > .nav-section-header:after {
-      content: '';
-      background: transparent url(../img/nav_up.png) no-repeat scroll 50% 50%;
-      width: 34px;
-      height: 34px; }
+  #nav li > ul {
+      display:none;
+  }
   #nav li ul {
-    display:none;
     overflow: hidden;
     margin: 0; }
     #nav li ul.animate-height-in {
@@ -139,12 +153,21 @@ a:active {
     #nav li ul > li {
       padding:0;
     }
+    #nav li ul ul li  {
+      padding-left: 5px;
+      border-left: 1px dotted #BBB;
+      margin-left: 13px;
+    }
     #nav li ul > li:last-child {
       padding-bottom:5px;
     }
+    #nav li.expanded > ul {
+      background: rgba(0, 0, 0, 0.03);
+    }
     #nav li.expanded ul > li {
-      background:#efefef;
-      background: rgba(0, 0, 0, 0.03); }
+      /*background:#efefef;
+      background: rgba(0, 0, 0, 0.03);*/
+    }
     #nav li.expanded ul > li li {
       background:inherit; }
 
@@ -172,147 +195,59 @@ a:active {
   background-color:#33B5E5;
 }
 
-/*
- * CSS Styles that are needed by jScrollPane for it to operate correctly.
- */
-
-.jspContainer {
-  overflow: hidden;
-  position: relative;
-}
-
-.jspPane {
-  position: absolute;
-  overflow: hidden;
-  width:auto !important; /* to avoid cut-off api names in reference in horiz scroll */
-}
-
-.jspVerticalBar {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 4px;
-  height: 100%;
-  background: #f5f5f5;
-}
-
-.jspHorizontalBar {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 4px;
-  background: #f5f5f5;
-}
-
-.jspVerticalBar *,
-.jspHorizontalBar * {
-  margin: 0;
-  padding: 0;
-}
-.jspCap {
-  display: block;
-}
-
-.jspVerticalBar .jspCap {
-  height: 4px;
-}
-
-.jspHorizontalBar .jspCap {
-  width: 0;
-  height: 100%;
-}
-
-.jspHorizontalBar .jspCap {
-  float: left;
-}
-
-.jspTrack {
-  position: relative;
-}
-
-.jspDrag {
-  background: #bbb;
-  position: relative;
-  top: 0;
-  left: 0;
-  cursor: pointer;
-}
-
-.jspDrag:hover,
-.jspDrag:active {
-  border-color: #09c;
-  background-color: #4cadcb;
-  background-image: -webkit-gradient(linear, left top, right top, from(#5dbcd9), to(#4cadcb));
-  background-image: -webkit-linear-gradient(left, #5dbcd9, #4cadcb);
-  background-image: -moz-linear-gradient(left, #5dbcd9, #4cadcb);
-  background-image: -ms-linear-gradient(left, #5dbcd9, #4cadcb);
-  background-image: -o-linear-gradient(left, #5dbcd9, #4cadcb);
-  background-image: linear-gradient(left, #5dbcd9, #4cadcb);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#5dbcd9', EndColorStr='#4cadcb');    
-}
-
-.jspHorizontalBar .jspTrack,
-.jspHorizontalBar .jspDrag {
-  float: left;
-  height: 100%;
-}
-
-.jspArrow {
-  background: #999;
-  text-indent: -20000px;
-  display: block;
-  cursor: pointer;
-}
-
-.jspArrow.jspDisabled {
-  cursor: default;
-  background: #ccc;
-}
-
-.jspVerticalBar .jspArrow {
-  height: 16px;
-}
-
-.jspHorizontalBar .jspArrow {
-  width: 16px;
-  float: left;
-  height: 100%;
-}
-
-.jspVerticalBar .jspArrow:focus {
-  outline: none;
-}
-
-.jspCorner {
-  float: left;
-  height: 100%;
-}
-
 p {
   font-size: 14px;
   line-height: 20px;
   margin: 15px 0;
 }
 
-p.meta {
+div#content p.meta {
     color: #999;
     font-size: 11px;
     font-style: italic;
-    margin: 0 0 8px 0;
+    margin: 0 0 8px 3px;
 }
 
 #content {
-    padding: 25px;
-background: white;
--webkit-border-radius: 15px;
-border-radius: 15px;
-width: 1000px;
-float: none;
+    padding: 15px 25px;
+    background: white;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    -moz-box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.2);
 }
 
+#content p {
+    line-height: 21px;
+}
+
+#content p, #content ul, #content ol {
+    font-family: Georgia;
+    font-size: 15px;
+}
+
+#content ul li, #content ol li {
+    padding-left: 5px;
+}
+
+
 body {
-    background: #F0F0F0;
+    background: #F9F9F9;
+}
+
+pre {
+    border: none;
+}
+
+pre code {
+    padding: 0;
+    border: 1px solid #ccc;
+}
+
+pre, code {
+    font-family: 'Inconsolata', monospace;
+    font-size: 14px;
+    background-color: transparent;
 }
 
 code {
@@ -321,27 +256,226 @@ code {
 
 ul, ol {
     font-size: 14px;
+    margin-left: 40px;
 }
 
-i.headerLinkIcon.icon-hand-right {
+/* Pointer link styling */
+h2, h3, h4, h5, h6 {
+  position: relative;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+h2 a i.headerLinkIcon.icon-hand-right,
+h3 a i.headerLinkIcon.icon-hand-right,
+h4 a i.headerLinkIcon.icon-hand-right,
+h5 a i.headerLinkIcon.icon-hand-right,
+h6 a i.headerLinkIcon.icon-hand-right  {
+  display: inline-table;
+  opacity: 0;
+  vertical-align: middle;
+  position: relative;
+  left: -25px;
+  text-decoration: none;
+  color: black;
+  transition: 0.1s opacity;
+  -moz-transition: 0.1s opacity;
+  -webkit-transition: 0.1s opacity;
+}
+
+a.heading_anchor {
+  color: black;
+  display: block;
+  top: 5px;
+  left: 0;
+  bottom: 0;
+  position: absolute;
+  padding-left: 30px;
+  margin-left: -35px;
+  -webkit-transition: 0.2s margin-left;
+  -moz-transition: 0.2s margin-left;
+}
+
+.codeSegment {
+  border-bottom: 1px solid rgba(234, 46, 73, .3);
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+}
+
+#content {
+    padding-right: 45px;
+    position: relative;
+}
+
+#toh_btn {
+    cursor: pointer;
+    width: 22px;
+    height: 18px;
     position: absolute;
-     display: none;
-     margin-left: -25px;
-padding-top: 10px;
+    right: 10px;
+    top: 10px;
+    background: url(../img/toh_icon.png) 0px 0px no-repeat;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-transition: border 0.2s;
+    -moz-transition: border 0.2s;
 }
 
-img {
-    vertical-align: inherit;
+#toh_btn.active {
+    -moz-box-shadow: inset 0px 0px 2px rgba(0, 0, 0, 0.7);
+    -webkit-box-shadow: inset 0px 0px 2px rgba(0, 0, 0, 0.7);
+    box-shadow: inset 0px 0px 2px rgba(0, 0, 0, 0.7);
+    background-color: #f4f4f4;
 }
 
-#search-header {
-    margin: 25px 0 0 6px;
+#toh_btn:hover {
+    border-color: #bbb;
+}
+
+#toh_btn.active:hover {
+    border-color: transparent;
+}
+
+ol.tocContainer li {
+    list-style-type: none;
+}
+#tocHolder {
+    display: none;
+}
+
+#tocHolder > ol.tocContainer {
+    padding: 12px 16px;
+    background: transparent;
+    position: fixed;
+    right: 3px;
+    top: 70px;
+    width: 15%;
+}
+
+li.tocItem > a {
+    font-weight: 300;
+    color: #08C;
+    transition: 0.3s color;
+    -webkit-transition: 0.3s color;
+    -moz-transition: 0.3s color;
+}
+li.tocItem.highlight > a {
+    color: #DA196E;
+}
+
+p.copyright {
+    font-size: 13px;
+    color: #999;
+    margin-top: 10px;
+}
+
+p.copyright a {
+    color: #7AB7D6;
+}
+
+#topbar {
+    height: 40px;
+    border-bottom: 1px solid #BBB;
+    margin-bottom: 10px;
+    background: #DDD;
+    background: -moz-linear-gradient(top,  #f7f7f7 0%, #dddddd 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f7f7f7), color-stop(100%,#dddddd));
+    background: -webkit-linear-gradient(top,  #f7f7f7 0%,#dddddd 100%);
+    background: -o-linear-gradient(top,  #f7f7f7 0%,#dddddd 100%);
+    background: -ms-linear-gradient(top,  #f7f7f7 0%,#dddddd 100%);
+    background: linear-gradient(to bottom,  #f7f7f7 0%,#dddddd 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7f7f7', endColorstr='#dddddd',GradientType=0 );
+}
+
+a#headerlink {
+    background: url(../img/c9devlogosmaller.png) 0 3px no-repeat;
+    float: left;
+    height: 26px;
+    display: inline-block;
+    margin: 2px 25px 0 19px;
+    font-size: 21px;
+    padding: 11px 0 0 55px;
+    font-weight: 100;
+    font-family: Helvetica;
+    color: #35434B;
+    -moz-transition: 0.2s color;
+    -webkit-transition: 0.2s color;
+    text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.7);
+}
+
+a#headerlink:hover {
+    text-decoration: none;
+    color: #666 !important;
+}
+
+a#headerlink:hover {
+    text-decoration: none;
+    color: #666 !important;
+}
+
+div.toplink {
+    float: left;
+    border-left: 1px solid transparent;
+    -webkit-transition: 0.2s background, 0.2s border;
+    -moz-transition: 0.2s background, 0.2s border;
+}
+
+div.toplink:hover {
+    background: #eee;
+    border-left: 1px solid #ddd;
+}
+
+div.toplink.active:hover {
+    border-left: 1px solid transparent;
+}
+
+div.toplink a {
+    display: inline-block;
+    padding: 11px 25px 11px 25px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+div.toplink.active {
+    background: #555;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+div.toplink.active a {
+    color: #fff;
+}
+
+div.toplink a:hover {
+    text-decoration: none;
+}
+
+.alert-heading {
+    display: inline-block;
+    padding-right: 5px;
+}
+
+li .tocNavArrow {
+    display: none;
+    position: absolute;
+    top: 11px;
+    right: 7px;
+    float: right;
+}
+
+.nav-section.expanded .icon-chevron-up.tocNavArrow {
+    display: block;
+}
+
+.nav-section:not(.expanded) .icon-chevron-down.tocNavArrow {
+    display: block;
+}
+
+.centered {
+  width: 75%;
+  margin: 0px auto;
 }
 
 #search-box {
-    width: 97%
-}
-
-#footer {
-    width: 80%;
+  margin-top: 20px;
 }

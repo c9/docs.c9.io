@@ -21,29 +21,28 @@ mixin format_date(mtime)
 html(xmlns='http://www.w3.org/1999/xhtml')
   head
     meta(http-equiv='Content-Type', content='text/html; charset=us-ascii')
-    title #{pageTitle} | Cloud9 Documentation
+    title #{pageTitle} | Cloud9 User Documentation
     link(href='./assets/csses/bootstrap.min.css', rel='stylesheet', type='text/css')
+    link(rel="stylesheet", href="./assets/csses/font-awesome.css")
     link(href='./assets/csses/docs.css', rel='stylesheet', type='text/css')
-    link(rel="stylesheet", href="http://yandex.st/highlightjs/7.0/styles/magula.min.css")
-    script(src="http://yandex.st/highlightjs/7.0/highlight.min.js")
-    <script>hljs.initHighlightingOnLoad();</script>
+    link(rel="stylesheet", href="https://yandex.st/highlightjs/7.0/styles/default.min.css")
+    link(href="https://fonts.googleapis.com/css?family=Inconsolata", rel="stylesheet", type="text/css")
   body
-    a#top(name='top')
+    iframe(height="127px", width="100%", src="https://c9.io/site/onlyheader/")
     .container-fluid
       .row-fluid
-        .span3
+        .span2
           include toc
-        .span9.documentationContainer
+        .span10.documentationContainer
           #content
-            .jd-descr
                h1 #{pageTitle}
                p.meta Last modified:&nbsp;
                  mixin format_date(mtime)
                div
                  != content
-          #footer.wrap
+          #footer.wrap.pull-right
             #copyright
-                p.copyright.pull-right &copy; <a href="http://www.c9.io">Cloud9 IDE</a>
             #footerlinks
+      iframe(height="249px", width="100%", src="https://c9.io/site/onlyfooter/")
       script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js')
       script(src='./assets/javascripts/docs.js', type='text/javascript')

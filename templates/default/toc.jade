@@ -1,15 +1,16 @@
 
 .sidebar-nav
     #search-header
-       input#search-box.input.focused(name='search', type='text', autocomplete='off', value='', placeholder='Search the docs')
+       input#search-box.input.focused.span12(name='search', type='text', autocomplete='off', value='', placeholder='Search the docs')
 
     #doc-nav.scroll-pane
-      a.totop(href='#top', data-g-event='left-nav-top') to top
       ul#nav
         li.nav-section
           .nav-section-header
-            a(href='javascript:void(0)')
+            a(href='#')
               span Features
+            i.icon-chevron-down.tocNavArrow
+            i.icon-chevron-up.tocNavArrow
           ul
             li
               a(href='applying_themes.html')
@@ -37,8 +38,10 @@
                 span Zen Mode
         li.nav-section
           .nav-section-header
-            a(href='javascript:void(0)')
+            a(href='#')
               span IDE Components
+            i.icon-chevron-down.tocNavArrow
+            i.icon-chevron-up.tocNavArrow
           ul
             li
               a(href='editor.html')
@@ -63,8 +66,10 @@
                 span Terminal
         li.nav-section
           .nav-section-header
-            a(href='javascript:void(0)')
+            a(href='#')
               span Tutorials
+            i.icon-chevron-down.tocNavArrow
+            i.icon-chevron-up.tocNavArrow
           ul
             li
               a(href='creating_new_account.html')
@@ -89,8 +94,10 @@
                 span Converting Public Projects to Private
         li.nav-section
           .nav-section-header
-            a(href='javascript:void(0)')
+            a(href='#')
               span Workflows
+            i.icon-chevron-down.tocNavArrow
+            i.icon-chevron-up.tocNavArrow
           ul
             li
               a(href='writing_nodejs_hello_world.html')
@@ -118,8 +125,10 @@
                 span Running Your Own Workspace
         li.nav-section
           .nav-section-header
-            a(href='javascript:void(0)')
+            a(href='#')
               span Deploying
+            i.icon-chevron-down.tocNavArrow
+            i.icon-chevron-up.tocNavArrow
           ul
             li
               a(href='deploying_code.html')
@@ -132,8 +141,10 @@
                 span Deploying to Windows Azure Sites
         li.nav-section
           .nav-section-header
-            a(href='javascript:void(0)')
+            a(href='#')
               span FAQ
+            i.icon-chevron-down.tocNavArrow
+            i.icon-chevron-up.tocNavArrow
           ul
             li
               a(href='faq.html')
