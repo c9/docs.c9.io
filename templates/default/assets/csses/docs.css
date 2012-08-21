@@ -225,11 +225,6 @@ div#content p.meta {
     line-height: 21px;
 }
 
-#content p, #content ul, #content ol,  #content dt, #content dd, #content tr, #content th, #content td, #content caption {
-    font-family: Georgia;
-    font-size: 15px;
-}
-
 #content ul li, #content ol li {
     padding-left: 5px;
 }
@@ -256,11 +251,6 @@ pre, code {
 
 code {
     color: #333;
-}
-
-ul, ol {
-    font-size: 14px;
-    margin-left: 40px;
 }
 
 /* Pointer link styling */
@@ -353,7 +343,7 @@ ol.tocContainer li {
     background: transparent;
     position: fixed;
     right: 3px;
-    top: 70px;
+    top: 138px;
     width: 15%;
 }
 
@@ -495,4 +485,8 @@ li .tocNavArrow {
 #nav div.alert a {
   color: #33B5E5;
   text-decoration: underline;
+}
+
+table td.debug_tools {
+  width: 181px;
 }

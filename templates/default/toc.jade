@@ -1,13 +1,14 @@
 
 .sidebar-nav
     #search-header
-       input#search-box.input.focused.span12(name='search', type='text', autocomplete='off', value='', placeholder='Search the docs')
+       input#search-box.input.focused.span12(id="st-search-input", class="st-search-input", name='search', type='text', value='', placeholder='Search the docs')
 
+    div#st-results-container
     #doc-nav.scroll-pane
       ul#nav
         li.nav-section
           .nav-section-header
-            a(href='#')
+            a(href='javascript:void(0)')
               span Features
             i.icon-chevron-down.tocNavArrow
             i.icon-chevron-up.tocNavArrow
@@ -29,7 +30,7 @@
                 span Revisions
             li
               a(href='autocompletion.html')
-                span Autocompletion
+                span Code Autocompletion
             li
               a(href='tab_functions.html')
                 span Tab Functions
@@ -41,7 +42,7 @@
                 span Zen Mode
         li.nav-section
           .nav-section-header
-            a(href='#')
+            a(href='javascript:void(0)')
               span IDE Components
             i.icon-chevron-down.tocNavArrow
             i.icon-chevron-up.tocNavArrow
@@ -69,7 +70,7 @@
                 span The Terminal
         li.nav-section
           .nav-section-header
-            a(href='#')
+            a(href='javascript:void(0)')
               span Creating Workspaces
             i.icon-chevron-down.tocNavArrow
             i.icon-chevron-up.tocNavArrow
@@ -91,7 +92,7 @@
                 span Running Your Own Workspace
         li.nav-section
           .nav-section-header
-            a(href='#')
+            a(href='javascript:void(0)')
               span Running and Debugging Code
             i.icon-chevron-down.tocNavArrow
             i.icon-chevron-up.tocNavArrow
@@ -101,40 +102,41 @@
                 span Running and Debugging Your Code
             li
               a(href='writing_nodejs_hello_world.html')
-                span Writing and Running a Node.js Hello World
-            li
-              a(href='creating_coffeescript_app.html')
-                span Creating Coffeescript Applications
-            li
-              a(href='editing_wordpress_sites.html')
-                span Editing Wordpress Sites
+                span Writing a Node.js App
               ul
                 li
-                  a(href="running_wordpress_on_cloud9.html")
-                    span Running Wordpress on Cloud9
+                  a(href="installing_npm_modules.html")
+                    span Installing NPM Modules
+                li
+                  a(href="creating_coffeescript_app.html")
+                    span Creating a Coffeescript App
             li
-              a(href='installing_npm_modules.html')
-                span Installing NPM Modules
-            li
-              a(href='running_python_code.html')
-                span Running Python Code
+              a(href='writing_a_python_app.html')
+                span Writing a Python App
               ul
                 li
                   a(href="installing_python_packages.html")
                     span Installing Python Packages
             li
-              a(href='running_ruby_code.html')
-                span Running Ruby Code
+              a(href='writing_a_ruby_app.html')
+                span Writing a Ruby App
               ul
                 li
                   a(href="installing_ruby_gems.html")
                     span Installing Ruby Gems
             li
-              a(href='running_php_code.html')
-                span Running PHP Code
+              a(href='writing_a_php_app.html')
+                span Writing a PHP App
+              ul
+                li
+                  a(href='editing_wordpress_sites.html')
+                    span Editing Remote Wordpress Websites
+                li
+                  a(href="running_wordpress_on_cloud9.html")
+                    span Running Wordpress on Cloud9
         li.nav-section
           .nav-section-header
-            a(href='#')
+            a(href='javascript:void(0)')
               span Deploying Code
             i.icon-chevron-down.tocNavArrow
             i.icon-chevron-up.tocNavArrow
@@ -146,6 +148,26 @@
               a(href='deploying_to_heroku.html')
                 span Deploying to Heroku
             li
-              a(href='deploying_to_windows_azure.html')
+              a(href='deploying_to_windows_azure_sites.html')
                 span Deploying to Windows Azure Sites
+            li
+              a(href='deploying_via_cli.html')
+                span Deploying via the Command Line
+              ul
+                li
+                  a(href="deploying_via_cli.html#heroku")
+                    span Heroku
+                li
+                  a(href="deploying_via_cli.html#windows-azure-web-sites")
+                    span Windows Azure Sites
+                li
+                  a(href="deploying_via_cli.html#windows-azure-cloud-services")
+                    span Windows Azure Cloud Services
+                li
+                  a(href="deploying_via_cli.html#cloudfoundry")
+                    span CloudFoundry
+                li
+                  a(href="deploying_via_cli.html#nodejitsu")
+                    span Nodejitsu   
+
         div.alert.alert-info We're <a href="https://www.github.com/c9/cloud9ide-documentation">open source</a>! Feel free to pull and contribute.

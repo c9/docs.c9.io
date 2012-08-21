@@ -21,7 +21,10 @@ mixin format_date(mtime)
 html(xmlns='http://www.w3.org/1999/xhtml')
   head
     meta(http-equiv='Content-Type', content='text/html; charset=us-ascii')
-    title #{pageTitle} | Cloud9 User Documentation
+    -if (whoAmI.indexOf("index.md") < 0)
+      title #{pageTitle} | Cloud9 User Documentation
+    -else 
+      title Cloud9 IDE User Documentation
     link(href='./assets/csses/bootstrap.min.css', rel='stylesheet', type='text/css')
     link(rel="stylesheet", href="./assets/csses/font-awesome.css")
     link(href='./assets/csses/docs.css', rel='stylesheet', type='text/css')
@@ -35,8 +38,10 @@ html(xmlns='http://www.w3.org/1999/xhtml')
           include toc
         .span10.documentationContainer
           #content
-             h1 #{pageTitle}
-             -if (whoAmI.indexOf("index.html") < 0)
+             -if (toh.length > 1)
+               #toh_btn(onclick="toggleTOH(this)")
+             -if (whoAmI.indexOf("index.md") < 0)
+               h1 #{pageTitle}
                p.meta Last modified:&nbsp; 
                   mixin format_date(mtime)
              div
@@ -45,9 +50,13 @@ html(xmlns='http://www.w3.org/1999/xhtml')
           #footer.wrap.pull-right
             #copyright
             #footerlinks
+        .span2#tocHolder
+           != headingTable(toh, 4, ['tocContainer', 'tocItem'])
       script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js')
       script(src='./assets/javascripts/docs.js', type='text/javascript')
       script(src="./assets/javascripts/ga.js")
+      script(src="./assets/javascripts/swiftype.js")
       script(src="./assets/javascripts/disqus-ext.js")
+      script(src="./assets/javascripts/iframes.js")
 
     iframe(id="footer_iframe", height="249px", width="100%", src="")

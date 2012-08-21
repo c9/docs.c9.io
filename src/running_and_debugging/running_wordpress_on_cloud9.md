@@ -12,7 +12,7 @@ To install Wordpress on your Cloud9 IDE instance:
 2. Go to **File | Upload Files** and select the Wordpress folder you just created.
 3. Rename _wp-config-sample.php_ to _'wp-config.php_
 
-We're almost there! In order to run Wordpress, you need a database to host your files. You could use MySQL, but for this project, we'll use PostgreSQL. To get that to work, we'll need to install [the `pg4wp` plugin](http://wordpress.org/extend/plugins/postgresql-for-wordpress/installation/). Follow the steps in the installation page to add it. We still have no connection, because no database was installed on the virtual machine in Cloud9, but now we've got something to get started with. 
+In order to run Wordpress, you need a database to host your files. You could use MySQL, but for this project, we'll use PostgreSQL. To get that to work, we'll need to install [the `pg4wp` plugin](http://wordpress.org/extend/plugins/postgresql-for-wordpress/installation/). Follow the steps in the installation page to add it. We still have no connection, because no database was installed on the virtual machine in Cloud9, but now we've got something to get started with. 
 
 We'll need to actually install PostgreSQL next. 
 
@@ -45,7 +45,9 @@ Essentially, we're:
   * configuring and compiling it 
   * starting the database
   * creating a new database called wp
-5. In _wp-config.php_, change the code to match your new PostgreSQL database:
+
+In _wp-config.php_, change the code to match your new PostgreSQL database:
+
 ```
 <?php 
 define('DB_NAME', 'wp'); 

@@ -1,4 +1,4 @@
-# Index
+# Cloud9 IDE User Documentation
 
 Welcome to the Cloud9 IDE documentation! Here, you'll find articles and tutorials to help you use the Cloud9 platform. These include everything from setting up git workspaces, to learning how to run, debug, and deploy your code.
 

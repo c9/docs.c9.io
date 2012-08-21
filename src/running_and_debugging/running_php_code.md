@@ -1,4 +1,4 @@
-# Running PHP Code
+# Writing a PHP App
   
 With Cloud9 IDE, you can run your PHP pages, without relying on a third-party system like Apache hosting. You can choose to run PHP scripts via the command line, by typing `php`, followed by the name of your PHP file. However, this is not a very common use case. Most likely, you'll be running your own server and hosting PHP files.
   
@@ -15,7 +15,7 @@ Here's a simple demonstration. First, create a PHP file called _hello_world.php_
 </html>
 ```
 
-Next, open the **Run & Debug** panel, at the left of the IDE. From the **Runtime** dropdown, select **Apache+PHP**. Then, click on the ![The Run Button](./icons/runButton.png) button in the top menu bar.
+Next, open the **Run** panel at the left of the IDE. From the **Runtime** dropdown, select **Apache+PHP**. Then, click on the ![The Run Button](./icons/runButton.png) button in the top menu bar.
  
 The console should now spit out a message about how your Apache server is running, something similar to this:
  

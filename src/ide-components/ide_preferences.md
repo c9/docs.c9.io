@@ -6,7 +6,7 @@ Note: All of these options are on a per-project basis. Changing them in one proj
 
 <div markdown="1">
 <table class="table table-striped table-bordered">
-  <caption>**General**: This section controls the overall IDE behavior:</caption>
+  <caption>**General**: This section controls the overall IDE behavior</caption>
   <thead>
     <tr>
       <th>Preference Name</th>

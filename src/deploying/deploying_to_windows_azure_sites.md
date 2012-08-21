@@ -1,4 +1,4 @@
-# Deploying to Windows Azure
+# Deploying to Windows Azure Sites
 
 This article will show you how to deploy your applications to Windows Azure. If you don't have an account yet, the Windows Azure process will help you create one. Keep in mind that Windows Azure is not free, though it does come with a free trial. Windows Azure projects can be deployed from any operating system.
 

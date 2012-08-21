@@ -1,4 +1,4 @@
-# Editing Wordpress Websites
+# Editing Remote Wordpress Websites via FTP
 
 <iframe width="480" height="360" src="http://www.youtube.com/embed/3vZIKzALxyU" frameborder="0" allowfullscreen></iframe>
 

@@ -6,7 +6,7 @@ First, create a new project. Then, in the console, enter the following command:
 
 	git clone git://github.com/fjakobs/cloud9-coffeescript-example.git
     
-This is a sample CoffeeScript application written by one of our developers. After cloning the project, you'll find three different files in the tree: _server.js_, _app.coffee_, and _README.md_.
+This is a sample CoffeeScript application written by one of our developers. After cloning the project, you'll find three different files in the project tree: _server.js_, _app.coffee_, and _README.md_.
 
 The _README.md_ file contains instructions to install coffee-script using npm. We've integrated Node Package Manager into Cloud9 IDE to enable users to install Node programs. Thus, from the Cloud9 IDE command line, type the following command to install the Coffeescript module:
 
