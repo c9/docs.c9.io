@@ -1,4 +1,3 @@
 # Index
 
-
-blah blah blah.
+Welcome to the Cloud9 IDE documentation!
