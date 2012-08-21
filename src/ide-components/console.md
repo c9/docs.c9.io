@@ -1,10 +1,10 @@
-Author: Daniela Gavidia
-
 # The Console
 
-The console is at the bottom of the IDE. It's where you can enter command line input, view output from your program, and manipulate your projects between your code repositories. 
+The console is at the bottom of the IDE. It's where you can enter command line input, view output from your program, and push and pull your files between your code repositories. 
 
-### Available Commands
+Note: The console is different than [the terminal](./terminal.html) in several ways, primarily that it can't run a full set of Unix commands.
+
+## Available Commands
 
 You can use many common Unix commands, such as `ls` and `mkdir`, in the console space. To preview the full list of basic commands in the console, you can type `help` and press Enter. For every command, a description is provided:
 
@@ -24,7 +24,7 @@ Those articles also explain how to use the command-line to commit your work.
 
 In addition, the console also has shortcuts for much of Cloud9 IDE's functionality. For example, `gotofile` launches the filename you provide, while `revealtab` opens the current file in the project tree. Again, typing `help` shows you which commands are available.
 
-### Output
+## Output
 
 The output tab in the console shows information whenever a user is running or debugging a program. The content is similar to the output of a desktop terminal.
 

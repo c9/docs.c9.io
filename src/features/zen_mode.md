@@ -1,5 +1,3 @@
-Author: Garen J. Torikian
-
 # Activating Zen Mode
 
 Zen mode is a full screen coding environment designed to make you more productive. It essentially removes all the additional UI elements in Cloud9 IDE, and places you in a harmonious relationship with your code.

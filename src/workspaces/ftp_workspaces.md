@@ -1,5 +1,3 @@
-Author: Daniela Gavidia
-
 # Setting up an FTP project
 
 <iframe width="480" height="360" src="http://www.youtube.com/embed/HehwOFg7jYc" frameborder="0" allowfullscreen></iframe>

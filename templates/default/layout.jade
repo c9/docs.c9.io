@@ -28,21 +28,26 @@ html(xmlns='http://www.w3.org/1999/xhtml')
     link(rel="stylesheet", href="https://yandex.st/highlightjs/7.0/styles/default.min.css")
     link(href="https://fonts.googleapis.com/css?family=Inconsolata", rel="stylesheet", type="text/css")
   body
-    iframe(height="127px", width="100%", src="https://c9.io/site/onlyheader/")
+    iframe(id="header_iframe", height="127px", width="100%", src="")
     .container-fluid
       .row-fluid
         .span2
           include toc
         .span10.documentationContainer
           #content
-               h1 #{pageTitle}
+             h1 #{pageTitle}
+             -if (whoAmI.indexOf("index.html") < 0)
                p.meta Last modified:&nbsp; 
-                  mixin format_date(mtime), by #{metadata.Author}
-               div
-                 != content
+                  mixin format_date(mtime)
+             div
+               != content
+             div#disqus_thread
           #footer.wrap.pull-right
             #copyright
             #footerlinks
       script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js')
       script(src='./assets/javascripts/docs.js', type='text/javascript')
-    iframe(height="249px", width="100%", src="https://c9.io/site/onlyfooter/")
+      script(src="./assets/javascripts/ga.js")
+      script(src="./assets/javascripts/disqus-ext.js")
+
+    iframe(id="footer_iframe", height="249px", width="100%", src="")

@@ -1,5 +1,3 @@
-Author: Garen J. Torikian
-
 ## The Minimap
 
 The minimap is an easy visualization of your code. It presents a smaller version of your code within the editor:

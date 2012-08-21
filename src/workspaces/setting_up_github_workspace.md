@@ -1,12 +1,10 @@
-Author: Daniela Gavidia
-
 # Setting Up a GitHub Project
 
 GitHub is a code hosting service which offers you a lot of features to manage your public and private git repositories. For more information about GitHub and how to use it, visit [www.github.com](https://github.com/).
 
 We have integrated GitHub to enable you to easily work on your public and private Git repositories. The following article explains how you can activate your GitHub account in Cloud9 IDE.
 
-### GitHub Activation
+## GitHub Activation
 
 You can manage your add-on services from your user profile that you can find in [./dashboard.html](the dashboard). When you have just signed in, click **Your Account** on the top of the left-side panel. Here, you can change the settings of your account. At the bottom, you'll see a list of add-on services that are integrated into Cloud9 IDE. Click **activate** on the GitHub button:
 
@@ -20,7 +18,7 @@ To finalize the activation, click on **Allow**. Next, you're redirected to your 
 
 Now that you have activated GitHub, you can start to create and manage git projects!
 
-### Managing Git Projects
+## Managing Git Projects
 
 There are several ways to manage GitHub projects in Cloud9 IDE:
 
@@ -28,7 +26,7 @@ There are several ways to manage GitHub projects in Cloud9 IDE:
 * By cloning a GitHub project from a URL
 * By bringing in a GitHub project manually
 
-#### Creating a New Git Project
+### Creating a New Git Project
 
 [New projects are created from the dashboard. In the left-side panel, click on the ![Project Add Icon](./icons/workspacePlusIcon.png) to add a new project:]{: #creatingNewProjects}
 
@@ -66,7 +64,7 @@ Don't forget to push this commit out to GitHub:
 
 Ta-da! Your project is developed on Cloud9, and stored in GitHub.
 
-#### Cloning Projects from a URL
+### Cloning Projects from a URL
 
 [You can also create a project in Cloud9 IDE by cloning it from a GitHub URL. Once again, click on the ![Project Add Icon](./icons/workspacePlusIcon.png), and select **Clone from URL**. A new window pops up asks you:]{: #cloningIntro}
 
@@ -83,7 +81,7 @@ You can find an examples of a GitHub URL on any of their repo description pages:
 
 [Paste the URL in the source field and click **CHECKOUT**. In the left-side panel, you'll see the project and its status turn into "Cloning in Progress". When this process is completed you can open the project and start editing it, just like any other project.]{: #cloningURLProcess}
 
-#### Clone Projects Already On GitHub
+### Clone Projects Already On GitHub
 
 When you provide Cloud9 IDE with your GitHub credentials, it provides a list of projects you haven't yet imported into the editor:
 

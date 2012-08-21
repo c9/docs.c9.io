@@ -1,5 +1,3 @@
-Author: Daniela Gavidia
-
 # Editing Wordpress Websites
 
 <iframe width="480" height="360" src="http://www.youtube.com/embed/3vZIKzALxyU" frameborder="0" allowfullscreen></iframe>

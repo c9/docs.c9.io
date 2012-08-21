@@ -1,5 +1,3 @@
-Author: Daniela Gavidia
-
 # Creating a New Workspace
 
 There are various choices to be made when creating a new workspace in Cloud9 IDE. In this article, we'll walk you through the creation of a new workspace and describe the choices you encounter.
@@ -9,7 +7,7 @@ The first step for creating a new workspace is to click on the ![Workspace Add I
 
 At this point, you'll encounter two choices: **Create a new workspace** and **Clone from URL**. Here's what they mean:
 
-### Create a New Workspace
+## Create a New Workspace
 
 After clicking on **Create a new workspace**, you're taken to the screen below:
 
@@ -28,7 +26,7 @@ Make a choice for the type of workspace and press **Create**. That's it! You can
 
 Now, just click **Start Editing** to get started!
 
-### Clone from URL
+## Clone from URL
 
 The second option for creating a new workspace is to clone one from URL. The URL would be, for example, the URL of a GitHub workspace.
 
@@ -41,7 +39,7 @@ If you have a premium account, you can choose who has access to your workspace. 
 
 Now, check out the workspace. It will be created under **My Workspaces**. You can now start editing it!
 
-### Deleting a workspace
+## Deleting a Workspace
 
 Now that you know how to create a workspace, you should also learn how to delete one. Look at the far right side of your dashboard:
 

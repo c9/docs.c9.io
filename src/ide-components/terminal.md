@@ -4,7 +4,7 @@ The terminal is [a premium-only feature](https://c9.io/site/pricing/) that provi
 
 Warning: While certain operations, like `sudo`, are restricted, you **can** completely destroy your workspace, by doing something like `rm -rf`.  Use your power wisely!
 
-To create a new terminal, go to **View | Terminals | New Terminal**. The terminal differs from the command line in several distinct ways, namely:
+To create a new terminal, go to **View | Terminals | New Terminal**. The terminal differs from [the console](./console.html) in several distinct ways, namely:
 
 * The terminal can perform all Unix commands, not just a subset
 * The terminal can't launch Cloud9 specific commands, like `nexttab` or `gotofile`

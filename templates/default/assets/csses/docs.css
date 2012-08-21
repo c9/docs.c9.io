@@ -225,7 +225,7 @@ div#content p.meta {
     line-height: 21px;
 }
 
-#content p, #content ul, #content ol,  #content dt, #content dd {
+#content p, #content ul, #content ol,  #content dt, #content dd, #content tr, #content th, #content td, #content caption {
     font-family: Georgia;
     font-size: 15px;
 }

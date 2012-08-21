@@ -2,7 +2,7 @@
 
 Cloud9 IDE provides several ways to run and debug your code. We'll explore each of them in this article.
 
-### Running Code
+## Running Code
 
 Running your code in Cloud9 is really easy. First, open the file you want to run. Usually, this file is going to be the main entry point to your app; for example, if you're creating a server, you'd want to run the file that actually instantiates that server.
 
@@ -19,11 +19,11 @@ You can also save your run scenarios. Just click on the **add** button at the to
 
 When you're ready to stop your app, click on the {:stopButton} button in the menu bar.
 
-#### Console Output
+### Console Output
 
 Every time you run a project, the console expands to reveal output from your program. If you're launching a server, Cloud9 provides you with a URL to access the project. Otherwise, any statements sent by your program's print statements (like `console.log()`) are also shown here.
 
-### Debugging Your Code
+## Debugging Your Code
 
 Setting up a project to debug is done in very much the same way as running your code. The only difference is that you must click on the run settings icon ![Run Settings Icon: A Gear with an Arrow](./icons/runSettingsIcon.png) and select "Run in debug mode."
 

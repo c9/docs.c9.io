@@ -1,5 +1,3 @@
-Author: Daniela Gavidia
-
 # The Dashboard
 
 After you have logged into Cloud9, you are placed into your account's dashboard. From here, you can edit your profile and manage workspaces you have access to.
@@ -23,15 +21,15 @@ The user profile contains:
     * Delete your account
     
 
-The gravatar that is used for your profile is handled by [gravatar.com](http://www.gravatar.com. If you don't have a gravatar yet, Cloud9 IDE uses its default.
+The gravatar that is used for your profile is handled by [gravatar.com](http://www.gravatar.com). If you don't have a gravatar yet, Cloud9 IDE uses an uninspiring default.
 
 In the left panel, you'll find a list of various projects associated with your account. These are:  
 
-* My Projects: these are projects you've created or cloned, and own
-* Shared With Me: these are projects shared with you by other Cloud9 users
-* Recently Visited: these are projects you've seen lately
-* Projects on GitHub: a list of your uncloned public and private GitHub projects
-* Projects on Bitbucket: a list of your uncloned public and private Bitbucket projects
+* **My Projects**: these are projects you've created or cloned, and own
+* **Shared With Me**: these are projects shared with you by other Cloud9 users
+* **Recently Visited**: these are projects you've seen lately
+* **Projects on GitHub**: a list of your uncloned public and private GitHub projects
+* **Projects on Bitbucket**: a list of your uncloned public and private Bitbucket projects
 
 Clicking on the ![Project Add Icon](./icons/workspacePlusIcon.png) next to **MY PROJECTS** lets you:
 
@@ -40,6 +38,6 @@ Clicking on the ![Project Add Icon](./icons/workspacePlusIcon.png) next to **MY 
 
 ![Creating new projects](./images/newWorkspace.png)
 
-For more information on creating new projects, see [this article](./creating_new_workspace.html).
+For more information on creating new workspaces, see [this section of the documentation](./creating_new_workspace.html).
 
 You can always filter your project list by entering text in the text bar to find matching projects. If you need to update the list, click the refresh icon at the bottom of the panel: ![Refresh projects button](./icons/refreshProjects.png)

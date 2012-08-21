@@ -1,5 +1,3 @@
-Author: Daniela Gavidia
-
 # Create a CoffeeScript Project
 
 For this tutorial, we'll show you how to create and run a [CoffeeScript](http://coffeescript.org/) project, entirely within the Cloud9 IDE. To run any coffeescript project, you'll need to first make sure to install the `coffeescript` module via the Node Package Manager (npm). We're going to walk you through how to do that with a sample project.

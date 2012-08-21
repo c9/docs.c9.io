@@ -1,5 +1,3 @@
-Author: Jan Jangboom
-
 # Running Wordpress on Cloud9
 
 To demonstrate just how amazing the Cloud9 IDE platform is, we're going to install the Wordpress platform, including any database dependencies, to create our own blog. While Premium users can have total control over the entire system, the sequence is a little more complicated for free users: they will need to have their database managed by another platform, like Heroku. We'll show both methods in this tutorial.

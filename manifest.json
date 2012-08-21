@@ -4,7 +4,7 @@
         "./src/deploying", 
         "./src/features", 
         "./src/ide-components", 
-        "./src/tutorials", 
+        "./src/workspaces", 
         "./src/workflows"
         ],
     "resources" : [ "./resources/anims", "./resources/images", "./resources/icons" ]

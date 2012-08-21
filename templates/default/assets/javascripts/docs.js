@@ -127,87 +127,6 @@ $(document).ready(function() {
   // Set up fixed navbar
   var prevScrollLeft = 0; // used to compare current position to previous position of horiz scroll
 
-  $(window).scroll(function(event) {
-    var scrollTop = $(window).scrollTop();    
-    
-    $($(".tocContainer.level_1").children()).removeClass("highlight");
-    for (var i = 0; i < h2poslen; i++) {
-       if(scrollTop + $(window).height() == $(document).height()) {
-           $($(".tocContainer.level_1").children()[h2poslen - 2]).removeClass("highlight");
-           $($(".tocContainer.level_1").children()[h2poslen - 1]).addClass("highlight");
-           break;
-       }
-        if (scrollTop > (h2positions[i]-50)) {
-            if (h2positions[i+1] && scrollTop < h2positions[i+1]) {
-                $($(".tocContainer.level_1").children()[i]).addClass("highlight");
-                break;
-            }
-            
-            else if (i === (h2poslen - 1)) {
-                $($(".tocContainer.level_1").children()[i]).addClass("highlight");
-            }
-        }
-    }
-
-    if (scrollTop > scrollPosUpdateTOH) {
-        $("#tocHolder > ol.tocContainer").css({
-            "position" : "fixed",
-            "top": "8px"
-        });
-    }
-    else {
-        $("#tocHolder > ol.tocContainer").css({
-            "position" : "absolute",
-            "top": "70px"
-        });
-    }
-
-    updateTOHButtonPosition(scrollTop);
-
-    if ($('#side-nav').length == 0) return;
-    if (event.target.nodeName == "DIV") {
-      // Dump scroll event if the target is a DIV, because that means the event is coming
-      // from a scrollable div and so there's no need to make adjustments to our layout
-      return;
-    }
-    var headerHeight = $('#header').outerHeight();
-    var subheaderHeight = $('#nav-x').outerHeight();
-    var searchResultHeight = $('#searchResults').is(":visible") ? 
-                             $('#searchResults').outerHeight() : 0;
-    var totalHeaderHeight = headerHeight + subheaderHeight + searchResultHeight;
-    var navBarShouldBeFixed = scrollTop > totalHeaderHeight;
-
-    // Don't continue if the header is sufficently far away 
-    // (to avoid intensive resizing that slows scrolling)
-    if (navBarIsFixed && navBarShouldBeFixed) {
-      return;
-    }
-    
-    if (navBarIsFixed != navBarShouldBeFixed) {
-      if (navBarShouldBeFixed) {
-        // make it fixed
-        var width = $('#doc-nav').width();
-        $('#doc-nav')
-            .addClass('fixed')
-            .css({'width':width+'px'})
-            .prependTo('#body-content');
-        // add neato "back to top" button
-        $('#doc-nav a.totop').css({'display':'block','width':$("#nav").innerWidth()+'px'});
-        
-      } else {
-        // make it static again
-        $('#doc-nav')
-            .removeClass('fixed')
-            .css({'width':'auto','margin':''})
-            .prependTo('#side-nav');
-        $('#doc-nav a.totop').hide();
-      }
-      navBarIsFixed = navBarShouldBeFixed;
-    } 
-    
-    resizeNav(250); // pass true in order to delay the scrollbar re-initialization for performance
-  });
-
   // Revise the sidenav widths to make room for the scrollbar 
   // which avoids the visible width from changing each time the bar appears
   var $sidenav = $("#side-nav");
@@ -215,17 +134,9 @@ $(document).ready(function() {
     
   $("#doc-nav  #nav").css("width", sidenav_width - 4 + "px"); // 4px is scrollbar width
 
+  $('iframe#header_iframe').attr('src', 'https://c9.io/site/onlyheader/');    
+  $('iframe#footer_iframe').attr('src', 'https://c9.io/site/onlyfooter/');  
 
-  $(".scroll-pane").removeAttr("tabindex"); // get rid of tabindex added by jscroller
-  
-  if ($(".scroll-pane").length > 1) {
-    // Check if there's a user preference for the panel heights
-    var cookieHeight = readCookie("reference_height");
-    if (cookieHeight) {
-      restoreHeight(cookieHeight);
-    }
-  }
-  
   resizeNav();
 });
 

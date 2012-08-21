@@ -1,5 +1,3 @@
-Author: Detmar ter Huurne
-
 ## Running the Express Module in Cloud9 IDE
 
 The [express npm module](http://expressjs.com/index.html) can't be run from the console. However, there is another way to use it for your applications.
