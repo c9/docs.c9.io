@@ -5,15 +5,3 @@ Welcome to the Cloud9 IDE documentation! Here, you'll find articles and tutorial
 If you're interested in troubleshooting specific aspects of the IDE, need help setting up an account, or want to chat with our support team, please [read the Cloud9 IDE support forum](http://support.cloud9ide.com/forums).
 
 All of our documentation content is [open-sourced on GitHub](http://github.com/c9/cloud9ide-documentation), just like our IDE.
-
-
-<div class="recently_updated" markdown="1">
-## Recently Updated
-
-* RECENTLY_UPDATED_PLACEHOLDER_1
-* RECENTLY_UPDATED_PLACEHOLDER_2
-* RECENTLY_UPDATED_PLACEHOLDER_3
-* RECENTLY_UPDATED_PLACEHOLDER_4
-* RECENTLY_UPDATED_PLACEHOLDER_5
-
-</div>
