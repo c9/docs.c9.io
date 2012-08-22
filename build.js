@@ -14,13 +14,15 @@ var sm = new Smasher({
 panda.make(["./manifest.json", "-t", "Cloud9 Documentation", "--assets", "./assets", development ? "-r" : null], function(err, cbReturn) {
     if (err) console.error(err);
     
-    console.log("Compiling assets...");
-     sm.compileAssets(function(err) {
-       if(err) {
-         console.error("An asset compilation error occurred", err);
-       } else {
-         console.log("Compilation done!");
-       }
-       return;
-     });
+    if (development) {
+      console.log("Compiling assets...");
+       sm.compileAssets(function(err) {
+         if(err) {
+           console.error("An asset compilation error occurred", err);
+         } else {
+           console.log("Compilation done!");
+         }
+         return;
+       });
+     }
 });
