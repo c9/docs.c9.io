@@ -3,7 +3,8 @@
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-weight: 400;
+  font-weight: 400;
+  font-family: 'CabinRegular', Arial;
 }
 
 iframe {
@@ -12,6 +13,11 @@ iframe {
 
 img {
   vertical-align: baseline;
+}
+
+body {
+  font-family: "Lucida Grande", "Lucida Sans Unicode", Arial, Verdana, sans-serif;
+  color: #404040;
 }
 
 .tocContainer ol {
@@ -256,6 +262,10 @@ code {
     color: #333;
 }
 
+a code {
+  color: #08C;
+}
+
 /* Pointer link styling */
 h2, h3, h4, h5, h6 {
   position: relative;
@@ -450,6 +460,7 @@ div.toplink a:hover {
 .alert-heading {
     display: inline-block;
     padding-right: 5px;
+    font-size: 14px;
 }
 
 li .tocNavArrow {
