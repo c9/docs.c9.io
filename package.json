@@ -10,7 +10,8 @@
         "node": "~0.6.0"
     },
     "dependencies": {
-        "panda-docs": ">=0.3.10"
+        "panda-docs": ">=0.3.10",
+        "asset-smasher": "0.2.0"
     },
     "devDependencies": {}
 }
