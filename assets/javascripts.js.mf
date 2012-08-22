@@ -1,0 +1,5 @@
+require "javascripts/docs.js"
+require "javascripts/ga.js"
+require "javascripts/iframes.js"
+require "javascripts/swiftype.js"
+require "javascripts/disqus-ext.js"
