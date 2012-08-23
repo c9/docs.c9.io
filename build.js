@@ -13,32 +13,30 @@ var sm = new Smasher({
 
 panda.make(["./manifest.json", "-t", "Cloud9 Documentation", "--assets", "./assets", development ? "-r" : null], function(err, cbReturn) {
     if (err) console.error(err);
-    var mtimes = [], anchorTags = [], f, t, i;
 
-    console.log("Collecting mtimes");
-    
-    for (f in cbReturn.files)
+    var mtimes = [];
+
+    for (var f in cbReturn.files)
     {
-        if (cbReturn.files[f].filename !== "index")
+        if (cbReturn.files[f].file !== "index")
             mtimes.push(cbReturn.files[f].mtime);
     }
 
     mtimes = mtimes.sort().slice(-5).reverse();
+    var anchorTags = [];
 
-    for (t in mtimes) {
-        for (f in cbReturn.files)
+    for (var t in mtimes) {
+        for (var f in cbReturn.files)
         {
             if (cbReturn.files[f].mtime === mtimes[t]) {
-               anchorTags.push("<a href='./" + cbReturn.files[f].filename + ".html'>" + cbReturn.files[f].pageTitle + "</a>");
+               anchorTags.push("<a href='./" + cbReturn.files[f].file + ".html'>" + cbReturn.files[f].pageTitle + "</a>");
                break;
             }
         }
     }
 
-    console.log("Writing back to index...");
-    
     fs.readFile("./out/index.html", "utf8", function(err, contents) {
-        for (i = 1; i < 6; i++) {
+        for (var i = 1; i < 6; i++) {
             contents = contents.replace("RECENTLY_UPDATED_PLACEHOLDER_" + i, anchorTags[i - 1]);
         }
         fs.writeFile("./out/index.html", contents, function() {
