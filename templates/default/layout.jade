@@ -34,7 +34,6 @@ html(xmlns='http://www.w3.org/1999/xhtml')
        link(href='./assets/stylesheets/default.css', rel='stylesheet', type='text/css')
     -else
        link(href="./assets/min/styles.css", rel='stylesheet', type='text/css')
-       link(rel="icon", type="image/x-icon", href="./assets/img/favicon.ico")
 
     link(href="https://fonts.googleapis.com/css?family=Inconsolata", rel="stylesheet", type="text/css")
   body
@@ -49,7 +48,8 @@ html(xmlns='http://www.w3.org/1999/xhtml')
                #toh_btn(onclick="toggleTOH(this)")
              -if (whoAmI.indexOf("index.md") < 0)
                h1 #{pageTitle}
-
+               p.meta Last modified:&nbsp; 
+                  mixin format_date(mtime)
              div
                != content
              div#disqus_thread
