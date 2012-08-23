@@ -11,7 +11,7 @@
     },
     "shrinkwrap": true,
     "dependencies": {
-        "panda-docs": ">=0.3.10"
+        "panda-docs": "0.3.13"
     },
     "devDependencies": {}
 }
