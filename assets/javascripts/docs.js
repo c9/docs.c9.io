@@ -158,7 +158,7 @@ $(document).ready(function() {
     else {
         $("#tocHolder > ol.tocContainer").css({
             "position" : "absolute",
-            "top": "138px"
+            "top": "70px"
         });
     }
 
