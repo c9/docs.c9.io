@@ -6,6 +6,10 @@ Cloud9 supports the installation of Ruby gems in your workspace using the RubyGe
 Let's try installing a gem. First, type the following in the console:
 
 ```bash
+export GEM_HOME=pwd
+```
+
+```bash
 gem install progressbar 
 ```
 
@@ -26,6 +30,6 @@ until total >= 100
 end
 ```
 
-After clicking **run**, the console will start printing out an ASCII progressbar.
+After clicking **run**, the console will being printing out an ASCII progressbar.
 
 You have access to all of the functionality `gem` provides you. For example, you can open up the console and type `gem query` to see a list of your installed gems.
