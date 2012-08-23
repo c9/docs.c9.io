@@ -1,5 +1,10 @@
+[class^="icon-"], [class*=" icon-"] {
+  background-image: ""; /* reset bootstrap crap */
+}
+
 h1, h2, h3, h4, h5, h6 {
-    font-weight: 400;
+  font-weight: 400;
+  font-family: 'CabinRegular', Arial;
 }
 
 iframe {
@@ -8,6 +13,11 @@ iframe {
 
 img {
   vertical-align: baseline;
+}
+
+body {
+  font-family: "Lucida Grande", "Lucida Sans Unicode", Arial, Verdana, sans-serif;
+  color: #404040;
 }
 
 .tocContainer ol {
@@ -239,7 +249,6 @@ pre {
 }
 
 pre code {
-    padding: 0;
     border: 1px solid #ccc;
 }
 
@@ -251,6 +260,10 @@ pre, code {
 
 code {
     color: #333;
+}
+
+a code {
+  color: #08C;
 }
 
 /* Pointer link styling */
@@ -447,6 +460,7 @@ div.toplink a:hover {
 .alert-heading {
     display: inline-block;
     padding-right: 5px;
+    font-size: 14px;
 }
 
 li .tocNavArrow {
@@ -489,4 +503,8 @@ li .tocNavArrow {
 
 table td.debug_tools {
   width: 181px;
+}
+
+div.sidebar-nav {
+  padding-top: 19px;
 }

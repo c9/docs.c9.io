@@ -1,6 +1,6 @@
 # Installing Python Packages
 
-Cloud9 supports the installation of Python packages for applications that need to go beyond the standard library set. Every workspace has version 0.6.10 of Python's `easy_install` package manager. For more information on this module, see [the official `easu_install` documentation](http://peak.telecommunity.com/DevCenter/EasyInstall).
+Cloud9 supports the installation of Python packages for applications that need to go beyond the standard library set. Every workspace has version 0.6.10 of Python's `easy_install` package manager. For more information on this module, see [the official `easy_install` documentation](http://peak.telecommunity.com/DevCenter/EasyInstall).
 
 Let's try installing a package. First, type the following in the console:
 

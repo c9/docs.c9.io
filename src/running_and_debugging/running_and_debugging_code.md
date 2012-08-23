@@ -36,7 +36,7 @@ The **run** button in the menu bar acts as a sort of short cut to the Run panel.
 ### Console Output
 
 Every time you run a project, the console expands to reveal output from your program. If you're launching a server, Cloud9 provides you with a URL to access the project. Otherwise, any statements sent by your application's print statements (like `console.log()` for Javascript, `print` for Python, or `puts` for Ruby) are also shown here. For example:  
-![Console run output](./images/RunOutput.png)
+![Console run output](./images/runOutput.png)
 
 ## Debugging Your Code
 
