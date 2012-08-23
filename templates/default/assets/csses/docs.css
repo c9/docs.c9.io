@@ -1,7 +1,3 @@
-[class^="icon-"], [class*=" icon-"] {
-  background-image: ""; /* reset bootstrap crap */
-}
-
 h1, h2, h3, h4, h5, h6 {
     font-weight: 400;
 }
@@ -493,8 +489,4 @@ li .tocNavArrow {
 
 table td.debug_tools {
   width: 181px;
-}
-
-div.sidebar-nav {
-  padding-top: 19px;
 }
