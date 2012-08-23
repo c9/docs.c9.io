@@ -24,7 +24,7 @@ With Cloud9 IDE, you can run your Node.js applications in a test environment and
 ![New run configuration pop-up](./images/newRunConfiguration.png)
 
 Your application will be deployed to one of our servers, and you will immediately see some output in the console similar to the one below:  
-![Console run output](./images/runOutput.png)
+![Console run output](./images/RunOutput.png)
 
 To see your application in action, click on the link created for your project. You should see your "Hello World" application open up in a new browser tab:  
 ![Node.js Hello World in the Browser](./images/helloWorld.png).
