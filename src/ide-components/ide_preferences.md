@@ -5,8 +5,11 @@ There are many different ways to configure the IDE. Below is a list of the optio
 Note: All of these options are on a per-project basis. Changing them in one project does not affect any another.
 
 <div markdown="1">
+## General
+
+This section controls the overall IDE behavior:
+
 <table class="table table-striped table-bordered">
-  <caption>**General**: This section controls the overall IDE behavior</caption>
   <thead>
     <tr>
       <th>Preference Name</th>
@@ -51,8 +54,11 @@ Note: All of these options are on a per-project basis. Changing them in one proj
 </div>
 
 <div markdown="1">
+## Language Support
+
+This section controls language analysis options:
+
 <table class="table table-striped table-bordered">
-  <caption>**Language Support**: This section controls language analysis options</caption>
   <thead>
     <tr>
       <th>Preference Name</th>
@@ -84,9 +90,12 @@ Note: All of these options are on a per-project basis. Changing them in one proj
 </table>
 </div>
 
+## Code Editor
+
+This section controls language analysis options:
+
 <div markdown="1">
 <table class="table table-striped table-bordered">
-  <caption>**Code Editor**: This section controls language analysis options</caption>
   <thead>
     <tr>
       <th>Preference Name</th>
@@ -162,9 +171,12 @@ Note: All of these options are on a per-project basis. Changing them in one proj
 </table>
 </div>
 
+## Terminal
+
+This section controls the behavior for [the terminal](./terminal.html):
+
 <div markdown="1">
 <table class="table table-striped table-bordered">
-  <caption>**Terminal**: This section controls the behavior for [the terminal](./terminal.html)</caption>
   <thead>
     <tr>
       <th>Preference Name</th>
@@ -192,9 +204,12 @@ Note: All of these options are on a per-project basis. Changing them in one proj
 </table>
 </div>
 
+## Code Tools
+
+This section controls the various tools that are available in the IDE:
+
 <div markdown="1">
 <table class="table table-striped table-bordered">
-  <caption>**Code Tools**: This section controls the various tools that are available in the IDE</caption>
   <thead>
     <tr>
       <th>Preference Name</th>

@@ -2,7 +2,7 @@ var panda = require("panda-docs");
 var Smasher = require('asset-smasher').Smasher;
 var fs = require("fs");
 
-var development = false;
+var development = true;
 
 var sm = new Smasher({
   paths:['./assets'],
@@ -11,7 +11,13 @@ var sm = new Smasher({
   outputTo: './out/assets/min'
 });
 
-panda.make(["./manifest.json", "-t", "Cloud9 Documentation", "--assets", "./assets", development ? "-r" : null], function(err, cbReturn) {
+var buildOptions = {
+  title: "Cloud9 Documentation",
+  assets: "./assets",
+  development: development
+};
+
+panda.make("./manifest.json", buildOptions, function(err, cbReturn) {
     if (err) console.error(err);
     
     if (!development) {

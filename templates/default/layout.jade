@@ -27,7 +27,7 @@ html(xmlns='http://www.w3.org/1999/xhtml')
     -else 
       title Cloud9 IDE User Documentation
 
-    -if (options.noRelease)
+    -if (options.development)
        link(href='./assets/stylesheets/bootstrap.css', rel='stylesheet', type='text/css')
        link(href="./assets/stylesheets/font-awesome.css", rel='stylesheet', type='text/css')
        link(href='./assets/stylesheets/docs.css', rel='stylesheet', type='text/css')
@@ -60,7 +60,7 @@ html(xmlns='http://www.w3.org/1999/xhtml')
            != headingTable(toh, 4, ['tocContainer', 'tocItem'])
       script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js', type='text/javascript')
 
-      -if (options.noRelease)
+      -if (options.development)
          script(src='./assets/javascripts/docs.js', type='text/javascript')
       -else
          script(src="./assets/min/javascripts.js", type='text/javascript')
