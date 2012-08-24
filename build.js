@@ -1,8 +1,9 @@
 var panda = require("panda-docs");
 var Smasher = require('asset-smasher').Smasher;
 var fs = require("fs");
+var argv = process.argv.splice(2);
 
-var development = true;
+var development = argv[0];
 
 var sm = new Smasher({
   paths:['./assets'],
