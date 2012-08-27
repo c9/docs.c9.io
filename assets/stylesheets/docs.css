@@ -29,6 +29,10 @@ body {
    font-weight: bold;   
 }
 
+.container {
+  width: 1270px;
+}
+
 .documentationContainer {
     margin-top: 20px;
     -webkit-transition: width 0.15s;
@@ -352,12 +356,17 @@ ol.tocContainer li {
 }
 
 #tocHolder > ol.tocContainer {
-    padding: 12px 16px;
-    background: transparent;
-    position: fixed;
-    right: 3px;
-    top: 138px;
-    width: 15%;
+  padding: 12px 16px;
+  background: transparent;
+  position: fixed;
+  right: 3px;
+  top: 70px;
+  width: 15%;
+  /*margin: 0;
+  padding: 12px 0px;
+  background: transparent;
+  position: fixed;
+  width: 100%; */
 }
 
 li.tocItem > a {
@@ -507,4 +516,8 @@ table td.debug_tools {
 
 div.sidebar-nav {
   padding-top: 19px;
+}
+
+div.autocomplete {
+  display: none !important;
 }

@@ -20,11 +20,11 @@ function toggleTOH(el) {
     if ($("#tocHolder").is(":visible")) {
         $(el).removeClass("active");
         $("#tocHolder").hide();
-        $(".documentationContainer").removeClass("span8").addClass("span10");
+        $(".documentationContainer").removeClass("span10").addClass("span12");
         updateTOHButtonPosition($(window).scrollTop());
     }
     else {
-        $(".documentationContainer").removeClass("span10").addClass("span8");
+        $(".documentationContainer").removeClass("span12").addClass("span10");
         $(el).addClass("active");
         setTimeout(function() {
             $("#tocHolder").show();
@@ -35,11 +35,11 @@ function toggleTOH(el) {
 }
 
 function updateTOHButtonPosition(scrollTop) {
-    if (scrollTop > scrollPosUpdateTOH) {
+    if (scrollTop > scrollPosUpdateTOH + 75) {
         $("#toh_btn").css({
             "position" : "fixed",
-            "top" : "19px",
-            "right" : ($($(".tocContainer.level_1")[0]).outerWidth() + 15) + "px"
+            "top" : "25px",
+            "right" : ($($(".tocContainer.level_1")[0]).outerWidth() + 7) + "px"
         });
     }
     else {

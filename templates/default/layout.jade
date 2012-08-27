@@ -39,11 +39,11 @@ html(xmlns='http://www.w3.org/1999/xhtml')
     link(href="https://fonts.googleapis.com/css?family=Inconsolata", rel="stylesheet", type="text/css")
   body
     iframe(id="header_iframe", height="127px", width="100%", src="")
-    .container-fluid
-      .row-fluid
-        .span2
+    .container
+      .row
+        .span3
           include toc
-        .span10.documentationContainer
+        .span12.documentationContainer
           #content
              -if (toh.length > 1 && whoAmI.indexOf("index.md") < 0)
                #toh_btn(onclick="toggleTOH(this)")

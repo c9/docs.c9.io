@@ -1,5 +1,3 @@
-# Introduction
-
 This is the source documentation for the [Cloud9 IDE ](https://www.c9.io) User Documentation. 
 
 The build system relies on the [Panda-Docs](https://github.com/gjtorikian/panda-docs) Node.js module.
@@ -12,14 +10,17 @@ First, check out this repository. Then, run
     
 to grab all the required dependencies.
 
+To create a **development** build, open your command prompt and type:
 
-To create a build, open your command prompt and type:
+    node build.js true
 
-    node build.js
+A development build differs in that it does not compress assets or add iframe headers and footers. To create a releasable build, just run the same command without any arguments:
+
+	node build.js
 
 # Contributing
 
-We'll very gladly take any pull requests for new documentation! This source material is intended to be open and sharable to all. 
+We'll very gladly take any pull requests for documentation updates or new workflows! We'll even give you author credits on the pages you create. This source material is intended to be open and sharable to all. 
 
 # License
 
