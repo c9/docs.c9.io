@@ -17,6 +17,7 @@ var rewriteURLs = function() {
 }
 
 var Swiftype = window.Swiftype || {};
+
 (function() {
   Swiftype.key = 'zphqNpNqsFz4MJEq8ZaM';
   Swiftype.inputElement = '#st-search-input';
