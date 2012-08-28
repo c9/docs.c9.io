@@ -35,4 +35,4 @@ The FTP log displays output related to the interaction with the FTP server. The 
 
 ![Demonstrating new files in the FTP](./images/FTPlog.png)
 
-Note: In an FTP project, all files are stored in your FTP server; Cloud9 only stores the FTP settings. Please keep this in mind. Cloud9 IDE does not keep any copies of your files, so make sure you back them up properly. Any changes you make to these files in Cloud9 are automatically reflected on the live web server.
+Note: In an FTP project, all files are stored on your FTP server; Cloud9 only stores the FTP settings. Please keep this in mind. Cloud9 IDE does not keep any copies of your files, so make sure you back them up properly. Any changes you make to these files in Cloud9 are automatically reflected on the live web server.

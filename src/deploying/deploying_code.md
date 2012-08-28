@@ -11,10 +11,10 @@ We offer tight integration with the following environments:
 
 Following these links will provide you with more information on code deployment. You can deploy your code to as many services and servers as you like. Keep in mind that you'll already need an account at those hosting providers before you can deploy your app to them!
 
-If you're comfortable with the command line, you can also unofficially deploy to several more environments, such as:
+If you're comfortable with the command line, you can also deploy to several more environments, such as:
 
 * [Windows Azure Cloud Services](./deploying_via_cli.html#windows-azure-cloud-services)
 * [CloudFoundry](./deploying_via_cli.html#cloudfoundry)
-* [NodeJitsu](deploying_via_cli.html#nodejitsu)
+* [NodeJitsu](./deploying_via_cli.html#nodejitsu)
 
 Warning: Before you attempt to deploy your application, make sure that you have committed all your changes to version control. Cloud9 deploys for you whatever was last committed to version control.

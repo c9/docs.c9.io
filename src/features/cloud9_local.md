@@ -1,6 +1,6 @@
 # Cloud9 Local
 
-For situations where internet access is limited, Cloud9 has an offline client that we call __Cloud9 Local__. Cloud9 Local provides all the functionality of the online editor, like revisions, JS-Hint warnings, language autocompletion, and more. The only features unavailable to Cloud9 are those that require an internet connection--namely, [deploying your code](./deploying_code.html).
+For situations where internet access is limited, Cloud9 has an offline client that we call __Cloud9 Local__. Cloud9 Local provides all the functionality of the online editor, like [revisions](./revisions.html), [JSHint warnings](./language_analysis.html), [language autocompletion](./autocompletion.html), and more. The only features unavailable to Cloud9 are those that require an internet connection--namely, [deploying your code](./deploying_code.html).
 
 In the future, Cloud9 Local will also allow you to seamlessly sync between your online and local environments. In other words, changes made to your online workspaces will be instantly brought down to your computer, and vice versa.
 
