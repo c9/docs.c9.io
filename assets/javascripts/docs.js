@@ -45,7 +45,7 @@ function updateTOHButtonPosition(scrollTop) {
         $("#toh_btn").css({
             "position" : "fixed",
             "top" : "19px",
-            "left" : ($("#content").outerWidth() + $("#content").position().left - 36) + "px",
+            "left" : ($("#content").outerWidth() + $("#content").offset().left - 36) + "px",
             "right" : ""
         });
     }
@@ -161,16 +161,23 @@ $(document).ready(function() {
         }
     }
 
+    container = $(".container");
+    $("#tocHolder > ol.tocContainer").css({
+      "left": $(container).outerWidth() + $(container).offset().left - $("#tocHolder > ol.tocContainer").outerWidth()
+    });
+
+
+
     if (scrollTop > scrollPosUpdateTOH) {
         $("#tocHolder > ol.tocContainer").css({
             "position" : "fixed",
-            "top": "8px"
+            "top": "20px"
         });
     }
     else {
         $("#tocHolder > ol.tocContainer").css({
             "position" : "absolute",
-            "top": "138px"
+            "top": "163px"
         });
     }
 
