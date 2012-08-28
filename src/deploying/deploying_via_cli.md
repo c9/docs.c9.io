@@ -1,6 +1,6 @@
 # Deploying via the Comand Line
 
-If deploying to servers using the IDE's graphical interface isn't your thing, you can also manually install various command-line tools into your workspace and deploy using the command line. It should go without saying that this is for super 1337 and advanced developers.
+If deploying to servers using the IDE's graphical interface isn't your thing, you can also manually install various command-line tools into your workspace and deploy using the command line. It should go without saying that this is for super 31337 developers that aren't afraid of the command line.
 
 Below is a list of some of the services we have tested and support deploying to. All the commands need to be executed in [the terminal](./terminal.html) unless stated otherwise.
 

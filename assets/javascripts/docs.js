@@ -4,7 +4,7 @@ var h2s;
 var h2positions = [];
 var h2poslen = 0;
 
-var scrollPosUpdateTOH = 62;
+var scrollPosUpdateTOH = 138;
 
 function getH2s() {
     h2s = $("#content h2");
@@ -20,11 +20,17 @@ function toggleTOH(el) {
     if ($("#tocHolder").is(":visible")) {
         $(el).removeClass("active");
         $("#tocHolder").hide();
+        $("#toh_btn").fadeOut(90);
         $(".documentationContainer").removeClass("span10").addClass("span12");
-        updateTOHButtonPosition($(window).scrollTop());
+        $("#toh_btn").fadeIn(90);
+        setTimeout(function() {
+          updateTOHButtonPosition($(window).scrollTop());
+        }, 150);
     }
     else {
+        $("#toh_btn").fadeOut(90);
         $(".documentationContainer").removeClass("span12").addClass("span10");
+        $("#toh_btn").fadeIn(90);
         $(el).addClass("active");
         setTimeout(function() {
             $("#tocHolder").show();
@@ -35,18 +41,20 @@ function toggleTOH(el) {
 }
 
 function updateTOHButtonPosition(scrollTop) {
-    if (scrollTop > scrollPosUpdateTOH + 75) {
+    if (scrollTop > scrollPosUpdateTOH) {
         $("#toh_btn").css({
             "position" : "fixed",
-            "top" : "25px",
-            "right" : ($($(".tocContainer.level_1")[0]).outerWidth() + 7) + "px"
+            "top" : "19px",
+            "left" : ($("#content").outerWidth() + $("#content").position().left - 36) + "px",
+            "right" : ""
         });
     }
     else {
         $("#toh_btn").css({
             "position" : "absolute",
             "top" : "10px",
-            "right" : "10px"
+            "left" : "",
+            "right" : "12px"
         });
     }
 }
@@ -110,6 +118,8 @@ $(document).ready(function() {
       event.preventDefault();
       return false;
   });
+
+  updateTOHButtonPosition($(window).scrollTop());
 
   /* Resize nav height when window height changes */
   $(window).resize(function() {

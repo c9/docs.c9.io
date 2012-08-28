@@ -4,16 +4,20 @@ In October 2011, BitBucket began offering Git support. However, as of this writi
 
 You can get around this problem easily by fixing the url that Cloud9 IDE generates when you attempt to clone. When cloning a BitBucket repository, Cloud9 IDE uses a source url like the following:
 
-    ssh://hg@bitbucket.org/username/repositoryname 
-    
+```bash
+ssh://hg@bitbucket.org/username/repositoryname 
+```
+
 To clone a Git repository from BitBucket, change the url to look like this:
 
-    git@bitbucket.org:username/repositoryname.git
-    
+```bash
+git@bitbucket.org:username/repositoryname.git
+```
+
 Notice the following differences:
 
-* We have removed `ssh://
-* We have changed `hg` to `git`
-* We have added `.git` to the end of the url
+* We removed `ssh://
+* We changed `hg` to `git`
+* We added `.git` to the end of the url
 
 Now, you should be able to clone your git repository from BitBucket!

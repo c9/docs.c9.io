@@ -4,8 +4,6 @@ This article will show you how to deploy your applications to Windows Azure. If 
 
 To get started, create a simple Node.js application. If you don't have one yet, you can [follow our tutorial](writing_nodejs_hello_world.html) on developing one. 
 
-Warning: Before you attempt to deploy your application, make sure that you have committed all your changes to version control. Cloud9 deploys for you whatever was last committed to version control.
-
 After you click on the **Deploy** button in the Project Bar, click the plus sign next to Deploy to add another deploy target. Choose Windows Azure as an option. You'll be prompted with this dialog:  
 ![Windows Azure asking for publisher settings](./images/windowsAzureDialog.png)
 

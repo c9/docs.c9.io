@@ -83,7 +83,7 @@ This section controls language analysis options:
       <td>Provides a strikethrough for arguments in a function that are not being used</td>
     </tr>
     <tr>
-      <td>**Warning Level**</td>
+      <td id="warning_level_option">**Warning Level**</td>
       <td>Specifies the minimum level of information severity you want provided in the gutter</td>
     </tr>
   </tbody>
@@ -133,7 +133,7 @@ This section controls language analysis options:
     </tr>
     <tr>
       <td>**Auto-hide Horizontal Scroll**</td>
-      <td>W[hen this is enabled, this will hide the horizontal scroll bar in the editor. Note that this has no effect in Mac OS X 10.7 (Lion), since all scrollbars, by default, auto-hide.]{: #autoHideHorizontalScroll}</td>
+      <td>W[hen this is enabled, this will hide the horizontal scroll bar in the editor. Note that this has no effect in Mac OS X 10.7 (Lion) and above, since all scrollbars, by default, auto-hide.]{: #autoHideHorizontalScroll}</td>
     </tr>
     <tr>
       <td>**Vim Mode**</td>
@@ -174,7 +174,6 @@ This section controls language analysis options:
 ## Terminal
 
 This section controls the behavior for [the terminal](./terminal.html):
-
 <div markdown="1">
 <table class="table table-striped table-bordered">
   <thead>

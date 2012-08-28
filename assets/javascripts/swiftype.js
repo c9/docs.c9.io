@@ -1,6 +1,6 @@
-var Swiftype = window.Swiftype || {};
+  var Swiftype = window.Swiftype || {};
   (function() {
-    Swiftype.key = 'KGcfbMpuq89y7F5q9zdy';
+    Swiftype.key = 'zphqNpNqsFz4MJEq8ZaM';
     Swiftype.inputElement = '#st-search-input';
     Swiftype.resultContainingElement = '#st-results-container';
     Swiftype.attachElement = '#st-search-input';

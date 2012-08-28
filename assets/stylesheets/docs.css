@@ -7,10 +7,6 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'CabinRegular', Arial;
 }
 
-iframe {
-  border: 0;
-}
-
 img {
   vertical-align: baseline;
 }
@@ -29,12 +25,9 @@ body {
    font-weight: bold;   
 }
 
-.container {
-  width: 1270px;
-}
-
 .documentationContainer {
     margin-top: 20px;
+    margin-bottom: 20px;
     -webkit-transition: width 0.15s;
     -moz-transition: width 0.15s;
 }
@@ -73,7 +66,9 @@ body {
   top: 20px; }
 
 a:hover,
-acronym:hover {
+acronym:hover,
+a code:hover,
+a:hover code {
   color: #7aa1b0 !important;
   text-decoration: none;
 }
@@ -253,6 +248,7 @@ pre {
 }
 
 pre code {
+    padding: 0;
     border: 1px solid #ccc;
 }
 
@@ -323,7 +319,6 @@ a.heading_anchor {
     width: 22px;
     height: 18px;
     position: absolute;
-    right: 10px;
     top: 10px;
     background: url(../img/toh_icon.png) 0px 0px no-repeat;
     border: 1px solid transparent;
@@ -359,14 +354,9 @@ ol.tocContainer li {
   padding: 12px 16px;
   background: transparent;
   position: fixed;
-  right: 3px;
-  top: 70px;
-  width: 15%;
-  /*margin: 0;
-  padding: 12px 0px;
-  background: transparent;
-  position: fixed;
-  width: 100%; */
+  top: 138px;
+    /*width: 15%;*/
+    margin-left: 0;
 }
 
 li.tocItem > a {
@@ -495,6 +485,10 @@ li .tocNavArrow {
 
 #search-box {
   margin-top: 20px;
+}
+
+div.container {
+   width: 1270px; 
 }
 
 #footer {

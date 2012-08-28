@@ -2,7 +2,9 @@
 
 <iframe width="480" height="360" src="http://www.youtube.com/embed/HehwOFg7jYc" frameborder="0" allowfullscreen></iframe>
 
-In this article, we'll show you how to set up an FTP project. Before attempting to create an FTP project, please be aware that Cloud9 IDE currently support only passive FTP. Active FTP, SFTP and FTPS are **not yet supported**.
+In this article, we'll show you how to set up an FTP project.
+
+Note: Currently, Cloud9 IDE only supports passive FTP. Active FTP, SFTP and FTPS are **not yet supported**. For SSH connections, consider creating [an SSH workspace](./run_your_own_workspace.html).
 
 To create an FTP project, go to the Dashboard and click on the ![Project Add Icon](./icons/workspacePlusIcon.png) next to **MY PROJECTS**. Choose the option to **Create a new project** (see "[Creating a New Project](./creating_new_workspace.html)" if you need to review the steps to create a new project):  
 ![New workspace creation](./images/newWorkspace.png)

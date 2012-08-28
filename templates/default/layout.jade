@@ -1,27 +1,9 @@
-mixin format_date(mtime)
-  -var m_names = new Array("January", "February", "March", "April", "May", "June", "July", "August", "September",  "October", "November", "December");
-  -mtime = new Date(mtime);
-  -var curr_date = mtime.getDate();
-  -var sup = "";
-
-  if (curr_date == 1 || curr_date == 21 || curr_date == 31)
-   sup = "st";
-  else if (curr_date == 2 || curr_date == 22)
-   sup = "nd";
-  else if (curr_date == 3 || curr_date == 23)
-   sup = "rd";
-  else
-   sup = "th";
-  
-  -var curr_month = mtime.getMonth();
-  -var curr_year = mtime.getFullYear();
-  
-  != m_names[curr_month] + " " + curr_date + "<sup>" + sup + "</sup>, " + curr_year 
-
 !!! 5
 html(xmlns='http://www.w3.org/1999/xhtml')
   head
     meta(http-equiv='Content-Type', content='text/html; charset=us-ascii')
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    
     -if (whoAmI.indexOf("index.md") < 0)
       title #{pageTitle} | Cloud9 User Documentation
     -else 
@@ -38,7 +20,7 @@ html(xmlns='http://www.w3.org/1999/xhtml')
 
     link(href="https://fonts.googleapis.com/css?family=Inconsolata", rel="stylesheet", type="text/css")
   body
-    iframe(id="header_iframe", height="127px", width="100%", src="")
+    iframe(id="header_iframe", height="127px", width="100%", src="", scrolling="no", frameborder="0")
     .container
       .row
         .span3
@@ -65,4 +47,4 @@ html(xmlns='http://www.w3.org/1999/xhtml')
       -else
          script(src="./assets/min/javascripts.js", type='text/javascript')
 
-    iframe(id="footer_iframe", height="249px", width="100%", src="")
+    iframe(id="footer_iframe", height="249px", width="100%", src="", scrolling="no", frameborder="0")

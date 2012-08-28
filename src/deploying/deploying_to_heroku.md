@@ -4,8 +4,6 @@ This section will show you how to deploy your applications to Heroku, a cloud-ba
 
 To get started, create a simple Node.js application. If you don't have one yet, you can [follow our tutorial](writing_nodejs_hello_world.html) on developing one. 
 
-Warning: Before you attempt to deploy your application, make sure that you have committed all your changes to version control. Cloud9 deploys for you whatever was last committed to version control.
-
 After you click on the **Deploy** button in the Project Bar, click the plus sign next to Deploy to add another deploy target. Choose Heroku as an option. After you have signed into your Heroku account, you can create a new deploy target or choose an existing one from your account:
 
 ![Showing the Deploy button](./images/herokuDeploy.png)

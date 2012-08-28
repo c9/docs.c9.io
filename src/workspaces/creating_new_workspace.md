@@ -26,7 +26,7 @@ Make a choice for the type of workspace and press **Create**. That's it! You can
 
 Now, just click **Start Editing** to get started!
 
-## Clone from URL
+## Cloning from a URL
 
 The second option for creating a new workspace is to clone one from URL. The URL would be, for example, the URL of a GitHub workspace.
 
