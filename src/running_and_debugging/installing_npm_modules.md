@@ -1,6 +1,6 @@
 # Installing NPM Modules
 
-Since Cloud9 IDE is built on top of Node.js, we also leverage the module system NPM. In Cloud9, you can install any npm package either, locally or globally. Note that due to security restrictions, modules installed globally can only be used in the project they were installed from. In other words, while you have access to any command line  tools installed by the module, they are bound to the project, not your username.
+Since Cloud9 IDE is built on top of Node.js, we also leverage the module system NPM. In Cloud9, you can install any npm package either locally or globally. Note that due to security restrictions, modules installed globally can only be used in the project they were installed from. In other words, while you have access to any command line  tools installed by the module, they are bound to the project, not your username. We run version 1.1.24 of npm.
 
 To demonstrate the power of NPM, we'll build and run a quick [express](http://expressjs.com/) server:
 
