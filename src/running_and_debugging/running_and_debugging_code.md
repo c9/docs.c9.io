@@ -16,7 +16,7 @@ There are two ways to run your code: either through the Run Panel, or through th
 
 Next, click on the **Run** button in [the project bar](./project_bar.html). You'll notice immediately that your active file is already available to run. Just double-click on the file, and you'll launch your app.
 
-When you're ready to stop your app, click on the {:stopButton} button in the menu bar at any time.
+When you're ready to stop your app, click on the [![Icon of the Stop Button](./icons/stop_button.png)]{: #stopButton} button in the menu bar at any time.
 
 At the bottom of the run panel, you'll notice a few more options you can set. Filling these textboxes out creates a _run scenario_, which is like setting up some configurations for the way your code runs. These options are:
 
