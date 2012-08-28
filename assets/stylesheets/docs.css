@@ -12,6 +12,7 @@ img {
 }
 
 body {
+  background: #F9F9F9;
   font-family: "Lucida Grande", "Lucida Sans Unicode", Arial, Verdana, sans-serif;
   color: #404040;
 }
@@ -100,7 +101,8 @@ a:active {
     margin-bottom: 1px;
     margin-top: 5px;
     padding: 0 30px 0 0; }
-  #nav .selected a, #nav .selected > .nav-section-header > a {
+  #nav .selected a,
+  #nav .selected > .nav-section-header > a {
     color: #09C;
   }
   #nav .selected ul li a {
@@ -234,14 +236,11 @@ p {
     line-height: 21px;
 }
 
-#content ul li, #content ol li {
+#content ul li,
+#content ol li {
     padding-left: 5px;
 }
 
-
-body {
-    background: #F9F9F9;
-}
 
 pre {
     border: none;
@@ -252,7 +251,8 @@ pre code {
     border: 1px solid #ccc;
 }
 
-pre, code {
+pre,
+code {
     font-family: 'Inconsolata', monospace;
     font-size: 14px;
     background-color: transparent;
