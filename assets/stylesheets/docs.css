@@ -511,7 +511,3 @@ table td.debug_tools {
 div.sidebar-nav {
   padding-top: 19px;
 }
-
-div.autocomplete {
-  display: none !important;
-}

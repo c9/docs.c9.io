@@ -91,6 +91,8 @@ $(document).ready(function() {
         }
     );
   
+  //changeSearchResults();
+
   // Set up expand/collapse behavior
   $('#nav li.nav-section .nav-section-header').click(function() {
     var section = $(this).closest('li.nav-section');
@@ -227,7 +229,6 @@ $(document).ready(function() {
 
   resizeNav();
 });
-
 
 // TODO: use $(document).ready instead
 function addLoadEvent(newfun) {

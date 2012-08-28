@@ -10,10 +10,10 @@ html(xmlns='http://www.w3.org/1999/xhtml')
       title Cloud9 IDE User Documentation
 
     -if (options.development)
-       link(href='./assets/stylesheets/bootstrap.css', rel='stylesheet', type='text/css')
-       link(href="./assets/stylesheets/font-awesome.css", rel='stylesheet', type='text/css')
-       link(href='./assets/stylesheets/docs.css', rel='stylesheet', type='text/css')
-       link(href='./assets/stylesheets/default.css', rel='stylesheet', type='text/css')
+       link(href='./assets/stylesheets/bootstrap.css', rel='stylesheet', type='text/css', media="all")
+       link(href="./assets/stylesheets/font-awesome.css", rel='stylesheet', type='text/css', media="all")
+       link(href='./assets/stylesheets/docs.css', rel='stylesheet', type='text/css', media="all")
+       link(href='./assets/stylesheets/default.css', rel='stylesheet', type='text/css', media="all")
     -else
        link(href="./assets/min/styles.css", rel='stylesheet', type='text/css')
        link(rel="icon", type="image/x-icon", href="./assets/img/favicon.ico")
@@ -44,6 +44,8 @@ html(xmlns='http://www.w3.org/1999/xhtml')
 
       -if (options.development)
          script(src='./assets/javascripts/docs.js', type='text/javascript')
+         script(src="./assets/javascripts/bootstrap-tooltip.js", type="text/javascript")
+         script(src="./assets/javascripts/swiftype.js", type="text/javascript")
       -else
          script(src="./assets/min/javascripts.js", type='text/javascript')
 
