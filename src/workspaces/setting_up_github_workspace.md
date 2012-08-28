@@ -6,7 +6,7 @@ We have integrated GitHub to enable you to easily work on your public and privat
 
 ## GitHub Activation
 
-You can manage your add-on services from your user profile that you can find in [./dashboard.html](the dashboard). When you have just signed in, click **Your Account** on the top of the left-side panel. Here, you can change the settings of your account. At the bottom, you'll see a list of add-on services that are integrated into Cloud9 IDE. Click **activate** on the GitHub button:
+You can manage your add-on services from your user profile that you can find in [the dashboard](./dashboard.html). When you have just signed in, click **Your Account** on the top of the left-side panel. Here, you can change the settings of your account. At the bottom, you'll see a list of add-on services that are integrated into Cloud9 IDE. Click **activate** on the GitHub button:
 
 ![Add-on Services Screenshot](./images/addonServices.png)
 

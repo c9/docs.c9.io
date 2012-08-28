@@ -21,7 +21,7 @@ function toggleTOH(el) {
         $(el).removeClass("active");
         $("#tocHolder").hide();
         $("#toh_btn").fadeOut(90);
-        $(".documentationContainer").removeClass("span10").addClass("span12");
+        $(".documentationContainer").css({"width": "720px"});
         $("#toh_btn").fadeIn(90);
         setTimeout(function() {
           updateTOHButtonPosition($(window).scrollTop());
@@ -29,10 +29,12 @@ function toggleTOH(el) {
     }
     else {
         $("#toh_btn").fadeOut(90);
-        $(".documentationContainer").removeClass("span12").addClass("span10");
+        $(".documentationContainer").css({"width": "520px"});
         $("#toh_btn").fadeIn(90);
         $(el).addClass("active");
         setTimeout(function() {
+            container = $(".container");
+            updateTOHPos(container);
             $("#tocHolder").show();
             updateTOHButtonPosition($(window).scrollTop());
         }, 150);
@@ -57,6 +59,12 @@ function updateTOHButtonPosition(scrollTop) {
             "right" : "12px"
         });
     }
+}
+
+function updateTOHPos(container) {
+  $("#tocHolder > ol.tocContainer").css({
+    "left": $(container).outerWidth() + $(container).offset().left - $("#tocHolder > ol.tocContainer").outerWidth() + 75
+  });
 }
 
 $(document).ready(function() {
@@ -100,7 +108,6 @@ $(document).ready(function() {
       // hide me
       section.children('ul').slideUp(100, 'swing', function() {
         section.closest('li').removeClass('expanded');
-        resizeNav();
       });
     } else {
       // show me
@@ -111,7 +118,6 @@ $(document).ready(function() {
       // now expand me
       section.closest('li').addClass('expanded');
       section.children('ul').slideDown(100, 'swing', function() {
-        resizeNav();
       });
     }
   });
@@ -127,10 +133,8 @@ $(document).ready(function() {
   $(window).resize(function() {
     getH2s();
     updateTOHButtonPosition($(window).scrollTop());
-    if ($('#side-nav').length == 0) return;
-    var stylesheet = $('link[rel="stylesheet"][class="fullscreen"]');
-
-    resizeNav();
+    container = $(".container");
+    updateTOHPos(container);
   });
   
   // Get the positions of all the H2s
@@ -161,12 +165,9 @@ $(document).ready(function() {
         }
     }
 
+
     container = $(".container");
-    $("#tocHolder > ol.tocContainer").css({
-      "left": $(container).outerWidth() + $(container).offset().left - $("#tocHolder > ol.tocContainer").outerWidth()
-    });
-
-
+    updateTOHPos(container);
 
     if (scrollTop > scrollPosUpdateTOH) {
         $("#tocHolder > ol.tocContainer").css({
@@ -223,8 +224,6 @@ $(document).ready(function() {
       }
       navBarIsFixed = navBarShouldBeFixed;
     } 
-    
-    resizeNav(250); // pass true in order to delay the scrollbar re-initialization for performance
   });
 
   // Revise the sidenav widths to make room for the scrollbar 
@@ -233,136 +232,4 @@ $(document).ready(function() {
   var sidenav_width = parseInt($sidenav.innerWidth());
     
   $("#doc-nav  #nav").css("width", sidenav_width - 4 + "px"); // 4px is scrollbar width
-
-  resizeNav();
 });
-
-// TODO: use $(document).ready instead
-function addLoadEvent(newfun) {
-  var current = window.onload;
-  if (typeof window.onload != 'function') {
-    window.onload = newfun;
-  } else {
-    window.onload = function() {
-      current();
-      newfun();
-    }
-  }
-}
-
-/* ######### RESIZE THE SIDENAV HEIGHT ########## */
-
-function resizeNav(delay) {
-  var $nav = $("#doc-nav");
-  var $window = $(window);
-  var navHeight;
-  
-  // Get the height of entire window and the total header height.
-  // Then figure out based on scroll position whether the header is visible
-  var windowHeight = $window.height();
-  var scrollTop = $window.scrollTop();
-  var headerHeight = $('#header').outerHeight();
-  var subheaderHeight = $('#nav-x').outerHeight();
-  var headerVisible = (scrollTop < (headerHeight + subheaderHeight));
-  
-  // get the height of space between nav and top of window. 
-  // Could be either margin or top position, depending on whether the nav is fixed.
-  var topMargin = (parseInt($nav.css('margin-top')) || parseInt($nav.css('top'))) + 1; 
-  // add 1 for the #side-nav bottom margin
-  
-  // Depending on whether the header is visible, set the side nav's height.
-  if (headerVisible) {
-    // The sidenav height grows as the header goes off screen
-    navHeight = windowHeight - (headerHeight + subheaderHeight - scrollTop) - topMargin;
-  } else {
-    // Once header is off screen, the nav height is almost full window height
-    navHeight = windowHeight - topMargin;
-  }
-  
-  $scrollPanes = $(".scroll-pane");
-  if ($scrollPanes.length > 1) {
-    // subtract the height of the api level widget and nav swapper from the available nav height
-    navHeight -= ($('#api-nav-header').outerHeight(true) + $('#nav-swap').outerHeight(true));
-    
-    $("#swapper").css({height:navHeight + "px"});
-    if ($("#nav-tree").is(":visible")) {
-      $("#nav-tree").css({height:navHeight});
-    }
-    
-    var classesHeight = navHeight - parseInt($("#resize-packages-nav").css("height")) - 10 + "px"; 
-    //subtract 10px to account for drag bar
-    
-    // if the window becomes small enough to make the class panel height 0, 
-    // then the package panel should begin to shrink
-    if (parseInt(classesHeight) <= 0) {
-      $("#resize-packages-nav").css({height:navHeight - 10}); //subtract 10px for drag bar
-      $("#packages-nav").css({height:navHeight - 10});
-    }
-    
-    $("#classes-nav").css({'height':classesHeight, 'margin-top':'10px'});
-    $("#classes-nav .jspContainer").css({height:400}); // hack
-    
-    
-  } else {
-    $nav.height(navHeight);
-  }
-  
-  if (delay) {
-    updateFromResize = true;
-    delayedReInitScrollbars(delay);
-  } else {
-    reInitScrollbars();
-  }
-  
-}
-
-var updateScrollbars = false;
-var updateFromResize = false;
-
-/* Re-initialize the scrollbars to account for changed nav size.
- * This method postpones the actual update by a 1/4 second in order to optimize the
- * scroll performance while the header is still visible, because re-initializing the
- * scroll panes is an intensive process.
- */
-function delayedReInitScrollbars(delay) {
-  // If we're scheduled for an update, but have received another resize request
-  // before the scheduled resize has occured, just ignore the new request
-  // (and wait for the scheduled one).
-  if (updateScrollbars && updateFromResize) {
-    updateFromResize = false;
-    return;
-  }
-  
-  // We're scheduled for an update and the update request came from this method's setTimeout
-  if (updateScrollbars && !updateFromResize) {
-    reInitScrollbars();
-    updateScrollbars = false;
-  } else {
-    updateScrollbars = true;
-    updateFromResize = false;
-    setTimeout('delayedReInitScrollbars()',delay);
-  }
-}
-
-/* Re-initialize the scrollbars to account for changed nav size. */
-function reInitScrollbars() {
-  var pane = $(".scroll-pane").each(function(){
-    var api = $(this).data('jsp');
-    if (!api) { setTimeout(reInitScrollbars,300); return;}
-    api.reinitialise( {verticalGutter:0} );
-  });  
-  $(".scroll-pane").removeAttr("tabindex"); // get rid of tabindex added by jscroller
-}
-
-
-function restoreHeight(packageHeight) {
-    $("#resize-packages-nav").height(packageHeight);
-    $("#packages-nav").height(packageHeight);
-  //  var classesHeight = navHeight - packageHeight;
- //   $("#classes-nav").css({height:classesHeight});
-  //  $("#classes-nav .jspContainer").css({height:classesHeight});
-}
-
-
-
-/* ######### END RESIZE THE SIDENAV HEIGHT ########## */
