@@ -1,6 +1,6 @@
 {
   "name": "cloud9ide-documentation",
-  "version": "0.1.32",
+  "version": "0.1.33",
   "dependencies": {
     "panda-docs": {
       "version": "0.3.16",
@@ -9,7 +9,7 @@
           "version": "0.2.9",
           "dependencies": {
             "highlight.js": {
-              "version": "7.1.0"
+              "version": "7.2.0"
             }
           }
         },
@@ -79,7 +79,7 @@
           }
         },
         "functional-docs": {
-          "version": "0.1.6",
+          "version": "0.1.8",
           "dependencies": {
             "jsdom": {
               "version": "0.2.15",
@@ -88,7 +88,28 @@
                   "version": "1.7.6"
                 },
                 "request": {
-                  "version": "2.10.0"
+                  "version": "2.11.0",
+                  "dependencies": {
+                    "form-data": {
+                      "version": "0.0.3",
+                      "dependencies": {
+                        "combined-stream": {
+                          "version": "0.0.3",
+                          "dependencies": {
+                            "delayed-stream": {
+                              "version": "0.0.5"
+                            }
+                          }
+                        },
+                        "async": {
+                          "version": "0.1.9"
+                        }
+                      }
+                    },
+                    "mime": {
+                      "version": "1.2.7"
+                    }
+                  }
                 },
                 "cssom": {
                   "version": "0.2.5"
@@ -122,14 +143,6 @@
         "glob": {
           "version": "3.1.10",
           "dependencies": {
-            "minimatch": {
-              "version": "0.2.6",
-              "dependencies": {
-                "lru-cache": {
-                  "version": "2.0.2"
-                }
-              }
-            },
             "graceful-fs": {
               "version": "1.1.10"
             },
