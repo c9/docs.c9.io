@@ -1,3 +1,13 @@
+/* ------------------------------------------------------------------------------------------
+ * Proper min-height
+ * --------------------------------------------------------------------------------------- */
+ $(window).resize(function(){
+  $("#wrapper").css("min-height", $(window).height() - $("#header_iframe").height() - $("#footer_iframe").height() );
+ });
+ /* ------------------------------------------------------------------------------------------
+ * END Proper min-height
+ * --------------------------------------------------------------------------------------- */
+
 var navBarIsFixed = false;
 
 var h2s;
@@ -68,6 +78,9 @@ function updateTOHPos(container) {
 }
 
 $(document).ready(function() {
+
+   $(window).resize();
+
   // prep nav expands
   var pagePath = document.location.pathname.substring(document.location.pathname.lastIndexOf("/") + 1);
 

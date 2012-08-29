@@ -10,6 +10,11 @@ img {
   vertical-align: baseline;
 }
 
+html,
+body {
+  min-height: 100%;
+}
+
 body {
   background: #F9F9F9;
   font-family: "Lucida Grande", "Lucida Sans Unicode", Arial, Verdana, sans-serif;
@@ -489,8 +494,7 @@ li .tocNavArrow {
 }
 
 .container {
-   margin-bottom: 20px;
-   margin-top: 20px;
+   padding: 20px 0;
    width: 960px; 
 }
 
@@ -519,14 +523,9 @@ table .debug_tools {
   padding-top: 19px;
 }
 
-html, body {
-    height: 100%;
-}
 footer {
     color: #666;
     background: #222;
-    padding: 17px 0 18px 0;
-    border-top: 1px solid #000;
 }
 footer a {
     color: #999;
@@ -535,13 +534,11 @@ footer a:hover {
     color: #efefef;
 }
 .wrapper {
-    min-height: 100%;
-    height: auto !important;
-    height: 100%;
-    margin: 0 auto -63px;
+    margin: 0 auto;
 }
 .push {
-    height: 63px;
+    height: 0px;
+    overflow: hidden;
 }
 
 
@@ -560,5 +557,6 @@ footer a:hover {
 
 #header_iframe,
 #footer_iframe {
-  box-shadow: 0 0 20px 0 rgba(0, 0, 0, .5)
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, .5);
+  display: block;
 }
