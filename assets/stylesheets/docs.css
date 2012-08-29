@@ -22,7 +22,8 @@ body {
 }
 
 .alert h4 {
-   font-weight: bold;   
+   font-weight: bold;
+   padding-bottom: 0px;   
 }
 
 .documentationContainer {

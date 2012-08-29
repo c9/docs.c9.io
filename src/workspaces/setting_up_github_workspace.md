@@ -1,8 +1,8 @@
-# Setting Up a GitHub Project
+# Setting Up a GitHub Workspace
 
-GitHub is a code hosting service which offers you a lot of features to manage your public and private git repositories. For more information about GitHub and how to use it, visit [www.github.com](https://github.com/).
+GitHub is a code hosting service which offers you a lot of features to manage your public and private git repositories. For more information about GitHub and how to use it, visit <https://github.com>.
 
-We have integrated GitHub to enable you to easily work on your public and private Git repositories. The following article explains how you can activate your GitHub account in Cloud9 IDE.
+We have integrated GitHub into the IDE to enable you to easily work on your public and private Git repositories. The following article explains how you can activate your GitHub account in Cloud9 IDE.
 
 ## GitHub Activation
 
@@ -46,27 +46,35 @@ Select git as your project type. [After you click **CREATE**, the project is lis
 
 There are a couple of things you should do first, before you can use all of git's power. First, you'll want to add a remote to the project. From the Cloud9 IDE command line, you can execute the following commands: 
 
-     git remote add [remote name] [remote url]
+```bash
+git remote add [remote name] [remote url]
+```
 
 `remote url` is the location of the project on GitHub; for example `'git@github.com:/ajaxorg/node_chat'`. You'll have to create a GitHub project first in order to generate this URL. Adding a remote URL lets you freely push and pull your project.
 
 Next, create a few new files inside your project. By default, you should already have a _README.md_. You can add these files to git with the following command:
 
-    git add [file1, file2, file3, ...]
+```bash
+git add [file1, file2, file3, ...]
+```
 
 Finally, create a commit that you can push to your remote:
 
-    git commit -m 'added new files'
-   
+```bash
+git commit -m 'added new files'
+```
+
 Don't forget to push this commit out to GitHub: 
 
-    git push [remote name] master
+```bash
+git push [remote name] master
+```
 
 Ta-da! Your project is developed on Cloud9, and stored in GitHub.
 
 ### Cloning Projects from a URL
 
-[You can also create a project in Cloud9 IDE by cloning it from a GitHub URL. Once again, click on the ![Project Add Icon](./icons/workspacePlusIcon.png), and select **Clone from URL**. A new window pops up asks you:]{: #cloningIntro}
+[You can also create a project in Cloud9 IDE by cloning it from a URL. Once again, click on the ![Project Add Icon](./icons/workspacePlusIcon.png), and select **Clone from URL**. A new window pops up, asking you:]{: #cloningIntro}
 
 * to enter a Source URL
 * to choose who will have access to the project (Premium feature)  
