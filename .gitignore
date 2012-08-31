@@ -5,3 +5,4 @@ node_modules/
 .c9revisions/
 .settings
 .settings.xml
+npm-debug.log

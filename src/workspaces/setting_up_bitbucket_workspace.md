@@ -1,30 +1,91 @@
-# Setting Up a Git Project (on BitBucket)
+# Setting Up a Bitbucket Workspace
 
-In this article, we'll explain the steps needed to push a Cloud9 IDE project to Bitbucket. For this article, we're assuming that you have created a git project in Cloud9. Let's see how you can push this project to Bitbucket.
+Bitbucket is a code-hosting services that offers both git and mercurial support. Projects can be listed as private or public, absolutely free. For more information on Bitbucket, visit <https://bitbucket.org>. 
 
-First, if you haven't done so already, create a Bitbucket account. Then, follow these steps:
+We have integrated Bitbucket into the IDE to enable you to easily work on your public and private repositories. The following article explains how you can activate your Bitbucket account in Cloud9 IDE.
 
-1. Go to your Cloud9 dashboard. Click on **Your Account** and, under **Account Settings**, click on **Show your SSH key** and copy the key.
-                                                                                                                        * 
-![Viewing your SSH key](./images/sshKey.png)
+## Bitbucket Activation
 
-2. In BitBucket, go to **Account Settings**, and then click on **[SSH Keys](https://bitbucket.org/account/#ssh-keys)**. 
-Paste the Cloud9 SSH key into the textbox. Then, click **Add key**.
+You can manage your add-on services from your user profile that you can find in [the dashboard](./dashboard.html). When you have just signed in, click **Your Account** on the top of the left-side panel. Here, you can change the settings of your account. At the bottom, you'll see a list of add-on services that are integrated into Cloud9 IDE. Click **activate** on the Bitbucket button:
 
-3. Create a git repository on Bitbucket. At the top, you will see: "Clone this repository (size: ... bytes): HTTPS/SSH". Click on SSH. Then, underneath it will show a URL of the form `git@bitbucket.org:username/reponame.git`. Copy this URL.
-![Cloning from Bitbucket](./images/cloneBitbucket.png)
+![Add-on Services Screenshot](./images/addonServices.png)
 
-4. Go to your Cloud9 project. If you created it as a git project, git is already setup. If you haven't already, commit any changes using the console:
+A new window will pop-up on your screen. This window asks you to give authorization permission for the Cloud9 IDE application to interact in various ways with Bitbucket:
 
-	git add .
-	git commit -a -m "My first commit"
+![Bitbucket Permissions Window](./images/bitbucketAuthorization.png)
 
-5. Add a new remote repository from the Cloud9 console; for instance:
+To finalize the activation, click on **Allow**. Next, you're redirected to your account page, where you'll notice that your Bitbucket account is activated. You can deactivate Bitbucket by simply clicking deactivate, which may be useful when you want to link your Bitbucket account to another Cloud9 account.
 
-	git remote add origin git@bitbucket.org:username/repository_name.git
+Now that you have activated Bitbucket, you can start to create and manage your projects!
 
-6. Finally, you can push to this repository:
+## Managing Projects
 
-	git push origin master
+There are several ways to manage Bitbucket projects in Cloud9 IDE:
 
-Your changes will appear on Bitbucket.
+* By creating a new git or mercurial project and pushing it to Bitbucket
+* By cloning a Bitbucket project from a URL
+* By bringing in a Bitbucket project manually
+
+### Creating a New Git Project
+
+{:creatingNewProjects}
+
+![New project menu](./images/newWorkspace.png)
+
+{:aboutSettingUp}
+
+{:setupOptions}
+
+![New Project Options](./images/createNewWorkspaceOptions.png)
+
+{:postCreate}
+
+There are a couple of things you should do first, before you can use all of git's power. First, you'll want to add a remote to the project. From the Cloud9 IDE command line, you can execute the following commands: 
+
+```bash
+git remote add [remote name] [remote url]
+```
+
+`remote url` is the location of the project on Bitbucket; for example `'origin git@bitbucket.org:username/repository_name.git'`. You'll have to create a Bitbucket project first in order to generate this URL. Adding a remote URL lets you freely push and pull your project.
+
+Next, create a few new files inside your project. By default, you should already have a _README.md_. You can add these files to git with the following command:
+
+```bash
+git add [file1, file2, file3, ...]
+```
+
+Finally, create a commit that you can push to your remote:
+
+```bash
+git commit -m 'added new files'
+```
+
+Don't forget to push this commit out to Bitbucket: 
+
+```bash
+git push [remote name] master
+```
+
+Ta-da! Your project is developed on Cloud9, and stored in Bitbucket.
+
+### Cloning Projects from a URL
+
+{:cloningIntro}
+
+{:cloningOptions}
+
+![Clone Project Options](./images/cloneWorkspaceOptions.png)
+
+You can find an examples of a Bitbucket URL on any of their repo description pages:
+
+![Bitbucket Repo Description](./images/bitbucketProjectURL.png)
+
+{:cloningURLProcess}
+
+### Clone Projects Already On Bitbucket
+
+When you provide Cloud9 IDE with your Bitbucket credentials, it provides a list of projects you haven't yet imported into the editor:
+
+![Bitbucket Pending Projects](./images/bitbucketPendingWorkspaces.png)
+
+From this list, clicking on a project and selecting **CLONE TO EDIT** brings the repo into the IDE, just as if you cloned it from a URL.
