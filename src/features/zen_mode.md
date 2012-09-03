@@ -4,7 +4,7 @@ Zen mode is a full screen coding environment designed to make you more productiv
 
 Here's a video demonstrating the feature:
 
-<iframe width="480" height="360" src="http://www.youtube.com/embed/lgNW5rEGOmI" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/MYrLvUnL_iY" frameborder="0" allowfullscreen></iframe>
 
 To activate zen mode, simply hover over the upper right corner of the code editor, and click the icon that appears. Keep in mind that you'll need to have a file open before you can launch zen mode. You can resize your window by holding and dragging the left or right border.
 
