@@ -1,6 +1,6 @@
   var _gaq = _gaq || [];
   _gaq.push(['_setAccount', 'UA-18736001-1']);
-  _gaq.push(['_setDomainName', 'none']);
+  _gaq.push(['_setDomainName', 'c9.io']);
   _gaq.push(['_setAllowLinker', true]);
   _gaq.push(['_trackPageview']);
 

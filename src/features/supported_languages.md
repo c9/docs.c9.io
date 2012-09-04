@@ -2,7 +2,9 @@
 
 <!-- video  -->
 
-Cloud9 IDE supports over two dozen different themes for highlighting your code. You can change your current theme by going to **View | Themes**, and selecting from one of the many options. By hovering over the menu items, you'll be able to get a preview of the theme. To activate a theme you like, just click on its name.
+Cloud9 IDE develops and builds on [Ace], an editor for writing code online. Ace supports over two dozen different themes for highlighting your code, and any changes made to Ace are reflected back into Cloud9 IDE.
+
+You can change your current theme by going to **View | Themes**, and selecting from one of the many options. By hovering over the menu items, you'll be able to get a preview of the theme. To activate a theme you like, just click on its name.
 
 The IDE contains the following themes:
 
