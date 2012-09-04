@@ -1,6 +1,6 @@
 {
   "name": "cloud9ide-documentation",
-  "version": "0.1.35",
+  "version": "0.1.36",
   "dependencies": {
     "panda-docs": {
       "version": "0.3.16",
