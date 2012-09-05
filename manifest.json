@@ -5,7 +5,8 @@
         "./src/features", 
         "./src/ide-components", 
         "./src/workspaces", 
-        "./src/running_and_debugging"
+        "./src/running_and_debugging",
+        "./src/c9_local"
         ],
     "resources" : [ "./resources/anims", "./resources/images", "./resources/icons" ]
 }
