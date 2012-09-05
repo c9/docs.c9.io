@@ -83,7 +83,7 @@ This toolbar, however, grants you the following capabilities:
      <tr>
       <td>![Icon for breakpoint list](./icons/breakpointsIcon.png)</td>
       <td>**Breakpoint List**</td>
-      <td>At any point during your coding or debugging session, you can click on the gutter to apply a breakpoint: ![Breakpoint Icon](./icons/breakpoint.png). When debugging your code, the process pauses at your established breakpoints, so that you can inspect closely what's going on in a certain part of the code. You can click on the breakpoint list to view all the breakpoints in your workspace.</td>
+      <td>At any point during your coding or debugging session, you can click on the gutter to apply a breakpoint: ![Breakpoint Icon](./icons/breakpoint.png). When debugging your code, the process pauses at your established breakpoints, so that you can inspect closely what's going on in a certain part of the code. You can click on the breakpoint list to view all the breakpoints in your workspace. If you click on the checkbox, you can enable or disable a breakpoint as well. You can also click on a breakpoint in the gutter to disable or enable it.</td>
     </tr>
   </tbody>
 </table>
