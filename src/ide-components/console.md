@@ -26,8 +26,7 @@ In addition, the console also has shortcuts for much of Cloud9 IDE's functionali
 
 ## Output
 
-The output tab in the console shows information whenever a user is running or debugging a program. The content is similar to the output of a desktop terminal.
-
+The output tab in the console shows information whenever a user is running or debugging a program. The content is similar to the output of a desktop terminal:  
 ![Screenshot of program output](./images/consoleOutput.png)
 
 The output tab also displays the error and additional information that can improve your coding quality. You can use the console to output results from your running application, just like a regular terminal.

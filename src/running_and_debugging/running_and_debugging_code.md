@@ -33,6 +33,8 @@ The **run** button in the menu bar acts as a sort of short cut to the Run panel.
 
 ![Run Button Expanded](./images/run_debug_menu_button.png)
 
+**Run in debug mode** indicates that you want to run the current code through the debugger. **Auto show & hide debug tools** will reveal (or collapse) the debugging tools panel described below. You can also work with this presentation by going to **View | Panels**, and configuring the debugger there.
+
 ### Console Output
 
 Every time you run a project, the console expands to reveal output from your program. If you're launching a server, Cloud9 provides you with a URL to access the project. Otherwise, any statements sent by your application's print statements (like `console.log()` for Javascript, `print` for Python, or `puts` for Ruby) are also shown here. For example:  

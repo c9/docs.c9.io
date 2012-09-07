@@ -4,9 +4,9 @@ The status bar is designed to provide you with all sorts of information about yo
 
 You can find the status bar in the lower-right corner of the editor: ![The status bar in its natural, shortened state](./icons/statusBarCollapsed.png). Keep in mind that the status bar is transparent, so it's able to camoflauge well with light or dark themes.
 
-There's three pieces of crucial information available at all times: your current row, your current column, and, if you're highlighting characters, the status bar displays the number of bytes currently selected.
+There's three pieces of crucial information available at all times: your current row, your current column, and, if you're highlighting characters, the status bar displays the number of bytes currently selected. If you're using Vim Mode, the status bar also tells you if you're in **INSERT** mode.
 
-If you click on the status bar, it expands into a menu that provides a smaller set of [the full IDE preferences](ide_preferences.html). Mostly, these options deal with visual formatting for the IDE:
+If you click on the status bar, it expands into a menu that provides a smaller set of [the full IDE preferences](ide_preferences.html). These options only deal with the IDE editor:
 
 <div markdown="1">
 <table class="table table-striped table-bordered">

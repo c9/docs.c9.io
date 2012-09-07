@@ -1,4 +1,4 @@
-# The Editor
+# IDE Overview
 
 Cloud9 IDE can be thought of as being divided into the following components:
 
