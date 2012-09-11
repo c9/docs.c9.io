@@ -4,7 +4,7 @@
 
 Cloud9 IDE develops and builds on [Ace](https://github.com/ajaxorg/ace), an editor for writing code online. Ace supports over two dozen different themes for highlighting your code, and any changes made to Ace are reflected back into Cloud9 IDE.
 
-You can change your current theme by going to **View | Themes**, and selecting from one of the many options. By hovering over the menu items, you'll be able to get a preview of the theme. To activate a theme you like, just click on its name.
+You can change your current theme by going to [[menu: View, Themes]], and selecting from one of the many options. By hovering over the menu items, you'll be able to get a preview of the theme. To activate a theme you like, just click on its name.
 
 The IDE contains the following themes:
 
@@ -35,7 +35,7 @@ The IDE contains the following themes:
 * Vibrant Ink
 </div>
 
-By default, files are highlighted based on their file extension. You can change this by going to **View | Syntax**, and selecting a different context. This forces a single file to use a different highlighter.
+By default, files are highlighted based on their file extension. You can change this by going to [[menu: View, Syntax]], and selecting a different context. This forces a single file to use a different highlighter.
 
 We support highlighting for the following languages:
 
@@ -78,4 +78,4 @@ We support highlighting for the following languages:
 * YAML
 </div>
 
-We are always adding new themes and new languages to support, so check the menu often! 
+We are always adding new themes and new languages to support, so check the menu often! Since we use Ace to provide syntax highlighting, [feel free to log an issue there](https://github.com/ajaxorg/ace/issues?labels=mode-request&page=1&state=open) for new requests.

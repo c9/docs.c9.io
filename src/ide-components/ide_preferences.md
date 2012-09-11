@@ -124,6 +124,10 @@ This section controls language analysis options:
       <td>[Shows invisibles characters in the editor, like tabs and line breaks]{: #invisibleChars}</td>
     </tr>
     <tr>
+      <td>**Show Indent Guides**</td>
+      <td>[Shows the indent guides in the editor, letting you see your code's nestings]{: #showIndentGuides}</td>
+    </tr>
+    <tr>
       <td>**Show Gutter**</td>
       <td>[Shows the gutter in the editor, which indicates line numbers, warnings, and errors]{: #showGutter}</td>
     </tr>

@@ -8,4 +8,4 @@ To activate zen mode, simply hover over the upper right corner of the code edito
 
 To get out of zen mode, hover over the same corner and click the same icon.
 
-You can also enter and exit zen mode via keyboard shortcuts, command line, or from the menu bar at **View | Zen Mode**.
+You can also enter and exit zen mode via keyboard shortcuts, command line, or from the menu bar at [[menu: View, Zen Mode]].

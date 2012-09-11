@@ -37,7 +37,11 @@ If you click on the status bar, it expands into a menu that provides a smaller s
       <td>**Highlight Active Line**</td>
       <td>{:highlightActiveLine}</td>
     </tr>
-        <tr>
+    <tr>
+      <td>**Show Indent Guides**</td>
+      <td>{:showIndentGuides}</td>
+    </tr>
+    <tr>
       <td>**Show Gutter**</td>
       <td>{:showGutter}</td>
     </tr>

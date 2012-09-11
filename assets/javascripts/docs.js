@@ -111,9 +111,16 @@ $(document).ready(function() {
              $(this).find("a").css({"margin-left": "-35px"});
         }
     );
-  
-  //changeSearchResults();
-
+ 
+    $('#macTab a').click(function (e) {
+      e.preventDefault();
+      $(this).tab('show');
+    });
+    $('#winTab a').click(function (e) {
+      e.preventDefault();
+      $(this).tab('show');
+    });
+    
   // Set up expand/collapse behavior
   $('#nav li.nav-section .nav-section-header').click(function() {
     var section = $(this).closest('li.nav-section');

@@ -38,7 +38,7 @@ On the far right of the menu, near the Cloud9 IDE logo, there are two more icons
 
 This is where most of the action happens. Every file you open appears here as a tab. You can open a new file easily by clicking on the ![Tab add icon](./icons/tabPlusIcon.png) button to the right of the last tab. Cloud9 IDE offers [syntax highlighting](./supported_languages.html) for over two dozen programming languages.
 
-The code editor supports a large number of keyboard shortcuts to increase your productivity. For an up-to-date list of these within the IDE, simply go to **Help | Keyboard Shortcuts**.
+The code editor supports a large number of keyboard shortcuts to increase your productivity. For an up-to-date list of these within the IDE, simply go to [[menu: Help, Keyboard Shortcuts]].
 
 If you hover over to the upper-right corner, you can [activate zen-mode](./zen_mode.html), which is a full screen coding environment. 
 

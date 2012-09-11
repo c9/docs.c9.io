@@ -6,4 +6,4 @@ If a file transfer is halted for some reason--say, if you lose your internet con
 
 ![Uploading files](./anims/uploading.gif)
 
-You can also get an exact copy of your workspace to save on your computer. By going into **File | Download Project**, you will be provided with a Zip file containing the entirety of your project.
+You can also get an exact copy of your workspace to save on your computer. By going into [[menu: File, Download Project]], you will be provided with a Zip file containing the entirety of your project.

@@ -9,7 +9,7 @@ To demonstrate just how amazing the Cloud9 IDE platform is, we're going to insta
 To install Wordpress on your Cloud9 IDE instance:
 
 1. Grab [the latest Wordpress zip file](http://wordpress.org/latest.zip), and unzip it.
-2. Go to **File | Upload Files** and select the Wordpress folder you just created.
+2. Go to [[menu: File, Upload Files]] and select the Wordpress folder you just created.
 3. Rename _wp-config-sample.php_ to _'wp-config.php_
 
 In order to run Wordpress, you need a database to host your files. You could use MySQL, but for this project, we'll use PostgreSQL. To get that to work, we'll need to install [the `pg4wp` plugin](http://wordpress.org/extend/plugins/postgresql-for-wordpress/installation/). Follow the steps in the installation page to add it. We still have no connection, because no database was installed on the virtual machine in Cloud9, but now we've got something to get started with. 
@@ -22,7 +22,7 @@ We'll need to actually install PostgreSQL next.
 
 Note: you cannot use a local database if you want to deploy the Wordpress blog to a service like Heroku. See the "free" solution below for information on how to do that.
 
-To install PostgreSQL locally, click **View | Terminals | New Terminal**, then entire the following commands:
+To install PostgreSQL locally, click [[menu: View, Terminals, New Terminal]], then entire the following commands:
 
 ```
 cd ..
