@@ -1,6 +1,6 @@
 # Using Goto File and Goto Definition
 
-<iframe width="480" height="360" src="https://www.youtube.com/embed/U5823J0kYLE" frameborder="0" allowfullscreen></iframe>
+<iframe width="640" height="360" src="https://www.youtube.com/embed/U5823J0kYLE" frameborder="0" allowfullscreen></iframe>
 
 Let's say you're workinng a large project containing many files, and you kind-of sort-of know the name of a file that you want to open up. Goto File is our feature to help you quickly and easily jump to any file in your workspace, without the need to search through different directories. Simply hit `Cmd-E` (or `Ctrl-E` on Unix/Windows) and away you go:  
 ![Goto File Window](./images/gotofile.png)

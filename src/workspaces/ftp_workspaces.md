@@ -1,6 +1,6 @@
 # Setting up an FTP project
 
-<iframe width="480" height="360" src="http://www.youtube.com/embed/HehwOFg7jYc" frameborder="0" allowfullscreen></iframe>
+<iframe width="640" height="480" src="https://www.youtube.com/embed/HehwOFg7jYc" frameborder="0" allowfullscreen></iframe>
 
 In this article, we'll show you how to set up an FTP project.
 

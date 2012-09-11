@@ -221,6 +221,10 @@ p {
   margin: 15px 0;
 }
 
+span.menucascade {
+  white-space:nowrap;
+}
+
 #content .meta {
     color: #999;
     font-size: 11px;
