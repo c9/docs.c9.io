@@ -14,7 +14,7 @@ The editor is the most important element of any IDE; that's why Cloud9 developed
 * Transposing letters
 * Code folding (including the entire file)
 * Converting cases
-* [Multiple cursor](./multiple_cursors.html)
+* [Multiple cursors](./multiple_cursors.html)
 * [Autocompletion](./autocompletion.html)
 * [Code analysis and refactoring](./language_analysis.html)
 * Search in files with regular expressions
@@ -26,5 +26,3 @@ The editor is the most important element of any IDE; that's why Cloud9 developed
 * Line wrapping, to a defined column or the width of the browser window
 * Support for a command line
 * Support for spaces and real tabs
-
-In addition to Cloud9 IDE, ACE is also used by [Google](http://www.google.com/script/start/), [GitHub](https://github.com/blog/905-edit-like-an-ace), and [Khan Academy](http://ejohn.org/blog/introducing-khan-cs/).
