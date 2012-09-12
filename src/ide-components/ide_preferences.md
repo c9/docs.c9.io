@@ -9,10 +9,10 @@ Note: All of these options are on a per-project basis. Changing them in one proj
 
 This section controls the overall IDE behavior:
 
-<table class="table table-striped table-bordered">
+<table class="ide_preferences table table-striped table-bordered">
   <thead>
     <tr>
-      <th>Preference Name</th>
+      <th class="preferenceCol">Preference Name</th>
       <th>Description</th>
     </tr>
   </thead>
@@ -42,12 +42,12 @@ This section controls the overall IDE behavior:
       <td>Prevents accidental data loss by showing a dialog asking if you _really_ want to leave Cloud9 IDE when closing your browser</td>
     </tr>
     <tr>
-      <td>**Reveal Active File in Project Tree**</td>
-      <td>[Defines the default runtime for your Node.js code. "Auto" is based on whatever is in the _package.json_ file, while "Default" reverts to Node 0.4.x.]{: #nodejsRuntime}</td>
+      <td>**Node.js Runtime**</td>
+      <td>[Defines the default runtime for your Node.js code. "Auto" is based on whatever is in the _package.json_ file, while "Default" reverts to Node 0.6.x.]{: #nodejsRuntime}</td>
     </tr>
     <tr>
       <td>**Keybindings**</td>
-      <td>Allows you to choose which operating system to use for keyboard shortcuts</td>
+      <td>Allows you to choose which operating system to use for [keyboard shortcuts](./keybindings.html)</td>
     </tr>
   </tbody>
 </table>
@@ -58,10 +58,10 @@ This section controls the overall IDE behavior:
 
 This section controls language analysis options:
 
-<table class="table table-striped table-bordered">
+<table class="ide_preferences table table-striped table-bordered">
   <thead>
     <tr>
-      <th>Preference Name</th>
+      <th class="preferenceCol">Preference Name</th>
       <th>Description</th>
     </tr>
   </thead>
@@ -95,10 +95,10 @@ This section controls language analysis options:
 This section controls language analysis options:
 
 <div markdown="1">
-<table class="table table-striped table-bordered">
+<table class="ide_preferences table table-striped table-bordered">
   <thead>
     <tr>
-      <th>Preference Name</th>
+      <th class="preferenceCol">Preference Name</th>
       <th>Description</th>
     </tr>
   </thead>
@@ -179,10 +179,10 @@ This section controls language analysis options:
 
 This section controls the behavior for [the terminal](./terminal.html):
 <div markdown="1">
-<table class="table table-striped table-bordered">
+<table class="ide_preferences table table-striped table-bordered">
   <thead>
     <tr>
-      <th>Preference Name</th>
+      <th class="preferenceCol">Preference Name</th>
       <th>Description</th>
     </tr>
   </thead>
@@ -212,10 +212,10 @@ This section controls the behavior for [the terminal](./terminal.html):
 This section controls the various tools that are available in the IDE:
 
 <div markdown="1">
-<table class="table table-striped table-bordered">
+<table class="ide_preferences table table-striped table-bordered">
   <thead>
     <tr>
-      <th>Preference Name</th>
+      <th class="preferenceCol">Preference Name</th>
       <th>Description</th>
     </tr>
   </thead>

@@ -524,6 +524,16 @@ table .debug_tools {
   width: 181px;
 }
 
+table.ide_preferences {
+   table-layout: fixed;
+ }
+
+table.ide_preferences th, table.ide_preferences td { overflow: hidden; }
+
+table th.preferenceCol {
+  width: 40%;
+}
+
 .sidebar-nav {
   padding-top: 19px;
 }
