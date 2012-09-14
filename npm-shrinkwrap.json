@@ -1,6 +1,6 @@
 {
   "name": "cloud9ide-documentation",
-  "version": "0.1.43",
+  "version": "0.1.44",
   "dependencies": {
     "panda-docs": {
       "version": "0.3.17",
@@ -91,7 +91,7 @@
                   "version": "2.11.1",
                   "dependencies": {
                     "form-data": {
-                      "version": "0.0.4",
+                      "version": "0.0.3",
                       "dependencies": {
                         "combined-stream": {
                           "version": "0.0.3",
@@ -102,7 +102,7 @@
                           }
                         },
                         "async": {
-                          "version": "0.1.22"
+                          "version": "0.1.9"
                         }
                       }
                     },
