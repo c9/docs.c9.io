@@ -87,6 +87,21 @@ $(document).ready(function() {
   if (pagePath === "")
     pagePath = "index.html";
 
+  $("#st-search-input[title]").keydown(
+      function(evt){
+        if (evt.keyCode == 13) {
+          var query = $(this).val();
+          if (query) {
+              $(this).val("");
+              $(this).blur();
+              var url = "https://www.google.com/search?q=" + encodeURIComponent("site:docs.c9.io " + query);
+              window.open(url);
+          }
+          return false;
+        }
+      }
+  );
+
   // select current page in sidenav and set up prev/next links if they exist
   var $selNavLink = $('#nav').find('a[href="' + pagePath + '"]');
   if ($selNavLink.length) {

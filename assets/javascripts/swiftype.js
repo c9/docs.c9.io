@@ -16,7 +16,3 @@ var Swiftype = window.Swiftype || {};
   var entry = document.getElementsByTagName('script')[0];
   entry.parentNode.insertBefore(script, entry);
 }());
-
-$(document).ready(function() {
-  $('#st-search-input[title]').tooltip({trigger: 'focus'});
-});
