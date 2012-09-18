@@ -1,6 +1,6 @@
 {
   "name": "cloud9ide-documentation",
-  "version": "0.1.45",
+  "version": "0.1.46",
   "dependencies": {
     "panda-docs": {
       "version": "0.3.18",
@@ -42,7 +42,7 @@
           }
         },
         "markdown_conrefs": {
-          "version": "1.2.12",
+          "version": "1.2.13",
           "dependencies": {
             "hash": {
               "version": "0.2.0"
@@ -131,7 +131,7 @@
               "version": "0.2.6",
               "dependencies": {
                 "lru-cache": {
-                  "version": "2.0.3"
+                  "version": "2.0.4"
                 }
               }
             },
