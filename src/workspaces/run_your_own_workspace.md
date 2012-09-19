@@ -6,12 +6,18 @@ If you own a server that you can SSH into, you can log into that machine with Cl
 
 <iframe width="640" height="360" src="https://www.youtube.com/embed/CogX0tqugi0" frameborder="0" allowfullscreen></iframe>
 
+## Connection Prerequisites
+
 In order to connect Cloud9 with a server you own, you'll need two things:
 
 1. [Node.js](http://www.nodejs.org) installed on the server. This version must be greater than 0.6.16, but no less than 0.6.19.
 2. Your private SSH key *must* be saved on the server at _~/.ssh/authorized_keys_. This is to ensure the utmost security between your client computer and the machine you're attempting to access. Cloud9 provides you with your SSH key in the workspace dialog; it is up to you to save it to the appropriate path. For more information on SSH keys, [see this article](http://www.eng.cam.ac.uk/help/jpmg/ssh/authorized_keys_howto.html).
 
-Once you've got those requirements set up, here's how you can create an SSH project of your own:
+Tip: If you're behind a firewall, you can identify which IP address and port Cloud9 is running on by typing `echo $OPENSHIFT_INTERNAL_IP` and `echo $OPENSHIFT_INTERNAL_PORT` into the console. You can use this information to open any blocked connections.
+
+## Creating an SSH Workspace
+
+Once you've got those requirements set up, here's how you can create an SSH workspace of your own:
 
 In the *Projects* tab on the Dashboard, click on the ![Project Add Icon](./icons/workspacePlusIcon.png) next to **MY PROJECTS** and choose the option to **Create a new project** (see "[Creating a New Project](./creating_new_workspace.html)" if you need to review the steps to create a new project):  
 ![New workspace creation](./images/newWorkspace.png)
