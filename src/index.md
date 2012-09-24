@@ -12,4 +12,4 @@ If you're interested in troubleshooting specific aspects of the IDE, need help s
 
 Remember: all of our documentation content is [open-sourced on GitHub](http://github.com/c9/cloud9ide-documentation), just like our IDE.
 
-See something that's not documented here? Send an e-mail to <a href="mailto:garen@c9.io">garen@c9.io</a> and we'll get it in.
+See something that's not documented here? Send an e-mail to <a href="mailto:docs@c9.io">docs@c9.io</a> and we'll get it in.
