@@ -1,6 +1,6 @@
 # Deploying to Heroku
 
-This section will show you how to deploy your applications to Heroku, a cloud-based application platform. The integration with Cloud9 IDE makes your development process even more agile. If you don't have a Heroku account, visit [their website](htttp://www.heroku.com) to create one for free. 
+This section will show you how to deploy your applications to Heroku, a cloud-based application platform. The integration with Cloud9 IDE makes your development process even more agile. If you don't have a Heroku account, visit [their website](http://www.heroku.com) to create one for free. 
 
 To get started, create a simple Node.js application. If you don't have one yet, you can [follow our tutorial](writing_nodejs_hello_world.html) on developing one. 
 
