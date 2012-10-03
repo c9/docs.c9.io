@@ -1,6 +1,6 @@
 # Writing a Ruby App
 
-While using Cloud9 IDE, you have access to the Ruby runtime. Accessing the command is no different than the way you'd use Ruby on your computer; just open the command line and type `ruby`. Currently, we run version 1.9.3.
+While using Cloud9 IDE, you have access to the Ruby runtime. Accessing the command is no different than the way you'd use Ruby on your computer; just open the command line and type `ruby`. Currently, the default version is 1.9.3. We have support for [`rvm](https://rvm.io/) that allows you to switch between available Ruby versions. `rvm` support is only provided within [the terminal](./the_terminal.html).
 
 To run a Ruby program that you've created, you can either:
 
