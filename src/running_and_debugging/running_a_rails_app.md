@@ -1,6 +1,6 @@
-# Writing a Rails App
+# Running a Rails App
 
-Cloud9 IDE also supports the ability to run a [Rails](http://rubyonrails.org/) application. The `rails` command is only available on [the terminal](./the_terminal.html).
+Cloud9 IDE also supports the ability to run a [Rails](http://rubyonrails.org/) application. The `rails` command is only available on [the terminal](./terminal.html).
 
 To run a rails application:
 
