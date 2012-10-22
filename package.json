@@ -1,10 +1,10 @@
 {
-    "name": "cloud9ide-documentation",
+    "name": "docs.c9.io",
     "version": "0.1.52",
     "private": true,
     "repository": {
         "type": "git",
-        "url": "git://github.com/c9/cloud9ide-documentation.git"
+        "url": "git://github.com/c9/docs.c9.io.git"
     },
     "engines": {
         "node": "~0.6.0"
