@@ -1,6 +1,6 @@
 # Writing and Running a Node.js Program
 
-Cloud9 IDE was built on top of the Node.js platform, and as such, you have full access to the `node` runtime. Currently, we run version v0.6.19.
+Cloud9 IDE was built on top of the Node.js platform, and as such, you have full access to the `node` runtime. Currently, we support running both version v0.6.x and v0.8.x.
 
 In this section, we'll walk you through the creation of a simple Hello World program. To get started, you'll first need to create a (GitHub or Mercurial) project. If you need a refresher on how to do this, please refer to [Creating a New Workspace](creating_new_workspace.html).
 
