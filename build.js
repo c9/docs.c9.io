@@ -18,7 +18,10 @@ var buildOptions = {
   assets: "./assets",
   development: development,
   resources: "./resources",
-  baseUrl: "https://docs.c9.io"
+  baseUrl: "https://docs.c9.io",
+  json: true,
+  tocId: "doc-nav",
+  contentId: "content"
 };
 
 panda.make([ 
