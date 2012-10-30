@@ -8,4 +8,4 @@ To access file revisions, you can either go to [[menu: File, File Revisions Hist
 
 At the bottom of the panel, there's a checkbox for showing all of a file's changes. Files changes that occur relatively soon to one another--say, a few seconds--are grouped by the revisions panel as one "change." If you prefer to see every single change as an individual entry, enable the **Show all file changes** checkbox.
 
-To restore a file to a previous revision, simply click the revisions button for that entry: ![Revisions Button](./icons/revisions_button.png)
+To restore a file to a previous revision, simply click the revisions button for that entry: ![Revisions Button](./resources/icons/revisions_button.png)

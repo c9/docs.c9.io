@@ -2,7 +2,7 @@
 
 Multiple cursors is one of the most useful features available in the Cloud9 editor. You can use multiple cursors to perform tasks like rename several variables or members at once, break up lists separated by commas, or insert the same text in multiple locations.
 
-![Showing multiple cursors](./anims/multiplecursors.gif)
+![Showing multiple cursors](./resources/anims/multiplecursors.gif)
 
 Multiple selections can be copied and pasted, and you can insert or remove entire lines in several locations.
 

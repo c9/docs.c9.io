@@ -6,12 +6,12 @@ In this article, we'll show you how to set up an FTP project.
 
 Note: Currently, Cloud9 IDE only supports passive FTP. Active FTP, SFTP and FTPS are **not yet supported**. For SSH connections, consider creating [an SSH workspace](./run_your_own_workspace.html).
 
-To create an FTP project, go to the Dashboard and click on the ![Project Add Icon](./icons/workspacePlusIcon.png) next to **MY PROJECTS**. Choose the option to **Create a new project** (see "[Creating a New Project](./creating_new_workspace.html)" if you need to review the steps to create a new project):  
-![New workspace creation](./images/newWorkspace.png)
+To create an FTP project, go to the Dashboard and click on the ![Project Add Icon](./resources/icons/workspacePlusIcon.png) next to **MY PROJECTS**. Choose the option to **Create a new project** (see "[Creating a New Project](./creating_new_workspace.html)" if you need to review the steps to create a new project):  
+![New workspace creation](./resources/images/newWorkspace.png)
 
 In the pop-up window that appears, select **FTP** for the project type:
 
-![FTP Options](./images/FTPoptions.png)
+![FTP Options](./resources/images/FTPoptions.png)
 
 Let's review the options available for your FTP project:
 
@@ -25,7 +25,7 @@ Warning: Be careful not to put an initial path that leaves you in a location whe
 
 Fill in your FTP details and click the **Login Test** to verify that the settings are correct. If the test succeeds, go ahead and click **Create** to create your FTP project. You'll then see your project in the Dashboard under My Projects:
 
-![New FTP Project](./images/newFtpWorkspace.png)
+![New FTP Project](./resources/images/newFtpWorkspace.png)
 
 When your new FTP project is selected, you will see three buttons: **Start Editing**, **FTP settings**, and **Delete** (on the far right). **FTP settings** gives you access to the settings you just filled in, as well as the login test. This is useful to use in case your login credentials have changed.
 
@@ -33,6 +33,6 @@ To get started with your FTP project, click on the **Start Editing** button. You
 
 The FTP log displays output related to the interaction with the FTP server. The screenshot below, for example, shows what happens when we create a new file called _TestFile.txt_. The file is created in the FTP server and when I write to it, the contents are transferred.
 
-![Demonstrating new files in the FTP](./images/FTPlog.png)
+![Demonstrating new files in the FTP](./resources/images/FTPlog.png)
 
 Note: In an FTP project, all files are stored on your FTP server; Cloud9 only stores the FTP settings. Please keep this in mind. Cloud9 IDE does not keep any copies of your files, so make sure you back them up properly. Any changes you make to these files in Cloud9 are automatically reflected on the live web server.

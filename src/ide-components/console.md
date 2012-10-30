@@ -8,7 +8,7 @@ Note: The console is different than [the terminal](./terminal.html) in several w
 
 You can use many common Unix commands, such as `ls` and `mkdir`, in the console space. To preview the full list of basic commands in the console, you can type `help` and press Enter. For every command, a description is provided:
 
-![Screenshot of the available commands](./images/availableCommands.png)
+![Screenshot of the available commands](./resources/images/availableCommands.png)
 
 You can also use mercurial commands (`hg`) and git commands (`git`) to communicate with the system, and to push your code between repositories. Typing `hg` or `git` shows the complete list of commands that are available for these services. For more information about these commands, please check their respective documentation:
 
@@ -27,10 +27,10 @@ In addition, the console also has shortcuts for much of Cloud9 IDE's functionali
 ## Output
 
 The output tab in the console shows information whenever a user is running or debugging a program. The content is similar to the output of a desktop terminal:  
-![Screenshot of program output](./images/consoleOutput.png)
+![Screenshot of program output](./resources/images/consoleOutput.png)
 
 The output tab also displays the error and additional information that can improve your coding quality. You can use the console to output results from your running application, just like a regular terminal.
 
-As your process runs, you'll see a message similar to this one indicating that Cloud9 is running something in the background: ![Running process](./images/runningProcess.png)
+As your process runs, you'll see a message similar to this one indicating that Cloud9 is running something in the background: ![Running process](./resources/images/runningProcess.png)
 
-If you hover over this message, you can opt to cancel the process by clicking on the button: ![Cancelling a process](./images/cancellingProcess.png)
+If you hover over this message, you can opt to cancel the process by clicking on the button: ![Cancelling a process](./resources/images/cancellingProcess.png)

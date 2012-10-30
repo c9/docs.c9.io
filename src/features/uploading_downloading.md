@@ -4,6 +4,6 @@ Cloud9 IDE allows you to easily add files to your curent workspace at any time. 
 
 If a file transfer is halted for some reason--say, if you lose your internet connection--the upload resumes once the connection returns. As the files transfer, the IDE lets you know the current status of the overall transfer, as well as the status of each file being uploaded:
 
-![Uploading files](./anims/uploading.gif)
+![Uploading files](./resources/anims/uploading.gif)
 
 You can also get an exact copy of your workspace to save on your computer. By going into [[menu: File, Download Project]], you will be provided with a Zip file containing the entirety of your project.

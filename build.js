@@ -16,10 +16,20 @@ var sm = new Smasher({
 var buildOptions = {
   title: "Cloud9 User Documentation",
   assets: "./assets",
-  development: development
+  development: development,
+  resources: "./resources",
+  baseUrl: "https://docs.c9.io"
 };
 
-panda.make("./manifest.json", buildOptions, function(err, cbReturn) {
+panda.make([ 
+        "./src/index.md",
+        "./src/deploying", 
+        "./src/features", 
+        "./src/ide-components", 
+        "./src/workspaces", 
+        "./src/running_and_debugging",
+        "./src/c9_local"
+        ], buildOptions, function(err, cbReturn) {
     if (err) console.error(err);
 
     // in case the index has been updated recently, remove it

@@ -11,4 +11,4 @@ To create a new terminal, go to [[menu: View, Terminals, New Terminal]], or simp
 * You can create more than one instance of a terminal (by just creating a new tab)
 * The terminal allows for path autocompletion by hitting [[keys: Tab]]
 
-![Screenshot of the terminal](./images/terminal.png)
+![Screenshot of the terminal](./resources/images/terminal.png)

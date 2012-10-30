@@ -15,7 +15,7 @@ As a quick demonstration, open a new file, and paste this Ruby code into it:
 puts 'Hello world'
 ```
 
-When you hit the ![The Run Button](./icons/runButton.png) button in the menu bar, the console will print out `Hello world`.
+When you hit the ![The Run Button](./resources/icons/runButton.png) button in the menu bar, the console will print out `Hello world`.
 
 Note: Currently, you can't debug Ruby applications, but we are working on adding this feature.
 

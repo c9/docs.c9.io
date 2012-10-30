@@ -11,10 +11,10 @@ Let's take a look at some of the additional features available while you collabo
 ## Members List
 
 There are two terms used for people accessing your project: **members** and **visitors**. Members are individuals that have read and write access to your project--that means they can change any code; visitors only have read access. The Members panel lists all the collaborators in a project, both active and inactive:  
-![The Members Panel](./images/members_panel.png)
+![The Members Panel](./resources/images/members_panel.png)
 
 If you are the owner of a project, you can click on anyone's username to grant (or revoke) write access:  
-![Granting write access](./images/collab_grant_access.png)
+![Granting write access](./resources/images/collab_grant_access.png)
 
 If you're worried about the sanctity of your code after grant access to other developers, fear not. You can always take a look at [a file revision history](./revisions.html) to view line-by-line changes made to your project over time.
 
@@ -26,4 +26,4 @@ Any member or visitor can participate in group chat with each other. Developers 
 
 In order to keep track of who is doing what in a workspace, every member in a project is given a different colored cursor. The cursor is used to identify who a particular member is. Hovering over the cursor shows the username of that member, and clicking on that name allows you to privately message them.
 
-![Showing multiple cursors](./anims/collab_multiuser_cursor.gif)
+![Showing multiple cursors](./resources/anims/collab_multiuser_cursor.gif)

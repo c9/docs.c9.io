@@ -17,7 +17,7 @@ Here's a simple demonstration. First, create a PHP file called _hello_world.php_
 </html>
 ```
 
-Next, open the **Run & Debug** panel, at the left of the IDE. From the **Runtime** dropdown, select **Apache+PHP**. Then, click on the ![The Run Button](./icons/runButton.png) button in the top menu bar.
+Next, open the **Run & Debug** panel, at the left of the IDE. From the **Runtime** dropdown, select **Apache+PHP**. Then, click on the ![The Run Button](./resources/icons/runButton.png) button in the top menu bar.
  
 The console should now spit out a message about how your Apache server is running, something similar to this:
  

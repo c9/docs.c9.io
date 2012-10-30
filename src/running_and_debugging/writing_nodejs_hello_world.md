@@ -20,8 +20,8 @@ This is a Node.js HTTP server. It returns a simple "Hello World" page every time
 
 In the callback function, you create a response with a status code of `200` (indicating that the request was fulfilled successfully) and the message "Hello World". Finally, you specify which port and IP address the server runs on. When Cloud9 IDE runs servers, you set and retrieve the IP address and port number with the `process.env.IP` and `process.env.PORT` variables.
 
-When you hit the ![The Run Button](./icons/runButton.png) button in the menu bar, the console will print out the following message:  
-![Console run output](./images/runOutput.png)
+When you hit the ![The Run Button](./resources/icons/runButton.png) button in the menu bar, the console will print out the following message:  
+![Console run output](./resources/images/runOutput.png)
 
 To see your application in action, click on the link created for your project. You should see your "Hello World" application open up in a new browser tab:  
-![Node.js Hello World in the Browser](./images/helloWorld.png).
+![Node.js Hello World in the Browser](./resources/images/helloWorld.png).
