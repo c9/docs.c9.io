@@ -80,10 +80,12 @@ function fixJson() {
     if (err) console.error(err);
     var docsJson = JSON.parse(contents);
     docsJson["files"] = docsJson["files"].map(function(file) {
-      file.contents = file.contents.replace("\n              <div id=\"disqus_thread\"></div>\n            ", "").replace("\n              <div id=\"toh_btn\" onclick=\"toggleTOH(this)\"></div>\n              ");
+      file.contents = file.contents.replace("\n              <div id=\"disqus_thread\"></div>\n            ", "").replace("\n              <div id=\"toh_btn\" onclick=\"toggleTOH(this)\"></div>\n              ", "");
       return file;
     });
-
+    
+    docsJson.toc = docsJson.toc.replace(new RegExp('<i class=\"icon-chevron-down tocNavArrow\"></i><i class=\"icon-chevron-up tocNavArrow\"></i>', "g"), "");
+    
     fs.writeFile(__dirname + "/out/cloud9-user-documentation.json", JSON.stringify(docsJson, null, "    "), "utf8", function(err, contents) {
       if (err) console.error(err);
     });
