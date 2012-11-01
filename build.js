@@ -44,24 +44,48 @@ panda.make([
     if (recentFiles.length > 5)
       recentFiles.pop();
 
-    fs.readFile(__dirname + "/out/index.html", "utf8", function(err, contents) {
-      if (err) console.error(err);
-      recentFiles.forEach(function (file, i) {
-        contents = contents.replace("%placeholder" + (i+1) + "%", "<a href='" + file.filename + ".html'>" + file.pageTitle + "</a>");
-      });
-      fs.writeFile(__dirname + "/out/index.html", contents, "utf8", function(err, contents) {
-        if (err) console.error(err);
-          if (!development) {
-            console.log("Compiling assets...");
-             sm.compileAssets(function(err) {
-               if(err) {
-                 console.error("An asset compilation error occurred", err);
-               } else {
-                 console.log("Compilation done!");
-               }
-               return;
-             });
-           }
-      });
-    })
+    addRecentChanges(recentFiles);
+    compileAssets();
+    fixJson();
 });
+
+function addRecentChanges(recentFiles) {
+  fs.readFile(__dirname + "/out/index.html", "utf8", function(err, contents) {
+    if (err) console.error(err);
+    recentFiles.forEach(function (file, i) {
+      contents = contents.replace("%placeholder" + (i+1) + "%", "<a href='" + file.filename + ".html'>" + file.pageTitle + "</a>");
+    });
+    fs.writeFile(__dirname + "/out/index.html", contents, "utf8", function(err, contents) {
+      if (err) console.error(err);
+    });
+  });
+}
+
+function compileAssets() {
+  if (!development) {
+    console.log("Compiling assets...");
+     sm.compileAssets(function(err) {
+       if(err) {
+         console.error("An asset compilation error occurred", err);
+       } else {
+         console.log("Compilation done!");
+       }
+       return;
+     });
+  }
+}
+
+function fixJson() {
+  fs.readFile(__dirname + "/out/cloud9-user-documentation.json", "utf8", function(err, contents) {
+    if (err) console.error(err);
+    var docsJson = JSON.parse(contents);
+    docsJson["files"] = docsJson["files"].map(function(file) {
+      file.contents = file.contents.replace("\n              <div id=\"disqus_thread\"></div>\n            ", "").replace("\n              <div id=\"toh_btn\" onclick=\"toggleTOH(this)\"></div>\n              ");
+      return file;
+    });
+
+    fs.writeFile(__dirname + "/out/cloud9-user-documentation.json", JSON.stringify(docsJson, null, "    "), "utf8", function(err, contents) {
+      if (err) console.error(err);
+    });
+  });
+}
