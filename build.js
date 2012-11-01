@@ -46,14 +46,14 @@ panda.make([
 
     addRecentChanges(recentFiles);
     compileAssets();
-    fixJson();
+    fixJson(recentFiles);
 });
 
 function addRecentChanges(recentFiles) {
   fs.readFile(__dirname + "/out/index.html", "utf8", function(err, contents) {
     if (err) console.error(err);
-    recentFiles.forEach(function (file, i) {
-      contents = contents.replace("%placeholder" + (i+1) + "%", "<a href='" + file.filename + ".html'>" + file.pageTitle + "</a>");
+    recentFiles.forEach(function (recentFile, i) {
+      contents = contents.replace("%placeholder" + (i+1) + "%", "<a href='" + recentFile.filename + ".html'>" + recentFile.pageTitle + "</a>");
     });
     fs.writeFile(__dirname + "/out/index.html", contents, "utf8", function(err, contents) {
       if (err) console.error(err);
@@ -75,12 +75,19 @@ function compileAssets() {
   }
 }
 
-function fixJson() {
+function fixJson(recentFiles) {
   fs.readFile(__dirname + "/out/cloud9-user-documentation.json", "utf8", function(err, contents) {
     if (err) console.error(err);
     var docsJson = JSON.parse(contents);
     docsJson["files"] = docsJson["files"].map(function(file) {
       file.contents = file.contents.replace("\n              <div id=\"disqus_thread\"></div>\n            ", "").replace("\n              <div id=\"toh_btn\" onclick=\"toggleTOH(this)\"></div>\n              ", "");
+      
+      if (file.filename === "index") {
+        recentFiles.forEach(function (recentFile, i) {
+          file.contents = file.contents.replace("%placeholder" + (i+1) + "%", "<a href='" + recentFile.filename + ".html'>" + recentFile.pageTitle + "</a>");
+        });
+      }
+
       return file;
     });
     
