@@ -2,7 +2,7 @@
 
 Cloud9 IDE provides several ways to run and debug your code. We'll explore each of them in this section of the documentation.
 
-Currently, only Javascript/Node.js applications can make use of the debugger. Also, only Javascript/Node.js, Python, Ruby, and Apache+PHP applications can be run.
+Note: Currently, only Javascript/Node.js applications can make use of the debugger. You can also execute Javascript/Node.js, Python, Ruby, and Apache+PHP applications.
 
 The following information applies to all of the above programming languages.
 

@@ -52,9 +52,9 @@ panda.make([
 function addRecentChanges(recentFiles) {
   fs.readFile(__dirname + "/out/index.html", "utf8", function(err, contents) {
     if (err) console.error(err);
-    recentFiles.forEach(function (recentFile, i) {
-      contents = contents.replace("%placeholder" + (i+1) + "%", "<a href='" + recentFile.filename + ".html'>" + recentFile.pageTitle + "</a>");
-    });
+
+    contents = replaceRecentFiles(recentFiles, contents);
+
     fs.writeFile(__dirname + "/out/index.html", contents, "utf8", function(err, contents) {
       if (err) console.error(err);
     });
@@ -82,11 +82,8 @@ function fixJson(recentFiles) {
     docsJson["files"] = docsJson["files"].map(function(file) {
       file.contents = file.contents.replace("\n              <div id=\"disqus_thread\"></div>\n            ", "").replace("\n              <div id=\"toh_btn\" onclick=\"toggleTOH(this)\"></div>\n              ", "");
       
-      if (file.filename === "index") {
-        recentFiles.forEach(function (recentFile, i) {
-          file.contents = file.contents.replace("%placeholder" + (i+1) + "%", "<a href='" + recentFile.filename + ".html'>" + recentFile.pageTitle + "</a>");
-        });
-      }
+      if (file.filename === "index")
+        file.contents = replaceRecentFiles(recentFiles, contents);
 
       return file;
     });
@@ -97,4 +94,12 @@ function fixJson(recentFiles) {
       if (err) console.error(err);
     });
   });
+}
+
+function replaceRecentFiles(recentFiles, contents) {
+  recentFiles.forEach(function (recentFile, i) {
+    contents = contents.replace("%placeholder" + (i+1) + "%", "<a href='" + recentFile.filename + ".html'>" + recentFile.pageTitle + "</a>");
+  });
+
+  return contents;
 }

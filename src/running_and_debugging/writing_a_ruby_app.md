@@ -21,7 +21,9 @@ Note: Currently, you can't debug Ruby applications, but we are working on adding
 
 ### RVM Support
 
-We have rudimentary support for `rvm`, that allows you only to switch between versions 1.8.7 and 1.9.3. We don't support rvm per-project or global gemsets. To do this, open [the terminal](./terminal.html) and type:
+We have rudimentary support for `rvm`, that allows you only to switch between versions 1.8.7 and 1.9.3. We don't support rvm per-project or global gemsets. 
+
+To use `rvm`, open [the terminal](./terminal.html) and type:
 
 ```bash
 # to switch to version 1.8.7

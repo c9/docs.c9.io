@@ -25,3 +25,17 @@ When you hit the ![The Run Button](./resources/icons/runButton.png) button in th
 
 To see your application in action, click on the link created for your project. You should see your "Hello World" application open up in a new browser tab:  
 ![Node.js Hello World in the Browser](./resources/images/helloWorld.png).
+
+### NVM Support
+
+We have rudimentary support for `nvm`, that allows you only to switch between Node.js versions 0.6.21 and 0.8.x. 
+
+To use `nvm`, open [the terminal](./terminal.html) and type:
+
+```bash
+# to switch to version 0.6.21
+nvm use v0.67 
+
+# to switch to the latest 0.8.x
+nvm use v0.8 
+```
