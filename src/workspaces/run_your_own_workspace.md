@@ -11,7 +11,7 @@ If you own a server that you can SSH into, you can log into that machine with Cl
 In order to connect Cloud9 with a server you own, you'll need two things:
 
 1. [Node.js](http://www.nodejs.org) installed on the server. This version must be between Node.js version 0.6.16 and the latest 0.8.x.
-2. Your private SSH key *must* be saved on the server at _~/.ssh/authorized_keys_. This is to ensure the utmost security between your client computer and the machine you're attempting to access. Cloud9 provides you with your SSH key in the workspace dialog; it is up to you to save it to the appropriate path. For more information on SSH keys, [see this article](http://www.eng.cam.ac.uk/help/jpmg/ssh/authorized_keys_howto.html).
+2. Your public SSH key *must* be saved on the server at _~/.ssh/authorized_keys_. This is to ensure the utmost security between your client computer and the machine you're attempting to access. Cloud9 provides you with your SSH key in the workspace dialog; it is up to you to save it to the appropriate path. For more information on SSH keys, [see this article](http://www.eng.cam.ac.uk/help/jpmg/ssh/authorized_keys_howto.html).
 
 Tip: If you're behind a firewall, you can identify which IP address and port Cloud9 is running on by typing `echo $OPENSHIFT_INTERNAL_IP` and `echo $OPENSHIFT_INTERNAL_PORT` into the console. You can use this information to open any blocked connections.
 
