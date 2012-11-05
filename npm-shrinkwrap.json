@@ -1,6 +1,6 @@
 {
   "name": "docs.c9.io",
-  "version": "0.1.64",
+  "version": "0.1.65",
   "dependencies": {
     "panda-docs": {
       "version": "0.4.1",
