@@ -13,3 +13,5 @@ Goto Definition takes the same concept and applies it to files. You can easily n
 
 
 Note: Currently, Goto Definition only works for Javascript files.
+
+Another feature that's available is the capability to "jump to definition." If your cursor is on a variable or function name, you can tap `F12` (or type `jumptodef` in the console) to instantly scroll the editor to the member's definition.
