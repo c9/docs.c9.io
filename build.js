@@ -1,3 +1,5 @@
+var hostname = require('os').hostname();
+
 var panda = require("panda-docs");
 var Smasher = require('asset-smasher').Smasher;
 
@@ -35,14 +37,28 @@ panda.make([
         ], buildOptions, function(err, cbReturn) {
     if (err) console.error(err);
 
-    // in case the index has been updated recently, remove it
-    var recentFiles = cbReturn["files"].sort(function(a,b) { return b.mtime - a.mtime } ).splice(0, 6).filter(function (file) {
-      return file.filename !== "index";
-    });
+    // for docs.c9.io, rely on the written filename, since 
+    // sm force updates all files, thus deleting any mtime info
+    if (/\w+-\d+-\d+-\d+-\d+/.test(hostname)) {
+      var recentFiles = JSON.parse(fs.readFileSync("recentFiles.json"));
+    }
+    else {
+      // in case the index was updated recently, remove it
+      var recentFiles = cbReturn["files"].sort(function(a,b) { return b.mtime - a.mtime } ).splice(0, 6).filter(function (file) {
+        return file.filename !== "index";
+      });
 
-    // in case the index WASN'T updated, drop the last item
-    if (recentFiles.length > 5)
-      recentFiles.pop();
+      // in case the index WASN'T updated, drop the last item
+      if (recentFiles.length > 5)
+        recentFiles.pop();
+
+      recentFiles = recentFiles.map(function (recentFile) {
+        delete recentFile.contents;
+        return recentFile;
+      });
+
+      fs.writeFileSync("recentFiles.json", JSON.stringify(recentFiles));
+    }
 
     addRecentChanges(recentFiles);
     compileAssets();
