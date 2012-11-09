@@ -10,7 +10,7 @@ To demonstrate the power of NPM, we'll build and run a quick [express](http://ex
 
 ```
 var express = require('express'),
-    app = express.createServer();
+    app = express();
 
 app.use(express.logger());
 
