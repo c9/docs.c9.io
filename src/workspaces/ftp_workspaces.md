@@ -1,6 +1,8 @@
 # Setting up an FTP project
 
+<div class="video-container">
 <iframe width="640" height="480" src="https://www.youtube.com/embed/HehwOFg7jYc" frameborder="0" allowfullscreen></iframe>
+</div>
 
 In this article, we'll show you how to set up an FTP project.
 

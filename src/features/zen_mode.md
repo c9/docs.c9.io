@@ -1,6 +1,8 @@
 # Activating Zen Mode
 
+<div class="video-container">
 <iframe width="640" height="360" src="https://www.youtube.com/embed/8MfQrfiZ70A" frameborder="0" allowfullscreen></iframe>
+</div>
 
 Zen mode is a full screen coding environment designed to make you more productive. It essentially removes all the additional UI elements in Cloud9 IDE, and places you in a harmonious relationship with your code.
 

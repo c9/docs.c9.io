@@ -19,7 +19,9 @@ To the left of the tab menu is another button that offers additional functions f
  
 ## Tab Sessions 
 
+<div class="video-container">
 <iframe width="640" height="480" src="https://www.youtube.com/embed/agUno6WDkAM" frameborder="0" allowfullscreen></iframe>
+</div>
 
 Tab sessions is a unique feature that is useful when dealing with projects that involve juggling between many tabs. Essentially, tab sessions lets you save the current state of the tabs. You can close your workspace, switch to a different branch, and instantly reload your previously opened files. You'll no longer need to work with opening and closing multiple files.
 

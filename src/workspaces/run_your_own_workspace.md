@@ -4,7 +4,9 @@ You have access to an incredibly powerful feature of Cloud9 that we like to call
 
 If you own a server that you can SSH into, you can log into that machine with Cloud9 and work on your projects remotely. To put this into perspective, you could have an entire toolchain set up on this machine--say, `make` with `gcc`, or `ant` with Java--edit the files with Cloud9 IDE, and build your toolchain via the IDE's terminal. Here's a video demonstrating how you could instantly compile a C program using an SSH workspace and Cloud9:
 
+<div class="video-container">
 <iframe width="640" height="360" src="https://www.youtube.com/embed/CogX0tqugi0" frameborder="0" allowfullscreen></iframe>
+</div>
 
 ## Connection Prerequisites
 

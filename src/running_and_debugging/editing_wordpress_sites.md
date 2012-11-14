@@ -1,6 +1,8 @@
 # Editing Remote Wordpress Websites via FTP
 
+<div class="video-container">
 <iframe width="640" height="480" src="https://www.youtube.com/embed/3vZIKzALxyU" frameborder="0" allowfullscreen></iframe>
+</div>
 
 Did you know that you can use Cloud9 IDE to work on your Wordpress website? It's true, and incredibly easy. You can't edit your posts on Wordpress using Cloud9, since they are stored in a database on your server. But you can edit pretty much every other aspect of your site.
 

@@ -1,6 +1,8 @@
 # Git Blame
 
+<div class="video-container">
 <iframe width="640" height="360" src="https://www.youtube.com/embed/RSXaAlBgQ2s" frameborder="0" allowfullscreen></iframe>
+</div>
 
 When you're working with git repositories, it's helpful to know who made a commit to a particualr piece of code. As it turns out, git has [a feature called `git blame`](http://www.kernel.org/pub/software/scm/git/docs/git-blame.html) that we've integrated directly into Cloud9 IDE.
 

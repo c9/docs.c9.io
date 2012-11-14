@@ -1,6 +1,8 @@
 # Searching and Replacing in Files
 
+<div class="video-container">
 <iframe width="640" height="360" src="https://www.youtube.com/embed/jQb-wxELkI4" frameborder="0" allowfullscreen></iframe>
+</div>
 
 Aside from [Goto File and Goto Definition](./gotofile_and_definition.html), Cloud9 also offers more traditional search functionality. There are three types of search modes available: quicksearch, search and replace, and find in files.
 

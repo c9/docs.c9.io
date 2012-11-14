@@ -1,6 +1,8 @@
 # Color Picker
 
+<div class="video-container">
 <iframe width="640" height="480" src="https://www.youtube.com/embed/T0FAFF6fQi4" frameborder="0" allowfullscreen></iframe>
+</div>
 
 The color picker is an awesome feature in Cloud9 IDE, designed to not only make color selections easier, but also, more harmonious. At its core, the color picker is a way to represent words (`red`, `blue`, _e.t.c._), RGBA values (`rgba(175, 3, 124, .6)`), or hex values (`#f00f00`) into actual colors. 
 
