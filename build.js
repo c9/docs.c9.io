@@ -23,7 +23,8 @@ var buildOptions = {
   baseUrl: "https://docs.c9.io",
   json: true,
   tocId: "doc-nav",
-  contentId: "content"
+  contentId: "content",
+  safeWords: ["GitHub", "Cloud9"]
 };
 
 panda.make([ 

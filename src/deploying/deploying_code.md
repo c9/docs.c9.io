@@ -2,7 +2,7 @@
 
 Cloud9 IDE offers many different ways to get your code from your editor to your production server. To deploy your code, click on the **Deploy** button in the Project Bar:
 
-![The Deploy button in the Project Bar](./resources/images/deployButton.png)
+![The Deploy button in the Project Bar](./resources/images/deployButton.png)<232, 109>
 
 We offer tight integration with the following environments:
 

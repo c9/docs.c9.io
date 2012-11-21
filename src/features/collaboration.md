@@ -13,10 +13,10 @@ Let's take a look at some of the additional features available while you collabo
 ## Members List
 
 There are two terms used for people accessing your project: **members** and **visitors**. Members are individuals that have read and write access to your project--that means they can change any code; visitors only have read access. The Members panel lists all the collaborators in a project, both active and inactive:  
-![The Members Panel](./resources/images/members_panel.png)
+![The Members Panel](./resources/images/members_panel.png)<260, 349>
 
 If you are the owner of a project, you can click on anyone's username to grant (or revoke) write access:  
-![Granting write access](./resources/images/collab_grant_access.png)
+![Granting write access](./resources/images/collab_grant_access.png)<249, 50>
 
 If you're worried about the sanctity of your code after grant access to other developers, fear not. You can always take a look at [a file revision history](./revisions.html) to view line-by-line changes made to your project over time.
 

@@ -9,7 +9,7 @@ When Cloud9 detects an issue with your code, an icon appears in the gutter for t
 * Errors (![Error icon](./resources/icons/error_icon.gif)): these are incorrect lines of code that will almost certainly throw a runtime error when you try to run your script
 
 If you hover over any of these icons in the gutter, you'll get a pop-up that presents some information as to what, exactly, the problem is. For example, suppose we have a variable declared, called `fs`, that is never used:  
-![fs with a strikethough](./resources/images/unused_var_sample.png)
+![fs with a strikethough](./resources/images/unused_var_sample.png)<215, 51>
 
 Notice also that `fs` has a strikethrough, to provide further visual clues that something is not quite right.
 

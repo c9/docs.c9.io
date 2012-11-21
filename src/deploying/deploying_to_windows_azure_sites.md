@@ -5,7 +5,7 @@ This article will show you how to deploy your applications to Windows Azure. If 
 To get started, create a simple Node.js application. If you don't have one yet, you can [follow our tutorial](writing_nodejs_hello_world.html) on developing one. 
 
 After you click on the **Deploy** button in the Project Bar, click the plus sign next to Deploy to add another deploy target. Choose Windows Azure as an option. You'll be prompted with this dialog:  
-![Windows Azure asking for publisher settings](./resources/images/windowsAzureDialog.png)
+![Windows Azure asking for publisher settings](./resources/images/windowsAzureDialog.png)<348, 403>
 
 You must click on the **Download Windows Azure Settings** button before you can continue. If you don't have a Windows Azure account, here is where you can create one. If you _do_ have an account, your browser will automatically download the required file.
 
@@ -16,7 +16,7 @@ After the file has uploaded, click on **Create new** to create a new hosted serv
 You can set a few configuration options such as the number of instances to use, its host OS, and where the data center is located. Selecting "Enable RDP" and providing a username and password enables remote desktop for your deployment.
 
 Your new Windows Azure server will appear in the Deploy list:  
-![Windows Azure information](./resources/images/windowsAzureInfo.png)
+![Windows Azure information](./resources/images/windowsAzureInfo.png)<234, 219>
 
 Go ahead and click on **DEPLOY**. If this is the first time you're trying to deploy this project to Windows Azure, you'll receive three prompts:
 
@@ -27,6 +27,6 @@ Go ahead and click on **DEPLOY**. If this is the first time you're trying to dep
 3. You'll be asked to select the instance size for this application. For this tutorial, just select Small, and then click **Create**. For more details about Windows Azure VM sizes, see [How to Configure Virtual Machine Sizes](http://msdn.microsoft.com/en-us/library/windowsazure/ee814754.aspx).
 
 Your app will now deploy to a Windows Azure server! You can follow its progress in the Deploy panel, or by watching the messages in the console:
-![Windows Azure staging messages](./resources/images/windowsAzureStagingOutput.png)
+![Windows Azure staging messages](./resources/images/windowsAzureStagingOutput.png)<825, 199>
 
 For more information on configuring your app on the Windows Azure website, see [Deploying a Windows Azure App from Cloud9](http://www.windowsazure.com/en-us/develop/nodejs/tutorials/deploying-with-cloud9/).
