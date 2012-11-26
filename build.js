@@ -28,13 +28,7 @@ var buildOptions = {
 };
 
 panda.make([ 
-        "./src/index.md",
-        "./src/deploying", 
-        "./src/features", 
-        "./src/ide-components", 
-        "./src/workspaces", 
-        "./src/running_and_debugging",
-        "./src/c9_local"
+        "./src/"
         ], buildOptions, function(err, cbReturn) {
     if (err) console.error(err);
 
