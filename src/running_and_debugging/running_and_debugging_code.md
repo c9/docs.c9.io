@@ -31,21 +31,21 @@ Of course, you can also save your run scenarios; just click on the **add** butto
 
 The **run** button in the menu bar acts as a sort of short cut to the Run panel. When clicked, the button automatically runs the currently active file. If you have a list of run scenarios already defined, the **run** button also presents a list of those:
 
-![Run Button Expanded](./resources/images/run_debug_menu_button.png)
+![Run Button Expanded](./resources/images/run_debug_menu_button.png)<205, 165>
 
 **Run in debug mode** indicates that you want to run the current code through the debugger. **Auto show & hide debug tools** will reveal (or collapse) the debugging tools panel described below. You can also work with this presentation by going to [[menu: View, Panels]], and configuring the debugger there.
 
 ### Console Output
 
 Every time you run a project, the console expands to reveal output from your program. If you're launching a server, Cloud9 provides you with a URL to access the project. Otherwise, any statements sent by your application's print statements (like `console.log()` for Javascript, `print` for Python, or `puts` for Ruby) are also shown here. For example:  
-![Console run output](./resources/images/runOutput.png)
+![Console run output](./resources/images/runOutput.png)<733, 85>
 
 ## Debugging Your Code
 
 Setting up a project to debug is done in very much the same way as running your code. The only difference is that you must click on the run settings icon in the Run panel ![Run Settings Icon: A Gear with an Arrow](./resources/icons/runSettingsIcon.png) and select **Run in debug mode**. Similarly, you can select **Run in debug mode** from the run button.
 
 Initially, the only difference this will make is the expansion of the debugging toolbar to the right of the editor:  
-![The toolbar used for debugging](./resources/images/tool_bar.png)
+![The toolbar used for debugging](./resources/images/tool_bar.png)<36, 225>
 
 This toolbar, however, grants you the following capabilities:
 
@@ -68,19 +68,19 @@ This toolbar, however, grants you the following capabilities:
       <td>**![Icon for the callstack](./resources/icons/callStackIcon.png)**</td>
       <td>**Callstack**</td>
       <td>This is a structured list of information about the sequences of your code--basically, which functions are calling what, and where you are in the current process. It also stores local variables and function arguments, if present. You can use this feature to check how your code is running:  
-      	![Callstack menu window](./resources/images/callStack.png)</td>
+	![Callstack menu window](./resources/images/callStack.png)<346, 171></td>
     </tr>
      <tr>
       <td>![Icon for interactive mode](./resources/icons/interactiveIcon.png)</td>
       <td>**Interactive Mode**</td>
       <td>Lets you evaluate a piece of code, such as expressions or the values and properties of variables. The text field allows you to type any code you want, in case you discover a way to fix you problem:
-![Interactive mode window](./resources/images/interactiveMenu.png)</td>
+![Interactive mode window](./resources/images/interactiveMenu.png)<324, 291></td>
     </tr>
      <tr>
       <td>![Icon for variable inspection](./resources/icons/variablesIcon.png)</td>
       <td>**Variable Inspection**</td>
       <td>This shows all the related variables (including functions) that are present in the current context:
-![Variable inspection window](./resources/images/variablesMenu.png)  </td>
+![Variable inspection window](./resources/images/variablesMenu.png)<331, 371> </td>
     </tr>
      <tr>
       <td>![Icon for breakpoint list](./resources/icons/breakpointsIcon.png)</td>
@@ -93,4 +93,4 @@ This toolbar, however, grants you the following capabilities:
 
 
 While debugging, you also have the power of the live inspector. While hovering over a piece of code in the editor, you'll instantly get some floating text that describes the values of that variable, similar to **Variable Inspection**.  
-![Live inspection window](./resources/images/debugLiveInspector.png)  
+![Live inspection window](./resources/images/debugLiveInspector.png)<467, 311>  

@@ -8,11 +8,11 @@ We have integrated Bitbucket into the IDE to enable you to easily work on your p
 
 You can manage your add-on services from your user profile that you can find in [the dashboard](./dashboard.html). When you have just signed in, click **Your Account** on the top of the left-side panel. Here, you can change the settings of your account. At the bottom, you'll see a list of add-on services that are integrated into Cloud9 IDE. Click **activate** on the Bitbucket button:
 
-![Add-on Services Screenshot](./resources/images/addonServices.png)
+![Add-on Services Screenshot](./resources/images/addonServices.png)<417, 213>
 
 A new window will pop-up on your screen. This window asks you to give authorization permission for the Cloud9 IDE application to interact in various ways with Bitbucket:
 
-![Bitbucket Permissions Window](./resources/images/bitbucketAuthorization.png)
+![Bitbucket Permissions Window](./resources/images/bitbucketAuthorization.png)<530, 255>
 
 To finalize the activation, click on **Allow**. Next, you're redirected to your account page, where you'll notice that your Bitbucket account is activated. You can deactivate Bitbucket by simply clicking deactivate, which may be useful when you want to link your Bitbucket account to another Cloud9 account.
 
@@ -30,13 +30,13 @@ There are several ways to manage Bitbucket projects in Cloud9 IDE:
 
 {:creatingNewProjects}
 
-![New project menu](./resources/images/newWorkspace.png)
+![New project menu](./resources/images/newWorkspace.png)<249, 106>
 
 {:aboutSettingUp}
 
 {:setupOptions}
 
-![New Project Options](./resources/images/createNewWorkspaceOptions.png)
+![New Project Options](./resources/images/createNewWorkspaceOptions.png)<651, 151>
 
 {:postCreate}
 
@@ -74,11 +74,11 @@ Ta-da! Your project is developed on Cloud9, and stored in Bitbucket.
 
 {:cloningOptions}
 
-![Clone Project Options](./resources/images/cloneWorkspaceOptions.png)
+![Clone Project Options](./resources/images/cloneWorkspaceOptions.png)<650, 105>
 
 You can find an examples of a Bitbucket URL on any of their repo description pages:
 
-![Bitbucket Repo Description](./resources/images/bitbucketProjectURL.png)
+![Bitbucket Repo Description](./resources/images/bitbucketProjectURL.png)<948, 192>
 
 {:cloningURLProcess}
 
@@ -86,6 +86,6 @@ You can find an examples of a Bitbucket URL on any of their repo description pag
 
 When you provide Cloud9 IDE with your Bitbucket credentials, it provides a list of projects you haven't yet imported into the editor:
 
-![Bitbucket Pending Projects](./resources/images/bitbucketPendingWorkspaces.png)
+![Bitbucket Pending Projects](./resources/images/bitbucketPendingWorkspaces.png)<250, 426>
 
 From this list, clicking on a project and selecting **CLONE TO EDIT** brings the repo into the IDE, just as if you cloned it from a URL.

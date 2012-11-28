@@ -24,10 +24,10 @@ Now, let's look at what the CoffeeScript file does. It creates an HTTP server wi
 
 Next, run the _server.js_ file and open the URL indicated in the console:
 
-![Messages in the console about the server](./resources/images/consoleServerMessage.png)
+![Messages in the console about the server](./resources/images/consoleServerMessage.png)<892, 108>
 
 The result is:
 
-![The server running in a browser](./resources/images/coffeescriptServer.png)
+![The server running in a browser](./resources/images/coffeescriptServer.png)<476, 79>
 
 To stop your application, go back to the editor and click on the {:stopButton} button in the Menu Bar.

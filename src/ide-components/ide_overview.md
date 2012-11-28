@@ -2,7 +2,7 @@
 
 Cloud9 IDE can be thought of as being divided into the following components:
 
-![IDE Components](./resources/images/editorNaming.png)
+![IDE Components](./resources/images/editorNaming.png)<1106, 803>
 
 Throughout the documentation, we'll refer to these sections by name. We can identify several distinct areas in the editor:
 
@@ -20,7 +20,7 @@ Remember: nearly every UI element can be collapsed, in order to provided a more 
 
 ## The Top Menu Bar
 
-![A screenshot of the top menu bar](./resources/images/topMenuBar.png)
+![A screenshot of the top menu bar](./resources/images/topMenuBar.png)<757, 22>
 
 In this section, you can find the usual menus for creating and saving files, changing your view, [applying a new theme for the editor](./supported_languages.html), and switching between windows.
 

@@ -2,11 +2,11 @@
 
 After you have logged into Cloud9, you are placed into your account's dashboard. From here, you can edit your profile and manage workspaces you have access to.
 
-![An overview of the dashboard](./resources/images/theDashboard.png)
+![An overview of the dashboard](./resources/images/theDashboard.png)<901, 581>
 
 In the top-left corner of the dashboard, your username is displayed. Within the user context, you can view your user profile by clicking on **Your Account**:
 
-![A snippet of the user context](./resources/images/userContext.png)
+![A snippet of the user context](./resources/images/userContext.png)<853, 404>
 
 The user profile contains:
 
@@ -36,7 +36,7 @@ Clicking on the ![Project Add Icon](./resources/icons/workspacePlusIcon.png) nex
 * Create a new project
 * Clone from URL
 
-![Creating new projects](./resources/images/newWorkspace.png)
+![Creating new projects](./resources/images/newWorkspace.png)<249, 106>
 
 For more information on creating new workspaces, see [this section of the documentation](./creating_new_workspace.html).
 

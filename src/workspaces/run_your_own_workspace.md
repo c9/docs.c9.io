@@ -22,10 +22,10 @@ Tip: If you're behind a firewall, you can identify which IP address and port Clo
 Once you've got those requirements set up, here's how you can create an SSH workspace of your own:
 
 In the *Projects* tab on the Dashboard, click on the ![Project Add Icon](./resources/icons/workspacePlusIcon.png) next to **MY PROJECTS** and choose the option to **Create a new project** (see "[Creating a New Project](./creating_new_workspace.html)" if you need to review the steps to create a new project):  
-![New workspace creation](./resources/images/newWorkspace.png)
+![New workspace creation](./resources/images/newWorkspace.png)<249, 106>
 
 In the pop-up window that appears, select **SSH** for the project type:  
-![SSH Options](./resources/images/SSHoptions.png)
+![SSH Options](./resources/images/SSHoptions.png)<652, 512>
 
 
 You don't need to fill out every option provided by the dialog. Let's review what they are:
@@ -39,7 +39,7 @@ You don't need to fill out every option provided by the dialog. Let's review wha
 Warning: Be careful not to put an initial path that leaves you in a location where you don't have write privileges, as that could cause problems!
 
 Fill in your SSH details and click the **Login Test** to verify that the settings are correct. If the test succeeds, go ahead and click **Create** to create your SSH connection. You'll then see your project in the Dashboard under My Projects:
-![New SSH Project](./resources/images/newSshWorkspace.png)
+![New SSH Project](./resources/images/newSshWorkspace.png)<551, 75>
 
 When your new SSH is selected, you will see three buttons: **Start Editing**, **SSH settings**, and **Delete** (on the far right). **SSH settings** gives you access to the settings you just filled in, as well as the login test. This is useful to use in case your login credentials have changed.
 

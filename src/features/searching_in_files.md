@@ -39,4 +39,4 @@ Find in files offers some of the same search options as quicksearch:
 * {:wholeWordsSearch}
 
 One more feature of find in files is the ability to render search results either in the console or the IDE. You can fold results to keep them out of the way, or, edited the file if you're working down a list:  
-![Search in files, IDE results](./resources/images/searchinfiles_ide.png)
+![Search in files, IDE results](./resources/images/searchinfiles_ide.png)<532, 405>
