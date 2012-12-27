@@ -46,6 +46,10 @@ You can start mongodb by running the `mongod` script on your project root:<br/>
 `--bind_ip=$IP` (because you can't bind to 0.0.0.0)
 
 ## Drivers
+
+You should use the host `$IP` instead of `localhost` as your driver connection url.<br/>
+e.g. in Node, it is: `process.env.IP`
+
 MongoDB has drivers for all supported runtimes. Followig are the most commonly used drivers:
 
 ### Node.JS apps:
