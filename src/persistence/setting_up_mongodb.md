@@ -17,7 +17,6 @@ In addition, MongoDB has many scalability features such as:
 
 **Replication**, **Auto-sharding**, **Map/Reduce** and **GridFS**
 
-```
 MongoDB is preinstalled in your workspace. To run MongoDB, run the following below (passing the correct parameters to it). Mongodb data will be stored in the folder `data`.
 
 ```no-highlight
