@@ -17,23 +17,12 @@ In addition, MongoDB has many scalability features such as:
 
 **Replication**, **Auto-sharding**, **Map/Reduce** and **GridFS**
 
-## Installation
-
-Open the terminal and follow the following commands:
-
-```no-highlight
-$ cd ~/$C9_PID # cd to project root folder
-$ # Download mongodb source
-$ wget http://downloads.mongodb.org/linux/mongodb-linux-x86_64-2.0.4.tgz
-$ tar -zxvf mongodb-linux-x86_64-2.0.4.tgz # Extract it
-$ rm -rf mongodb-linux-x86_64-2.0.4.tgz # Remove the compressed source
 ```
-Now, we create a script to run mondodb (passing the correct parameters to it)
-mongodb data will be stored in the folder `data`
+MongoDB is preinstalled in your workspace. To run MongoDB, run the following below (passing the correct parameters to it). Mongodb data will be stored in the folder `data`.
 
 ```no-highlight
 $ mkdir data
-$ echo './mongodb-linux-x86_64-2.0.4/bin/mongod --bind_ip=$IP --dbpath=data --nojournal "$@"' > mongod
+$ echo 'mongod --bind_ip=$IP --dbpath=data --nojournal --rest "$@"' > mongod
 $ chmod a+x mongod
 ```
 
@@ -44,6 +33,7 @@ You can start mongodb by running the `mongod` script on your project root:<br/>
 `--dbpath=data` (because it defaults to /var/db which isn't accessible)<br/>
 `--nojournal` because mongodb usually pre-allocates 2 GB journal file (which exceeds Cloud9 disk space quota)<br/>
 `--bind_ip=$IP` (because you can't bind to 0.0.0.0)
+`--rest` runs on default port 28017
 
 ## Drivers
 
