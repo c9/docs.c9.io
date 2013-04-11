@@ -39,7 +39,7 @@ To exit sqlite, use the command: `.exit`.
 ## Drivers
 SQLite has drivers for all supported runtimes.
 
-Followig are the most commonly used drivers:
+Following are the most commonly used drivers:
 
 ### Node.JS apps
 
