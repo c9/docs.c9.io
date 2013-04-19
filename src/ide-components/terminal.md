@@ -4,10 +4,9 @@ The terminal provides you with a TTY interface for _direct access_ to the machin
 
 Warning: While certain operations, like `sudo`, are restricted, you **can** completely destroy your workspace, by doing something like `rm -rf`.  Use your power wisely!
 
-To create a new terminal, go to [[menu: View, Terminals, New Terminal]], or simply type [[keys: Alt-T]] on the keyboard. The terminal differs from [the console](./console.html) in several distinct ways, namely:
+To create a new terminal, go to [[menu: View, Terminals, New Terminal]], or simply type [[keys: Alt-T]] on the keyboard. The terminal has the following capabilities:
 
-* The terminal can perform all Unix commands, not just a subset
-* The terminal can't launch Cloud9 specific commands, like `nexttab` or `gotofile`
+* Perform all Unix commands
 * You can create more than one instance of a terminal (by just creating a new tab)
 * The terminal allows for path autocompletion by hitting [[keys: Tab]]
 
