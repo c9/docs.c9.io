@@ -21,13 +21,13 @@ Now, you can use the `heroku` command for your projects, as described in the [He
 
 ### Free and Premium Plans
 
-In [the console](./console.html), type the following:
+In [the Console](./console.html) or [a Terminal](./terminal.html), type the following:
 
 ```bash
 npm install azure
 ```
 
-Now, you can use the `azure` command from the console. For more information, read [the official `azure` documentation](https://github.com/WindowsAzure/azure-sdk-for-node).
+Now, you can use the `azure` command from the Console/Terminal. For more information, read [the official `azure` documentation](https://github.com/WindowsAzure/azure-sdk-for-node).
 
 ### Premium Plans
 
@@ -52,7 +52,7 @@ For free and premium plans, follow the instructions on the [azure-cmdlet-node](h
 
 ## CloudFoundry
 
-To deploy to CloudFoundry from the command line, type:
+To deploy to CloudFoundry from the command line in [the Console](./console.html) or [a Terminal](./terminal.html), type:
 
 ```
 cd ~
@@ -67,7 +67,7 @@ bundle
 
 ### Free and Premium Plans
 
-On the console, type:
+In the [the Console](./console.html) or [a Terminal](./terminal.html), type:
 
 ```bash
 npm install jitsu@0.7.x -g
@@ -83,4 +83,4 @@ Now, you can run `jitsu` from the command line. For more information, see [the o
 npm install jitsu@0.7.x -g
 ```
 
-You can now run `jitsu` from both the console and the terminal.
+You can now run `jitsu` from both the Console and the Terminal.

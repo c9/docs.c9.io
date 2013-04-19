@@ -87,7 +87,7 @@ Now it's time to push this platform to a hosted service. We'll be using Heroku a
 
 1. Click on the **Deploy** icon in the project bar, and click on the plus icon to add a new deployment target
 2. Select Heroku from the dropdown list, and enter your login credentials
-3. In the Cloud9 IDE console, enter the following commands:
+3. In a Cloud9 IDE terminal (e.g. in the Console on the bottom), enter the following commands:
 ```
 git remote add heroku git@heroku.com:APPNAME.git
 git add .
