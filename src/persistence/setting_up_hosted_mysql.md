@@ -49,7 +49,7 @@ offers hosted MySQL instances and have a free tier available for getting started
 1. Log into your account<br/>
 2. Create a new project (or use an existing one)<br/>
 3. Test the connection using the following script:<br/>
-```PHP
+```php
             <?php
             
             $database = new mysqli('instanceNo.db.xeround.com', 'username', 'password', 'databasename', 'port');
