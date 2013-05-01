@@ -1,6 +1,6 @@
 # Language Analysis
 
-For JavaScript files, Cloud9 provides analysis using a combination of [our own analysis tools](https://github.com/ajaxorg/treehugger), as well as [JSHint](http://www.jshint.com/about/) (specifically for Javascript code). Our language analysis can't detect if your program is correct, fast, or has memory leaks, but it **can** save you type by spotting things like undeclared variables, syntax errors, or other preventable typos.
+For JavaScript files, Cloud9 provides analysis using a combination of [our own analysis tools](https://github.com/ajaxorg/treehugger), as well as [JSHint](http://www.jshint.com/about/) (specifically for Javascript code). Our language analysis can't detect if your program is correct, fast, or has memory leaks, but it **can** save you time by spotting things like undeclared variables, syntax errors, or other preventable typos.
 
 When Cloud9 detects an issue with your code, an icon appears in the gutter for the offending lines of code. There are three types of identifiers available for your code:
 
