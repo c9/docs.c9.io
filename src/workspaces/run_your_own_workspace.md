@@ -34,7 +34,7 @@ You don't need to fill out every option provided by the dialog. Let's review wha
 * **Username**: your username for the SSH server.
 * **Node.js Binary Path**: the locaton of your Node.js binary. If you're not sure where it is, you can always let Cloud9 guess it for you. Otherwise, on your server, type `which node`, to see the full path
 * **Initial path**: this is an optional parameter. You can set it as an absolute (starts with `/`) path. Otherwise, it'll be set to a relative path, and Cloud9 assumes that you want to start from the folder your SSH server leaves you after login (usually the _home_ or _default_ folder).
-* **Port**: this is an optional parameter. Cloud9 will automatically try to connect on port 443
+* **Port**: this is an optional parameter. Cloud9 will automatically try to connect on port 22
 
 Warning: Be careful not to put an initial path that leaves you in a location where you don't have write privileges, as that could cause problems!
 
