@@ -2,16 +2,41 @@
 
 ## Installation
 
-Open the terminal and install redis using `c9pm` (Cloud9 Package Manager):
+Open the terminal and install redis using `nada-nix` (the new Cloud9 Package Manager):
 
 ```no-highlight
-$ c9pm install redis
+nada-nix install redis
 ```
 
-You can start redis by running the :<br/>
-`$ `
+Start the server:
+
+```no-highlight
+redis-server --port 16379 --bind $IP
+```
+
+Connect with the client:
+
+```no-highlight
+./redis-cli -h $IP -p 16379
+```
+
+## Persistent configuration
+
+If you want to have the configuration persistent, you just need to create the file and pass it as an argument to redis-server. Follow the instructions below.
+
+Retrieve your local IP address:
+
+```no-highlight
+echo $IP 
+```
+
+Change your redis.conf (it's best to set a port > 16000 because those are free to use, such as 16379):
+
+```no-highlight
+bind [YOUR $IP] 
+port 16379
+```
 
 ## Drivers
-Redis has drivers for all supported runtimes. Followig are the most commonly used drivers:
 
-### Node.JS apps:
+See http://redis.io/clients for drivers.
