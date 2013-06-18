@@ -27,7 +27,7 @@ If you want to have the configuration persistent, you just need to create the fi
 Create the configuration file (it's best to set a port > 16000 because those are free to use, such as 16379):
 
 ```no-highlight
-"bind $IP\nport 16379" > redis.conf
+echo "bind $IP\nport 16379" > redis.conf 
 ```
 
 Run the server with this config file:
