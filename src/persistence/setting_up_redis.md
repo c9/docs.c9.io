@@ -24,17 +24,16 @@ Connect with the client:
 
 If you want to have the configuration persistent, you just need to create the file and pass it as an argument to redis-server. Follow the instructions below.
 
-Retrieve your local IP address:
+Create the configuration file (it's best to set a port > 16000 because those are free to use, such as 16379):
 
 ```no-highlight
-echo $IP 
+"bind $IP\nport 16379" > redis.conf
 ```
 
-Change your redis.conf (it's best to set a port > 16000 because those are free to use, such as 16379):
+Run the server with this config file:
 
 ```no-highlight
-bind [YOUR $IP] 
-port 16379
+redis-server redis.conf
 ```
 
 ## Drivers
