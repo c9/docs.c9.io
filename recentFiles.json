@@ -1,1 +1,5 @@
+<<<<<<< HEAD
+[{"filename":"setting_up_redis","mtime":1371565203000,"pageTitle":"Redis"},{"filename":"setting_up_mysql","mtime":1368538787000,"pageTitle":"MySQL"},{"filename":"collaboration","mtime":1368175052000,"pageTitle":"Collaboration"},{"filename":"setting_up_hosted_mysql","mtime":1366726748000,"pageTitle":"MySQL"},{"filename":"deploying_via_cli","mtime":1366360445000,"pageTitle":"Deploying via the Comand Line"}]
+=======
 [{"filename":"run_your_own_workspace","mtime":1367585083000,"pageTitle":"Running Your Own SSH Workspace"},{"filename":"terminal","mtime":1367585012000,"pageTitle":"Terminal"},{"filename":"deploying_to_windows_azure_sites","mtime":1367585012000,"pageTitle":"Deploying to Windows Azure Sites"},{"filename":"deploying_via_cli","mtime":1367585012000,"pageTitle":"Deploying via the Comand Line"},{"filename":"autocompletion","mtime":1367585012000,"pageTitle":"Code Autocompletion"}]
+>>>>>>> origin/master
