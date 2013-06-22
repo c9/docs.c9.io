@@ -10,8 +10,8 @@ To deploy to Heroku, type the following commands:
 
 ```bash
 wget http://assets.heroku.com/heroku-client/heroku-client.tgz
-tar xzfv heroku-client
-cd heroku-client
+tar xzfv heroku-client.tgz
+cd heroku-client/bin
 PATH=$PATH:$PWD
 ```
 
