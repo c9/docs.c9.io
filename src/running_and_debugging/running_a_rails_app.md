@@ -28,9 +28,6 @@ development:
   adapter: mysql2
   encoding: utf8
   database: c9
-  username: <Cloud9 username $C9_USER>
-  host: <Cloud9 $IP>
+  username: <%=ENV['C9_USER']%>
+  host: <%=ENV['IP']%>
 ```
-
-To know your $IP value type in terminal:
-`echo $IP`
