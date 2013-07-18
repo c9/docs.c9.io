@@ -11,7 +11,7 @@ Note: We will download, extract and configure Wordpress for you.
 
 In order to run Wordpress, you need a database to host your posts, articles, etc.
 
-You can use MySQL with our utility script _**mysql-ctl**_ as explained in [MySQl Setup](./setting_up_mysql.html)
+You can use MySQL with our utility script _**mysql-ctl**_ as explained in [MySQL Setup](./setting_up_mysql.html)
 
 ### Running the website
 
