@@ -1,81 +1,46 @@
-# Supported Languages and Themes
+# Supported Languages
 
-<!-- video  -->
+Cloud9 IDE has varying levels of support for different programming languages. 
+Usually you will at least have Syntax Highlighting in the editor and the ability
+to run apps from the Terminal. 
 
-Cloud9 IDE develops and builds on [Ace](https://github.com/ajaxorg/ace), an editor for writing code online. Ace supports over two dozen different themes for highlighting your code, and any changes made to Ace are reflected back into Cloud9 IDE.
+### Syntax Highlighting
 
-You can change your current theme by going to [[menu: View, Themes]], and selecting from one of the many options. By hovering over the menu items, you'll be able to get a preview of the theme. To activate a theme you like, just click on its name.
+Cloud9 IDE develops and builds on [Ace](https://github.com/ajaxorg/ace), an 
+editor for writing code online. Cloud9's Ace editor currently supports 
+highlighting for about 100 programming languages, and any changes made to Ace are 
+reflected back into Cloud9 IDE. 
 
-The IDE contains the following themes:
+The list of supported languages is growing, and you can get the full list from 
+the [[menu: View, Syntax]] menu. [Feel free to create an issue in the Ace repository](http://ace.ajax.org/#nav=higlighter) 
+for new requests, or add your own syntax highlighting mode.
 
-<div markdown="1" style="-moz-column-count: 2; -moz-column-gap: 20px; -webkit-column-count: 2; -webkit-column-gap: 20px; column-count: 2; column-gap: 20px;">
-* Chrome
-* Clouds
-* Clouds Midnight
-* Cobalt
-* Crimson Editor
-* Dawn
-* Eclipse
-* Idle Fingers
-* Kr Theme
-* Merbivore
-* Merbivore Soft
-* Mono Industrial
-* Monokai
-* Pastel On Dark
-* Solarized Dark
-* Solarized Light
-* TextMate
-* Tomorrow
-* Tomorrow Night
-* Tomorrow Night Blue
-* Tomorrow Night Bright
-* Tomorrow Night Eighties
-* Twilight
-* Vibrant Ink
-</div>
+See [Syntax Highlighting & Themes](./syntax_highlighting_themes.html) for more 
+info.
 
-By default, files are highlighted based on their file extension. You can change this by going to [[menu: View, Syntax]], and selecting a different context. This forces a single file to use a different highlighter.
+### Language Intelligence
 
-We support highlighting for the following languages:
+Cloud9 IDE's editor has extensive support for JavaScript (Node.js) with Error 
+Highlighting and Code Completion. 
 
-<div markdown="1" style="-moz-column-count: 2; -moz-column-gap: 20px; -webkit-column-count: 2; -webkit-column-gap: 20px; column-count: 2; column-gap: 20px;">
-* CoffeeScript
-* ColdFusion
-* C#
+Live syntax error checks are also supported for the following languages:
 * CSS
-* Go
-* Groovy
-* haXe
-* HTML
-* C/C++
-* Clojure
-* Java
-* JavaScript
-* JSON
-* LaTeX
-* LESS
-* Liquid
-* Lua
-* Markdown
-* OCaml
-* Perl
-* pgSQL
+* CoffeeScript
 * PHP
-* Powershell
+* Python
+* JSON
+* Lua
+
+### Running apps
+
+The Run menu currently supports running the following languages by default:
+* JavaScript (Node.js)
 * Python
 * Ruby
-* OpenSCAD
-* Scala
-* SCSS
-* SH
-* SQL
-* SVG
-* Text
-* Textile
-* XML
-* XQuery
-* YAML
-</div>
+* PHP (using apache)
 
-We are always adding new themes and new languages to support, so check the menu often! Since we use Ace to provide syntax highlighting, [feel free to log an issue there](https://github.com/ajaxorg/ace/issues?labels=mode-request&page=1&state=open) for new requests.
+If you'd like to run another language, you can usually do so from the Terminal.
+Each workspace is a unix sandbox with the standard tools like `bash`, `make`, 
+`gcc`, `vim`, `java` SDK or `perl` installed. The terminal in Cloud9 is a full 
+`xterm` compatible terminal emulator and you can use this to compile and for 
+instance run your `C` programs.
