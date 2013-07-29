@@ -80,7 +80,7 @@ console. It's not your google password, never type that into a third party tool.
 Finally, do a `commit`, and a `push`:
 
 ```bash
-git commit -a -m ""
+git commit -a -m "First commit"
 git push appengine master
 ```
 

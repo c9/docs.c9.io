@@ -24,4 +24,6 @@ environments, such as:
 * [CloudFoundry](./deploying_via_cli.html#cloudfoundry)
 * [NodeJitsu](./deploying_via_cli.html#nodejitsu)
 
-Warning: Before you attempt to deploy your application, make sure that you have committed all your changes to version control. Cloud9 deploys for you whatever was last committed to version control.
+Warning: Before you attempt to deploy your application, make sure that you have 
+committed all your changes to version control. Cloud9 deploys for you whatever 
+was last committed to version control.
