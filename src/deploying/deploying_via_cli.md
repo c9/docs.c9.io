@@ -1,8 +1,13 @@
-# Deploying via the Comand Line
+# Deploying via the Command Line
 
-If deploying to servers using the IDE's graphical interface isn't your thing, you can also manually install various command-line tools into your workspace and deploy using the command line. It should go without saying that this is for super 31337 developers that aren't afraid of the command line.
+If deploying to servers using the IDE's graphical interface isn't your thing, 
+you can also manually install various command-line tools into your workspace and 
+deploy using the command line. It should go without saying that this is for 
+super 31337 developers that aren't afraid of the command line.
 
-Below is a list of some of the services we have tested and support deploying to. All the commands need to be executed in [the terminal](./terminal.html) unless stated otherwise.
+Below is a list of some of the services we have tested and support deploying to. 
+All the commands need to be executed in [the terminal](./terminal.html) unless 
+stated otherwise.
 
 ## Heroku
 
@@ -15,23 +20,26 @@ cd heroku-client/bin
 PATH=$PATH:$PWD
 ```
 
-Now, you can use the `heroku` command for your projects, as described in the [Heroku documentation](https://toolbelt.heroku.com/).
+Now, you can use the `heroku` command for your projects, as described in the 
+[Heroku documentation](https://toolbelt.heroku.com/).
 
 ## Windows Azure Web Sites
 
 ### Free and Premium Plans
 
-In [the Console](./console.html) or [a Terminal](./terminal.html), type the following:
+In [the Console](./console.html) or [a Terminal](./terminal.html), type the 
+following:
 
 ```bash
 npm install azure
 ```
 
-Now, you can use the `azure` command from the Console/Terminal. For more information, read [the official `azure` documentation](https://github.com/WindowsAzure/azure-sdk-for-node).
+Now, you can use the `azure` command from the Console/Terminal. For more 
+information, read [the official `azure` documentation](https://github.com/WindowsAzure/azure-sdk-for-node).
 
 ### Premium Plans
 
-To deploy to Azure sites from the command line, open the Terminal and type
+To deploy to Azure sites from the command line, open the Terminal and type:
 
 ```bash
 cd ~/lib/azure-sites
@@ -48,11 +56,38 @@ Now, you can use the `azure` command in the terminal.
 
 ## Windows Azure Cloud Services
 
-For free and premium plans, follow the instructions on the [azure-cmdlet-node](https://github.com/c9/azure-cmdlet-node) repository. This project is maintained by Cloud9.
+For free and premium plans, follow the instructions on the 
+[azure-cmdlet-node](https://github.com/c9/azure-cmdlet-node) repository. This 
+project is maintained by Cloud9.
+
+## Google App Engine
+First, setup Push to Deploy: Create a new App Engine application at 
+[cloud.google.com/console](http://cloud.google.com/console), and then enable 
+Push-to-Deploy under 'App Engine' in the Application Settings page. Leave this 
+tab open to note the URL for your repo.
+
+Secondly, configure Cloud9. Run the following commands (making sure to replace 
+your email address, auth-token, and repo-url):
+
+```bash
+echo "machine code.google.com login password" >> ~/.netrc
+git remote add appengine
+```
+
+Note: The password in this case is the auth-token generated from the admin 
+console. It's not your google password, never type that into a third party tool.
+
+Finally, do a `commit`, and a `push`:
+
+```bash
+git commit -a -m ""
+git push appengine master
+```
 
 ## CloudFoundry
 
-To deploy to CloudFoundry from the command line in [the Console](./console.html) or [a Terminal](./terminal.html), type:
+To deploy to CloudFoundry from the command line in [the Console](./console.html) 
+or [a Terminal](./terminal.html), type:
 
 ```
 cd ~
@@ -75,7 +110,8 @@ mkdir node_modules
 mv ../lib/node_modules/jitsu node_modules
 ```
 
-Now, you can run `jitsu` from the command line. For more information, see [the official `jitsu` documentation](https://github.com/nodejitsu/jitsu).
+Now, you can run `jitsu` from the command line. For more information, see 
+[the official `jitsu` documentation](https://github.com/nodejitsu/jitsu).
 
 ### Premium Plans
 
