@@ -1,15 +1,15 @@
-# Running Wordpress on Cloud9
+# Running WordPress on Cloud9
 
-Wordpress is web software you can use to create websites or blogs.
-You can develop and host Wordpress websites entirely on Cloud9 IDE
+WordPress is web software you can use to create websites or blogs.
+You can develop and host WordPress websites entirely on Cloud9 IDE
 
 ### Creating a wordpress workspace
 
-Create a Wordpress workspace from the Wordpress template on your Cloud9 dashboard
+Create a WordPress workspace from the WordPress template on your Cloud9 dashboard
 
-Note: We will download, extract and configure Wordpress for you.
+Note: We will download, extract and configure WordPress for you.
 
-In order to run Wordpress, you need a database to host your posts, articles, etc.
+In order to run WordPress, you need a database to host your posts, articles, etc.
 
 You can use MySQL with our utility script _**mysql-ctl**_ as explained in [MySQL Setup](./setting_up_mysql.html)
 
