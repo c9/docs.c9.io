@@ -26,6 +26,6 @@ Running Apache Process
 Tip: you can access long running processes, like a server, at 'http://php_hello.gjtorikian.c9.io'.
 ```
 
-Clicking on that link gets you to your PHP page. For a more in-depth workflow, see the article on [running Wordpress entirely on Cloud9](./running_wordpress_on_cloud9.html).
+Clicking on that link gets you to your PHP page. For a more in-depth workflow, see the article on [running WordPress entirely on Cloud9](./running_wordpress_on_cloud9.html).
 
 Note: Currently, you can't debug PHP applications, but we are working on adding this feature.
