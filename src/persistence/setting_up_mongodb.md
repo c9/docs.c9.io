@@ -45,3 +45,13 @@ MongoDB has drivers for all supported runtimes. Following are the most commonly 
 ### Node.JS apps
 **[Mongoose](https://github.com/LearnBoost/mongoose)**<br/>
 **[Node-Mongodb-Native](https://github.com/mongodb/node-mongodb-native)**
+
+## Shell Access
+
+To access a shell prompt for the above MongoDB run the following.
+
+```no-highlight
+$ mongo --host $IP
+```
+
+Check out [docs.mongodb.org](http://docs.mongodb.org/manual/reference/mongo-shell/) for details on how to use the shell
