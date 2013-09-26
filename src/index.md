@@ -10,7 +10,7 @@ If you're interested in troubleshooting specific aspects of the IDE, need help s
 
 ## Contact Us
 
-Remember: All of our documentation content is [open-sourced on GitHub](http://github.com/c9/cloud9ide-documentation), just like our amazing IDE.
+Remember: All of our documentation content is [open-sourced on GitHub](https://github.com/c9/docs.c9.io), just like our amazing IDE.
 
 See something that's not documented here? Send an e-mail to <a href="mailto:docs@c9.io">docs@c9.io</a> and we'll get it in.
 
