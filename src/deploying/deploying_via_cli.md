@@ -70,12 +70,14 @@ Secondly, configure Cloud9. Run the following commands (making sure to replace
 your email address, auth-token, and repo-url):
 
 ```bash
-echo "machine code.google.com login password" >> ~/.netrc
-git remote add appengine
+echo "machine code.google.com login EMAIL password PASSWORD" >> ~/.netrc
+git remote add appengine REPO
 ```
 
-Note: The password in this case is the auth-token generated from the admin 
-console. It's not your google password, never type that into a third party tool.
+Note: The email in this case is the mail address you use to login to your Google
+App Engine account and the password is the auth-token generated from the admin
+console, it is not your google password, never type that into a third party tool.
+'REPO' is the repository URL generated before.
 
 Finally, do a `commit`, and a `push`:
 
