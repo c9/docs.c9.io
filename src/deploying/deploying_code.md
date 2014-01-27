@@ -23,6 +23,7 @@ environments, such as:
 * [Google App Engine](./deploying_via_cli.html#google-app-engine)
 * [CloudFoundry](./deploying_via_cli.html#cloudfoundry)
 * [NodeJitsu](./deploying_via_cli.html#nodejitsu)
+* [Modulus](./deploying_via_cli.html#modulus)
 
 Warning: Before you attempt to deploy your application, make sure that you have 
 committed all your changes to version control. Cloud9 deploys for you whatever 
