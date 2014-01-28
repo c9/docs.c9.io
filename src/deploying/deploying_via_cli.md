@@ -122,3 +122,15 @@ npm install jitsu@0.7.x -g
 ```
 
 You can now run `jitsu` from both the Console and the Terminal.
+
+## Modulus
+
+In the [the Console](./console.html) or [a Terminal](./terminal.html), type:
+
+```bash
+npm install modulus -g
+```
+
+Now, you can run `modulus` from the command line. For more information, see 
+[the official `modulus` documentation](https://github.com/onmodulus/modulus-cli).
+
