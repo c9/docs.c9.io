@@ -31,5 +31,5 @@ To make the experience even smoother you can choose "Always merge by default" an
 Check out the video below to see this in action.
 
 <div class="video-container">
-<iframe width="560" height="315" src="http://www.youtube.com/embed/8sstjmj8P6E" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/8sstjmj8P6E" frameborder="0" allowfullscreen></iframe>
 </div>
