@@ -88,33 +88,18 @@ git push appengine master
 
 ## OpenShift
 
-To deploy to CloudFoundry from the command line in [the Console](./console.html) 
-or [a Terminal](./terminal.html), type:
-
-Install rhc:
 ```
+# Install rhc:
 gem install rhc
-```
-
-Setup rhc:
-```
 rhc setup
-```
 
-After this you can use rhc to manage your account:
+# After this you can use rhc to manage your account:
 
-list apps:
-```
+# list apps:
 rhc apps
-```
-
-To show what you can do with apps do:
-```
+# To show what you can do with apps do:
 rhc app help
-```
-
-You deploy via a git push
-```
+# You deploy via a git push
 git push <giturl> master
 ```
 
