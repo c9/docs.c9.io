@@ -86,6 +86,38 @@ git commit -a -m "First commit"
 git push appengine master
 ```
 
+## OpenShift
+
+To deploy to CloudFoundry from the command line in [the Console](./console.html) 
+or [a Terminal](./terminal.html), type:
+
+Install rhc:
+```
+gem install rhc
+```
+
+Setup rhc:
+```
+rhc setup
+```
+
+After this you can use rhc to manage your account:
+
+list apps:
+```
+rhc apps
+```
+
+To show what you can do with apps do:
+```
+rhc app help
+```
+
+You deploy via a git push
+```
+git push <giturl> master
+```
+
 ## CloudFoundry
 
 To deploy to CloudFoundry from the command line in [the Console](./console.html) 
