@@ -1,11 +1,18 @@
 # Creating a New Workspace
+Cloud9 supports three types of workspaces:
+1. Hosted
+2. FTP
+3. SSH
 
-There are various choices to be made when creating a new workspace in Cloud9 IDE. In this article, we'll walk you through the creation of a new workspace and describe the choices you encounter.
+In this article, we'll walk you through the creation of a new workspace and describe the choices you encounter.
 
-The first step for creating a new workspace is to click on the ![Workspace Add Icon](./resources/icons/workspacePlusIcon.png) next to **MY PROJECTS**  in the Workspaces tab:
+The first step for creating a new workspace is click the "CREATE NEW WORKSPACE" button in your Dashboard: 
+
 ![New workspace creation](./resources/images/newWorkspace.png)<249, 106>
 
 At this point, you'll encounter two choices: **Create a new workspace** and **Clone from URL**. Here's what they mean:
+* **Create a New Workspace** allows you to create any of the previously mentioned types of workspaces (hosted, FTP, or SSH).
+* ** Clone from URL** allows you to instantly create a workspace from a repository, like GitHub or Bitbucket, using its URL. We'll explain more about this in the section below.
 
 ## Create a New Workspace
 
@@ -13,11 +20,13 @@ After clicking on **Create a new workspace**, you're taken to the screen below:
 
 ![Options for creating a new workspace](./resources/images/createNewWorkspaceOptions.png)<651, 151>
 
-Enter a workspace name. Depending on whether you have a free of premium account, you'll have several choices for the types of workspace you can create:
+First, let's enter a workspace name.
+Depending on whether you have a Free of Premium account, you can choose to make it either Public (open to anyone with the URL), or Private (only accessible to you and people you share it with).
 
-* **Git workspace** allows you to run `git` commands from the console and push your changes to [a GitHub repo](./setting_up_github_workspace.html) or [a Bitbucket git repo](./setting_up_bitbucket_workspace.html).
-* **Mercurial** allows you to run `hg` commands form the console and push your changes to [a Mercurial Bitbucket repo](./setting_up_bitbucket_workspace.html)
-* **FTP** allows you to [upload your files directly to an FTP server](./ftp_workspaces.html) you have access to
+After this, choose the type of workspace you want to create:
+
+* **Hosted**: This is a regular Cloud9 workspace, powered by a full Ubuntu environment. You even have `sudo` powers! This is the best choice for most people, and we've included some more info about it below.
+* **FTP** allows you to [upload your files directly to an FTP server](./ftp_workspaces.html) that you have access to
 * **SSH**, also called the "bring your own server" feature, lets you [log into a server you own](./run_your_own_workspace.html) and run Cloud9 from there
 
 Make a choice for the type of workspace and press **Create**. That's it! You can now see your new workspace in the dashboard:
@@ -26,11 +35,20 @@ Make a choice for the type of workspace and press **Create**. That's it! You can
 
 Now, just click **Start Editing** to get started!
 
+### Hosted workspaces
+Choose this workspace type to start from scratch with a 'Custom' workspace, or simply pick a pre-configured environment like Node.js, WordPress, or Python/Django, and immediately start developing your app.
+This way you don't need to spend valuable development time on system setup and maintenance, as we maintain it, and you control it. 
+
+![Options for creating a hosted workspace](./resources/images/createHostedWorkspace.png)<647, 375>
+
+As it's powered by a full Linux Ubuntu environment, hosted workspaces allow you to install any package (`sudo apt-get install package`), run `git` commands from the console to push your changes to [a GitHub repo](./setting_up_github_workspace.html) or [a Bitbucket git repo](./setting_up_bitbucket_workspace.html), etcetera.
+
 ## Cloning from a URL
 
 The second option for creating a new workspace is to clone one from URL. The URL would be, for example, the URL of a GitHub workspace.
 
-In fact, let's clone a workspace. When you click on **Clone from URL**, you're taken to this screen:  
+In fact, let's clone a workspace. When you click on **Clone from URL**, you're taken to this screen:
+
 ![Options for cloning a workspace](./resources/images/cloneWorkspaceOptions.png)<650, 105>
 
 Paste the following GitHub URL in the textbox labeled **Source URL**: https://github.com/mattpardee/geekdots 
