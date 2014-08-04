@@ -8,7 +8,24 @@
       ul#nav
         li.nav-section
           .nav-section-header
-            a(href='https://www.youtube.com/user/c9ide/videos?flow=grid&view=1', target='_blank') Video Tutorials
+            a(href='index.html') Home
+        // li.nav-section
+        //   .nav-section-header
+        //     a(href='https://www.youtube.com/user/c9ide/videos?flow=grid&view=1', target='_blank') Video Tutorials
+        li.nav-section
+          .nav-section-header
+            a(href='javascript:void(0)') Getting Started
+            i.icon-chevron-down.tocNavArrow
+            i.icon-chevron-up.tocNavArrow
+          ul
+            li.nav-submenu-item
+              a(href='create_a_workspace.html') Create a workspace
+            li.nav-submenu-item
+              a(href='run_an_application.html') Run an application
+            li.nav-submenu-item
+              a(href='setup_a_database.html') Set up a database
+            // li.nav-submenu-item
+            //   a(href='share_a_workspace.html') Share a workspace
         li.nav-section
           .nav-section-header
             a(href='javascript:void(0)') Features
@@ -141,13 +158,41 @@
             i.icon-chevron-down.tocNavArrow
             i.icon-chevron-up.tocNavArrow
           ul
-            li.nav-submenu-item
-              a(href='deploying_code.html') Deploying Your Code
-            li.nav-submenu-item
-              a(href='deploying_to_heroku.html') Deploying to Heroku
-            li.nav-submenu-item
-              a(href='deploying_to_windows_azure_sites.html') Deploying to Windows Azure Sites
+            // li.nav-submenu-item
+            //   a(href='deploying_code.html') Deploying Your Code
+            // li.nav-submenu-item
+            //   a(href='deploying_to_heroku.html') Deploying to Heroku
+            // li.nav-submenu-item
+            //   a(href='deploying_to_windows_azure_sites.html') Deploying to Windows Azure Sites
             li.nav-submenu-item
               a(href='deploying_via_cli.html') Deploying via the Command Line
+        li.nav-section
+          .nav-section-header
+            a(href='javascript:void(0)') Popular Frameworks
+            i.icon-chevron-down.tocNavArrow
+            i.icon-chevron-up.tocNavArrow
+          ul
+            li.nav-submenu-item
+              a(href='frameworks_laravel.html') Laravel
+            li.nav-submenu-item
+              a(href='frameworks_meteor.html') Meteor
+            li.nav-submenu-item
+              a(href='frameworks_drupal.html') Drupal
+            li.nav-submenu-item
+              a(href='frameworks_angularjs.html') AngularJS
+        li.nav-section
+          .nav-section-header
+            a(href='javascript:void(0)') FAQ
+            i.icon-chevron-down.tocNavArrow
+            i.icon-chevron-up.tocNavArrow
+          ul
+            li.nav-submenu-item
+              a(href='faq_general.html') General
+            li.nav-submenu-item
+              a(href='faq_php.html') PHP
+            li.nav-submenu-item
+              a(href='faq_python.html') Python
+            li.nav-submenu-item
+              a(href='faq_ssh.html') SSH workspaces
 
         div.alert.alert-info We're <a href="https://www.github.com/c9/docs.c9.io">open source</a>! Feel free to pull and contribute.
