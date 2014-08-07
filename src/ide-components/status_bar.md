@@ -1,5 +1,7 @@
 # Status Bar
 
+Note: this feature is deprecated
+
 The status bar is designed to provide you with all sorts of information about your code--and additional functionality--without getting in the way of the IDE. It's quite tiny, and quite powerful, like a weight-lifting squirrel.
 
 You can find the status bar in the lower-right corner of the editor: ![The status bar in its natural, shortened state](./resources/icons/statusBarCollapsed.png). Keep in mind that the status bar is transparent, so it's able to camoflauge well with light or dark themes.

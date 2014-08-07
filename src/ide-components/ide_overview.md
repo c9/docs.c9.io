@@ -1,5 +1,7 @@
 # IDE Overview
 
+Note: this article is outdated, a new version will follow soon
+
 Cloud9 IDE can be thought of as being divided into the following components:
 
 ![IDE Components](./resources/images/editorNaming.png)<1106, 803>

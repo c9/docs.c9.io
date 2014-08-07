@@ -70,3 +70,17 @@ Note:
 MySQL socket file can be found in ~/lib/mysql/socket/mysql.sock
 
 Of course this is just the beginning. We have for example plans to add a management UI to start and stop databases or pre-installing tools like phpMyAdmin. However, we don't want to make you wait for the fully integrated feature while we already have something that is enabling a lot of use cases and still super easy to use.
+
+<!--
+
+Using PHPMyAdmin
+
+PHPMyAdmin comes preinstalled on Cloud9 workspaces. You can run it in a similar fashion to how you would run it locally.
+
+First, set up a new site entry in the Apache configuration:
+
+````bash
+ln -s /etc/phpmyadmin/apache.conf /etc/apache2/sites-enabled/phpmyadmin.conf
+````
+
+-->

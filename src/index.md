@@ -12,6 +12,7 @@ For instance, read up on how to:
 * [Create a workspace](create_a_workspace.html)
 * [Run an application](run_an_application.html)
 * [Set up a database](setup_a_database.html) 
+* [Share a workspace](share_a_workspace.html) 
 
 ## Getting More Help
 
@@ -23,12 +24,12 @@ Remember: All of our documentation content is [open-sourced on GitHub](https://g
 
 See something that's not documented here? Simply add it to the documentation with a Pull Request, or send an e-mail to <a href="mailto:docs@c9.io">docs@c9.io</a>, and we'll get it in.
 
-## Recently Updated Topics
+<!--## Recently Updated Topics-->
 
-Here's a list of the last five recently updated topics:
+<!--Here's a list of the last five recently updated topics:-->
 
-* %placeholder1%
-* %placeholder2%
-* %placeholder3%
-* %placeholder4%
-* %placeholder5%
+<!--* %placeholder1%-->
+<!--* %placeholder2%-->
+<!--* %placeholder3%-->
+<!--* %placeholder4%-->
+<!--* %placeholder5%-->

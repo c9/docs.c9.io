@@ -1,5 +1,7 @@
 # Color Picker
 
+Note: this feature is deprecated
+
 <div class="video-container">
 <iframe width="640" height="480" src="https://www.youtube.com/embed/T0FAFF6fQi4" frameborder="0" allowfullscreen></iframe>
 </div>

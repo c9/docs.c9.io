@@ -1,5 +1,7 @@
 # The Console
 
+Note: this feature is deprecated
+
 The Console is at the bottom of the IDE. It's where you can enter command line input, view output from your program, and push and pull your files between your code repositories. 
 
 Note: The Console contains [a full-fledged terminal](./terminal.html), which provides you with a TTY interface for _direct access_ to the machine that Cloud9 is running on.

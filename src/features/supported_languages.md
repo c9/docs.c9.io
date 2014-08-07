@@ -18,29 +18,35 @@ for new requests, or add your own syntax highlighting mode.
 See [Syntax Highlighting & Themes](./syntax_highlighting_themes.html) for more 
 info.
 
-### Language Intelligence
+<!--### Language Intelligence-->
 
-Cloud9 IDE's editor has extensive support for JavaScript (Node.js) with Error 
-Highlighting and Code Completion. 
+<!--Cloud9 IDE's editor has extensive support for JavaScript (Node.js) with Error -->
+<!--Highlighting and Code Completion. -->
 
-Live syntax error checks are also supported for the following languages:
-* CSS
-* CoffeeScript
-* PHP
-* Python
-* JSON
-* Lua
+<!--Live syntax error checks are also supported for the following languages:-->
+<!--* CSS-->
+<!--* CoffeeScript-->
+<!--* PHP-->
+<!--* Python-->
+<!--* JSON-->
+<!--* Lua-->
 
 ### Running apps
 
-The Run menu currently supports running the following languages by default:
-* JavaScript (Node.js)
+The Run panel currently supports running the following by default:
+* Apache httpd (PHP, HTML)
+* Node
 * Python
 * Ruby
-* PHP (using apache)
+* Ruby on Rails
+* Go
+* CoffeeScript
+* Julia
+* Mocha
+* Shell script
 
-If you'd like to run another language, you can usually do so from the Terminal.
-Each workspace is a unix sandbox with the standard tools like `bash`, `make`, 
-`gcc`, `vim`, `java` SDK or `perl` installed. The terminal in Cloud9 is a full 
-`xterm` compatible terminal emulator and you can use this to compile and for 
-instance run your `C` programs.
+If you'd like to run any other language, simply create a new "Runner".
+
+You can also do so from the Terminal. 
+Each workspace is an Ubuntu VM with the standard tools like `bash`, `make`, 
+`gcc`, `vim`, `java` SDK or `perl` pre-installed.

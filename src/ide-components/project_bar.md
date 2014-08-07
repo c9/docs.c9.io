@@ -1,5 +1,7 @@
 # The Project Bar
 
+Note: this article is outdated, a new version will follow soon
+
 The project bar is located towards the left of the Cloud9 IDE: ![The Project Bar](./resources/images/project_bar.png)<197, 26>
 
 The buttons in the project bar allow you to reveal and hide panels for the IDE. In more detail:

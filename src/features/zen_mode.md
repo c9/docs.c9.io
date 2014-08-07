@@ -1,5 +1,7 @@
 # Activating Zen Mode
 
+Note: this feature is deprecated
+
 <div class="video-container">
 <iframe width="640" height="360" src="https://www.youtube.com/embed/8MfQrfiZ70A" frameborder="0" allowfullscreen></iframe>
 </div>

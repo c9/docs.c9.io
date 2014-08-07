@@ -1,5 +1,7 @@
 # Git Blame
 
+Note: this feature is deprecated
+
 <div class="video-container">
 <iframe width="640" height="360" src="https://www.youtube.com/embed/RSXaAlBgQ2s" frameborder="0" allowfullscreen></iframe>
 </div>

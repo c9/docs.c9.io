@@ -1,5 +1,7 @@
 # Using Goto File and Goto Definition
 
+Note: this article is outdated, a new version will follow soon
+
 <div class="video-container">
 <iframe width="640" height="360" src="https://www.youtube.com/embed/U5823J0kYLE" frameborder="0" allowfullscreen></iframe>
 </div>

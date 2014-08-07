@@ -1,5 +1,7 @@
 # IDE Preferences
 
+Note: this article is outdated, a new version will follow soon
+
 There are many different ways to configure the IDE. Below is a list of the options available, and what they do.
 
 Note: All of these options are on a per-project basis. Changing them in one project does not affect any another.

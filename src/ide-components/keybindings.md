@@ -1,5 +1,7 @@
 # Commands and Keybindings
 
+Note: this article is outdated, a new version will follow soon
+
 Nearly every action in Cloud9 has a corresponding command associated with it. On top of that, every command also has a keybinding that can be used to effortlessly execute the command.
 
 Below is a list of every single command and keybinding used by Cloud9. Have fun being efficient!
