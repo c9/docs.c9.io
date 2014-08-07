@@ -41,7 +41,7 @@ You can also test it using our tool from the Terminal:
 
 
 ## MongoDB
-From the terminal, run the following command:
+From the Terminal, run the following command:
 
     $ mongod --bind_ip=$IP --nojournal
 
@@ -50,11 +50,11 @@ The output will include:
     ...
     waiting for connections on port 27017
 
-Now you can open the mongo shell in a new terminal, running following command:
+Now you can open the mongo shell in a new Terminal, running following command:
 
     $ mongo
 
-To stop the MongoDB instance press `Control+C` in the terminal where `mongod` is running.
+To stop the MongoDB instance press `Control+C` in the Terminal where `mongod` is running.
 Now have a look at the currently used database:
 
     $ mongo
