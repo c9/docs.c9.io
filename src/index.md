@@ -24,12 +24,12 @@ Remember: All of our documentation content is [open-sourced on GitHub](https://g
 
 See something that's not documented here? Simply add it to the documentation with a Pull Request, or send an e-mail to <a href="mailto:docs@c9.io">docs@c9.io</a>, and we'll get it in.
 
-## Recently Updated Topics
+<!--## Recently Updated Topics-->
 
-Here's a list of the last five recently updated topics:
+<!--Here's a list of the last five recently updated topics:-->
 
-* %placeholder1%
-* %placeholder2%
-* %placeholder3%
-* %placeholder4%
-* %placeholder5%
+<!--* %placeholder1%-->
+<!--* %placeholder2%-->
+<!--* %placeholder3%-->
+<!--* %placeholder4%-->
+<!--* %placeholder5%-->

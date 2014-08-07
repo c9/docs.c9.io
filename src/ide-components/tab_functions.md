@@ -1,6 +1,6 @@
-Note: this article is outdated, a new version will follow soon
-
 # Tab Functions
+
+Note: this article is outdated, a new version will follow soon
 
 Cloud9 IDE offers advanced tab features to make working with multiple files easy. By right-clicking on any tab, you'll open up the tab context menu:
 

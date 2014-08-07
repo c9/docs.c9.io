@@ -1,6 +1,6 @@
-Note: this feature is deprecated
-
 # The Console
+
+Note: this feature is deprecated
 
 The Console is at the bottom of the IDE. It's where you can enter command line input, view output from your program, and push and pull your files between your code repositories. 
 

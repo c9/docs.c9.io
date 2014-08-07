@@ -1,6 +1,6 @@
-Note: this article is outdated, a new version will follow soon
-
 # IDE Preferences
+
+Note: this article is outdated, a new version will follow soon
 
 There are many different ways to configure the IDE. Below is a list of the options available, and what they do.
 

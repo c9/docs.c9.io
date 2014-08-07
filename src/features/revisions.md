@@ -1,6 +1,6 @@
-Note: this article is outdated, a new version will follow soon
-
 # Revisions
+
+Note: this article is outdated, a new version will follow soon
 
 <div class="video-container">
 <iframe width="640" height="360" src="https://www.youtube.com/embed/Or3byuEf-zE" frameborder="0" allowfullscreen></iframe>

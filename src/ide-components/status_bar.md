@@ -1,6 +1,6 @@
-Note: this feature is deprecated
-
 # Status Bar
+
+Note: this feature is deprecated
 
 The status bar is designed to provide you with all sorts of information about your code--and additional functionality--without getting in the way of the IDE. It's quite tiny, and quite powerful, like a weight-lifting squirrel.
 
