@@ -37,7 +37,7 @@ The IDE contains the following themes:
 
 By default, files are highlighted based on their file extension. You can change this by going to [[menu: View, Syntax]], and selecting a different context. This forces a single file to use a different highlighter.
 
-We support highlighting for the following languages:
+We support highlighting for at least the following languages, and many more:
 
 <div markdown="1" style="-moz-column-count: 2; -moz-column-gap: 20px; -webkit-column-count: 2; -webkit-column-gap: 20px; column-count: 2; column-gap: 20px;">
 * CoffeeScript

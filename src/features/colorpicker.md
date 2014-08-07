@@ -1,3 +1,5 @@
+Note: this feature is deprecated
+
 # Color Picker
 
 <div class="video-container">

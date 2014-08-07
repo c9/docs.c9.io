@@ -1,3 +1,5 @@
+Note: this article is outdated, a new version will follow soon
+
 # Revisions
 
 <div class="video-container">

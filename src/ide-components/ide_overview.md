@@ -1,3 +1,5 @@
+Note: this article is outdated, a new version will follow soon
+
 # IDE Overview
 
 Cloud9 IDE can be thought of as being divided into the following components:

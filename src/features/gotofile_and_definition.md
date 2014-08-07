@@ -1,3 +1,5 @@
+Note: this article is outdated, a new version will follow soon
+
 # Using Goto File and Goto Definition
 
 <div class="video-container">

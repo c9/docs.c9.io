@@ -1,3 +1,5 @@
+Note: this feature is deprecated
+
 # Activating Zen Mode
 
 <div class="video-container">

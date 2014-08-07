@@ -1,3 +1,5 @@
+Note: this feature is deprecated
+
 # Git Blame
 
 <div class="video-container">

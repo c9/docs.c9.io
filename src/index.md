@@ -12,6 +12,7 @@ For instance, read up on how to:
 * [Create a workspace](create_a_workspace.html)
 * [Run an application](run_an_application.html)
 * [Set up a database](setup_a_database.html) 
+* [Share a workspace](share_a_workspace.html) 
 
 ## Getting More Help
 

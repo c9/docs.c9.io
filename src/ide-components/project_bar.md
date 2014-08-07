@@ -1,3 +1,5 @@
+Note: this article is outdated, a new version will follow soon
+
 # The Project Bar
 
 The project bar is located towards the left of the Cloud9 IDE: ![The Project Bar](./resources/images/project_bar.png)<197, 26>

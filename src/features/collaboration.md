@@ -1,3 +1,5 @@
+Note: this article is outdated, a new version will follow soon
+
 # Collaboration
 
 Collaboration with Cloud9 IDE is an amazing feature that lets you do more than just share your projects with any other Cloud9 developer. You can grant someone else access to change files in your workspace, in realtime--or just let them view the workspace without any other rights. While you're collaborating, you can discuss the code through a built-in chat room.

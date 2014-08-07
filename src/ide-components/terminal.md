@@ -1,3 +1,5 @@
+Note: this article is outdated, a new version will follow soon
+
 # Terminal
 
 The terminal provides you with a TTY interface for _direct access_ to the machine that Cloud9 is running on. If you're [running your own workspace](./run_your_own_workspace.html), this is the server you've SSH'ed into. If you're using the hosted Cloud9 platform, this is the server your code runs on. 
