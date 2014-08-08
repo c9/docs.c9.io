@@ -25,7 +25,11 @@ Filling these textboxes out creates a Run Configuration.
 * Command: the command you want to run; this is usually the location of your running file in your project, but it also allows you to provide any additional command line arguments you want to pass to your app
 * Runner: defines how you want your code to be run. A wide range of Runners is available by default, from Apache to Node.js and Shell scripts, and you can define your own.
 * CWD: Set the current working directory to start from
-* Environment: Set environment variables
+* Environment: Set environment variables 
+* 
+
+
+Tip: If you can't find the Runner you need from the default set, you can [create your own custom Runner](./custom_runners.html).
 
 For some default runners like Node.js, it's an option to Run in debug mode, which indicates that you want to run the current code through the debugger. 
 This will reveal (or collapse) the debugging tools panel described in [Running and Debugging your code](./running_and_debugging_code.html).

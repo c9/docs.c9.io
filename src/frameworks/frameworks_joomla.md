@@ -7,11 +7,12 @@ Note: all instructions here are based on Joomla v3.x.
 
 ## Download Joomla
 
-1. Download Joomla from the [Joomla website](http://www.joomla.org/)
-2. [Create a Cloud9 workspace](./create_a_workspace.html) of type "Custom" or "PHP"
-2. Unzip and upload all the files to your workspaces, or just upload the zip file and unzip it from the Terminal
+1. [Create a Cloud9 workspace](./create_a_workspace.html) of type "Custom" or "PHP"
+2. Download and Unzip Joomla from the Terminal. You can find the latest version on the [Joomla website](http://www.joomla.org/)
         
-        unzip joomla.zip
+        wget http://joomlacode.org/gf/download/frsrelease/19665/160049/Joomla_3.3.3-Stable-Full_Package.zip
+        unzip Joomla*.zip
+        rm Joomla*.zip
 
 ## Start the database
 Joomla requires a MySQL database to connect to. MySQL is pre-installed in your workspace, so just execute these commands:
