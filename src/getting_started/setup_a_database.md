@@ -40,7 +40,23 @@ You can also test it using our tool from the Terminal:
     4 rows in set (0.15 sec)
 
 
-<!--## MongoDB-->
-<!--TODO-->
+## MongoDB
+From the Terminal, run the following command:
 
-<!--The $IP variable is intended to use to start a process that wants to be connected to the outside world. To connect to mongodb you can use "localhost".-->
+    $ mongod --bind_ip=$IP --nojournal
+
+The output will include:
+
+    ...
+    waiting for connections on port 27017
+
+Now you can open the mongo shell in a new Terminal, running following command:
+
+    $ mongo
+
+To stop the MongoDB instance press `Control+C` in the Terminal where `mongod` is running.
+Now have a look at the currently used database:
+
+    $ mongo
+    mongo> db
+    test
