@@ -4,7 +4,7 @@
 Create a Ionic app as follows:
 
 1. Create a new workspace (Node.js or Custom for a clean workspace)
-2. Open a Terminal, or using the pre-existing one at the bottom
+2. Open a Terminal, or use the pre-existing one at the bottom
 3. Run the following commands in the Terminal:
 
         $ npm install -g cordova ionic
