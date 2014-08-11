@@ -12,4 +12,4 @@ Create a Ionic app as follows:
         $ cd myApp
         $ ionic serve $PORT
     
-4. Click the Preview button in the top menu in the IDE, and choose "Preview with Web Server". This will open the Preview window for your running app.
+4. Click the "Preview" button in the top menu in the IDE, and choose "Preview with Web Server". This will open the Preview window for your running app.
