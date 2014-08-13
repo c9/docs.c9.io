@@ -10,17 +10,12 @@ All the commands need to be executed in [the terminal](./terminal.html) unless s
 
 ## Heroku
 
-To deploy to Heroku, type the following commands:
-
-```bash
-wget http://assets.heroku.com/heroku-client/heroku-client.tgz
-tar xzfv heroku-client.tgz
-cd heroku-client/bin
-PATH=$PATH:$PWD
-```
+Heroku's `toolbelt` is installed by default in new VMs.
 
 Now, you can use the `heroku` command for your projects, as described in the 
 [Heroku documentation](https://toolbelt.heroku.com/).
+
+If deploying to Heroku, you should probably be using a local instance of PostgresQL, or you may run into problems caused by different database interpretations of SQL.
 
 ## Windows Azure Web Sites
 
