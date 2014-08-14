@@ -6,6 +6,6 @@ Just make a new workspace, choose PHP, go to the Terminal, and execute the follo
     composer create-project laravel/laravel . --prefer-dist
 
 Run the project with the "Run Project" button in the menu bar on top of the IDE.
-If you click the URL that appears in the Run panel below (in the shape of 'https://laravel-c9-username.c9.io/'), you can browse to the directory 'project_name/public' to preview your new Laravel app.
+If you click the URL that appears in the Run panel below (in the shape of 'https://laravel-c9-username.c9.io/'), you can preview your new Laravel app.
 
 ![Run Panel](./resources/images/laravelWorkspaceRunning.png)<960, 640>
