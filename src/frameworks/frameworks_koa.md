@@ -9,13 +9,7 @@ By default Cloud9 runs Node v0.10.x or v0.8.x, depending on your setup, so we fi
 
 Open a Terminal, or using the pre-existing one at the bottom and execute the following in your Terminal:
 
-    nvm install 0.11
-
-<!--After this we still have to tell the current workspace to use Node 0.11:-->
-
-<!--    nvm use v0.11.x-->
-    
-<!--Note: replace x with the patch number that is shown while running the previous command.-->
+    nvm use 0.11
 
 Next, we need to install Koa itself:
 
