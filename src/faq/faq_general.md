@@ -28,3 +28,14 @@ Alternatively, try `du-c9` for seeing all files you added to your workspace and 
 
 ### I can't preview my running app. 
 Try using port 8080 instead, which often solves this case.
+
+### How can I upload local files to my project?
+
+Either use drag a local file directly from your desktop into the Cloud9 file tree,
+or use the "File > Upload Local Files" menu item.
+
+## How can I download my project files?
+
+Use "File > Download project". Currently, this will give you a .tar.gz file, which
+ensures maximum portability. To open these files, you can use something like
+[WinRAR](http://www.rarlab.com/) or [7-zip](http://www.7-zip.org/).
