@@ -11,7 +11,7 @@ To run a rails application:
 
 That's it! Your rails app will now be running.
 
-Note: http://<workspacename>.<username>.c9.io should be running your application.
+Note: http://<workspacename>-c9-<username>.c9.io should be running your application.
 
 Do **not** try to access the project through the IP address and port number rails returns to you--it won't work! 
 
