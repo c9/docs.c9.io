@@ -5,17 +5,11 @@ To get started with a Koa app, first create a workspace and choose either the No
 
 Koa.Js makes use of the new generator feature in javascript ECMA 6. 
 This feature is support in Node from 0.11 and up by toggling the <code>--harmony</code> flag. 
-By default Cloud9 runs Node v0.10.x or v0.8.x, depending on your setup, so we first need to install Node version 0.11.x.
+By default Cloud9 runs Node v0.10.x or v0.8.x, depending on your setup, so we first need activate Node version 0.11.x.
 
 Open a Terminal, or using the pre-existing one at the bottom and execute the following in your Terminal:
 
-    nvm install 0.11
-
-<!--After this we still have to tell the current workspace to use Node 0.11:-->
-
-<!--    nvm use v0.11.x-->
-    
-<!--Note: replace x with the patch number that is shown while running the previous command.-->
+    nvm use 0.11
 
 Next, we need to install Koa itself:
 
