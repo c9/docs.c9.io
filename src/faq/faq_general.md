@@ -31,7 +31,7 @@ Try using port 8080 instead, which often solves this case.
 
 ### How can I upload local files to my project?
 
-Either use drag a local file directly from your desktop into the Cloud9 file tree,
+Either drag a local file directly from your desktop into the Cloud9 file tree,
 or use the "File > Upload Local Files" menu item.
 
 ## How can I download my project files?
