@@ -11,16 +11,22 @@
 		
 3. Set a valid PHP timezone
 
-		sudo echo date.timezone = UTC >> /etc/php5/apache2/php.ini
+		echo 'date.timezone = UTC' | sudo tee --append /etc/php5/apache2/php.ini
+		
 4. Starting MySQL-Server
 
+		sudo mysql-ctl install
 		sudo mysql-ctl start
+		
 		
 # Create a Symfony-Project
 Open your Terminal and execute the following to create a new Symfony-Project
+You need the first line only if you used the PHP Project type for your workspace.
 
-		rm -rf * .c9
-		composer create-project symfony/framework-standard-edition path/ "2.5.*"
+		rm README.md php.ini hello-world.php
+		composer create-project symfony/framework-standard-edition symfony/ "2.5.*"
+		mv symfony/{*,.*} ./ 
+		rm -rf symfony
 
 The create-project composer command will ask for a few parameters, the only one you need to pay special attention is the database-host parameter. 
 
