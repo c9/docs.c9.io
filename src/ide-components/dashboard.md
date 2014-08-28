@@ -14,10 +14,8 @@ The user profile contains:
 * Your add-on services, which you've integrated into Cloud9. Currently, these are [GitHub](http://www.github.com) and [Bitbucket](http://www.bitbucket.org).
 * Your account settings, where you're given the following choices:
     * Change your password
-    * Change your email
     * Show your SSH key
     * Upgrade to premium (or, downgrade from it)
-    * Enter a promotion code
     * Delete your account
     
 
