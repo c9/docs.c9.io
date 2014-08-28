@@ -18,7 +18,6 @@
 		sudo mysql-ctl install
 		sudo mysql-ctl start
 		
-		
 # Create a Symfony-Project
 Open your Terminal and execute the following to create a new Symfony-Project
 You need the first line only if you used the PHP Project type for your workspace.
@@ -32,7 +31,7 @@ The create-project composer command will ask for a few parameters, the only one 
 
 # Running the project
 	
-There is a IP address checking in the wev/config.php file. To disable this check please remove the following lines
+There is a IP address checking in the web/app_dev.php file. To disable this check please remove the following lines
 
 		// This check prevents access to debug front controllers that are deployed by accident to production servers.
 		// Feel free to remove this, extend it, or make something more sophisticated.
