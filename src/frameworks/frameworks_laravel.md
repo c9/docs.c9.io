@@ -4,7 +4,8 @@ Just make a new workspace, choose PHP, go to the Terminal, and execute the follo
 
     rm README.md php.ini hello-world.php
     composer create-project laravel/laravel ./laravel --prefer-dist
-    mv laravel/{*,.*} ./ 
+    shopt -s dotglob
+    mv laravel/* ./ 
     rm -rf laravel
 
 Run the project with the "Run Project" button in the menu bar on top of the IDE.
