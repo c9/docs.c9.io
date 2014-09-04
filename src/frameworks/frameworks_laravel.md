@@ -6,6 +6,7 @@ Just make a new workspace, choose PHP, go to the Terminal, and execute the follo
     composer create-project laravel/laravel ./laravel --prefer-dist
     shopt -s dotglob
     mv laravel/* ./ 
+    mv server.php index.php
     rm -rf laravel
 
 Run the project with the "Run Project" button in the menu bar on top of the IDE.
