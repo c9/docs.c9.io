@@ -10,6 +10,17 @@ And then install PostgreSQL by running the following command in the Terminal
 
     $ sudo apt-get install postgresql postgresql-contrib
 
+### Set the "postgres" user password
+
+    $ sudo sudo -u postgres psql                                                                                  
+    psql (9.3.4, server 9.3.5)
+    Type "help" for help.
+    
+    postgres=# \password
+    Enter new password: 
+    Enter it again: 
+    postgres=# \q
+
 ### Create a ProstgreSQL database
 
 Now that PostgreSQL is installed, lets go and create a database.
