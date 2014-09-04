@@ -66,10 +66,23 @@ You can then connect to the database with following parameters:
 </table>
 </div>
 
+## Importing data into your database
+
+To import existing data into your database run following commands:
+
+    mysql-ctl cli
+
+You are now in the MySQL environment and can start the import:
+
+    mysql> use c9
+    mysql> source PATH_TO_SQL_FILE.sql
+
+To verify that everything got imported run:
+
+    mysql> show tables
+
 Note:
 MySQL socket file can be found in ~/lib/mysql/socket/mysql.sock
-
-Of course this is just the beginning. We have for example plans to add a management UI to start and stop databases or pre-installing tools like phpMyAdmin. However, we don't want to make you wait for the fully integrated feature while we already have something that is enabling a lot of use cases and still super easy to use.
 
 <!--
 
