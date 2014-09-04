@@ -79,7 +79,7 @@ You are now in the MySQL environment and can start the import:
 
 To verify that everything got imported run:
 
-    mysql> show tables
+    mysql> show tables;
 
 Note:
 MySQL socket file can be found in ~/lib/mysql/socket/mysql.sock
