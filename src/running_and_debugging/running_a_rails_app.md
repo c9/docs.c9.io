@@ -17,9 +17,8 @@ Do **not** try to access the project through the IP address and port number rail
 
 ## Use MySQL in your rails app
 
-1. Install `mysql2` adapter by typing in terminal: `gem install mysql2`
 
-2. [Setup MySQl](./setting_up_mysql.html) - note your DB connect parameters
+1. [Setup MySQl](./setting_up_mysql.html) - note your DB connect parameters
 
 3. edit `configs/database.yml`
 
