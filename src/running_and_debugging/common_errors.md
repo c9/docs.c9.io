@@ -1,6 +1,6 @@
 # Common errors
 
-Sometimes you run into issues when you run your project. Here you will find the most common issues and how to solve them.Debugging running apps
+Sometimes you run into issues when you run your project. Here you will find the most common issues and how to solve them.
 
 ## Address in use or similar
 
@@ -18,3 +18,7 @@ You now can kill that proccess, Make sure you replace PID with the ID of the pro
 
     // Kill the process
     kill -9 PID
+    
+and for the console wizards:
+
+    kill -9 $(lsof -i:$PORT -t)
