@@ -17,4 +17,4 @@ If any relevant process is running you will get a list looking like this:
 You now can kill that proccess, Make sure you replace PID with the ID of the process.
 
     // Kill the process
-    sudo kill -9 PID
+    kill -9 PID
