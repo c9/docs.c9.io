@@ -7,7 +7,7 @@ Sometimes you run into issues when you run your project. Here you will find the 
 The most common reason for an error thrown by your app stating that a port or address is in use is the fact that some process is already running listening on that port/address. You need to take a look for those and kill the processes conflicting with your app:
 
     // Find the process
-    sudo lsof -i tcp:$PORT
+    lsof -i tcp:$PORT
 
 If any relevant process is running you will get a list looking like this:
 
