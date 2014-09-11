@@ -30,10 +30,13 @@ You can start mongodb by running the `mongod` script on your project root:<br/>
 `$ ./mongod`
 
 ### MongoDB parameters used:
-`--dbpath=data` (because it defaults to /var/db which isn't accessible)<br/>
-`--nojournal` because mongodb usually pre-allocates 2 GB journal file (which exceeds Cloud9 disk space quota)<br/>
-`--bind_ip=$IP` (because you can't bind to 0.0.0.0)<br/>
-`--rest` runs on default port 28017
+
+| Parameter                      | Description                                                                                     |
+| ------------------------------ | ----------------------------------------------------------------------------------------------- |
+| `--dbpath=data`                | Because it defaults to /var/db which isn't accessible)                                          |
+| `--nojournal`                  | Because mongodb usually pre-allocates 2 GB journal file (which exceeds Cloud9 disk space quota) |
+| `--bind_ip=$IP`                | Because you can't bind to 0.0.0.0)                                                              |
+| `--rest`                       | Runs on default port 28017                                                                      |
 
 ## Drivers
 
