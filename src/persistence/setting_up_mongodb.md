@@ -51,7 +51,7 @@ MongoDB has drivers for all supported runtimes. Following are the most commonly 
 To access a shell prompt for the above MongoDB run the following.
 
 ```no-highlight
-$ mongo --host $IP
+$ mongo
 ```
 
 Check out [docs.mongodb.org](http://docs.mongodb.org/manual/reference/mongo-shell/) for details on how to use the shell
