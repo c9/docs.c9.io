@@ -1,6 +1,6 @@
 # The Editor
 
-The editor is the most important element of any IDE; that's why Cloud9 developed [ACE](http://ace.ajax.org). ACE is a high-performance code editor for the web that supports over 40 different langauges, over two dozen themes, and can still work faithfully on large documents (at last count, four million lines of code was the upper limit). It also contains a bevy of features you'd expect from traditional desktop editors. Among these include:
+The editor is the most important element of any IDE; that's why Cloud9 developed [ACE](http://ace.ajax.org). ACE is a high-performance code editor for the web that supports over 40 different languages, over two dozen themes, and can still work faithfully on large documents (at last count, four million lines of code was the upper limit). It also contains a bevy of features you'd expect from traditional desktop editors. Among these include:
 
 * Undo and Redo support
 * Cut, Copy, and Paste functionality
