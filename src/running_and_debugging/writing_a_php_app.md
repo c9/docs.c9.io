@@ -28,4 +28,12 @@ Tip: you can access long running processes, like a server, at 'http://php_hello.
 
 Clicking on that link gets you to your PHP page. For a more in-depth workflow, see the article on [running WordPress entirely on Cloud9](./running_wordpress_on_cloud9.html).
 
-Note: Currently, you can't debug PHP applications, but we are working on adding this feature.
+## Modifying php.ini
+
+You can configure your PHP installation by editing the `php.ini` located in the `/home/ubuntu/workspace` directory. Please note: in some cases `php.ini` is located somewhere else. Just create a simple PHP file running `phpinfo()` to find out where to look for `php.ini`.
+
+Make sure to restart Apache after you have applied your changes
+
+    apachectl restart
+
+Note: Currently, you can't debug PHP applications yet, but we are working on adding this feature.
