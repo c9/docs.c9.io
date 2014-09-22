@@ -2,32 +2,19 @@
 
 ## Installing PostgreSQL on a Cloud9 workspace
 
-First we need to get the latest updates from the apt-get repository
+PostgreSQL comes preinstalled on every Cloud9 workspace, yay.
 
-    $ sudo apt-get update
+## Start the PostgreSQL service
 
-And then install PostgreSQL by running the following command in the Terminal
+    $ sudo service postgresql start
 
-    $ sudo apt-get install postgresql postgresql-contrib
+## Connect to the service
 
-### Set the "postgres" user password
+    $ sudo sudo -u postgres psql 
 
-    $ sudo sudo -u postgres psql                                                                                  
-    psql (9.3.4, server 9.3.5)
-    Type "help" for help.
-    
-    postgres=# \password
-    Enter new password: 
-    Enter it again: 
-    postgres=# \q
+## Create a ProstgreSQL database
 
-### Create a ProstgreSQL database
+Make sure you have logged into the PostgreSQL terminal and then you can just run 
 
-Now that PostgreSQL is installed, lets go and create a database.
-First we switch to the postgres user:
-
-    $ sudo su postgres  
-    
-And now can create a database executing
-
-    $ createdb groceries
+    $ sudo sudo -u postgres psql 
+    postgres=# create database groceries
