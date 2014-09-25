@@ -1,8 +1,9 @@
 # SSH Workspaces
-To connect your Cloud9 IDE to a SSH client, we need to install a few dependencies onto your system. 
+To connect your Cloud9 IDE to a SSH client, we need to install a few dependencies on your system. 
 This is done by an open-source installer [which you can find here](https://github.com/c9/install/).
 
 Usually the installation should go through without any issues but on some systems you will need to install a few dependencies manually.
+See below for common dependency issues you might run into.
 
 ## Installing Python 2.7 on CentOS
 
