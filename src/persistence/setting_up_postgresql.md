@@ -28,4 +28,9 @@ PostgreSQL comes preinstalled on every Cloud9 workspace, yay.
 Make sure you have logged into the PostgreSQL terminal and then you can just run:
 
     $ sudo sudo -u postgres psql                                                                                  
-    postgres=# create database groceries
+    postgres=# create database "groceries";
+    
+## List all databases
+
+    $ sudo sudo -u postgres psql                                                                                  
+    postgres=# \list
