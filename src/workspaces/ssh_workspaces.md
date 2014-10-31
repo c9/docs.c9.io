@@ -11,3 +11,9 @@ Usually the installation should succeed without any issues, but on some systems 
     cd Python-2.7.6
     ./configure --prefix=/usr/local
     make && make altinstall
+
+## Common errors
+
+### no configure: error: "curses not found"
+
+To get around this issue make sure `glibc-static` is installed on the machine.
