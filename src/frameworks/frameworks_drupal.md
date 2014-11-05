@@ -7,6 +7,7 @@ Just make a new workspace, choose PHP, go to the Terminal, and execute the follo
     curl -O http://ftp.drupal.org/files/projects/drupal-7.30.tar.gz
     tar xvf drupal-7.30.tar.gz
     mv drupal-7.30/* workspace/
+    mv drupal-7.30/.htaccess workspace/
     cd $HOME/workspace
     mysql-ctl install
     mysql-ctl start
