@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 var hostname = require('os').hostname();
 
 var panda = require("panda-docs");
