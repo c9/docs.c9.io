@@ -34,8 +34,15 @@ Try using port 8080 instead, which often solves this case.
 Either drag a local file directly from your desktop into the Cloud9 file tree,
 or use the "File > Upload Local Files" menu item.
 
-## How can I download my project files?
+### How can I download my project files?
 
 Use "File > Download project". Currently, this will give you a .tar.gz file, which
 ensures maximum portability. To open these files, you can use something like
 [WinRAR](http://www.rarlab.com/) or [7-zip](http://www.7-zip.org/).
+
+### How can I change my username?
+
+Unfortunately we do not support changing usernames as they're tied to many things such as collaboration features. 
+
+We recommend creating a new account with your desired username and move your projects across by downloading the files and uploading them under the new username. 
+
