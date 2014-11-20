@@ -52,3 +52,17 @@ or use the "File > Upload Local Files" menu item.
 Use "File > Download project". Currently, this will give you a .tar.gz file, which
 ensures maximum portability. To open these files, you can use something like
 [WinRAR](http://www.rarlab.com/) or [7-zip](http://www.7-zip.org/).
+
+## How can I share a single directory of a private workspace
+
+Sometime you might want others to open a file or directory in the browser 
+without opening up the whole workspace. This can be done by starting a small 
+http server in that directory and make sure that the running application is public.
+
+To make the running application public you have to click the "sharing" button at
+the top right and the check "public" for application.
+
+To run the server open a terminal and do
+
+    $ cd /dir/i/want/to/share
+    $ python3 -m http.server 8080
