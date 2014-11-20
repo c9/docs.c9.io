@@ -16,18 +16,31 @@ No, this is not supported by our hosting platform. It does currently allow acces
 ### My workspace says it's out of quota. how do I fix it? 
 You can inspect your current quota usage with the df command in the Terminal:
 
-    df
+    $ df
 
 To find which files and directories are consuming a lot of space, go to a directory such as your home directory, and run this command:
 
-    du -m -d 1 -a | sort -n
+    $ du -m -d 1 -a | sort -n
 
 This should give you a list of all members of that directory and how much space they use in megabytes.
 
 Alternatively, try `du-c9` for seeing all files you added to your workspace and account for the quota.
 
-### I can't preview my running app. 
+### I can't preview my running app.
 Try using port 8080 instead, which often solves this case.
+
+### EADDRINUSE: My app complains that the address/port is in use 
+Applications won't start if another application is already listening to the same port. In order to fix it you first need to find out which process that is:
+
+    $ netstat -nlp | grep $PORT
+
+This will report the process id (PID) which you can then kill using
+
+    $ sudo kill -9 <PID>
+
+Often apache is still running in the background. In that case you can kill it using
+
+    $ sudo pkill apache2
 
 ### How can I upload local files to my project?
 
