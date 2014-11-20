@@ -1,11 +1,11 @@
 # Framework: Express
 [Express](http://expressjs.com/) is a minimal and flexible Node.js web application framework that provides a robust set of features for web and mobile applications.
 
-To get started with an express app, first create a workspace and choose either the Node.js type, or a Custom workspace type for a clean workspace.
+To get started with an Express app, first create a workspace and choose either the Node.js type, or a Custom workspace type for a clean workspace. Open the new workspace (or an existing one) to follow the instructions below.
 
 ## Installation
 
-First we'll install the express project generator and generate an application stub:
+First we'll install the Express project generator and generate an application stub:
 
     $ npm install -g express-generator
     $ express -f .
@@ -15,7 +15,7 @@ You might want to take a look at `package.json` and update the application name 
 
 ## Running
     
-Now you have a fully configured express application already. You can run it from the terminal using
+Now you have a fully configured express application already. You can run it from the terminal using:
 
     $ bin/www
 
