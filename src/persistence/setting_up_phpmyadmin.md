@@ -4,8 +4,7 @@ PHPMyAdmin provides an easy to use web interface to manage your MySQL database/s
 
 ## PHPMyAdmin's most common features
 * Import data from CSV and SQL
-* Export data to various formats: CSV, SQL, XML, PDF (via the TCPDFfd\mya library), ISO/IEC 26300 - OpenDocument Text and Spreadsheet, Word, Excel, LaTeX and others
-* Administering multiple servers
+* Export data to various formats: CSV, SQL, XML, PDF, Word, Excel, LaTeX and others
 * Creating PDF graphics of the database layout
 * Creating complex queries using Query-by-Example (QBE)
 * Searching globally in a database or a subset of it
@@ -21,4 +20,4 @@ This article explains our first iteration of PHPMyAdmin support in Cloud9. It ma
 $ phpmyadmin-ctl install
 ```
 
-After the installation is complete you'll be given a link to access PHPMyAdmin. If you'd like further help using the software please consult the <a href="http://www.phpmyadmin.net/home_page/docs.php" target="_blank">official PHPMyAdmin docs</a>.
+After the installation is complete you'll be given a link to access PHPMyAdmin. If you'd like further help using the software please consult the [official PHPMyAdmin docs](http://www.phpmyadmin.net/home_page/docs.php)</a>.
