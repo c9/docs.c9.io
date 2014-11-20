@@ -5,3 +5,4 @@ node_modules/
 .settings
 .settings.xml
 npm-debug.log
+.c9/
