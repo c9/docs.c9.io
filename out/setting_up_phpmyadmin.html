@@ -3,7 +3,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=us-ascii">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Framework: Meteor | Cloud9 User Documentation</title>
+    <title>PHPMyAdmin | Cloud9 User Documentation</title>
     <link href="./assets/min/styles.css" rel="stylesheet" type="text/css">
     <link rel="icon" type="image/x-icon" href="./assets/img/favicon.ico">
     <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css">
@@ -189,28 +189,31 @@
           </div>
           <div class="span12 documentationContainer">
             <div id="content">
-              <h1>Framework: Meteor</h1>
-              <div><p><a href="https://www.meteor.com/">Meteor</a> is an open-source platform for building web apps.</p>
-<p>Create a Meteor app as follows:</p>
-<ol>
-<li>Create a new workspace (Node.js or Custom for a clean workspace)</li>
-<li>Open a Terminal, or using the pre-existing one at the bottom</li>
-<li><p>Run the following commands in the Terminal:</p>
-<pre><code> <span class="title">curl</span> <span class="url">https://install.meteor.com/</span> | sh
- meteor create ./my_cool_app
- cd my_cool_app/
- meteor --port <span class="variable">$IP</span>:<span class="variable">$PORT</span></code></pre>
-</li>
-<li><p>Click the Preview button in the top menu in the IDE, and choose &quot;Preview with Web Server&quot;. This will open the Preview window for your running app. </p>
-</li>
-</ol>
-<div class="alert alert-success"><h4 class="alert-heading">Note: </h4>Alternatively, for the last step, click on the link that&#39;s displayed in the terminal, and change it in the resulting Preview to <a href="http://127.0.0.1:8080">http://127.0.0.1:8080</a>.</div>
+              <div id="toh_btn" onclick="toggleTOH(this)"></div>
+              <h1>PHPMyAdmin</h1>
+              <div><p>PHPMyAdmin provides an easy to use web interface to manage your MySQL database/s</p>
+<h2 id='phpmyadmins-most-common-features'><a class='heading_anchor' href='#phpmyadmins-most-common-features'><i class='headerLinkIcon'></i></a>PHPMyAdmin&#39;s most common features</h2>
+<ul>
+<li>Import data from CSV and SQL</li>
+<li>Export data to various formats: CSV, SQL, XML, PDF, Word, Excel, LaTeX and others</li>
+<li>Creating PDF graphics of the database layout</li>
+<li>Creating complex queries using Query-by-Example (QBE)</li>
+<li>Searching globally in a database or a subset of it</li>
+<li>Transforming stored data into any format using a set of predefined functions, like displaying BLOB-data as image or download-link</li>
+<li>Live charts to monitor MySQL server activity like connections, processes, CPU/Memory usage, etc.</li>
+<li><a href="http://en.wikipedia.org/wiki/PHPMyAdmin">Many more</a><br/></li>
+</ul>
+<h2 id='using-phpmyadmin-with-cloud9'><a class='heading_anchor' href='#using-phpmyadmin-with-cloud9'><i class='headerLinkIcon'></i></a>Using PHPMyAdmin with Cloud9</h2>
+<p>This article explains our first iteration of PHPMyAdmin support in Cloud9. It makes it super easy to install a PHPMyAdmin instance right in your workspace. Each workspace runs it&#39;s own Database and copy of PHPMyAdmin.</p>
+<pre><code class="language-bash"><span class="comment"># Install PHPMyAdmin</span>
+$ phpmyadmin-ctl install</code></pre>
+<p>After the installation is complete you&#39;ll be given a link to access PHPMyAdmin. If you&#39;d like further help using the software please consult the <a href="http://www.phpmyadmin.net/home_page/docs.php">official PHPMyAdmin docs</a></a>.</p>
 
               </div>
               <div id="disqus_thread"></div>
             </div>
           </div>
-          <div id="tocHolder" class="span2">
+          <div id="tocHolder" class="span2"></li><ol class='tocContainer level_1'><li class='tocItem level_2'><a href='#phpmyadmins-most-common-features'>PHPMyAdmin's most common features</a></li><li class='tocItem level_2'><a href='#using-phpmyadmin-with-cloud9'>Using PHPMyAdmin with Cloud9</a></li></ol></li><li class='tocItem level_1'><a href='#install-phpmyadmin'>Install PHPMyAdmin</a></li></ol>
           </div>
         </div>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js" type="text/javascript"></script>
