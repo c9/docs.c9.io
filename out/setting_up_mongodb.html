@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=us-ascii">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MongoDB | Cloud9 User Documentation</title>
+    <link href="./assets/min/styles.css" rel="stylesheet" type="text/css">
+    <link rel="icon" type="image/x-icon" href="./assets/img/favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <iframe id="header_iframe" height="50px" width="100%" src="" scrolling="no" frameborder="0"></iframe>
+    <div id="wrapper" class="wrapper">
+      <div class="container">
+        <div class="row">
+          <div class="span3">
+            <div class="sidebar-nav">
+              <div id="search-header">
+                <form>
+                  <input id="st-search-input" name="search" type="text" value="" title="Press Enter for results" placeholder="Search the docs" style="width: 182px" class="input focused span3 st-search-input">
+                </form>
+              </div>
+              <div id="st-results-container"></div>
+              <div id="doc-nav" class="scroll-pane">
+                <ul id="nav">
+                  <li class="nav-section">
+                    <div class="nav-section-header"><a href="index.html">Home</a></div>
+                  </li>
+                  <!-- li.nav-section-->
+                  <!--   .nav-section-header-->
+                  <!--     a(href='https://www.youtube.com/user/c9ide/videos?flow=grid&view=1', target='_blank') Video Tutorials-->
+                  <li class="nav-section">
+                    <div class="nav-section-header"><a href="javascript:void(0)">Getting Started</a><i class="icon-chevron-down tocNavArrow"></i><i class="icon-chevron-up tocNavArrow"></i></div>
+                    <ul>
+                      <li class="nav-submenu-item"><a href="create_a_workspace.html">Create a workspace</a></li>
+                      <li class="nav-submenu-item"><a href="run_an_application.html">Run an application</a></li>
+                      <li class="nav-submenu-item"><a href="setup_a_database.html">Set up a database</a></li>
+                      <li class="nav-submenu-item"><a href="share_a_workspace.html">Share a workspace</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-section">
+                    <div class="nav-section-header"><a href="javascript:void(0)">Features</a><i class="icon-chevron-down tocNavArrow"></i><i class="icon-chevron-up tocNavArrow"></i></div>
+                    <ul>
+                      <li class="nav-submenu-item"><a href="supported_languages.html">Supported Languages</a></li>
+                      <li class="nav-submenu-item"><a href="syntax_highlighting_themes.html">Syntax Highlighting & Themes</a></li>
+                      <!-- li.nav-submenu-item-->
+                      <!--   a(href='collaboration.html') Collaboration-->
+                      <!-- li.nav-submenu-item-->
+                      <!--   a(href='colorpicker.html') Color Picker-->
+                      <li class="nav-submenu-item"><a href="multiple_cursors.html">Multiple Cursors</a></li>
+                      <!-- li.nav-submenu-item-->
+                      <!--   a(href='revisions.html') Revisions-->
+                      <li class="nav-submenu-item"><a href="language_analysis.html">Language Analysis</a></li>
+                      <li class="nav-submenu-item"><a href="autocompletion.html">Code Autocompletion</a></li>
+                      <!-- li.nav-submenu-item-->
+                      <!--   a(href='uploading_downloading.html') Uploading Files and Downloading Your Project-->
+                      <!-- li.nav-submenu-item-->
+                      <!--   a(href='gotofile_and_definition.html') Using Goto File and Goto Definition-->
+                      <li class="nav-submenu-item"><a href="searching_in_files.html">Searching and Replacing in Files</a></li>
+                      <!-- li.nav-submenu-item-->
+                      <!--   a(href='git_blame.html') Git Blame-->
+                      <!-- li.nav-submenu-item-->
+                      <!--   a(href='zen_mode.html') Zen Mode-->
+                      <li class="nav-submenu-item"><a href="custom_runners.html">Custom Runners</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-section">
+                    <div class="nav-section-header"><a href="javascript:void(0)">IDE Components</a><i class="icon-chevron-down tocNavArrow"></i><i class="icon-chevron-up tocNavArrow"></i></div>
+                    <ul>
+                      <!-- li.nav-submenu-item-->
+                      <!--   a(href='ide_overview.html') IDE Overview-->
+                      <li class="nav-submenu-item"><a href="the_editor.html">The Editor</a></li>
+                      <!-- li.nav-submenu-item-->
+                      <!--   a(href='console.html') The Console-->
+                      <li class="nav-submenu-item"><a href="dashboard.html">The Dashboard</a></li>
+                      <!-- li.nav-submenu-item-->
+                      <!--   a(href='project_bar.html') The Project Bar-->
+                      <!-- li.nav-submenu-item-->
+                      <!--   a(href='status_bar.html') The Status Bar-->
+                      <!-- li.nav-submenu-item-->
+                      <!--   a(href='terminal.html') The Terminal-->
+                      <!-- li.nav-submenu-item-->
+                      <!--   a(href='ide_preferences.html') IDE Preferences-->
+                      <!-- li.nav-submenu-item-->
+                      <!--   a(href='tab_functions.html') Tab Functions-->
+                      <!-- li.nav-submenu-item-->
+                      <!--   a(href='keybindings.html') Commands and Keybindings-->
+                    </ul>
+                  </li>
+                  <li class="nav-section">
+                    <div class="nav-section-header"><a href="javascript:void(0)">Creating Workspaces</a><i class="icon-chevron-down tocNavArrow"></i><i class="icon-chevron-up tocNavArrow"></i></div>
+                    <ul>
+                      <li class="nav-submenu-item"><a href="creating_new_workspace.html">Creating a New Workspace</a></li>
+                      <li class="nav-submenu-item"><a href="ssh_workspaces.html">Setting up SSH Workspaces</a></li>
+                      <li class="nav-submenu-item"><a href="setting_up_github_workspace.html">Setting up a GitHub Workspace</a></li>
+                      <li class="nav-submenu-item"><a href="setting_up_bitbucket_workspace.html">Setting up a Bitbucket Workspace</a></li>
+                      <li class="nav-submenu-item"><a href="setting_up_gitlab_workspace.html">Setting up a GitLab Workspace</a></li>
+                      <li class="nav-submenu-item"><a href="ftp_workspaces.html">Creating an FTP Workspace</a></li>
+                      <li class="nav-submenu-item"><a href="run_your_own_workspace.html">Running Your Own SSH Workspace</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-section">
+                    <div class="nav-section-header"><a href="javascript:void(0)">Running and Debugging Code</a><i class="icon-chevron-down tocNavArrow"></i><i class="icon-chevron-up tocNavArrow"></i></div>
+                    <ul>
+                      <li class="nav-submenu-item"><a href="running_and_debugging_code.html">Running and Debugging Your Code</a></li>
+                      <li class="nav-submenu-item"><a href="common_errors.html">Common Errors</a></li>
+                      <li class="nav-submenu-item"><a href="terminal_monitor.html">Terminal Monitor</a></li>
+                      <li class="nav-submenu-item"><a href="writing_nodejs_hello_world.html">Writing a Node.js App</a>
+                        <ul>
+                          <li class="nav-submenu-item"><a href="installing_npm_modules.html">Installing NPM Modules</a></li>
+                          <li class="nav-submenu-item"><a href="creating_coffeescript_app.html">Creating a Coffeescript App</a></li>
+                        </ul>
+                      </li>
+                      <li class="nav-submenu-item"><a href="writing_a_python_app.html">Writing a Python App</a>
+                        <ul>
+                          <li class="nav-submenu-item"><a href="installing_python_packages.html">Installing Python Packages</a></li>
+                        </ul>
+                      </li>
+                      <li class="nav-submenu-item"><a href="writing_a_ruby_app.html">Writing a Ruby App</a>
+                        <ul>
+                          <li class="nav-submenu-item"><a href="installing_ruby_gems.html">Installing Ruby Gems</a></li>
+                          <li class="nav-submenu-item"><a href="running_a_rails_app.html">Running a Rails App</a></li>
+                        </ul>
+                      </li>
+                      <li class="nav-submenu-item"><a href="writing_a_php_app.html">Writing a PHP App</a>
+                        <ul>
+                          <li class="nav-submenu-item"><a href="editing_wordpress_sites.html">Editing Remote WordPress Websites</a></li>
+                          <li class="nav-submenu-item"><a href="running_wordpress_on_cloud9.html">Running WordPress on Cloud9</a></li>
+                        </ul>
+                      </li>
+                      <li class="nav-submenu-item"><a href="writing_a_go_app.html">Writing a Go App</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-section">
+                    <div class="nav-section-header"><a href="javascript:void(0)">Database and Persistence</a><i class="icon-chevron-down tocNavArrow"></i><i class="icon-chevron-up tocNavArrow"></i></div>
+                    <ul>
+                      <li class="nav-submenu-item"><a href="setting_up_mysql.html">Using MySQL</a></li>
+                      <li class="nav-submenu-item"><a href="setting_up_mongodb.html">Using MongoDB</a></li>
+                      <li class="nav-submenu-item"><a href="setting_up_postgresql.html">Using PostgreSQL</a></li>
+                      <li class="nav-submenu-item"><a href="setting_up_redis.html">Using Redis</a></li>
+                      <li class="nav-submenu-item"><a href="setting_up_sqlite3.html">Using SQLite</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-section">
+                    <div class="nav-section-header"><a href="javascript:void(0)">Deploying Code</a><i class="icon-chevron-down tocNavArrow"></i><i class="icon-chevron-up tocNavArrow"></i></div>
+                    <ul>
+                      <!-- li.nav-submenu-item-->
+                      <!--   a(href='deploying_code.html') Deploying Your Code-->
+                      <!-- li.nav-submenu-item-->
+                      <!--   a(href='deploying_to_heroku.html') Deploying to Heroku-->
+                      <!-- li.nav-submenu-item-->
+                      <!--   a(href='deploying_to_windows_azure_sites.html') Deploying to Windows Azure Sites-->
+                      <li class="nav-submenu-item"><a href="deploying_via_cli.html">Deploying via the Command Line</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-section">
+                    <div class="nav-section-header"><a href="javascript:void(0)">Popular Frameworks</a><i class="icon-chevron-down tocNavArrow"></i><i class="icon-chevron-up tocNavArrow"></i></div>
+                    <ul>
+                      <li class="nav-submenu-item"><a href="frameworks_angularjs.html">AngularJS</a></li>
+                      <li class="nav-submenu-item"><a href="frameworks_drupal.html">Drupal</a></li>
+                      <li class="nav-submenu-item"><a href="frameworks_express.html">Express</a></li>
+                      <li class="nav-submenu-item"><a href="frameworks_ghost.html">Ghost</a></li>
+                      <li class="nav-submenu-item"><a href="frameworks_ionic.html">Ionic</a></li>
+                      <li class="nav-submenu-item"><a href="frameworks_jekyll.html">Jekyll</a></li>
+                      <li class="nav-submenu-item"><a href="frameworks_joomla.html">Joomla</a></li>
+                      <li class="nav-submenu-item"><a href="frameworks_koa.html">KoaJS</a></li>
+                      <li class="nav-submenu-item"><a href="frameworks_laravel.html">Laravel</a></li>
+                      <li class="nav-submenu-item"><a href="frameworks_meteor.html">Meteor</a></li>
+                      <li class="nav-submenu-item"><a href="frameworks_symfony2.html">Symfony</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-section">
+                    <div class="nav-section-header"><a href="javascript:void(0)">FAQ</a><i class="icon-chevron-down tocNavArrow"></i><i class="icon-chevron-up tocNavArrow"></i></div>
+                    <ul>
+                      <li class="nav-submenu-item"><a href="faq_general.html">General</a></li>
+                      <li class="nav-submenu-item"><a href="faq_php.html">PHP</a></li>
+                      <li class="nav-submenu-item"><a href="faq_python.html">Python</a></li>
+                      <li class="nav-submenu-item"><a href="faq_ssh.html">SSH workspaces</a></li>
+                    </ul>
+                  </li>
+                  <div class="alert alert-info">These articles are <a href="https://www.github.com/c9/docs.c9.io">open source</a>! Feel free to pull and contribute.</div>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="span12 documentationContainer">
+            <div id="content">
+              <div id="toh_btn" onclick="toggleTOH(this)"></div>
+              <h1>MongoDB</h1>
+              <div><p>MongoDB is a scalable, high-performance, open source NoSQL database.</p>
+<h2 id='mongodbs-most-common-features'><a class='heading_anchor' href='#mongodbs-most-common-features'><i class='headerLinkIcon'></i></a>MongoDB&#39;s most common features</h2>
+<ul>
+<li><p>Document-Oriented Storage<br/>
+JSON-style documents with dynamic schemas offer simplicity and power.</p>
+</li>
+<li><p>Full Index Support<br/>
+Index on any attribute, just like you&#39;re used to.</p>
+</li>
+<li><p>Querying<br/>
+Rich, document-based queries.</p>
+</li>
+</ul>
+<p>In addition, MongoDB has many scalability features such as:</p>
+<p><strong>Replication</strong>, <strong>Auto-sharding</strong>, <strong>Map/Reduce</strong> and <strong>GridFS</strong></p>
+<h2 id='running-mongodb-on-a-cloud9-workspace'><a class='heading_anchor' href='#running-mongodb-on-a-cloud9-workspace'><i class='headerLinkIcon'></i></a>Running MongoDB on a Cloud9 workspace</h2>
+<p>MongoDB is preinstalled in your workspace. To run MongoDB, run the following below (passing the correct parameters to it). Mongodb data will be stored in the folder <code>data</code>.</p>
+<pre><code class="language-no-highlight">$ mkdir data
+$ echo 'mongod --bind_ip=$IP --dbpath=data --nojournal --rest "$@"' > mongod
+$ chmod a+x mongod</code></pre>
+<p>You can start mongodb by running the <code>mongod</code> script on your project root:<br/>
+<code>$ ./mongod</code></p>
+<h3 id='mongodb-parameters-used:'><a class='heading_anchor' href='#mongodb-parameters-used:'><i class='headerLinkIcon'></i></a>MongoDB parameters used:</h3>
+<p>| Parameter                      | Description                                                                                     |
+| ------------------------------ | ----------------------------------------------------------------------------------------------- |
+| <code>--dbpath=data</code>                | Because it defaults to /var/db which isn&#39;t accessible)                                          |
+| <code>--nojournal</code>                  | Because mongodb usually pre-allocates 2 GB journal file (which exceeds Cloud9 disk space quota) |
+| <code>--bind_ip=$IP</code>                | Because you can&#39;t bind to 0.0.0.0)                                                              |
+| <code>--rest</code>                       | Runs on default port 28017                                                                      |</p>
+<h2 id='drivers'><a class='heading_anchor' href='#drivers'><i class='headerLinkIcon'></i></a>Drivers</h2>
+<p>You should use the host <code>$IP</code> instead of <code>localhost</code> as your driver connection url.<br/>
+e.g. in Node, it is: <code>process.env.IP</code></p>
+<p>MongoDB has drivers for all supported runtimes. Following are the most commonly used drivers:</p>
+<h3 id='nodejs-apps'><a class='heading_anchor' href='#nodejs-apps'><i class='headerLinkIcon'></i></a>Node.JS apps</h3>
+<p><strong><a href="https://github.com/LearnBoost/mongoose">Mongoose</a></strong><br/>
+<strong><a href="https://github.com/mongodb/node-mongodb-native">Node-Mongodb-Native</a></strong></p>
+<h2 id='shell-access'><a class='heading_anchor' href='#shell-access'><i class='headerLinkIcon'></i></a>Shell Access</h2>
+<p>To access a shell prompt for the above MongoDB run the following.</p>
+<pre><code class="language-no-highlight">$ mongo</code></pre>
+<p>Check out <a href="http://docs.mongodb.org/manual/reference/mongo-shell/">docs.mongodb.org</a> for details on how to use the shell</p>
+
+              </div>
+              <div id="disqus_thread"></div>
+            </div>
+          </div>
+          <div id="tocHolder" class="span2"></li><ol class='tocContainer level_1'><li class='tocItem level_2'><a href='#mongodbs-most-common-features'>MongoDB's most common features</a></li><li class='tocItem level_2'><a href='#running-mongodb-on-a-cloud9-workspace'>Running MongoDB on a Cloud9 workspace</a><ol class='tocContainer level_2'><li class='tocItem level_3'><a href='#mongodb-parameters-used:'>MongoDB parameters used:</a></li></ol></li><li class='tocItem level_2'><a href='#drivers'>Drivers</a><ol class='tocContainer level_2'><li class='tocItem level_3'><a href='#nodejs-apps'>Node.JS apps</a></li></ol></li><li class='tocItem level_2'><a href='#shell-access'>Shell Access</a></li></ol></li></ol>
+          </div>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js" type="text/javascript"></script>
+        <script src="./assets/min/javascripts.js" type="text/javascript"></script>
+      </div>
+      <div class="push"></div>
+    </div>
+    <footer>
+      <iframe id="footer_iframe" height="290px" width="100%" src="" scrolling="no" frameborder="0"></iframe>
+    </footer>
+  </body>
+</html>

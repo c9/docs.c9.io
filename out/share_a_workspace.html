@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=us-ascii">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Share a workspace | Cloud9 User Documentation</title>
+    <link href="./assets/min/styles.css" rel="stylesheet" type="text/css">
+    <link rel="icon" type="image/x-icon" href="./assets/img/favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <iframe id="header_iframe" height="50px" width="100%" src="" scrolling="no" frameborder="0"></iframe>
+    <div id="wrapper" class="wrapper">
+      <div class="container">
+        <div class="row">
+          <div class="span3">
+            <div class="sidebar-nav">
+              <div id="search-header">
+                <form>
+                  <input id="st-search-input" name="search" type="text" value="" title="Press Enter for results" placeholder="Search the docs" style="width: 182px" class="input focused span3 st-search-input">
+                </form>
+              </div>
+              <div id="st-results-container"></div>
+              <div id="doc-nav" class="scroll-pane">
+                <ul id="nav">
+                  <li class="nav-section">
+                    <div class="nav-section-header"><a href="index.html">Home</a></div>
+                  </li>
+                  <!-- li.nav-section-->
+                  <!--   .nav-section-header-->
+                  <!--     a(href='https://www.youtube.com/user/c9ide/videos?flow=grid&view=1', target='_blank') Video Tutorials-->
+                  <li class="nav-section">
+                    <div class="nav-section-header"><a href="javascript:void(0)">Getting Started</a><i class="icon-chevron-down tocNavArrow"></i><i class="icon-chevron-up tocNavArrow"></i></div>
+                    <ul>
+                      <li class="nav-submenu-item"><a href="create_a_workspace.html">Create a workspace</a></li>
+                      <li class="nav-submenu-item"><a href="run_an_application.html">Run an application</a></li>
+                      <li class="nav-submenu-item"><a href="setup_a_database.html">Set up a database</a></li>
+                      <li class="nav-submenu-item"><a href="share_a_workspace.html">Share a workspace</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-section">
+                    <div class="nav-section-header"><a href="javascript:void(0)">Features</a><i class="icon-chevron-down tocNavArrow"></i><i class="icon-chevron-up tocNavArrow"></i></div>
+                    <ul>
+                      <li class="nav-submenu-item"><a href="supported_languages.html">Supported Languages</a></li>
+                      <li class="nav-submenu-item"><a href="syntax_highlighting_themes.html">Syntax Highlighting & Themes</a></li>
+                      <!-- li.nav-submenu-item-->
+                      <!--   a(href='collaboration.html') Collaboration-->
+                      <!-- li.nav-submenu-item-->
+                      <!--   a(href='colorpicker.html') Color Picker-->
+                      <li class="nav-submenu-item"><a href="multiple_cursors.html">Multiple Cursors</a></li>
+                      <!-- li.nav-submenu-item-->
+                      <!--   a(href='revisions.html') Revisions-->
+                      <li class="nav-submenu-item"><a href="language_analysis.html">Language Analysis</a></li>
+                      <li class="nav-submenu-item"><a href="autocompletion.html">Code Autocompletion</a></li>
+                      <!-- li.nav-submenu-item-->
+                      <!--   a(href='uploading_downloading.html') Uploading Files and Downloading Your Project-->
+                      <!-- li.nav-submenu-item-->
+                      <!--   a(href='gotofile_and_definition.html') Using Goto File and Goto Definition-->
+                      <li class="nav-submenu-item"><a href="searching_in_files.html">Searching and Replacing in Files</a></li>
+                      <!-- li.nav-submenu-item-->
+                      <!--   a(href='git_blame.html') Git Blame-->
+                      <!-- li.nav-submenu-item-->
+                      <!--   a(href='zen_mode.html') Zen Mode-->
+                      <li class="nav-submenu-item"><a href="custom_runners.html">Custom Runners</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-section">
+                    <div class="nav-section-header"><a href="javascript:void(0)">IDE Components</a><i class="icon-chevron-down tocNavArrow"></i><i class="icon-chevron-up tocNavArrow"></i></div>
+                    <ul>
+                      <!-- li.nav-submenu-item-->
+                      <!--   a(href='ide_overview.html') IDE Overview-->
+                      <li class="nav-submenu-item"><a href="the_editor.html">The Editor</a></li>
+                      <!-- li.nav-submenu-item-->
+                      <!--   a(href='console.html') The Console-->
+                      <li class="nav-submenu-item"><a href="dashboard.html">The Dashboard</a></li>
+                      <!-- li.nav-submenu-item-->
+                      <!--   a(href='project_bar.html') The Project Bar-->
+                      <!-- li.nav-submenu-item-->
+                      <!--   a(href='status_bar.html') The Status Bar-->
+                      <!-- li.nav-submenu-item-->
+                      <!--   a(href='terminal.html') The Terminal-->
+                      <!-- li.nav-submenu-item-->
+                      <!--   a(href='ide_preferences.html') IDE Preferences-->
+                      <!-- li.nav-submenu-item-->
+                      <!--   a(href='tab_functions.html') Tab Functions-->
+                      <!-- li.nav-submenu-item-->
+                      <!--   a(href='keybindings.html') Commands and Keybindings-->
+                    </ul>
+                  </li>
+                  <li class="nav-section">
+                    <div class="nav-section-header"><a href="javascript:void(0)">Creating Workspaces</a><i class="icon-chevron-down tocNavArrow"></i><i class="icon-chevron-up tocNavArrow"></i></div>
+                    <ul>
+                      <li class="nav-submenu-item"><a href="creating_new_workspace.html">Creating a New Workspace</a></li>
+                      <li class="nav-submenu-item"><a href="ssh_workspaces.html">Setting up SSH Workspaces</a></li>
+                      <li class="nav-submenu-item"><a href="setting_up_github_workspace.html">Setting up a GitHub Workspace</a></li>
+                      <li class="nav-submenu-item"><a href="setting_up_bitbucket_workspace.html">Setting up a Bitbucket Workspace</a></li>
+                      <li class="nav-submenu-item"><a href="setting_up_gitlab_workspace.html">Setting up a GitLab Workspace</a></li>
+                      <li class="nav-submenu-item"><a href="ftp_workspaces.html">Creating an FTP Workspace</a></li>
+                      <li class="nav-submenu-item"><a href="run_your_own_workspace.html">Running Your Own SSH Workspace</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-section">
+                    <div class="nav-section-header"><a href="javascript:void(0)">Running and Debugging Code</a><i class="icon-chevron-down tocNavArrow"></i><i class="icon-chevron-up tocNavArrow"></i></div>
+                    <ul>
+                      <li class="nav-submenu-item"><a href="running_and_debugging_code.html">Running and Debugging Your Code</a></li>
+                      <li class="nav-submenu-item"><a href="common_errors.html">Common Errors</a></li>
+                      <li class="nav-submenu-item"><a href="terminal_monitor.html">Terminal Monitor</a></li>
+                      <li class="nav-submenu-item"><a href="writing_nodejs_hello_world.html">Writing a Node.js App</a>
+                        <ul>
+                          <li class="nav-submenu-item"><a href="installing_npm_modules.html">Installing NPM Modules</a></li>
+                          <li class="nav-submenu-item"><a href="creating_coffeescript_app.html">Creating a Coffeescript App</a></li>
+                        </ul>
+                      </li>
+                      <li class="nav-submenu-item"><a href="writing_a_python_app.html">Writing a Python App</a>
+                        <ul>
+                          <li class="nav-submenu-item"><a href="installing_python_packages.html">Installing Python Packages</a></li>
+                        </ul>
+                      </li>
+                      <li class="nav-submenu-item"><a href="writing_a_ruby_app.html">Writing a Ruby App</a>
+                        <ul>
+                          <li class="nav-submenu-item"><a href="installing_ruby_gems.html">Installing Ruby Gems</a></li>
+                          <li class="nav-submenu-item"><a href="running_a_rails_app.html">Running a Rails App</a></li>
+                        </ul>
+                      </li>
+                      <li class="nav-submenu-item"><a href="writing_a_php_app.html">Writing a PHP App</a>
+                        <ul>
+                          <li class="nav-submenu-item"><a href="editing_wordpress_sites.html">Editing Remote WordPress Websites</a></li>
+                          <li class="nav-submenu-item"><a href="running_wordpress_on_cloud9.html">Running WordPress on Cloud9</a></li>
+                        </ul>
+                      </li>
+                      <li class="nav-submenu-item"><a href="writing_a_go_app.html">Writing a Go App</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-section">
+                    <div class="nav-section-header"><a href="javascript:void(0)">Database and Persistence</a><i class="icon-chevron-down tocNavArrow"></i><i class="icon-chevron-up tocNavArrow"></i></div>
+                    <ul>
+                      <li class="nav-submenu-item"><a href="setting_up_mysql.html">Using MySQL</a></li>
+                      <li class="nav-submenu-item"><a href="setting_up_mongodb.html">Using MongoDB</a></li>
+                      <li class="nav-submenu-item"><a href="setting_up_postgresql.html">Using PostgreSQL</a></li>
+                      <li class="nav-submenu-item"><a href="setting_up_redis.html">Using Redis</a></li>
+                      <li class="nav-submenu-item"><a href="setting_up_sqlite3.html">Using SQLite</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-section">
+                    <div class="nav-section-header"><a href="javascript:void(0)">Deploying Code</a><i class="icon-chevron-down tocNavArrow"></i><i class="icon-chevron-up tocNavArrow"></i></div>
+                    <ul>
+                      <!-- li.nav-submenu-item-->
+                      <!--   a(href='deploying_code.html') Deploying Your Code-->
+                      <!-- li.nav-submenu-item-->
+                      <!--   a(href='deploying_to_heroku.html') Deploying to Heroku-->
+                      <!-- li.nav-submenu-item-->
+                      <!--   a(href='deploying_to_windows_azure_sites.html') Deploying to Windows Azure Sites-->
+                      <li class="nav-submenu-item"><a href="deploying_via_cli.html">Deploying via the Command Line</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-section">
+                    <div class="nav-section-header"><a href="javascript:void(0)">Popular Frameworks</a><i class="icon-chevron-down tocNavArrow"></i><i class="icon-chevron-up tocNavArrow"></i></div>
+                    <ul>
+                      <li class="nav-submenu-item"><a href="frameworks_angularjs.html">AngularJS</a></li>
+                      <li class="nav-submenu-item"><a href="frameworks_drupal.html">Drupal</a></li>
+                      <li class="nav-submenu-item"><a href="frameworks_express.html">Express</a></li>
+                      <li class="nav-submenu-item"><a href="frameworks_ghost.html">Ghost</a></li>
+                      <li class="nav-submenu-item"><a href="frameworks_ionic.html">Ionic</a></li>
+                      <li class="nav-submenu-item"><a href="frameworks_jekyll.html">Jekyll</a></li>
+                      <li class="nav-submenu-item"><a href="frameworks_joomla.html">Joomla</a></li>
+                      <li class="nav-submenu-item"><a href="frameworks_koa.html">KoaJS</a></li>
+                      <li class="nav-submenu-item"><a href="frameworks_laravel.html">Laravel</a></li>
+                      <li class="nav-submenu-item"><a href="frameworks_meteor.html">Meteor</a></li>
+                      <li class="nav-submenu-item"><a href="frameworks_symfony2.html">Symfony</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-section">
+                    <div class="nav-section-header"><a href="javascript:void(0)">FAQ</a><i class="icon-chevron-down tocNavArrow"></i><i class="icon-chevron-up tocNavArrow"></i></div>
+                    <ul>
+                      <li class="nav-submenu-item"><a href="faq_general.html">General</a></li>
+                      <li class="nav-submenu-item"><a href="faq_php.html">PHP</a></li>
+                      <li class="nav-submenu-item"><a href="faq_python.html">Python</a></li>
+                      <li class="nav-submenu-item"><a href="faq_ssh.html">SSH workspaces</a></li>
+                    </ul>
+                  </li>
+                  <div class="alert alert-info">These articles are <a href="https://www.github.com/c9/docs.c9.io">open source</a>! Feel free to pull and contribute.</div>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="span12 documentationContainer">
+            <div id="content">
+              <div id="toh_btn" onclick="toggleTOH(this)"></div>
+              <h1>Share a workspace</h1>
+              <div><p>As you develop your application, often you just want to quickly demo your work-in-progress to a colleague, customer, or friend. 
+Or you want to pull in a fellow dev to debug an issue, or to pair program.</p>
+<p>Cloud9 enables you to do just these things, easily: share your entire development environment, the running application, or just a preview of your running application. 
+Here we describe how to access these options, and how to use each.</p>
+<h2 id='share-dialog'><a class='heading_anchor' href='#share-dialog'><i class='headerLinkIcon'></i></a>Share dialog</h2>
+<p>The best place to start sharing is from the dedicated &quot;Share&quot; dialog. 
+Access it via the &quot;Share&quot; button on the right top of the IDE, or via the menu in Window &gt; Share...</p>
+<p><img src="./resources/images/shareButtons.png" alt="Share buttons" width="614" height=" 102"></p>
+<p>Here&#39;s what you see when you pull up the Share dialog:</p>
+<p><img src="./resources/images/shareWorkspaceDialog.png" alt="Share Dialog" width="429" height=" 529"></p>
+<p><strong>Links to share</strong></p>
+<ul>
+<li>Editor: see section &quot;Share your development environment&quot;</li>
+<li>Application: see section &quot;Share your application&quot; </li>
+<li></li>
+</ul>
+<p>If you enable the &quot;Public&quot; checkbox for an option, it will make the URL accessible for anyone with the URL.
+For public workspaces all these URLs are public by default, but for private workspaces you have to enable them manually.</p>
+<p><strong>Who has access</strong></p>
+<p>This section refers to people you have specifically granted access to your entire development environment.
+(R) gives Read access only to that person: the ability to open and view files, and to run your code.
+(RW) or &quot;Read/Write&quot; also gives that person the ability to write to files.</p>
+<p><strong>Invite people</strong></p>
+<p>This section enables you to invite people to your workspace and immediately set if they have just &quot;Read&quot; or &quot;Read+Write&quot; rights. 
+You can invite people by their email address or Cloud9 username. 
+You can also choose whether or not send an automatic email to that person that they&#39;ve been invited to your workspace.</p>
+<h2 id='share-your-development-environment'><a class='heading_anchor' href='#share-your-development-environment'><i class='headerLinkIcon'></i></a>Share your development environment</h2>
+<p>Cloud9&#39;s Collaboration features allow you to share your entire development environment so you can work on code together, much like working on a document in Google Docs.
+You&#39;ll actually be able to see each other&#39;s cursor as you type, run your app, share the Terminal(s), and talk in the group chat.
+See the screenshot below for what this looks like:</p>
+<p><img src="./resources/images/collab.png" alt="Collaboration Features" width="550" height=" 890"></p>
+<p>In order to share your entire development environment, do one of the following: </p>
+<ol>
+<li>Make the URL publicly available to everyone: check the &quot;Public&quot; checkbox for the &quot;Editor&quot; in the &quot;Links to Share&quot; section.</li>
+<li>Choose to share only with specific people: invite them from the &quot;Invite people&quot; section.</li>
+<li>Grant/revoke access rights in the &quot;Who has access&quot; section.</li>
+</ol>
+<p>If someone asks for either Read or Read+Write access to your workspace, you can accept or deny them from the Collaboration panel on the right. </p>
+<div class="alert alert-success"><h4 class="alert-heading">Note: </h4>alternatively you can just share the URL to your workspace from the browser&#39;s URL bar and accept members as they request access to your workspace
+
+</div>
+<h2 id='share-your-application'><a class='heading_anchor' href='#share-your-application'><i class='headerLinkIcon'></i></a>Share your application</h2>
+<p>If you <a href="./run_an_application.html">Run your application</a> the result can be shared by copying the URL from the dialog. 
+This URL can only be viewed if it&#39;s made Public by checking the &quot;Public&quot; checkbox next to the &quot;Application&quot; in the &quot;Links to share&quot; section.</p>
+<p>People who have full read access to your workspace (as defined in the &quot;Who has access&quot;) can view this URL whether it&#39;s public or not.</p>
+<div class="alert alert-success"><h4 class="alert-heading">Note: </h4>alternatively you can just share the URL to your running app from the Preview panels&#39; URL bar
+
+</div>
+<h2 id='share-a-preview'><a class='heading_anchor' href='#share-a-preview'><i class='headerLinkIcon'></i></a>Share a Preview</h2>
+<p>If you Preview a file in your application, it can be shared by copying the URL from the dialog. 
+This URL can only be viewed if it&#39;s made Public by checking the &quot;Public&quot; checkbox next to the &quot;Preview&quot; in the &quot;Links to share&quot; section.</p>
+<p>People who have full read access to your workspace (as defined in the &quot;Who has access&quot;) can view this URL whether it&#39;s public or not.</p>
+<div class="alert alert-success"><h4 class="alert-heading">Note: </h4>alternatively you can just share the URL to your Preview from the Preview panels&#39; URL bar
+
+</div>
+<div class="alert alert-info"><h4 class="alert-heading">Tip: </h4>If you can&#39;t find how to preview your running app, try to use port 8080 in the URL.</div>
+
+              </div>
+              <div id="disqus_thread"></div>
+            </div>
+          </div>
+          <div id="tocHolder" class="span2"></li><ol class='tocContainer level_1'><li class='tocItem level_2'><a href='#share-dialog'>Share dialog</a></li><li class='tocItem level_2'><a href='#share-your-development-environment'>Share your development environment</a></li><li class='tocItem level_2'><a href='#share-your-application'>Share your application</a></li><li class='tocItem level_2'><a href='#share-a-preview'>Share a Preview</a></li></ol></li></ol>
+          </div>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js" type="text/javascript"></script>
+        <script src="./assets/min/javascripts.js" type="text/javascript"></script>
+      </div>
+      <div class="push"></div>
+    </div>
+    <footer>
+      <iframe id="footer_iframe" height="290px" width="100%" src="" scrolling="no" frameborder="0"></iframe>
+    </footer>
+  </body>
+</html>

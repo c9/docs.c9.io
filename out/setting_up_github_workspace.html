@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=us-ascii">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Setting Up a GitHub Workspace | Cloud9 User Documentation</title>
+    <link href="./assets/min/styles.css" rel="stylesheet" type="text/css">
+    <link rel="icon" type="image/x-icon" href="./assets/img/favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <iframe id="header_iframe" height="50px" width="100%" src="" scrolling="no" frameborder="0"></iframe>
+    <div id="wrapper" class="wrapper">
+      <div class="container">
+        <div class="row">
+          <div class="span3">
+            <div class="sidebar-nav">
+              <div id="search-header">
+                <form>
+                  <input id="st-search-input" name="search" type="text" value="" title="Press Enter for results" placeholder="Search the docs" style="width: 182px" class="input focused span3 st-search-input">
+                </form>
+              </div>
+              <div id="st-results-container"></div>
+              <div id="doc-nav" class="scroll-pane">
+                <ul id="nav">
+                  <li class="nav-section">
+                    <div class="nav-section-header"><a href="index.html">Home</a></div>
+                  </li>
+                  <!-- li.nav-section-->
+                  <!--   .nav-section-header-->
+                  <!--     a(href='https://www.youtube.com/user/c9ide/videos?flow=grid&view=1', target='_blank') Video Tutorials-->
+                  <li class="nav-section">
+                    <div class="nav-section-header"><a href="javascript:void(0)">Getting Started</a><i class="icon-chevron-down tocNavArrow"></i><i class="icon-chevron-up tocNavArrow"></i></div>
+                    <ul>
+                      <li class="nav-submenu-item"><a href="create_a_workspace.html">Create a workspace</a></li>
+                      <li class="nav-submenu-item"><a href="run_an_application.html">Run an application</a></li>
+                      <li class="nav-submenu-item"><a href="setup_a_database.html">Set up a database</a></li>
+                      <li class="nav-submenu-item"><a href="share_a_workspace.html">Share a workspace</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-section">
+                    <div class="nav-section-header"><a href="javascript:void(0)">Features</a><i class="icon-chevron-down tocNavArrow"></i><i class="icon-chevron-up tocNavArrow"></i></div>
+                    <ul>
+                      <li class="nav-submenu-item"><a href="supported_languages.html">Supported Languages</a></li>
+                      <li class="nav-submenu-item"><a href="syntax_highlighting_themes.html">Syntax Highlighting & Themes</a></li>
+                      <!-- li.nav-submenu-item-->
+                      <!--   a(href='collaboration.html') Collaboration-->
+                      <!-- li.nav-submenu-item-->
+                      <!--   a(href='colorpicker.html') Color Picker-->
+                      <li class="nav-submenu-item"><a href="multiple_cursors.html">Multiple Cursors</a></li>
+                      <!-- li.nav-submenu-item-->
+                      <!--   a(href='revisions.html') Revisions-->
+                      <li class="nav-submenu-item"><a href="language_analysis.html">Language Analysis</a></li>
+                      <li class="nav-submenu-item"><a href="autocompletion.html">Code Autocompletion</a></li>
+                      <!-- li.nav-submenu-item-->
+                      <!--   a(href='uploading_downloading.html') Uploading Files and Downloading Your Project-->
+                      <!-- li.nav-submenu-item-->
+                      <!--   a(href='gotofile_and_definition.html') Using Goto File and Goto Definition-->
+                      <li class="nav-submenu-item"><a href="searching_in_files.html">Searching and Replacing in Files</a></li>
+                      <!-- li.nav-submenu-item-->
+                      <!--   a(href='git_blame.html') Git Blame-->
+                      <!-- li.nav-submenu-item-->
+                      <!--   a(href='zen_mode.html') Zen Mode-->
+                      <li class="nav-submenu-item"><a href="custom_runners.html">Custom Runners</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-section">
+                    <div class="nav-section-header"><a href="javascript:void(0)">IDE Components</a><i class="icon-chevron-down tocNavArrow"></i><i class="icon-chevron-up tocNavArrow"></i></div>
+                    <ul>
+                      <!-- li.nav-submenu-item-->
+                      <!--   a(href='ide_overview.html') IDE Overview-->
+                      <li class="nav-submenu-item"><a href="the_editor.html">The Editor</a></li>
+                      <!-- li.nav-submenu-item-->
+                      <!--   a(href='console.html') The Console-->
+                      <li class="nav-submenu-item"><a href="dashboard.html">The Dashboard</a></li>
+                      <!-- li.nav-submenu-item-->
+                      <!--   a(href='project_bar.html') The Project Bar-->
+                      <!-- li.nav-submenu-item-->
+                      <!--   a(href='status_bar.html') The Status Bar-->
+                      <!-- li.nav-submenu-item-->
+                      <!--   a(href='terminal.html') The Terminal-->
+                      <!-- li.nav-submenu-item-->
+                      <!--   a(href='ide_preferences.html') IDE Preferences-->
+                      <!-- li.nav-submenu-item-->
+                      <!--   a(href='tab_functions.html') Tab Functions-->
+                      <!-- li.nav-submenu-item-->
+                      <!--   a(href='keybindings.html') Commands and Keybindings-->
+                    </ul>
+                  </li>
+                  <li class="nav-section">
+                    <div class="nav-section-header"><a href="javascript:void(0)">Creating Workspaces</a><i class="icon-chevron-down tocNavArrow"></i><i class="icon-chevron-up tocNavArrow"></i></div>
+                    <ul>
+                      <li class="nav-submenu-item"><a href="creating_new_workspace.html">Creating a New Workspace</a></li>
+                      <li class="nav-submenu-item"><a href="ssh_workspaces.html">Setting up SSH Workspaces</a></li>
+                      <li class="nav-submenu-item"><a href="setting_up_github_workspace.html">Setting up a GitHub Workspace</a></li>
+                      <li class="nav-submenu-item"><a href="setting_up_bitbucket_workspace.html">Setting up a Bitbucket Workspace</a></li>
+                      <li class="nav-submenu-item"><a href="setting_up_gitlab_workspace.html">Setting up a GitLab Workspace</a></li>
+                      <li class="nav-submenu-item"><a href="ftp_workspaces.html">Creating an FTP Workspace</a></li>
+                      <li class="nav-submenu-item"><a href="run_your_own_workspace.html">Running Your Own SSH Workspace</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-section">
+                    <div class="nav-section-header"><a href="javascript:void(0)">Running and Debugging Code</a><i class="icon-chevron-down tocNavArrow"></i><i class="icon-chevron-up tocNavArrow"></i></div>
+                    <ul>
+                      <li class="nav-submenu-item"><a href="running_and_debugging_code.html">Running and Debugging Your Code</a></li>
+                      <li class="nav-submenu-item"><a href="common_errors.html">Common Errors</a></li>
+                      <li class="nav-submenu-item"><a href="terminal_monitor.html">Terminal Monitor</a></li>
+                      <li class="nav-submenu-item"><a href="writing_nodejs_hello_world.html">Writing a Node.js App</a>
+                        <ul>
+                          <li class="nav-submenu-item"><a href="installing_npm_modules.html">Installing NPM Modules</a></li>
+                          <li class="nav-submenu-item"><a href="creating_coffeescript_app.html">Creating a Coffeescript App</a></li>
+                        </ul>
+                      </li>
+                      <li class="nav-submenu-item"><a href="writing_a_python_app.html">Writing a Python App</a>
+                        <ul>
+                          <li class="nav-submenu-item"><a href="installing_python_packages.html">Installing Python Packages</a></li>
+                        </ul>
+                      </li>
+                      <li class="nav-submenu-item"><a href="writing_a_ruby_app.html">Writing a Ruby App</a>
+                        <ul>
+                          <li class="nav-submenu-item"><a href="installing_ruby_gems.html">Installing Ruby Gems</a></li>
+                          <li class="nav-submenu-item"><a href="running_a_rails_app.html">Running a Rails App</a></li>
+                        </ul>
+                      </li>
+                      <li class="nav-submenu-item"><a href="writing_a_php_app.html">Writing a PHP App</a>
+                        <ul>
+                          <li class="nav-submenu-item"><a href="editing_wordpress_sites.html">Editing Remote WordPress Websites</a></li>
+                          <li class="nav-submenu-item"><a href="running_wordpress_on_cloud9.html">Running WordPress on Cloud9</a></li>
+                        </ul>
+                      </li>
+                      <li class="nav-submenu-item"><a href="writing_a_go_app.html">Writing a Go App</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-section">
+                    <div class="nav-section-header"><a href="javascript:void(0)">Database and Persistence</a><i class="icon-chevron-down tocNavArrow"></i><i class="icon-chevron-up tocNavArrow"></i></div>
+                    <ul>
+                      <li class="nav-submenu-item"><a href="setting_up_mysql.html">Using MySQL</a></li>
+                      <li class="nav-submenu-item"><a href="setting_up_mongodb.html">Using MongoDB</a></li>
+                      <li class="nav-submenu-item"><a href="setting_up_postgresql.html">Using PostgreSQL</a></li>
+                      <li class="nav-submenu-item"><a href="setting_up_redis.html">Using Redis</a></li>
+                      <li class="nav-submenu-item"><a href="setting_up_sqlite3.html">Using SQLite</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-section">
+                    <div class="nav-section-header"><a href="javascript:void(0)">Deploying Code</a><i class="icon-chevron-down tocNavArrow"></i><i class="icon-chevron-up tocNavArrow"></i></div>
+                    <ul>
+                      <!-- li.nav-submenu-item-->
+                      <!--   a(href='deploying_code.html') Deploying Your Code-->
+                      <!-- li.nav-submenu-item-->
+                      <!--   a(href='deploying_to_heroku.html') Deploying to Heroku-->
+                      <!-- li.nav-submenu-item-->
+                      <!--   a(href='deploying_to_windows_azure_sites.html') Deploying to Windows Azure Sites-->
+                      <li class="nav-submenu-item"><a href="deploying_via_cli.html">Deploying via the Command Line</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-section">
+                    <div class="nav-section-header"><a href="javascript:void(0)">Popular Frameworks</a><i class="icon-chevron-down tocNavArrow"></i><i class="icon-chevron-up tocNavArrow"></i></div>
+                    <ul>
+                      <li class="nav-submenu-item"><a href="frameworks_angularjs.html">AngularJS</a></li>
+                      <li class="nav-submenu-item"><a href="frameworks_drupal.html">Drupal</a></li>
+                      <li class="nav-submenu-item"><a href="frameworks_express.html">Express</a></li>
+                      <li class="nav-submenu-item"><a href="frameworks_ghost.html">Ghost</a></li>
+                      <li class="nav-submenu-item"><a href="frameworks_ionic.html">Ionic</a></li>
+                      <li class="nav-submenu-item"><a href="frameworks_jekyll.html">Jekyll</a></li>
+                      <li class="nav-submenu-item"><a href="frameworks_joomla.html">Joomla</a></li>
+                      <li class="nav-submenu-item"><a href="frameworks_koa.html">KoaJS</a></li>
+                      <li class="nav-submenu-item"><a href="frameworks_laravel.html">Laravel</a></li>
+                      <li class="nav-submenu-item"><a href="frameworks_meteor.html">Meteor</a></li>
+                      <li class="nav-submenu-item"><a href="frameworks_symfony2.html">Symfony</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-section">
+                    <div class="nav-section-header"><a href="javascript:void(0)">FAQ</a><i class="icon-chevron-down tocNavArrow"></i><i class="icon-chevron-up tocNavArrow"></i></div>
+                    <ul>
+                      <li class="nav-submenu-item"><a href="faq_general.html">General</a></li>
+                      <li class="nav-submenu-item"><a href="faq_php.html">PHP</a></li>
+                      <li class="nav-submenu-item"><a href="faq_python.html">Python</a></li>
+                      <li class="nav-submenu-item"><a href="faq_ssh.html">SSH workspaces</a></li>
+                    </ul>
+                  </li>
+                  <div class="alert alert-info">These articles are <a href="https://www.github.com/c9/docs.c9.io">open source</a>! Feel free to pull and contribute.</div>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="span12 documentationContainer">
+            <div id="content">
+              <div id="toh_btn" onclick="toggleTOH(this)"></div>
+              <h1>Setting Up a GitHub Workspace</h1>
+              <div><p>GitHub is a code hosting service which offers you a lot of features to manage your public and private git repositories. For more information about GitHub and how to use it, visit <a href="https://github.com">https://github.com</a>.</p>
+<p>We have integrated GitHub into the IDE to enable you to easily work on your public and private Git repositories. The following article explains how you can activate your GitHub account in Cloud9 IDE.</p>
+<h2 id='github-activation'><a class='heading_anchor' href='#github-activation'><i class='headerLinkIcon'></i></a>GitHub Activation</h2>
+<p>You can manage your add-on services from your user profile that you can find in <a href="./dashboard.html">the dashboard</a>. When you have just signed in, click <strong>Your Account</strong> on the top of the left-side panel. Here, you can change the settings of your account. At the bottom, you&#39;ll see a list of add-on services that are integrated into Cloud9 IDE. Click <strong>activate</strong> on the GitHub button:</p>
+<p><img src="./resources/images/addonServices.png" alt="Add-on Services Screenshot" width="417" height=" 213"></p>
+<p>A new window will pop-up on your screen. This window asks you to give authorization permission for the Cloud9 IDE application to interact in various ways with GitHub:</p>
+<p><img src="./resources/images/githubAuthorization.png" alt="GitHub Permissions Window" width="428" height=" 311"></p>
+<p>To finalize the activation, click on <strong>Allow</strong>. Next, you&#39;re redirected to your account page, where you&#39;ll notice that your GitHub account is activated. You can deactivate GitHub by simply clicking deactivate, which may be useful when you want to link your GitHub account to another Cloud9 account.</p>
+<p>Now that you have activated GitHub, you can start to create and manage git projects!</p>
+<h2 id='managing-git-projects'><a class='heading_anchor' href='#managing-git-projects'><i class='headerLinkIcon'></i></a>Managing Git Projects</h2>
+<p>There are several ways to manage GitHub projects in Cloud9 IDE:</p>
+<ul>
+<li>By creating a new git project and pushing it to GitHub</li>
+<li>By cloning a GitHub project from a URL</li>
+<li>By bringing in a GitHub project manually</li>
+</ul>
+<h3 id='creating-a-new-git-project'><a class='heading_anchor' href='#creating-a-new-git-project'><i class='headerLinkIcon'></i></a>Creating a New Git Project</h3>
+<p>New projects are created from the dashboard. In the left-side panel, click on the <img src="./resources/icons/workspacePlusIcon.png" alt="Project Add Icon" width="" height=""> to add a new project:</p>
+<p><img src="./resources/images/newWorkspace.png" alt="New project menu" width="249" height=" 106"></p>
+<p>A new window will pop-up in which you can change your settings to your preferences:</p>
+<ul>
+<li>Fill in your preferred project name in the text field</li>
+<li>Choose who will have access to the project (a feature for Premium customers)</li>
+<li>Select your project type (git, mercurial, or FTP)</li>
+<li>Choose a development server (a feature for Premium customers)
+{: #setupOptions}</li>
+</ul>
+<p><img src="./resources/images/createNewWorkspaceOptions.png" alt="New Project Options" width="651" height=" 151"></p>
+<p>Select git as your project type. After you click <strong>CREATE</strong>, the project is listed in your dashboard. Select the project to see its Project Profile, where you can start editing: <img src="./resources/icons/startEditing.png" alt="Start editing button" width="" height=""></p>
+<p>There are a couple of things you should do first, before you can use all of git&#39;s power. First, you&#39;ll want to add a remote to the project. From the Cloud9 IDE command line, you can execute the following commands: </p>
+<pre><code class="language-bash">git remote add [remote name] [remote url]</code></pre>
+<p><code>remote url</code> is the location of the project on GitHub; for example <code>&#39;git@github.com:/ajaxorg/node_chat&#39;</code>. You&#39;ll have to create a GitHub project first in order to generate this URL. Adding a remote URL lets you freely push and pull your project.</p>
+<p>Next, create a few new files inside your project. By default, you should already have a <em>README.md</em>. You can add these files to git with the following command:</p>
+<pre><code class="language-bash">git add [file1, file2, file3, ...]</code></pre>
+<p>Finally, create a commit that you can push to your remote:</p>
+<pre><code class="language-bash">git commit -m <span class="string">'added new files'</span></code></pre>
+<p>Don&#39;t forget to push this commit out to GitHub: </p>
+<pre><code class="language-bash">git push [remote name] master</code></pre>
+<p>Ta-da! Your project is developed on Cloud9, and stored in GitHub.</p>
+<h3 id='cloning-projects-from-a-url'><a class='heading_anchor' href='#cloning-projects-from-a-url'><i class='headerLinkIcon'></i></a>Cloning Projects from a URL</h3>
+<p>You can also create a project in Cloud9 IDE by cloning it from a URL. Once again, click on the <img src="./resources/icons/workspacePlusIcon.png" alt="Project Add Icon" width="" height="">, and select <strong>Clone from URL</strong>. A new window pops up, asking you:</p>
+<ul>
+<li>to enter a Source URL</li>
+<li>to choose who will have access to the project (Premium feature)  </li>
+<li>to choose a development server (Premium feature)<br>{: #cloningOptions}</li>
+</ul>
+<p><img src="./resources/images/cloneWorkspaceOptions.png" alt="Clone Project Options" width="650" height=" 105"></p>
+<p>You can find an examples of a GitHub URL on any of their repo description pages:</p>
+<p><img src="./resources/images/githubProjectURL.png" alt="GitHub Repo Description" width="492" height=" 55"></p>
+<p>Paste the URL in the source field and click <strong>CHECKOUT</strong>. In the left-side panel, you&#39;ll see the project and its status turn into &quot;Cloning in Progress&quot;. When this process is completed you can open the project and start editing it, just like any other project.</p>
+<h3 id='clone-projects-already-on-github'><a class='heading_anchor' href='#clone-projects-already-on-github'><i class='headerLinkIcon'></i></a>Clone Projects Already On GitHub</h3>
+<p>When you provide Cloud9 IDE with your GitHub credentials, it provides a list of projects you haven&#39;t yet imported into the editor:</p>
+<p><img src="./resources/images/githubPendingWorkspaces.png" alt="GitHub Pending Projects" width="235" height=" 271"></p>
+<p>From this list, clicking on a project and selecting <strong>CLONE TO EDIT</strong> brings the repo into the IDE, just as if you cloned it from a URL.</p>
+
+              </div>
+              <div id="disqus_thread"></div>
+            </div>
+          </div>
+          <div id="tocHolder" class="span2"></li><ol class='tocContainer level_1'><li class='tocItem level_2'><a href='#github-activation'>GitHub Activation</a></li><li class='tocItem level_2'><a href='#managing-git-projects'>Managing Git Projects</a><ol class='tocContainer level_2'><li class='tocItem level_3'><a href='#creating-a-new-git-project'>Creating a New Git Project</a></li><li class='tocItem level_3'><a href='#cloning-projects-from-a-url'>Cloning Projects from a URL</a></li><li class='tocItem level_3'><a href='#clone-projects-already-on-github'>Clone Projects Already On GitHub</a></li></ol></li></ol></li></ol>
+          </div>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js" type="text/javascript"></script>
+        <script src="./assets/min/javascripts.js" type="text/javascript"></script>
+      </div>
+      <div class="push"></div>
+    </div>
+    <footer>
+      <iframe id="footer_iframe" height="290px" width="100%" src="" scrolling="no" frameborder="0"></iframe>
+    </footer>
+  </body>
+</html>

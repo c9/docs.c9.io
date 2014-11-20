@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=us-ascii">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IDE Overview | Cloud9 User Documentation</title>
+    <link href="./assets/min/styles.css" rel="stylesheet" type="text/css">
+    <link rel="icon" type="image/x-icon" href="./assets/img/favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <iframe id="header_iframe" height="50px" width="100%" src="" scrolling="no" frameborder="0"></iframe>
+    <div id="wrapper" class="wrapper">
+      <div class="container">
+        <div class="row">
+          <div class="span3">
+            <div class="sidebar-nav">
+              <div id="search-header">
+                <form>
+                  <input id="st-search-input" name="search" type="text" value="" title="Press Enter for results" placeholder="Search the docs" style="width: 182px" class="input focused span3 st-search-input">
+                </form>
+              </div>
+              <div id="st-results-container"></div>
+              <div id="doc-nav" class="scroll-pane">
+                <ul id="nav">
+                  <li class="nav-section">
+                    <div class="nav-section-header"><a href="index.html">Home</a></div>
+                  </li>
+                  <!-- li.nav-section-->
+                  <!--   .nav-section-header-->
+                  <!--     a(href='https://www.youtube.com/user/c9ide/videos?flow=grid&view=1', target='_blank') Video Tutorials-->
+                  <li class="nav-section">
+                    <div class="nav-section-header"><a href="javascript:void(0)">Getting Started</a><i class="icon-chevron-down tocNavArrow"></i><i class="icon-chevron-up tocNavArrow"></i></div>
+                    <ul>
+                      <li class="nav-submenu-item"><a href="create_a_workspace.html">Create a workspace</a></li>
+                      <li class="nav-submenu-item"><a href="run_an_application.html">Run an application</a></li>
+                      <li class="nav-submenu-item"><a href="setup_a_database.html">Set up a database</a></li>
+                      <li class="nav-submenu-item"><a href="share_a_workspace.html">Share a workspace</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-section">
+                    <div class="nav-section-header"><a href="javascript:void(0)">Features</a><i class="icon-chevron-down tocNavArrow"></i><i class="icon-chevron-up tocNavArrow"></i></div>
+                    <ul>
+                      <li class="nav-submenu-item"><a href="supported_languages.html">Supported Languages</a></li>
+                      <li class="nav-submenu-item"><a href="syntax_highlighting_themes.html">Syntax Highlighting & Themes</a></li>
+                      <!-- li.nav-submenu-item-->
+                      <!--   a(href='collaboration.html') Collaboration-->
+                      <!-- li.nav-submenu-item-->
+                      <!--   a(href='colorpicker.html') Color Picker-->
+                      <li class="nav-submenu-item"><a href="multiple_cursors.html">Multiple Cursors</a></li>
+                      <!-- li.nav-submenu-item-->
+                      <!--   a(href='revisions.html') Revisions-->
+                      <li class="nav-submenu-item"><a href="language_analysis.html">Language Analysis</a></li>
+                      <li class="nav-submenu-item"><a href="autocompletion.html">Code Autocompletion</a></li>
+                      <!-- li.nav-submenu-item-->
+                      <!--   a(href='uploading_downloading.html') Uploading Files and Downloading Your Project-->
+                      <!-- li.nav-submenu-item-->
+                      <!--   a(href='gotofile_and_definition.html') Using Goto File and Goto Definition-->
+                      <li class="nav-submenu-item"><a href="searching_in_files.html">Searching and Replacing in Files</a></li>
+                      <!-- li.nav-submenu-item-->
+                      <!--   a(href='git_blame.html') Git Blame-->
+                      <!-- li.nav-submenu-item-->
+                      <!--   a(href='zen_mode.html') Zen Mode-->
+                      <li class="nav-submenu-item"><a href="custom_runners.html">Custom Runners</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-section">
+                    <div class="nav-section-header"><a href="javascript:void(0)">IDE Components</a><i class="icon-chevron-down tocNavArrow"></i><i class="icon-chevron-up tocNavArrow"></i></div>
+                    <ul>
+                      <!-- li.nav-submenu-item-->
+                      <!--   a(href='ide_overview.html') IDE Overview-->
+                      <li class="nav-submenu-item"><a href="the_editor.html">The Editor</a></li>
+                      <!-- li.nav-submenu-item-->
+                      <!--   a(href='console.html') The Console-->
+                      <li class="nav-submenu-item"><a href="dashboard.html">The Dashboard</a></li>
+                      <!-- li.nav-submenu-item-->
+                      <!--   a(href='project_bar.html') The Project Bar-->
+                      <!-- li.nav-submenu-item-->
+                      <!--   a(href='status_bar.html') The Status Bar-->
+                      <!-- li.nav-submenu-item-->
+                      <!--   a(href='terminal.html') The Terminal-->
+                      <!-- li.nav-submenu-item-->
+                      <!--   a(href='ide_preferences.html') IDE Preferences-->
+                      <!-- li.nav-submenu-item-->
+                      <!--   a(href='tab_functions.html') Tab Functions-->
+                      <!-- li.nav-submenu-item-->
+                      <!--   a(href='keybindings.html') Commands and Keybindings-->
+                    </ul>
+                  </li>
+                  <li class="nav-section">
+                    <div class="nav-section-header"><a href="javascript:void(0)">Creating Workspaces</a><i class="icon-chevron-down tocNavArrow"></i><i class="icon-chevron-up tocNavArrow"></i></div>
+                    <ul>
+                      <li class="nav-submenu-item"><a href="creating_new_workspace.html">Creating a New Workspace</a></li>
+                      <li class="nav-submenu-item"><a href="ssh_workspaces.html">Setting up SSH Workspaces</a></li>
+                      <li class="nav-submenu-item"><a href="setting_up_github_workspace.html">Setting up a GitHub Workspace</a></li>
+                      <li class="nav-submenu-item"><a href="setting_up_bitbucket_workspace.html">Setting up a Bitbucket Workspace</a></li>
+                      <li class="nav-submenu-item"><a href="setting_up_gitlab_workspace.html">Setting up a GitLab Workspace</a></li>
+                      <li class="nav-submenu-item"><a href="ftp_workspaces.html">Creating an FTP Workspace</a></li>
+                      <li class="nav-submenu-item"><a href="run_your_own_workspace.html">Running Your Own SSH Workspace</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-section">
+                    <div class="nav-section-header"><a href="javascript:void(0)">Running and Debugging Code</a><i class="icon-chevron-down tocNavArrow"></i><i class="icon-chevron-up tocNavArrow"></i></div>
+                    <ul>
+                      <li class="nav-submenu-item"><a href="running_and_debugging_code.html">Running and Debugging Your Code</a></li>
+                      <li class="nav-submenu-item"><a href="common_errors.html">Common Errors</a></li>
+                      <li class="nav-submenu-item"><a href="terminal_monitor.html">Terminal Monitor</a></li>
+                      <li class="nav-submenu-item"><a href="writing_nodejs_hello_world.html">Writing a Node.js App</a>
+                        <ul>
+                          <li class="nav-submenu-item"><a href="installing_npm_modules.html">Installing NPM Modules</a></li>
+                          <li class="nav-submenu-item"><a href="creating_coffeescript_app.html">Creating a Coffeescript App</a></li>
+                        </ul>
+                      </li>
+                      <li class="nav-submenu-item"><a href="writing_a_python_app.html">Writing a Python App</a>
+                        <ul>
+                          <li class="nav-submenu-item"><a href="installing_python_packages.html">Installing Python Packages</a></li>
+                        </ul>
+                      </li>
+                      <li class="nav-submenu-item"><a href="writing_a_ruby_app.html">Writing a Ruby App</a>
+                        <ul>
+                          <li class="nav-submenu-item"><a href="installing_ruby_gems.html">Installing Ruby Gems</a></li>
+                          <li class="nav-submenu-item"><a href="running_a_rails_app.html">Running a Rails App</a></li>
+                        </ul>
+                      </li>
+                      <li class="nav-submenu-item"><a href="writing_a_php_app.html">Writing a PHP App</a>
+                        <ul>
+                          <li class="nav-submenu-item"><a href="editing_wordpress_sites.html">Editing Remote WordPress Websites</a></li>
+                          <li class="nav-submenu-item"><a href="running_wordpress_on_cloud9.html">Running WordPress on Cloud9</a></li>
+                        </ul>
+                      </li>
+                      <li class="nav-submenu-item"><a href="writing_a_go_app.html">Writing a Go App</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-section">
+                    <div class="nav-section-header"><a href="javascript:void(0)">Database and Persistence</a><i class="icon-chevron-down tocNavArrow"></i><i class="icon-chevron-up tocNavArrow"></i></div>
+                    <ul>
+                      <li class="nav-submenu-item"><a href="setting_up_mysql.html">Using MySQL</a></li>
+                      <li class="nav-submenu-item"><a href="setting_up_mongodb.html">Using MongoDB</a></li>
+                      <li class="nav-submenu-item"><a href="setting_up_postgresql.html">Using PostgreSQL</a></li>
+                      <li class="nav-submenu-item"><a href="setting_up_redis.html">Using Redis</a></li>
+                      <li class="nav-submenu-item"><a href="setting_up_sqlite3.html">Using SQLite</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-section">
+                    <div class="nav-section-header"><a href="javascript:void(0)">Deploying Code</a><i class="icon-chevron-down tocNavArrow"></i><i class="icon-chevron-up tocNavArrow"></i></div>
+                    <ul>
+                      <!-- li.nav-submenu-item-->
+                      <!--   a(href='deploying_code.html') Deploying Your Code-->
+                      <!-- li.nav-submenu-item-->
+                      <!--   a(href='deploying_to_heroku.html') Deploying to Heroku-->
+                      <!-- li.nav-submenu-item-->
+                      <!--   a(href='deploying_to_windows_azure_sites.html') Deploying to Windows Azure Sites-->
+                      <li class="nav-submenu-item"><a href="deploying_via_cli.html">Deploying via the Command Line</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-section">
+                    <div class="nav-section-header"><a href="javascript:void(0)">Popular Frameworks</a><i class="icon-chevron-down tocNavArrow"></i><i class="icon-chevron-up tocNavArrow"></i></div>
+                    <ul>
+                      <li class="nav-submenu-item"><a href="frameworks_angularjs.html">AngularJS</a></li>
+                      <li class="nav-submenu-item"><a href="frameworks_drupal.html">Drupal</a></li>
+                      <li class="nav-submenu-item"><a href="frameworks_express.html">Express</a></li>
+                      <li class="nav-submenu-item"><a href="frameworks_ghost.html">Ghost</a></li>
+                      <li class="nav-submenu-item"><a href="frameworks_ionic.html">Ionic</a></li>
+                      <li class="nav-submenu-item"><a href="frameworks_jekyll.html">Jekyll</a></li>
+                      <li class="nav-submenu-item"><a href="frameworks_joomla.html">Joomla</a></li>
+                      <li class="nav-submenu-item"><a href="frameworks_koa.html">KoaJS</a></li>
+                      <li class="nav-submenu-item"><a href="frameworks_laravel.html">Laravel</a></li>
+                      <li class="nav-submenu-item"><a href="frameworks_meteor.html">Meteor</a></li>
+                      <li class="nav-submenu-item"><a href="frameworks_symfony2.html">Symfony</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-section">
+                    <div class="nav-section-header"><a href="javascript:void(0)">FAQ</a><i class="icon-chevron-down tocNavArrow"></i><i class="icon-chevron-up tocNavArrow"></i></div>
+                    <ul>
+                      <li class="nav-submenu-item"><a href="faq_general.html">General</a></li>
+                      <li class="nav-submenu-item"><a href="faq_php.html">PHP</a></li>
+                      <li class="nav-submenu-item"><a href="faq_python.html">Python</a></li>
+                      <li class="nav-submenu-item"><a href="faq_ssh.html">SSH workspaces</a></li>
+                    </ul>
+                  </li>
+                  <div class="alert alert-info">These articles are <a href="https://www.github.com/c9/docs.c9.io">open source</a>! Feel free to pull and contribute.</div>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="span12 documentationContainer">
+            <div id="content">
+              <div id="toh_btn" onclick="toggleTOH(this)"></div>
+              <h1>IDE Overview</h1>
+              <div><div class="alert alert-success"><h4 class="alert-heading">Note: </h4>this article is outdated, a new version will follow soon
+
+</div>
+<p>Cloud9 IDE can be thought of as being divided into the following components:</p>
+<p><img src="./resources/images/editorNaming.png" alt="IDE Components" width="1106" height=" 803"></p>
+<p>Throughout the documentation, we&#39;ll refer to these sections by name. We can identify several distinct areas in the editor:</p>
+<ul>
+<li>The top menu bar is the uppermost area, with easy access to a variety of menus</li>
+<li>The project bar on the left lets you manipulate various aspects of your project, including its active files, preferences, and choices for deployment</li>
+<li>The panel displays views according to what&#39;s been selected in the project bar</li>
+<li>The toolbar is on the far right, where you can find tools used when <a href="./running_and_debugging_code.html">debugging your code</a>. Projects that are <a href="./collaboration.html">open with collaboration</a> also make use of this panel for chatting.</li>
+<li>The code editor is the main area where you write your code.</li>
+<li>The console is the bottom area of the window. It&#39;s an expandable area that can act like a desktop terminal to enter command line input (like <code>ls</code> or <code>mkdir</code>). It also displays output provided by your program&#39;s print statements (like <code>console.log()</code>), as well as providing an area for search results</li>
+</ul>
+<p>The <a href="./project_bar.html">Project Bar</a>, <a href="./running_and_debugging_code.html">Tool Bar</a>, and <a href="./console.html">Console</a> are powerful features, so their documentation is provided separately. We&#39;ll talk about the rest of the editor below:</p>
+<p>Remember: nearly every UI element can be collapsed, in order to provided a more harmonious coding experience. For example, clicking on the buttons in the upper left of the editor allows you to hide the panels and top menu bar:<br><img src="./resources/anims/collapsingbars.gif" alt="Hiding panel elements" width="" height=""></p>
+<h2 id='the-top-menu-bar'><a class='heading_anchor' href='#the-top-menu-bar'><i class='headerLinkIcon'></i></a>The Top Menu Bar</h2>
+<p><img src="./resources/images/topMenuBar.png" alt="A screenshot of the top menu bar" width="757" height=" 22"></p>
+<p>In this section, you can find the usual menus for creating and saving files, changing your view, <a href="./supported_languages.html">applying a new theme for the editor</a>, and switching between windows.</p>
+<p>In the middle of the menu bar you&#39;ll find the <strong>debug</strong> button: <img src="./resources/icons/debugButton.png" alt="The debug button" width="" height="">. This is used for running and debugging your code. For more information, see <a href="./running_and_debugging_code.html">the section on &quot;Running and Debugging Your Code&quot;.</a>.</p>
+<p><a id="previewButton"></a></p>
+<p>The preview button <img src="./resources/icons/previewButton.png" alt="The preview button" width="" height=""> provides you with a look of what the currently active file would look like in the browser. For text files, this is usually just the raw text, but certain files, like HTML or XML, render as the actual markup.</p>
+<p>The autosave button indicates the status of your current saves: <img src="./resources/icons/autosaveButton.png" alt="Autosave Button" width="" height="">. Files are saved automatically by Cloud9 IDE, and every revision is made available for you to browse through. For more information, see <a href="./revisions.html">the section on revisions and saving</a>.</p>
+<p>On the far right of the menu, near the Cloud9 IDE logo, there are two more icons: one to return to <a href="./dashboard.html">the dashboard</a>, and one to return to the Cloud9 IDE homepage.</p>
+<h2 id='the-code-editor'><a class='heading_anchor' href='#the-code-editor'><i class='headerLinkIcon'></i></a>The Code Editor</h2>
+<p>This is where most of the action happens. Every file you open appears here as a tab. You can open a new file easily by clicking on the <img src="./resources/icons/tabPlusIcon.png" alt="Tab add icon" width="" height=""> button to the right of the last tab. Cloud9 IDE offers <a href="./supported_languages.html">syntax highlighting</a> for over two dozen programming languages.</p>
+<p>The code editor supports a large number of keyboard shortcuts to increase your productivity. For an up-to-date list of these within the IDE, simply go to <span class="menucascade"><span class="menuitem"><strong>Help</strong></span><span class='menudivider'> <strong>&gt;</strong> </span><span class='menuitem'><strong>Keyboard Shortcuts</strong></span></span>.</p>
+<p>If you hover over to the upper-right corner, you can <a href="./zen_mode.html">activate zen-mode</a>, which is a full screen coding environment. </p>
+<p>At the lower-right corner, you can find <a href="./status_bar.html">the status bar</a>.</p>
+
+              </div>
+              <div id="disqus_thread"></div>
+            </div>
+          </div>
+          <div id="tocHolder" class="span2"></li><ol class='tocContainer level_1'><li class='tocItem level_2'><a href='#the-top-menu-bar'>The Top Menu Bar</a></li><li class='tocItem level_2'><a href='#the-code-editor'>The Code Editor</a></li></ol></li></ol>
+          </div>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js" type="text/javascript"></script>
+        <script src="./assets/min/javascripts.js" type="text/javascript"></script>
+      </div>
+      <div class="push"></div>
+    </div>
+    <footer>
+      <iframe id="footer_iframe" height="290px" width="100%" src="" scrolling="no" frameborder="0"></iframe>
+    </footer>
+  </body>
+</html>
