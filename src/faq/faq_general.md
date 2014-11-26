@@ -26,7 +26,11 @@ This should give you a list of all members of that directory and how much space 
 
 Alternatively, try `du-c9` for seeing all files you added to your workspace and account for the quota.
 
-### I can't preview my running app.
+## Can I use two-factor authentication with Cloud9?
+You can sign into Cloud9 with your github or bitbucket account and set that up to use two-factor authentication.
+We don't currently provide an option to directly setup your Cloud9 account for two-factor authentication.
+
+### I can't preview my running app. 
 Try using port 8080 instead, which often solves this case.
 
 ### EADDRINUSE: My app complains that the address/port is in use 
