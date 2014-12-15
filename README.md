@@ -20,12 +20,7 @@ A development build differs in that it does not compress assets or add iframe he
 
 # Deploy
 
-We host https://docs.c9.io on github pages. In order to deploy please run
-
-	node build.js
-
-and then commit the generated HTML. Once this is merged into the gh-pages branch
-the site is deployed.
+The site https://docs.c9.io is deployed automatically whenever something is pushed to master.
 
 # Contributing
 

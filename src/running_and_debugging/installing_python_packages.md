@@ -5,7 +5,7 @@ Cloud9 supports the installation of Python packages for applications that need t
 Let's try installing a package. First, type the following in the console:
 
 ```bash
-easy_install markdown
+sudo easy_install markdown
 ```
 
 This installs [the `markdown` Python package](http://pypi.python.org/pypi/Markdown/) to your workspace. You won't see the package installed in the directory tree, because it's kept deep within your project's the Python libs. 
