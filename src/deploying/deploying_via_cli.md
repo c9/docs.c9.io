@@ -100,16 +100,19 @@ git push <giturl> master
 ## CloudFoundry
 
 To deploy to CloudFoundry from the command line in [the Console](./console.html) 
-or [a Terminal](./terminal.html), type:
+or [a Terminal](./terminal.html), you need to install [Go](./writing_a_go_app.html#download-go) first.
+
+After Go is installed, type:
 
 ```
 cd ~
-wget https://github.com/cloudfoundry/vmc/zipball/master
-mv master cloudfoundry
-unzip cloudfoundry
-cd cloudfoundry-vmc-nnnn
-bundle 
+wget -o cf.zip https://cli.run.pivotal.io/stable?release=linux64-binary&source=github
+tar -xvzf cf.zip
 ```
+
+You can now run `cf` from the Console and the Terminal. For more information, see 
+[the official `CloudFoundry` documentation](https://github.com/cloudfoundry/cli).
+
 
 ## NodeJitsu
 
