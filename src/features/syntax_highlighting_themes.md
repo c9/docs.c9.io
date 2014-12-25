@@ -44,6 +44,7 @@ We support highlighting for at least the following languages, and many more:
 * ColdFusion
 * C#
 * CSS
+* Dart
 * Go
 * Groovy
 * haXe
