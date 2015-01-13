@@ -1,6 +1,6 @@
 # Setting Up a Bitbucket Workspace
 
-Bitbucket is a code-hosting services that offers both git and mercurial support. Projects can be listed as private or public, absolutely free. For more information on Bitbucket, visit <https://bitbucket.org>. 
+Bitbucket is a code-hosting services that offers both git and mercurial support. Projects can be listed as private or public, absolutely free. For more information on Bitbucket, visit <https://bitbucket.org>.
 
 We have integrated Bitbucket into the IDE to enable you to easily work on your public and private repositories. The following article explains how you can activate your Bitbucket account in Cloud9 IDE.
 
@@ -40,7 +40,7 @@ There are several ways to manage Bitbucket projects in Cloud9 IDE:
 
 {:postCreate}
 
-There are a couple of things you should do first, before you can use all of git's power. First, you'll want to add a remote to the project. From the Cloud9 IDE command line, you can execute the following commands: 
+There are a couple of things you should do first, before you can use all of git's power. First, you'll want to add a remote to the project. From the Cloud9 IDE command line, you can execute the following commands:
 
 ```bash
 git remote add [remote name] [remote url]
@@ -60,7 +60,7 @@ Finally, create a commit that you can push to your remote:
 git commit -m 'added new files'
 ```
 
-Don't forget to push this commit out to Bitbucket: 
+Don't forget to push this commit out to Bitbucket:
 
 ```bash
 git push [remote name] master
@@ -89,3 +89,6 @@ When you provide Cloud9 IDE with your Bitbucket credentials, it provides a list 
 ![Bitbucket Pending Projects](./resources/images/bitbucketPendingWorkspaces.png)<250, 426>
 
 From this list, clicking on a project and selecting **CLONE TO EDIT** brings the repo into the IDE, just as if you cloned it from a URL.
+
+Note:
+In addition to the previously mentioned methods, you may also create a new workspace and perform a Git clone from the terminal in that new workspace.
