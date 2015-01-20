@@ -19,8 +19,6 @@ If deploying to Heroku, you should probably be using a local instance of Postgre
 
 ## Windows Azure Web Sites
 
-### Free and Premium Plans
-
 In [the Console](./console.html) or [a Terminal](./terminal.html), type the 
 following:
 
@@ -30,23 +28,6 @@ npm install azure
 
 Now, you can use the `azure` command from the Console/Terminal. For more 
 information, read [the official `azure` documentation](https://github.com/WindowsAzure/azure-sdk-for-node).
-
-### Premium Plans
-
-To deploy to Azure sites from the command line, open the Terminal and type:
-
-```bash
-cd ~/lib/azure-sites
-npm install
-```
-
-Then, add the bin to your workspace's path:
-
-```
-PATH=$PATH:$HOME/lib/azure-sites/bin
-```
-
-Now, you can use the `azure` command in the terminal.
 
 ## Windows Azure Cloud Services
 
