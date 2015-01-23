@@ -10,7 +10,7 @@ PostgreSQL comes preinstalled on every Cloud9 workspace, yay.
 
 ### Set the "postgres" user password
 
-    $ sudo sudo -u postgres psql                                                                                  
+    $ sudo -u postgres psql                                                                                  
     psql (9.3.4, server 9.3.5)
     Type "help" for help.
     
@@ -21,16 +21,16 @@ PostgreSQL comes preinstalled on every Cloud9 workspace, yay.
 
 ## Connect to the service
 
-    $ sudo sudo -u postgres psql                                                                                  
+    $ sudo -u postgres psql                                                                                  
 
 ## Create a PostgreSQL database
 
 Make sure you have logged into the PostgreSQL terminal and then you can just run:
 
-    $ sudo sudo -u postgres psql                                                                                  
+    $ sudo -u postgres psql                                                                                  
     postgres=# create database "groceries";
     
 ## List all databases
 
-    $ sudo sudo -u postgres psql                                                                                  
+    $ sudo -u postgres psql                                                                                  
     postgres=# \list
