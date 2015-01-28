@@ -1,19 +1,19 @@
 # FAQ: General
 
 ### Can I use FTP workspaces on Cloud9?
-Yes, Cloud9 supports FTP workspaces that allow you to edit your files directly on your FTP server. 
+Yes, Cloud9 supports FTP workspaces that allow you to edit your files directly on your FTP server.
 Currently FTP workspaces still open in the old version of Cloud9, but soon we'll also support FTP workspaces with the new version of Cloud9.
 
 One thing that was removed for reliability reasons in the new version of Cloud9, is the ability to deploy over FTP from a regular workspace.
 We're bringing back those features in a new format and with much higher reliability in the coming months.
 
-### How do I deploy to Heroku/Openshift/Azure/...? 
+### How do I deploy to Heroku/Openshift/Azure/...?
 See [Deploying via CLI](./deploying_via_cli.html).
 
-### Can I connect to SMTP servers (port 25)? 
+### Can I connect to SMTP servers (port 25)?
 No, this is not supported by our hosting platform. It does currently allow access to the GMail servers though, so you can use that service during development.
 
-### My workspace says it's out of quota. how do I fix it? 
+### My workspace says it's out of quota. how do I fix it?
 You can inspect your current quota usage with the df command in the Terminal:
 
     $ df
@@ -30,10 +30,10 @@ Alternatively, try `du-c9` for seeing all files you added to your workspace and 
 You can sign into Cloud9 with your github or bitbucket account and set that up to use two-factor authentication.
 We don't currently provide an option to directly setup your Cloud9 account for two-factor authentication.
 
-### I can't preview my running app. 
+### I can't preview my running app.
 Try using port 8080 instead, which often solves this case.
 
-### EADDRINUSE: My app complains that the address/port is in use 
+### EADDRINUSE: My app complains that the address/port is in use
 Applications won't start if another application is already listening to the same port. In order to fix it you first need to find out which process that is:
 
     $ netstat -nlp | grep $PORT
@@ -59,8 +59,8 @@ ensures maximum portability. To open these files, you can use something like
 
 ## How can I share a single directory of a private workspace
 
-Sometime you might want others to open a file or directory in the browser 
-without opening up the whole workspace. This can be done by starting a small 
+Sometime you might want others to open a file or directory in the browser
+without opening up the whole workspace. This can be done by starting a small
 http server in that directory and make sure that the running application is public.
 
 To make the running application public you have to click the "sharing" button at
@@ -70,3 +70,7 @@ To run the server open a terminal and do
 
     $ cd /dir/i/want/to/share
     $ python3 -m http.server 8080
+
+## How do I SSH into my workspace?
+
+At the moment, users cannot SSH into their Cloud9 workspaces. You may setup an SSH workspace which will access the files on another SSH server but you cannot SSH into your workspace from another machine.
