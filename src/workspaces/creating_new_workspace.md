@@ -57,6 +57,19 @@ If you have a premium account, you can choose who has access to your workspace. 
 
 Now, check out the workspace. It will be created under **My Workspaces**. You can now start editing it!
 
+## Changing a Workspace
+
+Workspaces can be resized or the sharing options can be changed. To change a public/community workspace to a private workspace, open the Share menu in the top right of your workspace and uncheck the box that says "Public". This will change your workspace from public to private. Changes take place immediately.
+
+To change the size of a workspace, use the Workspace Size interface, next to the Share button at the top right-hand side of your workspace.
+
+![Workspace resize interface](./resources/images/resizeInterface.png)<480, 507>
+
+1. Click the workspace stats to show the resize interface
+2. Click on your current workspace size, under where it says "Resize this workspace"
+3. Choose your new workspace size
+4. Click "Resize" (As soon as your click this it will restart your workspace. Everything will remain the way you left it)
+
 ## Deleting a Workspace
 
 Now that you know how to create a workspace, you should also learn how to delete one. Look at the far right side of your dashboard:
