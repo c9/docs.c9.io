@@ -20,8 +20,9 @@ print """
 <head><title>Sample CGI Script</title></head>
 
 <body>
-
   <h3> Sample CGI Script </h3>
+</body>
+</html>
 """
 ```
 
@@ -54,7 +55,7 @@ sudo vi /etc/apache2/conf-available/serve-cgi-bin.conf
 
 The file should read something like this:
 
-```apacheconf
+```
 <IfModule mod_alias.c>
         <IfModule mod_cgi.c>
                 Define ENABLE_USR_LIB_CGI_BIN
@@ -77,7 +78,7 @@ The file should read something like this:
 
 We just need to modify the following section from:
 
-```apacheconf
+```
 <IfDefine ENABLE_USR_LIB_CGI_BIN>
     ScriptAlias /cgi-bin/ /usr/lib/cgi-bin/
     <Directory "/usr/lib/cgi-bin">
@@ -90,7 +91,7 @@ We just need to modify the following section from:
 
 to 
 
-```apacheconf
+```
 <IfDefine ENABLE_USR_LIB_CGI_BIN>
     ScriptAlias /cgi-bin/ /home/ubuntu/workspace/cgi-bin/
     <Directory "/home/ubuntu/workspace/cgi-bin">
