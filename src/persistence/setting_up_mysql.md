@@ -128,7 +128,7 @@ In this example we will connect from PHP:
 
 1. Create a new file, call it `connect.php` 
 
-2. Copy/paste the following code in there:
+2. Copy/paste the following code in there and save the file:
 ```bash
 <?php
     // A simple PHP script demonstrating how to connect to MySQL.
@@ -158,7 +158,7 @@ In this example we will connect from PHP:
 
 5. Click the link that is displayed after that
 
-6. A preview pane will open, showing 'Connected successfully'.
+6. A preview pane will open, showing 'Connected successfully (0.0.0.0 via TCP/IP)'.
 
 
 Note:

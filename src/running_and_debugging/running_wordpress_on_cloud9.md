@@ -3,7 +3,7 @@
 WordPress is web software you can use to create websites or blogs.
 You can develop and host WordPress websites entirely on Cloud9 IDE
 
-### Creating a wordpress workspace
+### Creating a WordPress workspace
 
 Create a WordPress workspace from the WordPress template on your Cloud9 dashboard
 
