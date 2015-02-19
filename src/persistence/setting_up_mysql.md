@@ -26,7 +26,7 @@ $ mysql-ctl stop
 $ mysql-ctl cli
 ```
 
-You can then connect to the database with following parameters:
+After having started (and with that created) the database, you can connect to it using the following parameters:
 <div markdown="1">
 <table class="table table-striped table-bordered">
     <thead>
@@ -40,7 +40,7 @@ You can then connect to the database with following parameters:
         <tr>
             <td>`Hostname`</td>
             <td>`$IP`</td>
-            <td>The same local IP as the application you run on Cloud9</td>
+            <td>The environment variable 'IP' (type in a terminal: echo $IP)</td>
         </tr>
         <tr>
             <td>`Port`</td>
@@ -50,12 +50,12 @@ You can then connect to the database with following parameters:
         <tr>
             <td>`User`</td>
             <td>`$C9_USER`</td>
-            <td>Your Cloud9 user name</td>
+            <td>Your Cloud9 user name (again an environment variable)</td>
         </tr>
         <tr>
             <td>`Password`</td>
-            <td>-</td>
-            <td>No password since you can only access the DB from within the workspace</td>
+            <td>`<empty>`</td>
+            <td>No password (empty string); access is restricted to the the workspace</td>
         </tr>
         <tr>
             <td>`Database`</td>
@@ -80,6 +80,86 @@ You are now in the MySQL environment and can start the import:
 To verify that everything got imported run:
 
     mysql> show tables;
+    
+Some useful CLI commands (please note the semicolon at the end of most of them):
+<div markdown="1">
+<table class="table table-striped table-bordered">
+    <thead>
+        <tr>
+            <th>Command</td>
+            <th>Description</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>`help`</td>
+            <td>`list all mysql commands`</td>
+        </tr>
+        <tr>
+            <td>`show databases;`</td>
+            <td>`list the available databases`</td>
+        </tr>
+        <tr>
+            <td>`use c9`</td>
+            <td>`select/use database c9`</td>
+        </tr>
+        <tr>
+            <td>`show tables;`</td>
+            <td>`list the tables of the current database`</td>
+        </tr>
+        <tr>
+            <td>`exit`</td>
+            <td>`close the mysql command line tool`</td>
+        </tr>
+        <tr>
+            <td>`select * from mysql.user;`</td>
+            <td>`show all records/columns from system table user`</td>
+        </tr>
+    </tbody>
+</table>
+</div>
+
+## Connecting from PHP
+
+So now you know how to create a database, start the db server, access it via a 
+command line tool.. It is time for the real deal: accessing it from your code.
+
+In this example we will connect from PHP:
+
+1. Create a new file, call it `connect.php` 
+
+2. Copy/paste the following code in there:
+```bash
+<?php
+    // A simple PHP script demonstrating how to connect to MySQL.
+    // Press the 'Run' button on the top to start the web server,
+    // then click the URL that is emitted to the Output tab of the console.
+
+    $servername = getenv('IP');
+    $username = getenv('C9_USER');
+    $password = "";
+    $database = "c9";
+    $dbport = 3306;
+
+    // Create connection
+    $db = new mysqli($servername, $username, $password, $database, $dbport);
+
+    // Check connection
+    if ($db->connect_error) {
+        die("Connection failed: " . $db->connect_error);
+    } 
+    echo "Connected successfully (".$db->host_info.")";
+?>
+```
+
+3. Run the code by a right-click on the file tab 'connect.php', select 'run this file'
+
+4. The output pane shows 'Starting Apache httpd...'
+
+5. Click the link that is displayed after that
+
+6. A preview pane will open, showing 'Connected successfully'.
+
 
 Note:
 MySQL socket file can be found in ~/lib/mysql/socket/mysql.sock
