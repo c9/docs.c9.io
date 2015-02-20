@@ -18,7 +18,7 @@ After clicking on **Create a new workspace**, you're taken to the screen below:
 ![Options for creating a new workspace](./resources/images/createNewWorkspaceOptions.png)<651, 151>
 
 First, let's enter a workspace name.
-Depending on whether you have a Free of Premium account, you can choose to make it either Public (open to anyone with the URL), or Private (only accessible to you and people you share it with).
+Depending on whether you have a Free or Premium account, you can choose to make it either Public (open to anyone with the URL), or Private (only accessible to you and people you share it with).
 
 After this, choose the type of workspace you want to create:
 
