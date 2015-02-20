@@ -3,7 +3,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=us-ascii">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Writing a PHP App | Cloud9 User Documentation</title>
+    <title>MySQL | Cloud9 User Documentation</title>
     <link href="./assets/min/styles.css" rel="stylesheet" type="text/css">
     <link rel="icon" type="image/x-icon" href="./assets/img/favicon.ico">
     <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css">
@@ -194,35 +194,168 @@
           <div class="span12 documentationContainer">
             <div id="content">
               <div id="toh_btn" onclick="toggleTOH(this)"></div>
-              <h1>Writing a PHP App</h1>
-              <div><p>With Cloud9 IDE, you can run your PHP pages, without relying on a third-party system like Apache hosting. We run PHP version 5.3.3.</p>
-<p>You can choose to run PHP scripts via the command line, by typing <code>php</code>, followed by the name of your PHP file. However, this is not a very common use case. Most likely, you&#39;ll be running your own server and hosting PHP files.</p>
-<p>Here&#39;s a simple demonstration. First, create a PHP file called <em>hello_world.php</em>, and paste this code into it:</p>
-<pre><code class="language-xml"><span class="tag">&lt;<span class="title">html</span>&gt;</span>
-  <span class="tag">&lt;<span class="title">head</span>&gt;</span>
-   <span class="tag">&lt;<span class="title">title</span>&gt;</span>PHP Test<span class="tag">&lt;/<span class="title">title</span>&gt;</span>
-  <span class="tag">&lt;/<span class="title">head</span>&gt;</span>
-  <span class="tag">&lt;<span class="title">body</span>&gt;</span>
-   <span class="pi">&lt;?php echo '&lt;p&gt;Hello World&lt;/p&gt;'; ?&gt;</span> 
-  <span class="tag">&lt;/<span class="title">body</span>&gt;</span>
-<span class="tag">&lt;/<span class="title">html</span>&gt;</span></code></pre>
-<p>Next, open the <strong>Run &amp; Debug</strong> panel, at the left of the IDE. From the <strong>Runtime</strong> dropdown, select <strong>Apache+PHP</strong>. Then, click on the <img src="./resources/icons/runButton.png" alt="The Run Button" width="" height=""> button in the top menu bar.</p>
-<p>The console should now spit out a message about how your Apache server is running, something similar to this:</p>
-<pre><code class="language-no-highlight">Running Apache Process
-Tip: you can access long running processes, like a server, at 'http://php_hello.gjtorikian.c9.io'.</code></pre>
-<p>Clicking on that link gets you to your PHP page. For a more in-depth workflow, see the article on <a href="./running_wordpress_on_cloud9.html">running WordPress entirely on Cloud9</a>.</p>
-<h2 id='modifying-phpini'><a class='heading_anchor' href='#modifying-phpini'><i class='headerLinkIcon'></i></a>Modifying php.ini</h2>
-<p>You can configure your PHP installation by editing the <code>php.ini</code> located in the <code>/home/ubuntu/workspace</code> directory. Please note: in some cases <code>php.ini</code> is located somewhere else. Just create a simple PHP file running <code>phpinfo()</code> to find out where to look for <code>php.ini</code>.</p>
-<p>Make sure to restart Apache after you have applied your changes</p>
-<pre><code>apachectl re<span class="operator"><span class="keyword">start</span></code></pre>
-<div class="alert alert-success"><h4 class="alert-heading">Note: </h4>Currently, you can&#39;t debug PHP applications yet, but we are working on adding this feature.
-</div>
+              <h1>MySQL</h1>
+              <div><p>MySQL is the world&#39;s most widely used open source relational database management system (RDBMS) that runs as a server providing multi-user access to a number of databases.</p>
+<h2 id='mysqls-most-common-features'><a class='heading_anchor' href='#mysqls-most-common-features'><i class='headerLinkIcon'></i></a>MySQL&#39;s most common features</h2>
+<ul>
+<li>A broad subset of ANSI SQL 99, as well as extensions<br/></li>
+<li>Cross-platform support<br/></li>
+<li>Stored procedures<br/></li>
+<li>Triggers<br/></li>
+<li>Cursors<br/></li>
+<li>Updatable Views<br/></li>
+<li>Information schema<br/></li>
+<li><a href="http://en.wikipedia.org/wiki/MySQL">Many more</a><br/></li>
+</ul>
+<h2 id='using-mysql-with-cloud9'><a class='heading_anchor' href='#using-mysql-with-cloud9'><i class='headerLinkIcon'></i></a>Using MySQL with Cloud9</h2>
+<p>This article explains our first iteration of MySQL support in Cloud9. It makes it super easy to install, start and stop a MySQL instance right in your workspace. The nice thing is that every workspace will run a separate database so your projects will never interfere with each other. You can control MySQL with the <code>mysql-ctl</code> command line tool run from the terminal:</p>
+<pre><code class="language-bash"><span class="comment"># start MySQL. Will create an empty database on first start</span>
+$ mysql-ctl start
 
+<span class="comment"># stop MySQL</span>
+$ mysql-ctl stop
+
+<span class="comment"># run the MySQL interactive shell</span>
+$ mysql-ctl cli</code></pre>
+<p>After having started (and with that created) the database, you can connect to it using the following parameters:</p>
+<div markdown="1"><table class="table table-striped table-bordered">
+    <thead>
+        <tr>
+            <th>Option</td>
+            <th>Value</td>
+            <th>Comment</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><code>Hostname</code></td>
+            <td><code>$IP</code></td>
+            <td>The environment variable &#39;IP&#39; (type in a terminal: echo $IP)</td>
+        </tr>
+        <tr>
+            <td><code>Port</code></td>
+            <td><code>3306</code></td>
+            <td>The default MySQL port number</td>
+        </tr>
+        <tr>
+            <td><code>User</code></td>
+            <td><code>$C9_USER</code></td>
+            <td>Your Cloud9 user name (again an environment variable)</td>
+        </tr>
+        <tr>
+            <td><code>Password</code></td>
+            <td><code>&lt;empty&gt;</code></td>
+            <td>No password (empty string); access is restricted to the the workspace</td>
+        </tr>
+        <tr>
+            <td><code>Database</code></td>
+            <td><code>c9</code></td>
+            <td>The database name</td>
+        </tr>
+    </tbody>
+</table>
+</div><h2 id='importing-data-into-your-database'><a class='heading_anchor' href='#importing-data-into-your-database'><i class='headerLinkIcon'></i></a>Importing data into your database</h2>
+<p>To import existing data into your database run following commands:</p>
+<pre><code><span class="title">mysql</span>-ctl cli</code></pre>
+<p>You are now in the MySQL environment and can start the import:</p>
+<pre><code><span class="title">mysql</span>&gt; use c9
+<span class="title">mysql</span>&gt; source <span class="type">PATH_TO_SQL_FILE</span>.sql</code></pre>
+<p>To verify that everything got imported run:</p>
+<pre><code>mysql&gt; <span class="operator"><span class="keyword">show</span> tables;</span></code></pre>
+<p>Some useful CLI commands (please note the semicolon at the end of most of them):</p>
+<div markdown="1"><table class="table table-striped table-bordered">
+    <thead>
+        <tr>
+            <th>Command</td>
+            <th>Description</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><code>help</code></td>
+            <td><code>list all mysql commands</code></td>
+        </tr>
+        <tr>
+            <td><code>show databases;</code></td>
+            <td><code>list the available databases</code></td>
+        </tr>
+        <tr>
+            <td><code>use c9</code></td>
+            <td><code>select/use database c9</code></td>
+        </tr>
+        <tr>
+            <td><code>show tables;</code></td>
+            <td><code>list the tables of the current database</code></td>
+        </tr>
+        <tr>
+            <td><code>exit</code></td>
+            <td><code>close the mysql command line tool</code></td>
+        </tr>
+        <tr>
+            <td><code>select * from mysql.user;</code></td>
+            <td><code>show all records/columns from system table user</code></td>
+        </tr>
+    </tbody>
+</table>
+</div><h2 id='connecting-from-php'><a class='heading_anchor' href='#connecting-from-php'><i class='headerLinkIcon'></i></a>Connecting from PHP</h2>
+<p>So now you know how to create a database, start the db server, access it via a 
+command line tool.. It is time for the real deal: accessing it from your code.</p>
+<p>In this example we will connect from PHP:</p>
+<ol>
+<li><p>Create a new file, call it <code>connect.php</code> </p>
+</li>
+<li><p>Copy/paste the following code in there and save the file:</p>
+<pre><code class="language-bash">&lt;?php
+ // A simple PHP script demonstrating how to connect to MySQL.
+ // Press the <span class="string">'Run'</span> button on the top to start the web server,
+ // <span class="keyword">then</span> click the URL that is emitted to the Output tab of the console.
+
+ <span class="variable">$servername</span> = getenv(<span class="string">'IP'</span>);
+ <span class="variable">$username</span> = getenv(<span class="string">'C9_USER'</span>);
+ <span class="variable">$password</span> = <span class="string">""</span>;
+ <span class="variable">$database</span> = <span class="string">"c9"</span>;
+ <span class="variable">$dbport</span> = 3306;
+
+ // Create connection
+ <span class="variable">$db</span> = new mysqli(<span class="variable">$servername</span>, <span class="variable">$username</span>, <span class="variable">$password</span>, <span class="variable">$database</span>, <span class="variable">$dbport</span>);
+
+ // Check connection
+ <span class="keyword">if</span> (<span class="variable">$db</span>-&gt;connect_error) {
+     die(<span class="string">"Connection failed: "</span> . <span class="variable">$db</span>-&gt;connect_error);
+ } 
+ <span class="keyword">echo</span> <span class="string">"Connected successfully ("</span>.<span class="variable">$db</span>-&gt;host_info.<span class="string">")"</span>;
+?&gt;</code></pre>
+</li>
+<li><p>Run the code by a right-click on the file tab &#39;connect.php&#39;, select &#39;run this file&#39;</p>
+</li>
+<li><p>The output pane shows &#39;Starting Apache httpd...&#39;</p>
+</li>
+<li><p>Click the link that is displayed after that</p>
+</li>
+<li><p>A preview pane will open, showing &#39;Connected successfully (0.0.0.0 via TCP/IP)&#39;.</p>
+</li>
+</ol>
+<div class="alert alert-success"><h4 class="alert-heading">Note: </h4>MySQL socket file can be found in ~/lib/mysql/socket/mysql.sock
+
+</div>
+<!--
+
+Using PHPMyAdmin
+
+PHPMyAdmin comes preinstalled on Cloud9 workspaces. You can run it in a similar fashion to how you would run it locally.
+
+First, set up a new site entry in the Apache configuration:
+
+````bash
+ln -s /etc/phpmyadmin/apache.conf /etc/apache2/sites-enabled/phpmyadmin.conf
+````
+
+-->
               </div>
               <div id="disqus_thread"></div>
             </div>
           </div>
-          <div id="tocHolder" class="span2"></li><ol class='tocContainer level_1'><li class='tocItem level_2'><a href='#modifying-phpini'>Modifying php.ini</a></li></ol></li></ol>
+          <div id="tocHolder" class="span2"><li class='tocItem level_1'><a href='#mysql'>MySQL</a><ol class='tocContainer level_1'><li class='tocItem level_2'><a href='#mysqls-most-common-features'>MySQL's most common features</a></li><li class='tocItem level_2'><a href='#using-mysql-with-cloud9'>Using MySQL with Cloud9</a></li></ol></li><li class='tocItem level_1'><a href='#start-mysql-will-create-an-empty-database-on-first-start'>start MySQL. Will create an empty database on first start</a></li><li class='tocItem level_1'><a href='#stop-mysql'>stop MySQL</a></li><li class='tocItem level_1'><a href='#run-the-mysql-interactive-shell'>run the MySQL interactive shell</a><ol class='tocContainer level_1'><li class='tocItem level_2'><a href='#importing-data-into-your-database'>Importing data into your database</a></li><li class='tocItem level_2'><a href='#connecting-from-php'>Connecting from PHP</a></li></ol></li></ol>
           </div>
         </div>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js" type="text/javascript"></script>

@@ -3,7 +3,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=us-ascii">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Writing a PHP App | Cloud9 User Documentation</title>
+    <title>The Console | Cloud9 User Documentation</title>
     <link href="./assets/min/styles.css" rel="stylesheet" type="text/css">
     <link rel="icon" type="image/x-icon" href="./assets/img/favicon.ico">
     <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css">
@@ -194,35 +194,37 @@
           <div class="span12 documentationContainer">
             <div id="content">
               <div id="toh_btn" onclick="toggleTOH(this)"></div>
-              <h1>Writing a PHP App</h1>
-              <div><p>With Cloud9 IDE, you can run your PHP pages, without relying on a third-party system like Apache hosting. We run PHP version 5.3.3.</p>
-<p>You can choose to run PHP scripts via the command line, by typing <code>php</code>, followed by the name of your PHP file. However, this is not a very common use case. Most likely, you&#39;ll be running your own server and hosting PHP files.</p>
-<p>Here&#39;s a simple demonstration. First, create a PHP file called <em>hello_world.php</em>, and paste this code into it:</p>
-<pre><code class="language-xml"><span class="tag">&lt;<span class="title">html</span>&gt;</span>
-  <span class="tag">&lt;<span class="title">head</span>&gt;</span>
-   <span class="tag">&lt;<span class="title">title</span>&gt;</span>PHP Test<span class="tag">&lt;/<span class="title">title</span>&gt;</span>
-  <span class="tag">&lt;/<span class="title">head</span>&gt;</span>
-  <span class="tag">&lt;<span class="title">body</span>&gt;</span>
-   <span class="pi">&lt;?php echo '&lt;p&gt;Hello World&lt;/p&gt;'; ?&gt;</span> 
-  <span class="tag">&lt;/<span class="title">body</span>&gt;</span>
-<span class="tag">&lt;/<span class="title">html</span>&gt;</span></code></pre>
-<p>Next, open the <strong>Run &amp; Debug</strong> panel, at the left of the IDE. From the <strong>Runtime</strong> dropdown, select <strong>Apache+PHP</strong>. Then, click on the <img src="./resources/icons/runButton.png" alt="The Run Button" width="" height=""> button in the top menu bar.</p>
-<p>The console should now spit out a message about how your Apache server is running, something similar to this:</p>
-<pre><code class="language-no-highlight">Running Apache Process
-Tip: you can access long running processes, like a server, at 'http://php_hello.gjtorikian.c9.io'.</code></pre>
-<p>Clicking on that link gets you to your PHP page. For a more in-depth workflow, see the article on <a href="./running_wordpress_on_cloud9.html">running WordPress entirely on Cloud9</a>.</p>
-<h2 id='modifying-phpini'><a class='heading_anchor' href='#modifying-phpini'><i class='headerLinkIcon'></i></a>Modifying php.ini</h2>
-<p>You can configure your PHP installation by editing the <code>php.ini</code> located in the <code>/home/ubuntu/workspace</code> directory. Please note: in some cases <code>php.ini</code> is located somewhere else. Just create a simple PHP file running <code>phpinfo()</code> to find out where to look for <code>php.ini</code>.</p>
-<p>Make sure to restart Apache after you have applied your changes</p>
-<pre><code>apachectl re<span class="operator"><span class="keyword">start</span></code></pre>
-<div class="alert alert-success"><h4 class="alert-heading">Note: </h4>Currently, you can&#39;t debug PHP applications yet, but we are working on adding this feature.
+              <h1>The Console</h1>
+              <div><div class="alert alert-success"><h4 class="alert-heading">Note: </h4>this feature is deprecated
+
 </div>
+<p>The Console is at the bottom of the IDE. It&#39;s where you can enter command line input, view output from your program, and push and pull your files between your code repositories. </p>
+<div class="alert alert-success"><h4 class="alert-heading">Note: </h4>The Console contains <a href="./terminal.html">a full-fledged terminal</a>, which provides you with a TTY interface for <em>direct access</em> to the machine that Cloud9 is running on.
+
+</div>
+<h2 id='available-commands'><a class='heading_anchor' href='#available-commands'><i class='headerLinkIcon'></i></a>Available Commands</h2>
+<p>The terminal can perform all Unix commands, and allows for path autocompletion by hitting <kbd class="keyboard-key nowrap"><abbr title="Tab">Tab</abbr></kbd>.</p>
+<p>For instance, you can use mercurial commands (<code>hg</code>) and git commands (<code>git</code>) to communicate with the system, and to push your code between repositories. Typing <code>hg</code> or <code>git</code> shows the complete list of commands that are available for these services. For more information about these commands, please check their respective documentation:</p>
+<ul>
+<li><a href="http://mercurial.selenic.com/guide">Mercurial Command List</a></li>
+<li><a href="http://help.github.com/git-cheat-sheets">Git Command List</a></li>
+</ul>
+<p>To use mercurial commands on the project you are working on, you must have a mercurial project set up; the same holds true for git. Follow these links to learn more about how to set up these project in Cloud9:</p>
+<ul>
+<li><a href="./setting_up_bitbucket_workspace.html">Setting up a Mercurial Project</a></li>
+<li><a href="./setting_up_github_workspace.html">Setting up a Git project (on GitHub)</a></li>
+</ul>
+<h2 id='output'><a class='heading_anchor' href='#output'><i class='headerLinkIcon'></i></a>Output</h2>
+<p>The output tab in the Console shows information whenever a user is running or debugging a program. The content is similar to the output of a desktop terminal:<br><img src="./resources/images/consoleOutput.png" alt="Screenshot of program output" width="1174" height=" 336"></p>
+<p>The output tab also displays the error and additional information that can improve your coding quality. You can use the Console to output results from your running application, just like a regular terminal.</p>
+<p>As your process runs, you&#39;ll see a message similar to this one indicating that Cloud9 is running something in the background: <img src="./resources/images/runningProcess.png" alt="Running process" width="197" height=" 29"></p>
+<p>If you hover over this message, you can opt to cancel the process by clicking on the button: <img src="./resources/images/cancellingProcess.png" alt="Cancelling a process" width="186" height=" 37"></p>
 
               </div>
               <div id="disqus_thread"></div>
             </div>
           </div>
-          <div id="tocHolder" class="span2"></li><ol class='tocContainer level_1'><li class='tocItem level_2'><a href='#modifying-phpini'>Modifying php.ini</a></li></ol></li></ol>
+          <div id="tocHolder" class="span2"></li><ol class='tocContainer level_1'><li class='tocItem level_2'><a href='#available-commands'>Available Commands</a></li><li class='tocItem level_2'><a href='#output'>Output</a></li></ol></li></ol>
           </div>
         </div>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js" type="text/javascript"></script>

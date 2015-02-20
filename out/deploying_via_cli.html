@@ -3,7 +3,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=us-ascii">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Writing a PHP App | Cloud9 User Documentation</title>
+    <title>Deploying via the Command Line | Cloud9 User Documentation</title>
     <link href="./assets/min/styles.css" rel="stylesheet" type="text/css">
     <link rel="icon" type="image/x-icon" href="./assets/img/favicon.ico">
     <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css">
@@ -194,35 +194,88 @@
           <div class="span12 documentationContainer">
             <div id="content">
               <div id="toh_btn" onclick="toggleTOH(this)"></div>
-              <h1>Writing a PHP App</h1>
-              <div><p>With Cloud9 IDE, you can run your PHP pages, without relying on a third-party system like Apache hosting. We run PHP version 5.3.3.</p>
-<p>You can choose to run PHP scripts via the command line, by typing <code>php</code>, followed by the name of your PHP file. However, this is not a very common use case. Most likely, you&#39;ll be running your own server and hosting PHP files.</p>
-<p>Here&#39;s a simple demonstration. First, create a PHP file called <em>hello_world.php</em>, and paste this code into it:</p>
-<pre><code class="language-xml"><span class="tag">&lt;<span class="title">html</span>&gt;</span>
-  <span class="tag">&lt;<span class="title">head</span>&gt;</span>
-   <span class="tag">&lt;<span class="title">title</span>&gt;</span>PHP Test<span class="tag">&lt;/<span class="title">title</span>&gt;</span>
-  <span class="tag">&lt;/<span class="title">head</span>&gt;</span>
-  <span class="tag">&lt;<span class="title">body</span>&gt;</span>
-   <span class="pi">&lt;?php echo '&lt;p&gt;Hello World&lt;/p&gt;'; ?&gt;</span> 
-  <span class="tag">&lt;/<span class="title">body</span>&gt;</span>
-<span class="tag">&lt;/<span class="title">html</span>&gt;</span></code></pre>
-<p>Next, open the <strong>Run &amp; Debug</strong> panel, at the left of the IDE. From the <strong>Runtime</strong> dropdown, select <strong>Apache+PHP</strong>. Then, click on the <img src="./resources/icons/runButton.png" alt="The Run Button" width="" height=""> button in the top menu bar.</p>
-<p>The console should now spit out a message about how your Apache server is running, something similar to this:</p>
-<pre><code class="language-no-highlight">Running Apache Process
-Tip: you can access long running processes, like a server, at 'http://php_hello.gjtorikian.c9.io'.</code></pre>
-<p>Clicking on that link gets you to your PHP page. For a more in-depth workflow, see the article on <a href="./running_wordpress_on_cloud9.html">running WordPress entirely on Cloud9</a>.</p>
-<h2 id='modifying-phpini'><a class='heading_anchor' href='#modifying-phpini'><i class='headerLinkIcon'></i></a>Modifying php.ini</h2>
-<p>You can configure your PHP installation by editing the <code>php.ini</code> located in the <code>/home/ubuntu/workspace</code> directory. Please note: in some cases <code>php.ini</code> is located somewhere else. Just create a simple PHP file running <code>phpinfo()</code> to find out where to look for <code>php.ini</code>.</p>
-<p>Make sure to restart Apache after you have applied your changes</p>
-<pre><code>apachectl re<span class="operator"><span class="keyword">start</span></code></pre>
-<div class="alert alert-success"><h4 class="alert-heading">Note: </h4>Currently, you can&#39;t debug PHP applications yet, but we are working on adding this feature.
+              <h1>Deploying via the Command Line</h1>
+              <div><p>In the new version of Cloud9 we don&#39;t have support for deployment from the UI yet, but we&#39;re going to add those features soon. </p>
+<p>Until then, you can manually install various command-line tools into your workspace and deploy using the command line. 
+It should go without saying that this is for super 31337 developers that aren&#39;t afraid of the command line.</p>
+<p>Below is a list of some of the services we have tested and support deploying to. 
+All the commands need to be executed in <a href="./terminal.html">the terminal</a> unless stated otherwise.</p>
+<h2 id='heroku'><a class='heading_anchor' href='#heroku'><i class='headerLinkIcon'></i></a>Heroku</h2>
+<p>Heroku&#39;s <code>toolbelt</code> is installed by default in new VMs.</p>
+<p>Now, you can use the <code>heroku</code> command for your projects, as described in the 
+<a href="https://toolbelt.heroku.com/">Heroku documentation</a>.</p>
+<p>If deploying to Heroku, you should probably be using a local instance of PostgresQL, or you may run into problems caused by different database interpretations of SQL.</p>
+<h2 id='windows-azure-web-sites'><a class='heading_anchor' href='#windows-azure-web-sites'><i class='headerLinkIcon'></i></a>Windows Azure Web Sites</h2>
+<p>In <a href="./console.html">the Console</a> or <a href="./terminal.html">a Terminal</a>, type the 
+following:</p>
+<pre><code class="language-bash">npm install azure</code></pre>
+<p>Now, you can use the <code>azure</code> command from the Console/Terminal. For more 
+information, read <a href="https://github.com/WindowsAzure/azure-sdk-for-node">the official <code>azure</code> documentation</a>.</p>
+<h2 id='windows-azure-cloud-services'><a class='heading_anchor' href='#windows-azure-cloud-services'><i class='headerLinkIcon'></i></a>Windows Azure Cloud Services</h2>
+<p>For free and premium plans, follow the instructions on the 
+<a href="https://github.com/c9/azure-cmdlet-node">azure-cmdlet-node</a> repository. This 
+project is maintained by Cloud9.</p>
+<h2 id='google-app-engine'><a class='heading_anchor' href='#google-app-engine'><i class='headerLinkIcon'></i></a>Google App Engine</h2>
+<p>First, setup Push to Deploy: Create a new App Engine application at 
+<a href="http://cloud.google.com/console">cloud.google.com/console</a>, and then enable 
+Push-to-Deploy under &#39;App Engine&#39; in the Application Settings page. Leave this 
+tab open to note the URL for your repo.</p>
+<p>Secondly, configure Cloud9. Run the following commands (making sure to replace 
+your email address, auth-token, and repo-url):</p>
+<pre><code class="language-bash"><span class="keyword">echo</span> <span class="string">"machine code.google.com login EMAIL password PASSWORD"</span> &gt;&gt; ~/.netrc
+git remote add appengine REPO</code></pre>
+<div class="alert alert-success"><h4 class="alert-heading">Note: </h4>The email in this case is the mail address you use to login to your Google
+App Engine account and the password is the auth-token generated from the admin
+console, it is not your google password, never type that into a third party tool.
+&#39;REPO&#39; is the repository URL generated before.
+
 </div>
+<p>Finally, do a <code>commit</code>, and a <code>push</code>:</p>
+<pre><code class="language-bash">git commit -a -m <span class="string">"First commit"</span>
+git push appengine master</code></pre>
+<h2 id='openshift'><a class='heading_anchor' href='#openshift'><i class='headerLinkIcon'></i></a>OpenShift</h2>
+<pre><code><span class="preprocessor"># Install rhc:</span>
+gem install rhc
+rhc setup
+
+<span class="preprocessor"># After this you can use rhc to manage your account:</span>
+
+<span class="preprocessor"># list apps:</span>
+rhc apps
+<span class="preprocessor"># To show what you can do with apps do:</span>
+rhc app help
+<span class="preprocessor"># You deploy via a git push</span>
+git push &lt;giturl&gt; master</code></pre>
+<h2 id='cloudfoundry'><a class='heading_anchor' href='#cloudfoundry'><i class='headerLinkIcon'></i></a>CloudFoundry</h2>
+<p>To deploy to CloudFoundry from the command line in <a href="./console.html">the Console</a> 
+or <a href="./terminal.html">a Terminal</a>, you need to install the command line tools:</p>
+<pre><code><span class="title">cd</span> ~
+<span class="title">wget</span> -<span class="type">O</span> cf.tgz<span class="string"> 'https://cli.run.pivotal.io/stable?release=linux64-binary&amp;source=github'</span>
+<span class="title">tar</span> xvzf cf.tgz</code></pre>
+<p>You can now run <code>cf</code> from the Console and the Terminal. For more information, see 
+<a href="https://github.com/cloudfoundry/cli">the official <code>CloudFoundry</code> documentation</a>.</p>
+<h2 id='nodejitsu'><a class='heading_anchor' href='#nodejitsu'><i class='headerLinkIcon'></i></a>NodeJitsu</h2>
+<h3 id='free-and-premium-plans'><a class='heading_anchor' href='#free-and-premium-plans'><i class='headerLinkIcon'></i></a>Free and Premium Plans</h3>
+<p>In the <a href="./console.html">the Console</a> or <a href="./terminal.html">a Terminal</a>, type:</p>
+<pre><code class="language-bash">npm install jitsu@0.7.x -g
+mkdir node_modules
+mv ../lib/node_modules/jitsu node_modules</code></pre>
+<p>Now, you can run <code>jitsu</code> from the command line. For more information, see 
+<a href="https://github.com/nodejitsu/jitsu">the official <code>jitsu</code> documentation</a>.</p>
+<h3 id='premium-plans'><a class='heading_anchor' href='#premium-plans'><i class='headerLinkIcon'></i></a>Premium Plans</h3>
+<pre><code class="language-bash">npm install jitsu@0.7.x -g</code></pre>
+<p>You can now run <code>jitsu</code> from both the Console and the Terminal.</p>
+<h2 id='modulus'><a class='heading_anchor' href='#modulus'><i class='headerLinkIcon'></i></a>Modulus</h2>
+<p>In the <a href="./console.html">the Console</a> or <a href="./terminal.html">a Terminal</a>, type:</p>
+<pre><code class="language-bash">npm install modulus -g</code></pre>
+<p>Now, you can run <code>modulus</code> from the command line. For more information, see 
+<a href="https://github.com/onmodulus/modulus-cli">the official <code>modulus</code> documentation</a>.</p>
 
               </div>
               <div id="disqus_thread"></div>
             </div>
           </div>
-          <div id="tocHolder" class="span2"></li><ol class='tocContainer level_1'><li class='tocItem level_2'><a href='#modifying-phpini'>Modifying php.ini</a></li></ol></li></ol>
+          <div id="tocHolder" class="span2"></li><ol class='tocContainer level_1'><li class='tocItem level_2'><a href='#heroku'>Heroku</a></li><li class='tocItem level_2'><a href='#windows-azure-web-sites'>Windows Azure Web Sites</a></li><li class='tocItem level_2'><a href='#windows-azure-cloud-services'>Windows Azure Cloud Services</a></li><li class='tocItem level_2'><a href='#google-app-engine'>Google App Engine</a></li><li class='tocItem level_2'><a href='#openshift'>OpenShift</a></li></ol></li><li class='tocItem level_1'><a href='#install-rhc:'>Install rhc:</a></li><li class='tocItem level_1'><a href='#after-this-you-can-use-rhc-to-manage-your-account:'>After this you can use rhc to manage your account:</a></li><li class='tocItem level_1'><a href='#list-apps:'>list apps:</a></li><li class='tocItem level_1'><a href='#to-show-what-you-can-do-with-apps-do:'>To show what you can do with apps do:</a></li><li class='tocItem level_1'><a href='#you-deploy-via-a-git-push'>You deploy via a git push</a><ol class='tocContainer level_1'><li class='tocItem level_2'><a href='#cloudfoundry'>CloudFoundry</a></li><li class='tocItem level_2'><a href='#nodejitsu'>NodeJitsu</a><ol class='tocContainer level_2'><li class='tocItem level_3'><a href='#free-and-premium-plans'>Free and Premium Plans</a></li><li class='tocItem level_3'><a href='#premium-plans'>Premium Plans</a></li></ol></li><li class='tocItem level_2'><a href='#modulus'>Modulus</a></li></ol></li></ol>
           </div>
         </div>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js" type="text/javascript"></script>

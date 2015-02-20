@@ -3,7 +3,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=us-ascii">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Writing a PHP App | Cloud9 User Documentation</title>
+    <title>Share a workspace | Cloud9 User Documentation</title>
     <link href="./assets/min/styles.css" rel="stylesheet" type="text/css">
     <link rel="icon" type="image/x-icon" href="./assets/img/favicon.ico">
     <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css">
@@ -194,35 +194,69 @@
           <div class="span12 documentationContainer">
             <div id="content">
               <div id="toh_btn" onclick="toggleTOH(this)"></div>
-              <h1>Writing a PHP App</h1>
-              <div><p>With Cloud9 IDE, you can run your PHP pages, without relying on a third-party system like Apache hosting. We run PHP version 5.3.3.</p>
-<p>You can choose to run PHP scripts via the command line, by typing <code>php</code>, followed by the name of your PHP file. However, this is not a very common use case. Most likely, you&#39;ll be running your own server and hosting PHP files.</p>
-<p>Here&#39;s a simple demonstration. First, create a PHP file called <em>hello_world.php</em>, and paste this code into it:</p>
-<pre><code class="language-xml"><span class="tag">&lt;<span class="title">html</span>&gt;</span>
-  <span class="tag">&lt;<span class="title">head</span>&gt;</span>
-   <span class="tag">&lt;<span class="title">title</span>&gt;</span>PHP Test<span class="tag">&lt;/<span class="title">title</span>&gt;</span>
-  <span class="tag">&lt;/<span class="title">head</span>&gt;</span>
-  <span class="tag">&lt;<span class="title">body</span>&gt;</span>
-   <span class="pi">&lt;?php echo '&lt;p&gt;Hello World&lt;/p&gt;'; ?&gt;</span> 
-  <span class="tag">&lt;/<span class="title">body</span>&gt;</span>
-<span class="tag">&lt;/<span class="title">html</span>&gt;</span></code></pre>
-<p>Next, open the <strong>Run &amp; Debug</strong> panel, at the left of the IDE. From the <strong>Runtime</strong> dropdown, select <strong>Apache+PHP</strong>. Then, click on the <img src="./resources/icons/runButton.png" alt="The Run Button" width="" height=""> button in the top menu bar.</p>
-<p>The console should now spit out a message about how your Apache server is running, something similar to this:</p>
-<pre><code class="language-no-highlight">Running Apache Process
-Tip: you can access long running processes, like a server, at 'http://php_hello.gjtorikian.c9.io'.</code></pre>
-<p>Clicking on that link gets you to your PHP page. For a more in-depth workflow, see the article on <a href="./running_wordpress_on_cloud9.html">running WordPress entirely on Cloud9</a>.</p>
-<h2 id='modifying-phpini'><a class='heading_anchor' href='#modifying-phpini'><i class='headerLinkIcon'></i></a>Modifying php.ini</h2>
-<p>You can configure your PHP installation by editing the <code>php.ini</code> located in the <code>/home/ubuntu/workspace</code> directory. Please note: in some cases <code>php.ini</code> is located somewhere else. Just create a simple PHP file running <code>phpinfo()</code> to find out where to look for <code>php.ini</code>.</p>
-<p>Make sure to restart Apache after you have applied your changes</p>
-<pre><code>apachectl re<span class="operator"><span class="keyword">start</span></code></pre>
-<div class="alert alert-success"><h4 class="alert-heading">Note: </h4>Currently, you can&#39;t debug PHP applications yet, but we are working on adding this feature.
+              <h1>Share a workspace</h1>
+              <div><p>As you develop your application, often you just want to quickly demo your work-in-progress to a colleague, customer, or friend. 
+Or you want to pull in a fellow dev to debug an issue, or to pair program.</p>
+<p>Cloud9 enables you to do just these things, easily: share your entire development environment, the running application, or just a preview of your running application. 
+Here we describe how to access these options, and how to use each.</p>
+<h2 id='share-dialog'><a class='heading_anchor' href='#share-dialog'><i class='headerLinkIcon'></i></a>Share dialog</h2>
+<p>The best place to start sharing is from the dedicated &quot;Share&quot; dialog. 
+Access it via the &quot;Share&quot; button on the right top of the IDE, or via the menu in Window &gt; Share...</p>
+<p><img src="./resources/images/shareButtons.png" alt="Share buttons" width="614" height=" 102"></p>
+<p>Here&#39;s what you see when you pull up the Share dialog:</p>
+<p><img src="./resources/images/shareWorkspaceDialog.png" alt="Share Dialog" width="429" height=" 529"></p>
+<p><strong>Links to share</strong></p>
+<ul>
+<li>Editor: see section &quot;Share your development environment&quot;</li>
+<li>Application: see section &quot;Share your application&quot; </li>
+<li></li>
+</ul>
+<p>If you enable the &quot;Public&quot; checkbox for an option, it will make the URL accessible for anyone with the URL.
+For public workspaces all these URLs are public by default, but for private workspaces you have to enable them manually.</p>
+<p><strong>Who has access</strong></p>
+<p>This section refers to people you have specifically granted access to your entire development environment.
+(R) gives Read access only to that person: the ability to open and view files, and to run your code.
+(RW) or &quot;Read/Write&quot; also gives that person the ability to write to files.</p>
+<p><strong>Invite people</strong></p>
+<p>This section enables you to invite people to your workspace and immediately set if they have just &quot;Read&quot; or &quot;Read+Write&quot; rights. 
+You can invite people by their email address or Cloud9 username. 
+You can also choose whether or not send an automatic email to that person that they&#39;ve been invited to your workspace.</p>
+<h2 id='share-your-development-environment'><a class='heading_anchor' href='#share-your-development-environment'><i class='headerLinkIcon'></i></a>Share your development environment</h2>
+<p>Cloud9&#39;s Collaboration features allow you to share your entire development environment so you can work on code together, much like working on a document in Google Docs.
+You&#39;ll actually be able to see each other&#39;s cursor as you type, run your app, share the Terminal(s), and talk in the group chat.
+See the screenshot below for what this looks like:</p>
+<p><img src="./resources/images/collab.png" alt="Collaboration Features" width="550" height=" 890"></p>
+<p>In order to share your entire development environment, do one of the following: </p>
+<ol>
+<li>Make the URL publicly available to everyone: check the &quot;Public&quot; checkbox for the &quot;Editor&quot; in the &quot;Links to Share&quot; section.</li>
+<li>Choose to share only with specific people: invite them from the &quot;Invite people&quot; section.</li>
+<li>Grant/revoke access rights in the &quot;Who has access&quot; section.</li>
+</ol>
+<p>If someone asks for either Read or Read+Write access to your workspace, you can accept or deny them from the Collaboration panel on the right. </p>
+<div class="alert alert-success"><h4 class="alert-heading">Note: </h4>alternatively you can just share the URL to your workspace from the browser&#39;s URL bar and accept members as they request access to your workspace
+
 </div>
+<h2 id='share-your-application'><a class='heading_anchor' href='#share-your-application'><i class='headerLinkIcon'></i></a>Share your application</h2>
+<p>If you <a href="./run_an_application.html">Run your application</a> the result can be shared by copying the URL from the dialog. 
+This URL can only be viewed if it&#39;s made Public by checking the &quot;Public&quot; checkbox next to the &quot;Application&quot; in the &quot;Links to share&quot; section.</p>
+<p>People who have full read access to your workspace (as defined in the &quot;Who has access&quot;) can view this URL whether it&#39;s public or not.</p>
+<div class="alert alert-success"><h4 class="alert-heading">Note: </h4>alternatively you can just share the URL to your running app from the Preview panels&#39; URL bar
+
+</div>
+<h2 id='share-a-preview'><a class='heading_anchor' href='#share-a-preview'><i class='headerLinkIcon'></i></a>Share a Preview</h2>
+<p>If you Preview a file in your application, it can be shared by copying the URL from the dialog. 
+This URL can only be viewed if it&#39;s made Public by checking the &quot;Public&quot; checkbox next to the &quot;Preview&quot; in the &quot;Links to share&quot; section.</p>
+<p>People who have full read access to your workspace (as defined in the &quot;Who has access&quot;) can view this URL whether it&#39;s public or not.</p>
+<div class="alert alert-success"><h4 class="alert-heading">Note: </h4>alternatively you can just share the URL to your Preview from the Preview panels&#39; URL bar
+
+</div>
+<div class="alert alert-info"><h4 class="alert-heading">Tip: </h4>If you can&#39;t find how to preview your running app, try to use port 8080 in the URL.</div>
 
               </div>
               <div id="disqus_thread"></div>
             </div>
           </div>
-          <div id="tocHolder" class="span2"></li><ol class='tocContainer level_1'><li class='tocItem level_2'><a href='#modifying-phpini'>Modifying php.ini</a></li></ol></li></ol>
+          <div id="tocHolder" class="span2"></li><ol class='tocContainer level_1'><li class='tocItem level_2'><a href='#share-dialog'>Share dialog</a></li><li class='tocItem level_2'><a href='#share-your-development-environment'>Share your development environment</a></li><li class='tocItem level_2'><a href='#share-your-application'>Share your application</a></li><li class='tocItem level_2'><a href='#share-a-preview'>Share a Preview</a></li></ol></li></ol>
           </div>
         </div>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js" type="text/javascript"></script>

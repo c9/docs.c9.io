@@ -3,7 +3,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=us-ascii">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Writing a PHP App | Cloud9 User Documentation</title>
+    <title>Framework: Koa | Cloud9 User Documentation</title>
     <link href="./assets/min/styles.css" rel="stylesheet" type="text/css">
     <link rel="icon" type="image/x-icon" href="./assets/img/favicon.ico">
     <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css">
@@ -193,36 +193,56 @@
           </div>
           <div class="span12 documentationContainer">
             <div id="content">
-              <div id="toh_btn" onclick="toggleTOH(this)"></div>
-              <h1>Writing a PHP App</h1>
-              <div><p>With Cloud9 IDE, you can run your PHP pages, without relying on a third-party system like Apache hosting. We run PHP version 5.3.3.</p>
-<p>You can choose to run PHP scripts via the command line, by typing <code>php</code>, followed by the name of your PHP file. However, this is not a very common use case. Most likely, you&#39;ll be running your own server and hosting PHP files.</p>
-<p>Here&#39;s a simple demonstration. First, create a PHP file called <em>hello_world.php</em>, and paste this code into it:</p>
-<pre><code class="language-xml"><span class="tag">&lt;<span class="title">html</span>&gt;</span>
-  <span class="tag">&lt;<span class="title">head</span>&gt;</span>
-   <span class="tag">&lt;<span class="title">title</span>&gt;</span>PHP Test<span class="tag">&lt;/<span class="title">title</span>&gt;</span>
-  <span class="tag">&lt;/<span class="title">head</span>&gt;</span>
-  <span class="tag">&lt;<span class="title">body</span>&gt;</span>
-   <span class="pi">&lt;?php echo '&lt;p&gt;Hello World&lt;/p&gt;'; ?&gt;</span> 
-  <span class="tag">&lt;/<span class="title">body</span>&gt;</span>
-<span class="tag">&lt;/<span class="title">html</span>&gt;</span></code></pre>
-<p>Next, open the <strong>Run &amp; Debug</strong> panel, at the left of the IDE. From the <strong>Runtime</strong> dropdown, select <strong>Apache+PHP</strong>. Then, click on the <img src="./resources/icons/runButton.png" alt="The Run Button" width="" height=""> button in the top menu bar.</p>
-<p>The console should now spit out a message about how your Apache server is running, something similar to this:</p>
-<pre><code class="language-no-highlight">Running Apache Process
-Tip: you can access long running processes, like a server, at 'http://php_hello.gjtorikian.c9.io'.</code></pre>
-<p>Clicking on that link gets you to your PHP page. For a more in-depth workflow, see the article on <a href="./running_wordpress_on_cloud9.html">running WordPress entirely on Cloud9</a>.</p>
-<h2 id='modifying-phpini'><a class='heading_anchor' href='#modifying-phpini'><i class='headerLinkIcon'></i></a>Modifying php.ini</h2>
-<p>You can configure your PHP installation by editing the <code>php.ini</code> located in the <code>/home/ubuntu/workspace</code> directory. Please note: in some cases <code>php.ini</code> is located somewhere else. Just create a simple PHP file running <code>phpinfo()</code> to find out where to look for <code>php.ini</code>.</p>
-<p>Make sure to restart Apache after you have applied your changes</p>
-<pre><code>apachectl re<span class="operator"><span class="keyword">start</span></code></pre>
-<div class="alert alert-success"><h4 class="alert-heading">Note: </h4>Currently, you can&#39;t debug PHP applications yet, but we are working on adding this feature.
+              <h1>Framework: Koa</h1>
+              <div><p><a href="https://www.koajs.com/">Koa</a> is a new web framework designed by the team behind Express, which aims to be a smaller, more expressive, and more robust foundation for web applications and APIs. </p>
+<p>To get started with a Koa app, first create a workspace and choose either the Node.js type, or a Custom workspace type for a clean workspace.</p>
+<p>Koa.Js makes use of the new generator feature in javascript ECMA 6. 
+This feature is support in Node from 0.11 and up by toggling the <code>--harmony</code> flag. 
+By default Cloud9 runs Node v0.10.x or v0.8.x, depending on your setup, so we first need activate Node version 0.11.x.</p>
+<p>Open a Terminal, or using the pre-existing one at the bottom and execute the following in your Terminal:</p>
+<pre><code><span class="title">nvm</span> use <span class="number">0</span>.<span class="number">11</span></code></pre>
+<p>Next, we need to install Koa itself:</p>
+<pre><code><span class="title">npm</span> install koa</code></pre>
+<p>Now we can create a simple Koa.Js server.
+Create a server.js file in your root folder with this code:</p>
+<pre><code><span class="keyword">var</span> koa = <span class="keyword">require</span>(<span class="string">'koa'</span>);
+<span class="keyword">var</span> app = koa();
+
+app.<span class="keyword">use</span>(<span class="function"><span class="keyword">function</span> *<span class="params">()</span>{</span>
+    <span class="keyword">this</span>.body = <span class="string">'&lt;h1&gt;Hello from Koa.Js&lt;/h1&gt;'</span>;
+});
+
+app.listen(process.env.PORT);</code></pre>
+<p>If you now press the Run button on top of the IDE, you will see some errors, as the runner/debugger defaults to &#39;Node (default)&#39;, which is Node version 0.10.x or 0.8.x.</p>
+<p>Luckily all you need is to create a Runner file so Cloud9 can run Node 11.x in harmony mode and thereby support generators.</p>
+<p>In the Run panel below, click the &#39;Runner&#39; text input and choose &#39;New Runner&#39;. 
+In the new Runner file that&#39;s opened, save the following code as &#39;Node 0.11.x.run&#39;:</p>
+<pre><code>/<span class="regexp">/ This file overrides the built-in Node 0.11.x runner
+/</span><span class="regexp">/ For more information see http:/</span><span class="regexp">/docs.c9.io:8080/</span><span class="comment">#!/api/run-method-run</span>
+{
+  <span class="string">"cmd"</span>: [
+    <span class="string">"bash"</span>,
+    <span class="string">"--login"</span>,
+    <span class="string">"-c"</span>,
+    <span class="string">"nvm use 0.11 &gt; /dev/null; node --harmony <span class="subst">${debug?--nocrankshaft --nolazy --debug-brk=<span class="number">15454</span>}</span> '<span class="variable">$file</span>' <span class="variable">$args</span>"</span>
+  ],
+  <span class="string">"debugger"</span>: <span class="string">"v8"</span>,
+  <span class="string">"debugport"</span>: <span class="number">15454</span>,
+  <span class="string">"info"</span>: <span class="string">"Your code is running at \\033[01;34m<span class="variable">$url</span>\\033[00m.\n\\033[01;31mImportant:\\033[00m use \\033[01;32mprocess.env.PORT\\033[00m as the port and \\033[01;32mprocess.env.IP\\033[00m as the host in your scripts!\n"</span>
+}</code></pre>
+<div class="alert alert-success"><h4 class="alert-heading">Note: </h4>alternatively, you can check &#39;Show Hidden Files&#39; in your workspace directory tree (the small gear in the upper right corner), and create a new file in the &#39;.c9/runners&#39; folder called &#39;Node 0.11.x.run&#39; with this code.
+
 </div>
+<p>Let&#39;s run server.js with this new configuration; in the Run panel on the bottom, choose your new &#39;Node 0.11.x&#39; Runner, and press Run again.</p>
+<p>You Koa.Js server should now be up and running.</p>
+<p>Now if you click the Preview button in the top menu in the IDE, and choose &quot;Preview with Web Server&quot;, this will open the Preview window for your running app. </p>
+<p>(Credits go to Tom at <a href="http://kyorcode.blogspot.nl/2014/08/running-koajs-in-cloud9.html">http://kyorcode.blogspot.nl/2014/08/running-koajs-in-cloud9.html</a>)</p>
 
               </div>
               <div id="disqus_thread"></div>
             </div>
           </div>
-          <div id="tocHolder" class="span2"></li><ol class='tocContainer level_1'><li class='tocItem level_2'><a href='#modifying-phpini'>Modifying php.ini</a></li></ol></li></ol>
+          <div id="tocHolder" class="span2">
           </div>
         </div>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js" type="text/javascript"></script>

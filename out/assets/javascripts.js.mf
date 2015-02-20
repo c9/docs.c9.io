@@ -1,0 +1,4 @@
+require "javascripts/iframes.js"
+require "javascripts/ga.js"
+require "javascripts/docs.js"
+require "javascripts/bootstrap.js"

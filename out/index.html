@@ -3,7 +3,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=us-ascii">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Writing a PHP App | Cloud9 User Documentation</title>
+    <title>Cloud9 IDE User Documentation</title>
     <link href="./assets/min/styles.css" rel="stylesheet" type="text/css">
     <link rel="icon" type="image/x-icon" href="./assets/img/favicon.ico">
     <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css">
@@ -193,36 +193,38 @@
           </div>
           <div class="span12 documentationContainer">
             <div id="content">
-              <div id="toh_btn" onclick="toggleTOH(this)"></div>
-              <h1>Writing a PHP App</h1>
-              <div><p>With Cloud9 IDE, you can run your PHP pages, without relying on a third-party system like Apache hosting. We run PHP version 5.3.3.</p>
-<p>You can choose to run PHP scripts via the command line, by typing <code>php</code>, followed by the name of your PHP file. However, this is not a very common use case. Most likely, you&#39;ll be running your own server and hosting PHP files.</p>
-<p>Here&#39;s a simple demonstration. First, create a PHP file called <em>hello_world.php</em>, and paste this code into it:</p>
-<pre><code class="language-xml"><span class="tag">&lt;<span class="title">html</span>&gt;</span>
-  <span class="tag">&lt;<span class="title">head</span>&gt;</span>
-   <span class="tag">&lt;<span class="title">title</span>&gt;</span>PHP Test<span class="tag">&lt;/<span class="title">title</span>&gt;</span>
-  <span class="tag">&lt;/<span class="title">head</span>&gt;</span>
-  <span class="tag">&lt;<span class="title">body</span>&gt;</span>
-   <span class="pi">&lt;?php echo '&lt;p&gt;Hello World&lt;/p&gt;'; ?&gt;</span> 
-  <span class="tag">&lt;/<span class="title">body</span>&gt;</span>
-<span class="tag">&lt;/<span class="title">html</span>&gt;</span></code></pre>
-<p>Next, open the <strong>Run &amp; Debug</strong> panel, at the left of the IDE. From the <strong>Runtime</strong> dropdown, select <strong>Apache+PHP</strong>. Then, click on the <img src="./resources/icons/runButton.png" alt="The Run Button" width="" height=""> button in the top menu bar.</p>
-<p>The console should now spit out a message about how your Apache server is running, something similar to this:</p>
-<pre><code class="language-no-highlight">Running Apache Process
-Tip: you can access long running processes, like a server, at 'http://php_hello.gjtorikian.c9.io'.</code></pre>
-<p>Clicking on that link gets you to your PHP page. For a more in-depth workflow, see the article on <a href="./running_wordpress_on_cloud9.html">running WordPress entirely on Cloud9</a>.</p>
-<h2 id='modifying-phpini'><a class='heading_anchor' href='#modifying-phpini'><i class='headerLinkIcon'></i></a>Modifying php.ini</h2>
-<p>You can configure your PHP installation by editing the <code>php.ini</code> located in the <code>/home/ubuntu/workspace</code> directory. Please note: in some cases <code>php.ini</code> is located somewhere else. Just create a simple PHP file running <code>phpinfo()</code> to find out where to look for <code>php.ini</code>.</p>
-<p>Make sure to restart Apache after you have applied your changes</p>
-<pre><code>apachectl re<span class="operator"><span class="keyword">start</span></code></pre>
-<div class="alert alert-success"><h4 class="alert-heading">Note: </h4>Currently, you can&#39;t debug PHP applications yet, but we are working on adding this feature.
-</div>
+              <div><p>Welcome to the official Cloud9 IDE documentation! Here, you&#39;ll find articles and tutorials to help you use the Cloud9 platform. These include everything from setting up a workspace, to learning how to run, debug, and deploy your code.</p>
+<!--Don't forget to check out [our YouTube channel](http://www.youtube.com/user/c9ide/videos?flow=grid&view=1) which contains videos describing many of the features of the IDE, as well as providing additional tutorials. Our videos are also available on relevant documentation pages.-->
+
+<h2 id='getting-started'><a class='heading_anchor' href='#getting-started'><i class='headerLinkIcon'></i></a>Getting started</h2>
+<p>Have a look at the &quot;Getting Started&quot; section on the left for an introduction into the basics of Cloud9.
+For instance, read up on how to:</p>
+<ul>
+<li><a href="create_a_workspace.html">Create a workspace</a></li>
+<li><a href="run_an_application.html">Run an application</a></li>
+<li><a href="setup_a_database.html">Set up a database</a> </li>
+<li><a href="share_a_workspace.html">Share a workspace</a> </li>
+</ul>
+<h2 id='getting-more-help'><a class='heading_anchor' href='#getting-more-help'><i class='headerLinkIcon'></i></a>Getting More Help</h2>
+<p>If you&#39;re interested in troubleshooting specific aspects of the IDE, need help setting up an account, or just want to chat with our support team, please <a href="https://support.c9.io">visit the Support pages</a>.</p>
+<h2 id='contact-us'><a class='heading_anchor' href='#contact-us'><i class='headerLinkIcon'></i></a>Contact Us</h2>
+<p>Remember: All of our documentation content is <a href="https://github.com/c9/docs.c9.io">open-sourced on GitHub</a>, just like our amazing IDE.</p>
+<p>See something that&#39;s not documented here? Simply add it to the documentation with a Pull Request, or send an e-mail to <a href="mailto:docs@c9.io">docs@c9.io</a>, and we&#39;ll get it in.</p>
+<h2 id='recently-updated-topics'><a class='heading_anchor' href='#recently-updated-topics'><i class='headerLinkIcon'></i></a>Recently Updated Topics</h2>
+<p>Here&#39;s a list of the last five recently updated topics:</p>
+<ul>
+<li><a href='ide_overview.html'>IDE Overview</a></li>
+<li><a href='deploying_code.html'>Deploying Your Code</a></li>
+<li><a href='faq_general.html'>FAQ: General</a></li>
+<li><a href='faq_php.html'>FAQ: PHP</a></li>
+<li><a href='faq_python.html'>FAQ: Python</a></li>
+</ul>
 
               </div>
               <div id="disqus_thread"></div>
             </div>
           </div>
-          <div id="tocHolder" class="span2"></li><ol class='tocContainer level_1'><li class='tocItem level_2'><a href='#modifying-phpini'>Modifying php.ini</a></li></ol></li></ol>
+          <div id="tocHolder" class="span2"></li><ol class='tocContainer level_1'><li class='tocItem level_2'><a href='#getting-started'>Getting started</a></li><li class='tocItem level_2'><a href='#getting-more-help'>Getting More Help</a></li><li class='tocItem level_2'><a href='#contact-us'>Contact Us</a></li><li class='tocItem level_2'><a href='#recently-updated-topics'>Recently Updated Topics</a></li></ol></li></ol>
           </div>
         </div>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js" type="text/javascript"></script>

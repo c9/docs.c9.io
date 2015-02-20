@@ -3,7 +3,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=us-ascii">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Writing a PHP App | Cloud9 User Documentation</title>
+    <title>Collaboration | Cloud9 User Documentation</title>
     <link href="./assets/min/styles.css" rel="stylesheet" type="text/css">
     <link rel="icon" type="image/x-icon" href="./assets/img/favicon.ico">
     <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css">
@@ -194,35 +194,34 @@
           <div class="span12 documentationContainer">
             <div id="content">
               <div id="toh_btn" onclick="toggleTOH(this)"></div>
-              <h1>Writing a PHP App</h1>
-              <div><p>With Cloud9 IDE, you can run your PHP pages, without relying on a third-party system like Apache hosting. We run PHP version 5.3.3.</p>
-<p>You can choose to run PHP scripts via the command line, by typing <code>php</code>, followed by the name of your PHP file. However, this is not a very common use case. Most likely, you&#39;ll be running your own server and hosting PHP files.</p>
-<p>Here&#39;s a simple demonstration. First, create a PHP file called <em>hello_world.php</em>, and paste this code into it:</p>
-<pre><code class="language-xml"><span class="tag">&lt;<span class="title">html</span>&gt;</span>
-  <span class="tag">&lt;<span class="title">head</span>&gt;</span>
-   <span class="tag">&lt;<span class="title">title</span>&gt;</span>PHP Test<span class="tag">&lt;/<span class="title">title</span>&gt;</span>
-  <span class="tag">&lt;/<span class="title">head</span>&gt;</span>
-  <span class="tag">&lt;<span class="title">body</span>&gt;</span>
-   <span class="pi">&lt;?php echo '&lt;p&gt;Hello World&lt;/p&gt;'; ?&gt;</span> 
-  <span class="tag">&lt;/<span class="title">body</span>&gt;</span>
-<span class="tag">&lt;/<span class="title">html</span>&gt;</span></code></pre>
-<p>Next, open the <strong>Run &amp; Debug</strong> panel, at the left of the IDE. From the <strong>Runtime</strong> dropdown, select <strong>Apache+PHP</strong>. Then, click on the <img src="./resources/icons/runButton.png" alt="The Run Button" width="" height=""> button in the top menu bar.</p>
-<p>The console should now spit out a message about how your Apache server is running, something similar to this:</p>
-<pre><code class="language-no-highlight">Running Apache Process
-Tip: you can access long running processes, like a server, at 'http://php_hello.gjtorikian.c9.io'.</code></pre>
-<p>Clicking on that link gets you to your PHP page. For a more in-depth workflow, see the article on <a href="./running_wordpress_on_cloud9.html">running WordPress entirely on Cloud9</a>.</p>
-<h2 id='modifying-phpini'><a class='heading_anchor' href='#modifying-phpini'><i class='headerLinkIcon'></i></a>Modifying php.ini</h2>
-<p>You can configure your PHP installation by editing the <code>php.ini</code> located in the <code>/home/ubuntu/workspace</code> directory. Please note: in some cases <code>php.ini</code> is located somewhere else. Just create a simple PHP file running <code>phpinfo()</code> to find out where to look for <code>php.ini</code>.</p>
-<p>Make sure to restart Apache after you have applied your changes</p>
-<pre><code>apachectl re<span class="operator"><span class="keyword">start</span></code></pre>
-<div class="alert alert-success"><h4 class="alert-heading">Note: </h4>Currently, you can&#39;t debug PHP applications yet, but we are working on adding this feature.
+              <h1>Collaboration</h1>
+              <div><div class="alert alert-success"><h4 class="alert-heading">Note: </h4>this article is outdated, a new version will follow soon
+
+</div>
+<p>Collaboration with Cloud9 IDE is an amazing feature that lets you do more than just share your projects with any other Cloud9 developer. You can grant someone else access to change files in your workspace, in realtime--or just let them view the workspace without any other rights. While you&#39;re collaborating, you can discuss the code through a built-in chat room.</p>
+<p>To invite someone to collaborate on a project with you, simply copy the URL in the browser and send it to a friend. You can also click on <strong>Share</strong> in the menu bar to get quick access to other ways to share, such as via e-mail, Twitter, or Facebook.</p>
+<p>Let&#39;s take a look at some of the additional features available while you collaborate.</p>
+<h2 id='members-list'><a class='heading_anchor' href='#members-list'><i class='headerLinkIcon'></i></a>Members List</h2>
+<p>There are two terms used for people accessing your project: <strong>members</strong> and <strong>visitors</strong>. Members are individuals that have read and write access to your project--that means they can change any code; visitors only have read access. The Members panel lists all the collaborators in a project, both active and inactive:  </p>
+<p><img src="./resources/images/members_panel.png" alt="The Members Panel" width="260" height=" 349"></p>
+<p>If you are the owner of a project, you can click on anyone&#39;s username to grant (or revoke) write access:  </p>
+<p><img src="./resources/images/collab_grant_access.png" alt="Granting write access" width="249" height=" 50"></p>
+<p>If you&#39;re worried about the sanctity of your code after grant access to other developers, fear not. You can always take a look at <a href="./revisions.html">a file revision history</a> to view line-by-line changes made to your project over time.</p>
+<h2 id='chatting'><a class='heading_anchor' href='#chatting'><i class='headerLinkIcon'></i></a>Chatting</h2>
+<p>Any member or visitor can participate in group chat with each other. Developers can also choose to double-click on a person&#39;s username and engage in a private, instant-message-style conversation.</p>
+<h2 id='collaborate-on-code'><a class='heading_anchor' href='#collaborate-on-code'><i class='headerLinkIcon'></i></a>Collaborate on Code</h2>
+<p>When a collaborator changes a file you&#39;re also working on, Cloud9 detects it and asks you whether you&#39;d like to use their changes, or your version. We&#39;re also simply giving you the option to merge both, using a three-way-merge algorithm  to handle any conflicts. This is the same algorithm used by version control systems like git for merging branches.</p>
+<p>To make the experience even smoother you can choose &quot;Always merge by default&quot; and we&#39;ll never interrupt you about file changes again.</p>
+<p>Check out the video below to see this in action.</p>
+<div class="video-container">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/8sstjmj8P6E" frameborder="0" allowfullscreen></iframe>
 </div>
 
               </div>
               <div id="disqus_thread"></div>
             </div>
           </div>
-          <div id="tocHolder" class="span2"></li><ol class='tocContainer level_1'><li class='tocItem level_2'><a href='#modifying-phpini'>Modifying php.ini</a></li></ol></li></ol>
+          <div id="tocHolder" class="span2"></li><ol class='tocContainer level_1'><li class='tocItem level_2'><a href='#members-list'>Members List</a></li><li class='tocItem level_2'><a href='#chatting'>Chatting</a></li><li class='tocItem level_2'><a href='#collaborate-on-code'>Collaborate on Code</a></li></ol></li></ol>
           </div>
         </div>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js" type="text/javascript"></script>

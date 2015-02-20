@@ -3,7 +3,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=us-ascii">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Writing a PHP App | Cloud9 User Documentation</title>
+    <title>Picking a Plan | Cloud9 User Documentation</title>
     <link href="./assets/min/styles.css" rel="stylesheet" type="text/css">
     <link rel="icon" type="image/x-icon" href="./assets/img/favicon.ico">
     <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css">
@@ -194,35 +194,71 @@
           <div class="span12 documentationContainer">
             <div id="content">
               <div id="toh_btn" onclick="toggleTOH(this)"></div>
-              <h1>Writing a PHP App</h1>
-              <div><p>With Cloud9 IDE, you can run your PHP pages, without relying on a third-party system like Apache hosting. We run PHP version 5.3.3.</p>
-<p>You can choose to run PHP scripts via the command line, by typing <code>php</code>, followed by the name of your PHP file. However, this is not a very common use case. Most likely, you&#39;ll be running your own server and hosting PHP files.</p>
-<p>Here&#39;s a simple demonstration. First, create a PHP file called <em>hello_world.php</em>, and paste this code into it:</p>
-<pre><code class="language-xml"><span class="tag">&lt;<span class="title">html</span>&gt;</span>
-  <span class="tag">&lt;<span class="title">head</span>&gt;</span>
-   <span class="tag">&lt;<span class="title">title</span>&gt;</span>PHP Test<span class="tag">&lt;/<span class="title">title</span>&gt;</span>
-  <span class="tag">&lt;/<span class="title">head</span>&gt;</span>
-  <span class="tag">&lt;<span class="title">body</span>&gt;</span>
-   <span class="pi">&lt;?php echo '&lt;p&gt;Hello World&lt;/p&gt;'; ?&gt;</span> 
-  <span class="tag">&lt;/<span class="title">body</span>&gt;</span>
-<span class="tag">&lt;/<span class="title">html</span>&gt;</span></code></pre>
-<p>Next, open the <strong>Run &amp; Debug</strong> panel, at the left of the IDE. From the <strong>Runtime</strong> dropdown, select <strong>Apache+PHP</strong>. Then, click on the <img src="./resources/icons/runButton.png" alt="The Run Button" width="" height=""> button in the top menu bar.</p>
-<p>The console should now spit out a message about how your Apache server is running, something similar to this:</p>
-<pre><code class="language-no-highlight">Running Apache Process
-Tip: you can access long running processes, like a server, at 'http://php_hello.gjtorikian.c9.io'.</code></pre>
-<p>Clicking on that link gets you to your PHP page. For a more in-depth workflow, see the article on <a href="./running_wordpress_on_cloud9.html">running WordPress entirely on Cloud9</a>.</p>
-<h2 id='modifying-phpini'><a class='heading_anchor' href='#modifying-phpini'><i class='headerLinkIcon'></i></a>Modifying php.ini</h2>
-<p>You can configure your PHP installation by editing the <code>php.ini</code> located in the <code>/home/ubuntu/workspace</code> directory. Please note: in some cases <code>php.ini</code> is located somewhere else. Just create a simple PHP file running <code>phpinfo()</code> to find out where to look for <code>php.ini</code>.</p>
-<p>Make sure to restart Apache after you have applied your changes</p>
-<pre><code>apachectl re<span class="operator"><span class="keyword">start</span></code></pre>
-<div class="alert alert-success"><h4 class="alert-heading">Note: </h4>Currently, you can&#39;t debug PHP applications yet, but we are working on adding this feature.
-</div>
+              <h1>Picking a Plan</h1>
+              <div><p>The <a href="https://c9.io/web/site/pricing">Plans and Pricing Page</a> has the basics for the available plans but here, we&#39;ll break down the details of workspaces.</p>
+<h2 id='workspace-choices'><a class='heading_anchor' href='#workspace-choices'><i class='headerLinkIcon'></i></a>Workspace Choices</h2>
+<p>With Cloud9, you write code, run commands, and build applications in workspaces (virtual machines) hosted on Google Cloud. You&#39;re free to resize workspaces at any time so don&#39;t fret about their initial sizing. Following are the different types of workspaces and their properties:</p>
+<h3 id='micro-workspace'><a class='heading_anchor' href='#micro-workspace'><i class='headerLinkIcon'></i></a>Micro Workspace</h3>
+<ul>
+<li>512MB RAM</li>
+<li>1GB Disk space</li>
+<li>1 CPU</li>
+<li>Private</li>
+</ul>
+<h3 id='small-workspace'><a class='heading_anchor' href='#small-workspace'><i class='headerLinkIcon'></i></a>Small Workspace</h3>
+<ul>
+<li>512MB RAM</li>
+<li>5GB Disk space</li>
+<li>1 CPU</li>
+<li>Private</li>
+</ul>
+<h3 id='medium-workspace'><a class='heading_anchor' href='#medium-workspace'><i class='headerLinkIcon'></i></a>Medium Workspace</h3>
+<ul>
+<li>1GB RAM</li>
+<li>10GB Disk space</li>
+<li>1 CPU</li>
+<li>Private</li>
+</ul>
+<h3 id='large-workspace'><a class='heading_anchor' href='#large-workspace'><i class='headerLinkIcon'></i></a>Large Workspace</h3>
+<ul>
+<li>2GB RAM</li>
+<li>20GB Disk space</li>
+<li>1 CPU</li>
+<li>Private</li>
+</ul>
+<h3 id='ssh-workspace'><a class='heading_anchor' href='#ssh-workspace'><i class='headerLinkIcon'></i></a>SSH Workspace</h3>
+<ul>
+<li>Resources determined by user</li>
+<li>Private</li>
+</ul>
+<h3 id='community-workspaces'><a class='heading_anchor' href='#community-workspaces'><i class='headerLinkIcon'></i></a>Community Workspaces</h3>
+<ul>
+<li>512MB RAM</li>
+<li>1GB Disk space</li>
+<li>1 CPU</li>
+<li>Publicly readable</li>
+<li>Archived after a week of inactivity (restored unchanged when you open it again)</li>
+</ul>
+<p>Given the resources from your plan, you may make as many private workspaces as you&#39;d like. For example, if you&#39;re signed up for the large plan with 80gb of storage, you could use that to have 4 different large workspaces, each with 20gb of storage. With those 4 workspaces, you would have no resources left to make further private workspaces although you could still make more community workspaces.</p>
+<h2 id='reaching-the-limits'><a class='heading_anchor' href='#reaching-the-limits'><i class='headerLinkIcon'></i></a>Reaching the Limits</h2>
+<p>When a workspace reaches its RAM limit, you will be notified and processes may be killed to stay within the limit.</p>
+<p>When the storage limit within a workspace is reached, the terminal will display a message to let you know. Any downloads will be stopped.</p>
+<h2 id='all-plans'><a class='heading_anchor' href='#all-plans'><i class='headerLinkIcon'></i></a>All plans</h2>
+<p>The following features are provided with the free plan and all paid plans.</p>
+<ul>
+<li><strong>Unlimited Community Workspaces</strong> - Each community workspace is readable by anyone, like a public GitHub repository.</li>
+<li><strong>Team collaboration</strong> - You can invite coworkers, classmates, and anyone with an email address or Cloud9 account to work with you, real-time, giving read/write privileges to whomever you choose. Collaboration takes place live so you can see one another manipulating code real-time.</li>
+<li><strong>VMs hosted on Google Cloud</strong> - Each VM/workspace is allotted resources according to your chosing. Those resources are important because each workspace is running on a VM hosted on Google Cloud.</li>
+<li><strong>Sudo Shell Access/Terminal</strong> - Sudo access allows you to install your own programs or languages, giving them nearly the same amount of access they might have on a local machine.</li>
+<li><strong>SSD Performance</strong> - VM&#39;s are hosted on SSD&#39;s to speed up processes and development.</li>
+<li><strong>Running on Docker</strong> - Workspaces are powered by Docker Ubuntu containers that give you full freedom over your environment, including sudo rights.</li>
+</ul>
 
               </div>
               <div id="disqus_thread"></div>
             </div>
           </div>
-          <div id="tocHolder" class="span2"></li><ol class='tocContainer level_1'><li class='tocItem level_2'><a href='#modifying-phpini'>Modifying php.ini</a></li></ol></li></ol>
+          <div id="tocHolder" class="span2"></li><ol class='tocContainer level_1'><li class='tocItem level_2'><a href='#workspace-choices'>Workspace Choices</a><ol class='tocContainer level_2'><li class='tocItem level_3'><a href='#micro-workspace'>Micro Workspace</a></li><li class='tocItem level_3'><a href='#small-workspace'>Small Workspace</a></li><li class='tocItem level_3'><a href='#medium-workspace'>Medium Workspace</a></li><li class='tocItem level_3'><a href='#large-workspace'>Large Workspace</a></li><li class='tocItem level_3'><a href='#ssh-workspace'>SSH Workspace</a></li><li class='tocItem level_3'><a href='#community-workspaces'>Community Workspaces</a></li></ol></li><li class='tocItem level_2'><a href='#reaching-the-limits'>Reaching the Limits</a></li><li class='tocItem level_2'><a href='#all-plans'>All plans</a></li></ol></li></ol>
           </div>
         </div>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js" type="text/javascript"></script>

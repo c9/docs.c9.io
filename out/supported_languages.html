@@ -3,7 +3,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=us-ascii">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Writing a PHP App | Cloud9 User Documentation</title>
+    <title>Supported Languages | Cloud9 User Documentation</title>
     <link href="./assets/min/styles.css" rel="stylesheet" type="text/css">
     <link rel="icon" type="image/x-icon" href="./assets/img/favicon.ico">
     <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css">
@@ -194,35 +194,57 @@
           <div class="span12 documentationContainer">
             <div id="content">
               <div id="toh_btn" onclick="toggleTOH(this)"></div>
-              <h1>Writing a PHP App</h1>
-              <div><p>With Cloud9 IDE, you can run your PHP pages, without relying on a third-party system like Apache hosting. We run PHP version 5.3.3.</p>
-<p>You can choose to run PHP scripts via the command line, by typing <code>php</code>, followed by the name of your PHP file. However, this is not a very common use case. Most likely, you&#39;ll be running your own server and hosting PHP files.</p>
-<p>Here&#39;s a simple demonstration. First, create a PHP file called <em>hello_world.php</em>, and paste this code into it:</p>
-<pre><code class="language-xml"><span class="tag">&lt;<span class="title">html</span>&gt;</span>
-  <span class="tag">&lt;<span class="title">head</span>&gt;</span>
-   <span class="tag">&lt;<span class="title">title</span>&gt;</span>PHP Test<span class="tag">&lt;/<span class="title">title</span>&gt;</span>
-  <span class="tag">&lt;/<span class="title">head</span>&gt;</span>
-  <span class="tag">&lt;<span class="title">body</span>&gt;</span>
-   <span class="pi">&lt;?php echo '&lt;p&gt;Hello World&lt;/p&gt;'; ?&gt;</span> 
-  <span class="tag">&lt;/<span class="title">body</span>&gt;</span>
-<span class="tag">&lt;/<span class="title">html</span>&gt;</span></code></pre>
-<p>Next, open the <strong>Run &amp; Debug</strong> panel, at the left of the IDE. From the <strong>Runtime</strong> dropdown, select <strong>Apache+PHP</strong>. Then, click on the <img src="./resources/icons/runButton.png" alt="The Run Button" width="" height=""> button in the top menu bar.</p>
-<p>The console should now spit out a message about how your Apache server is running, something similar to this:</p>
-<pre><code class="language-no-highlight">Running Apache Process
-Tip: you can access long running processes, like a server, at 'http://php_hello.gjtorikian.c9.io'.</code></pre>
-<p>Clicking on that link gets you to your PHP page. For a more in-depth workflow, see the article on <a href="./running_wordpress_on_cloud9.html">running WordPress entirely on Cloud9</a>.</p>
-<h2 id='modifying-phpini'><a class='heading_anchor' href='#modifying-phpini'><i class='headerLinkIcon'></i></a>Modifying php.ini</h2>
-<p>You can configure your PHP installation by editing the <code>php.ini</code> located in the <code>/home/ubuntu/workspace</code> directory. Please note: in some cases <code>php.ini</code> is located somewhere else. Just create a simple PHP file running <code>phpinfo()</code> to find out where to look for <code>php.ini</code>.</p>
-<p>Make sure to restart Apache after you have applied your changes</p>
-<pre><code>apachectl re<span class="operator"><span class="keyword">start</span></code></pre>
-<div class="alert alert-success"><h4 class="alert-heading">Note: </h4>Currently, you can&#39;t debug PHP applications yet, but we are working on adding this feature.
-</div>
+              <h1>Supported Languages</h1>
+              <div><p>Cloud9 IDE has varying levels of support for different programming languages. 
+Usually you will at least have Syntax Highlighting in the editor and the ability
+to run apps from the Terminal. </p>
+<h3 id='syntax-highlighting'><a class='heading_anchor' href='#syntax-highlighting'><i class='headerLinkIcon'></i></a>Syntax Highlighting</h3>
+<p>Cloud9 IDE develops and builds on <a href="https://github.com/ajaxorg/ace">Ace</a>, an 
+editor for writing code online. Cloud9&#39;s Ace editor currently supports 
+highlighting for about 100 programming languages, and any changes made to Ace are 
+reflected back into Cloud9 IDE. </p>
+<p>The list of supported languages is growing, and you can get the full list from 
+the <span class="menucascade"><span class="menuitem"><strong>View</strong></span><span class='menudivider'> <strong>&gt;</strong> </span><span class='menuitem'><strong>Syntax</strong></span></span> menu. <a href="http://ace.ajax.org/#nav=higlighter">Feel free to create an issue in the Ace repository</a> 
+for new requests, or add your own syntax highlighting mode.</p>
+<p>See <a href="./syntax_highlighting_themes.html">Syntax Highlighting &amp; Themes</a> for more 
+info.</p>
+<!--### Language Intelligence-->
+
+<!--Cloud9 IDE's editor has extensive support for JavaScript (Node.js) with Error -->
+<!--Highlighting and Code Completion. -->
+
+<!--Live syntax error checks are also supported for the following languages:-->
+<!--* CSS-->
+<!--* CoffeeScript-->
+<!--* PHP-->
+<!--* Python-->
+<!--* JSON-->
+<!--* Lua-->
+
+<h3 id='running-apps'><a class='heading_anchor' href='#running-apps'><i class='headerLinkIcon'></i></a>Running apps</h3>
+<p>The Run panel currently supports running the following by default:</p>
+<ul>
+<li>Apache httpd (PHP, HTML)</li>
+<li>Node</li>
+<li>Python</li>
+<li>Ruby</li>
+<li>Ruby on Rails</li>
+<li>Go</li>
+<li>CoffeeScript</li>
+<li>Julia</li>
+<li>Mocha</li>
+<li>Shell script</li>
+</ul>
+<p>If you&#39;d like to run any other language, simply create a new &quot;Runner&quot;.</p>
+<p>You can also do so from the Terminal. 
+Each workspace is an Ubuntu VM with the standard tools like <code>bash</code>, <code>make</code>, 
+<code>gcc</code>, <code>vim</code>, <code>java</code> SDK or <code>perl</code> pre-installed.</p>
 
               </div>
               <div id="disqus_thread"></div>
             </div>
           </div>
-          <div id="tocHolder" class="span2"></li><ol class='tocContainer level_1'><li class='tocItem level_2'><a href='#modifying-phpini'>Modifying php.ini</a></li></ol></li></ol>
+          <div id="tocHolder" class="span2"></li><ol class='tocContainer level_1'><ol class='tocContainer level_2'><li class='tocItem level_3'><a href='#syntax-highlighting'>Syntax Highlighting</a></li><li class='tocItem level_3'><a href='#running-apps'>Running apps</a></li></ol></li></ol></li></ol>
           </div>
         </div>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js" type="text/javascript"></script>

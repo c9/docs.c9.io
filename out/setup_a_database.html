@@ -3,7 +3,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=us-ascii">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Writing a PHP App | Cloud9 User Documentation</title>
+    <title>Set up a database | Cloud9 User Documentation</title>
     <link href="./assets/min/styles.css" rel="stylesheet" type="text/css">
     <link rel="icon" type="image/x-icon" href="./assets/img/favicon.ico">
     <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css">
@@ -194,35 +194,59 @@
           <div class="span12 documentationContainer">
             <div id="content">
               <div id="toh_btn" onclick="toggleTOH(this)"></div>
-              <h1>Writing a PHP App</h1>
-              <div><p>With Cloud9 IDE, you can run your PHP pages, without relying on a third-party system like Apache hosting. We run PHP version 5.3.3.</p>
-<p>You can choose to run PHP scripts via the command line, by typing <code>php</code>, followed by the name of your PHP file. However, this is not a very common use case. Most likely, you&#39;ll be running your own server and hosting PHP files.</p>
-<p>Here&#39;s a simple demonstration. First, create a PHP file called <em>hello_world.php</em>, and paste this code into it:</p>
-<pre><code class="language-xml"><span class="tag">&lt;<span class="title">html</span>&gt;</span>
-  <span class="tag">&lt;<span class="title">head</span>&gt;</span>
-   <span class="tag">&lt;<span class="title">title</span>&gt;</span>PHP Test<span class="tag">&lt;/<span class="title">title</span>&gt;</span>
-  <span class="tag">&lt;/<span class="title">head</span>&gt;</span>
-  <span class="tag">&lt;<span class="title">body</span>&gt;</span>
-   <span class="pi">&lt;?php echo '&lt;p&gt;Hello World&lt;/p&gt;'; ?&gt;</span> 
-  <span class="tag">&lt;/<span class="title">body</span>&gt;</span>
-<span class="tag">&lt;/<span class="title">html</span>&gt;</span></code></pre>
-<p>Next, open the <strong>Run &amp; Debug</strong> panel, at the left of the IDE. From the <strong>Runtime</strong> dropdown, select <strong>Apache+PHP</strong>. Then, click on the <img src="./resources/icons/runButton.png" alt="The Run Button" width="" height=""> button in the top menu bar.</p>
-<p>The console should now spit out a message about how your Apache server is running, something similar to this:</p>
-<pre><code class="language-no-highlight">Running Apache Process
-Tip: you can access long running processes, like a server, at 'http://php_hello.gjtorikian.c9.io'.</code></pre>
-<p>Clicking on that link gets you to your PHP page. For a more in-depth workflow, see the article on <a href="./running_wordpress_on_cloud9.html">running WordPress entirely on Cloud9</a>.</p>
-<h2 id='modifying-phpini'><a class='heading_anchor' href='#modifying-phpini'><i class='headerLinkIcon'></i></a>Modifying php.ini</h2>
-<p>You can configure your PHP installation by editing the <code>php.ini</code> located in the <code>/home/ubuntu/workspace</code> directory. Please note: in some cases <code>php.ini</code> is located somewhere else. Just create a simple PHP file running <code>phpinfo()</code> to find out where to look for <code>php.ini</code>.</p>
-<p>Make sure to restart Apache after you have applied your changes</p>
-<pre><code>apachectl re<span class="operator"><span class="keyword">start</span></code></pre>
-<div class="alert alert-success"><h4 class="alert-heading">Note: </h4>Currently, you can&#39;t debug PHP applications yet, but we are working on adding this feature.
-</div>
+              <h1>Set up a database</h1>
+              <div><h2 id='mysql'><a class='heading_anchor' href='#mysql'><i class='headerLinkIcon'></i></a>MySQL</h2>
+<p>From the Terminal, run the following command:</p>
+<pre><code><span class="variable">$ </span>mysql-ctl install</code></pre>
+<p>The output will be:</p>
+<pre><code>MySQL <span class="number">5.5</span> database added.  Please make <span class="keyword">note</span> <span class="keyword">of</span> these credentials:
+
+Root User: username
+Database Name: c9</code></pre>
+<p>Now you can connect to the database using the ip <em>127.0.0.1</em> and the default port <em>3306</em>.
+You can also test it using our tool from the Terminal:</p>
+<pre><code><span class="comment">$</span> <span class="comment">mysql</span>-<span class="comment">ctl</span> <span class="comment">cli</span>
+<span class="comment">Welcome</span> <span class="comment">to</span> <span class="comment">the</span> <span class="comment">MySQL</span> <span class="comment">monitor</span>.  <span class="comment">Commands</span> <span class="comment">end</span> <span class="comment">with</span> <span class="comment">;</span> <span class="comment">or</span> <span class="comment">\g</span>.
+<span class="comment">Your</span> <span class="comment">MySQL</span> <span class="comment">connection</span> <span class="comment">id</span> <span class="comment">is</span> <span class="comment">24</span>
+<span class="comment">Server</span> <span class="comment">version:</span> <span class="comment">5</span>.<span class="comment">5</span>.<span class="comment">37</span>-<span class="comment">0ubuntu0</span>.<span class="comment">14</span>.<span class="comment">04</span>.<span class="comment">1</span> <span class="comment">(Ubuntu)</span>
+
+<span class="comment">Copyright</span> <span class="comment">(c)</span> <span class="comment">2000</span>, <span class="comment">2014</span>, <span class="comment">Oracle</span> <span class="comment">and/or</span> <span class="comment">its</span> <span class="comment">affiliates</span>. <span class="comment">All</span> <span class="comment">rights</span> <span class="comment">reserved</span>.
+
+<span class="comment">Oracle</span> <span class="comment">is</span> <span class="comment">a</span> <span class="comment">registered</span> <span class="comment">trademark</span> <span class="comment">of</span> <span class="comment">Oracle</span> <span class="comment">Corporation</span> <span class="comment">and/or</span> <span class="comment">its</span>
+<span class="comment">affiliates</span>. <span class="comment">Other</span> <span class="comment">names</span> <span class="comment">may</span> <span class="comment">be</span> <span class="comment">trademarks</span> <span class="comment">of</span> <span class="comment">their</span> <span class="comment">respective</span>
+<span class="comment">owners</span>.
+
+<span class="comment">Type</span> <span class="comment">'help;'</span> <span class="comment">or</span> <span class="comment">'\h'</span> <span class="comment">for</span> <span class="comment">help</span>. <span class="comment">Type</span> <span class="comment">'\c'</span> <span class="comment">to</span> <span class="comment">clear</span> <span class="comment">the</span> <span class="comment">current</span> <span class="comment">input</span> <span class="comment">statement</span>.
+
+<span class="comment">mysql</span>&gt;  <span class="comment">show</span> <span class="comment">databases;</span>
+<span class="literal">+</span><span class="literal">-</span><span class="literal">-</span><span class="literal">-</span><span class="literal">-</span><span class="literal">-</span><span class="literal">-</span><span class="literal">-</span><span class="literal">-</span><span class="literal">-</span><span class="literal">-</span><span class="literal">-</span><span class="literal">-</span><span class="literal">-</span><span class="literal">-</span><span class="literal">-</span><span class="literal">-</span><span class="literal">-</span><span class="literal">-</span><span class="literal">-</span><span class="literal">-</span><span class="literal">+</span>
+<span class="comment">|</span> <span class="comment">Database</span>           <span class="comment">|</span>
+<span class="literal">+</span><span class="literal">-</span><span class="literal">-</span><span class="literal">-</span><span class="literal">-</span><span class="literal">-</span><span class="literal">-</span><span class="literal">-</span><span class="literal">-</span><span class="literal">-</span><span class="literal">-</span><span class="literal">-</span><span class="literal">-</span><span class="literal">-</span><span class="literal">-</span><span class="literal">-</span><span class="literal">-</span><span class="literal">-</span><span class="literal">-</span><span class="literal">-</span><span class="literal">-</span><span class="literal">+</span>
+<span class="comment">|</span> <span class="comment">information_schema</span> <span class="comment">|</span>
+<span class="comment">|</span> <span class="comment">c9</span>                 <span class="comment">|</span>
+<span class="comment">|</span> <span class="comment">mysql</span>              <span class="comment">|</span>
+<span class="comment">|</span> <span class="comment">performance_schema</span> <span class="comment">|</span>
+<span class="literal">+</span><span class="literal">-</span><span class="literal">-</span><span class="literal">-</span><span class="literal">-</span><span class="literal">-</span><span class="literal">-</span><span class="literal">-</span><span class="literal">-</span><span class="literal">-</span><span class="literal">-</span><span class="literal">-</span><span class="literal">-</span><span class="literal">-</span><span class="literal">-</span><span class="literal">-</span><span class="literal">-</span><span class="literal">-</span><span class="literal">-</span><span class="literal">-</span><span class="literal">-</span><span class="literal">+</span>
+<span class="comment">4</span> <span class="comment">rows</span> <span class="comment">in</span> <span class="comment">set</span> <span class="comment">(0</span>.<span class="comment">15</span> <span class="comment">sec)</code></pre>
+<h2 id='mongodb'><a class='heading_anchor' href='#mongodb'><i class='headerLinkIcon'></i></a>MongoDB</h2>
+<p>From the Terminal, run the following command:</p>
+<pre><code><span class="comment">$</span> <span class="comment">mongod</span> <span class="literal">-</span><span class="literal">-</span><span class="comment">bind_ip=$IP</span> <span class="literal">-</span><span class="literal">-</span><span class="comment">nojournal</code></pre>
+<p>The output will include:</p>
+<pre><code><span class="keyword">...</span>
+waiting <span class="keyword">for</span> connections on port <span class="number">27017</span></code></pre>
+<p>Now you can open the mongo shell in a new Terminal, running following command:</p>
+<pre><code><span class="variable">$ </span>mongo</code></pre>
+<p>To stop the MongoDB instance press <code>Control+C</code> in the Terminal where <code>mongod</code> is running.
+Now have a look at the currently used database:</p>
+<pre><code>$ mongo
+<span class="title">mongo</span>&gt; db
+<span class="title">test</span></code></pre>
 
               </div>
               <div id="disqus_thread"></div>
             </div>
           </div>
-          <div id="tocHolder" class="span2"></li><ol class='tocContainer level_1'><li class='tocItem level_2'><a href='#modifying-phpini'>Modifying php.ini</a></li></ol></li></ol>
+          <div id="tocHolder" class="span2"></li><ol class='tocContainer level_1'><li class='tocItem level_2'><a href='#mongodb'>MongoDB</a></li></ol></li></ol>
           </div>
         </div>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js" type="text/javascript"></script>

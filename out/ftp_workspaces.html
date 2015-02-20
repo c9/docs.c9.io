@@ -3,7 +3,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=us-ascii">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Writing a PHP App | Cloud9 User Documentation</title>
+    <title>Setting up an FTP project | Cloud9 User Documentation</title>
     <link href="./assets/min/styles.css" rel="stylesheet" type="text/css">
     <link rel="icon" type="image/x-icon" href="./assets/img/favicon.ico">
     <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css">
@@ -193,36 +193,41 @@
           </div>
           <div class="span12 documentationContainer">
             <div id="content">
-              <div id="toh_btn" onclick="toggleTOH(this)"></div>
-              <h1>Writing a PHP App</h1>
-              <div><p>With Cloud9 IDE, you can run your PHP pages, without relying on a third-party system like Apache hosting. We run PHP version 5.3.3.</p>
-<p>You can choose to run PHP scripts via the command line, by typing <code>php</code>, followed by the name of your PHP file. However, this is not a very common use case. Most likely, you&#39;ll be running your own server and hosting PHP files.</p>
-<p>Here&#39;s a simple demonstration. First, create a PHP file called <em>hello_world.php</em>, and paste this code into it:</p>
-<pre><code class="language-xml"><span class="tag">&lt;<span class="title">html</span>&gt;</span>
-  <span class="tag">&lt;<span class="title">head</span>&gt;</span>
-   <span class="tag">&lt;<span class="title">title</span>&gt;</span>PHP Test<span class="tag">&lt;/<span class="title">title</span>&gt;</span>
-  <span class="tag">&lt;/<span class="title">head</span>&gt;</span>
-  <span class="tag">&lt;<span class="title">body</span>&gt;</span>
-   <span class="pi">&lt;?php echo '&lt;p&gt;Hello World&lt;/p&gt;'; ?&gt;</span> 
-  <span class="tag">&lt;/<span class="title">body</span>&gt;</span>
-<span class="tag">&lt;/<span class="title">html</span>&gt;</span></code></pre>
-<p>Next, open the <strong>Run &amp; Debug</strong> panel, at the left of the IDE. From the <strong>Runtime</strong> dropdown, select <strong>Apache+PHP</strong>. Then, click on the <img src="./resources/icons/runButton.png" alt="The Run Button" width="" height=""> button in the top menu bar.</p>
-<p>The console should now spit out a message about how your Apache server is running, something similar to this:</p>
-<pre><code class="language-no-highlight">Running Apache Process
-Tip: you can access long running processes, like a server, at 'http://php_hello.gjtorikian.c9.io'.</code></pre>
-<p>Clicking on that link gets you to your PHP page. For a more in-depth workflow, see the article on <a href="./running_wordpress_on_cloud9.html">running WordPress entirely on Cloud9</a>.</p>
-<h2 id='modifying-phpini'><a class='heading_anchor' href='#modifying-phpini'><i class='headerLinkIcon'></i></a>Modifying php.ini</h2>
-<p>You can configure your PHP installation by editing the <code>php.ini</code> located in the <code>/home/ubuntu/workspace</code> directory. Please note: in some cases <code>php.ini</code> is located somewhere else. Just create a simple PHP file running <code>phpinfo()</code> to find out where to look for <code>php.ini</code>.</p>
-<p>Make sure to restart Apache after you have applied your changes</p>
-<pre><code>apachectl re<span class="operator"><span class="keyword">start</span></code></pre>
-<div class="alert alert-success"><h4 class="alert-heading">Note: </h4>Currently, you can&#39;t debug PHP applications yet, but we are working on adding this feature.
+              <h1>Setting up an FTP project</h1>
+              <div><div class="video-container">
+<iframe width="640" height="480" src="https://www.youtube.com/embed/HehwOFg7jYc" frameborder="0" allowfullscreen></iframe>
 </div>
+
+<p>In this article, we&#39;ll show you how to set up an FTP project.</p>
+<div class="alert alert-success"><h4 class="alert-heading">Note: </h4>Currently, Cloud9 IDE only supports passive FTP. Active FTP, SFTP and FTPS are <strong>not yet supported</strong>. For SSH connections, consider creating <a href="./run_your_own_workspace.html">an SSH workspace</a>.
+
+</div>
+<p>To create an FTP project, go to the Dashboard and click on the <img src="./resources/icons/workspacePlusIcon.png" alt="Project Add Icon" width="" height=""> next to <strong>MY PROJECTS</strong>. Choose the option to <strong>Create a new project</strong> (see &quot;<a href="./creating_new_workspace.html">Creating a New Project</a>&quot; if you need to review the steps to create a new project):<br><img src="./resources/images/newWorkspace.png" alt="New workspace creation" width="249" height=" 106"></p>
+<p>In the pop-up window that appears, select <strong>FTP</strong> for the project type:</p>
+<p><img src="./resources/images/FTPoptions.png" alt="FTP Options" width="641" height=" 378"></p>
+<p>Let&#39;s review the options available for your FTP project:</p>
+<ul>
+<li><strong>Hostname</strong>: the domain name or IP address of the machine running your FTP server.</li>
+<li><strong>Username</strong>: your username for the FTP server.</li>
+<li><strong>Password</strong>: your password for the FTP server.</li>
+<li><strong>Initial path</strong>: this is an optional parameter. You can set it as an absolute (starts with <code>/</code>) path. Otherwise, it&#39;ll be set to a relative path, and Cloud9 assumes that you want to start from the folder your FTP server leaves you after login (<em>home</em> or <em>default</em> folder).</li>
+</ul>
+<div class="alert alert-block"><h4 class="alert-heading">Warning: </h4>Be careful not to put an initial path that leaves you in a location where you don&#39;t have write privileges as that could cause problems.
+
+</div>
+<p>Fill in your FTP details and click the <strong>Login Test</strong> to verify that the settings are correct. If the test succeeds, go ahead and click <strong>Create</strong> to create your FTP project. You&#39;ll then see your project in the Dashboard under My Projects:</p>
+<p><img src="./resources/images/newFtpWorkspace.png" alt="New FTP Project" width="630" height=" 145"></p>
+<p>When your new FTP project is selected, you will see three buttons: <strong>Start Editing</strong>, <strong>FTP settings</strong>, and <strong>Delete</strong> (on the far right). <strong>FTP settings</strong> gives you access to the settings you just filled in, as well as the login test. This is useful to use in case your login credentials have changed.</p>
+<p>To get started with your FTP project, click on the <strong>Start Editing</strong> button. You&#39;ll be taken to the editor. Under Project Files, you should see the files from the FTP server in the directory you selected (either your home/default folder or the location indicated by the Initial Path, if you set it). The editor for FTP projects works the same as in other projects: you can create and edit your files in the usual way. The main difference is the <strong>FTP log</strong> at the bottom of the page (where the console is usually located for other non-FTP projects).</p>
+<p>The FTP log displays output related to the interaction with the FTP server. The screenshot below, for example, shows what happens when we create a new file called <em>TestFile.txt</em>. The file is created in the FTP server and when I write to it, the contents are transferred.</p>
+<p><img src="./resources/images/FTPlog.png" alt="Demonstrating new files in the FTP" width="525" height=" 178"></p>
+<div class="alert alert-success"><h4 class="alert-heading">Note: </h4>In an FTP project, all files are stored on your FTP server; Cloud9 only stores the FTP settings. Please keep this in mind. Cloud9 IDE does not keep any copies of your files, so make sure you back them up properly. Any changes you make to these files in Cloud9 are automatically reflected on the live web server.</div>
 
               </div>
               <div id="disqus_thread"></div>
             </div>
           </div>
-          <div id="tocHolder" class="span2"></li><ol class='tocContainer level_1'><li class='tocItem level_2'><a href='#modifying-phpini'>Modifying php.ini</a></li></ol></li></ol>
+          <div id="tocHolder" class="span2">
           </div>
         </div>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js" type="text/javascript"></script>

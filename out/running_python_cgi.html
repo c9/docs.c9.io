@@ -3,7 +3,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=us-ascii">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Writing a PHP App | Cloud9 User Documentation</title>
+    <title>Running a Python CGI server | Cloud9 User Documentation</title>
     <link href="./assets/min/styles.css" rel="stylesheet" type="text/css">
     <link rel="icon" type="image/x-icon" href="./assets/img/favicon.ico">
     <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css">
@@ -193,36 +193,89 @@
           </div>
           <div class="span12 documentationContainer">
             <div id="content">
-              <div id="toh_btn" onclick="toggleTOH(this)"></div>
-              <h1>Writing a PHP App</h1>
-              <div><p>With Cloud9 IDE, you can run your PHP pages, without relying on a third-party system like Apache hosting. We run PHP version 5.3.3.</p>
-<p>You can choose to run PHP scripts via the command line, by typing <code>php</code>, followed by the name of your PHP file. However, this is not a very common use case. Most likely, you&#39;ll be running your own server and hosting PHP files.</p>
-<p>Here&#39;s a simple demonstration. First, create a PHP file called <em>hello_world.php</em>, and paste this code into it:</p>
-<pre><code class="language-xml"><span class="tag">&lt;<span class="title">html</span>&gt;</span>
-  <span class="tag">&lt;<span class="title">head</span>&gt;</span>
-   <span class="tag">&lt;<span class="title">title</span>&gt;</span>PHP Test<span class="tag">&lt;/<span class="title">title</span>&gt;</span>
-  <span class="tag">&lt;/<span class="title">head</span>&gt;</span>
-  <span class="tag">&lt;<span class="title">body</span>&gt;</span>
-   <span class="pi">&lt;?php echo '&lt;p&gt;Hello World&lt;/p&gt;'; ?&gt;</span> 
-  <span class="tag">&lt;/<span class="title">body</span>&gt;</span>
-<span class="tag">&lt;/<span class="title">html</span>&gt;</span></code></pre>
-<p>Next, open the <strong>Run &amp; Debug</strong> panel, at the left of the IDE. From the <strong>Runtime</strong> dropdown, select <strong>Apache+PHP</strong>. Then, click on the <img src="./resources/icons/runButton.png" alt="The Run Button" width="" height=""> button in the top menu bar.</p>
-<p>The console should now spit out a message about how your Apache server is running, something similar to this:</p>
-<pre><code class="language-no-highlight">Running Apache Process
-Tip: you can access long running processes, like a server, at 'http://php_hello.gjtorikian.c9.io'.</code></pre>
-<p>Clicking on that link gets you to your PHP page. For a more in-depth workflow, see the article on <a href="./running_wordpress_on_cloud9.html">running WordPress entirely on Cloud9</a>.</p>
-<h2 id='modifying-phpini'><a class='heading_anchor' href='#modifying-phpini'><i class='headerLinkIcon'></i></a>Modifying php.ini</h2>
-<p>You can configure your PHP installation by editing the <code>php.ini</code> located in the <code>/home/ubuntu/workspace</code> directory. Please note: in some cases <code>php.ini</code> is located somewhere else. Just create a simple PHP file running <code>phpinfo()</code> to find out where to look for <code>php.ini</code>.</p>
-<p>Make sure to restart Apache after you have applied your changes</p>
-<pre><code>apachectl re<span class="operator"><span class="keyword">start</span></code></pre>
-<div class="alert alert-success"><h4 class="alert-heading">Note: </h4>Currently, you can&#39;t debug PHP applications yet, but we are working on adding this feature.
-</div>
+              <h1>Running a Python CGI server</h1>
+              <div><p>In order to run a Python CGI server, you can start by creating a new workspace. It doesn&#39;t have to be a Python/Django workspace, even a Custom workspace would do. You would need to tell the Apache2 server already installed on the workspace to allow CGI scripts and to make sure it knows where to look for them.</p>
+<p>Lets start by creating a very simple python CGI script: </p>
+<ol>
+<li>Create a folder within your workspace, name it <code>cgi-bin</code> (the name doesn&#39;t matter, although it is customary to use <code>cgi-bin</code>).</li>
+<li>Within the <code>cgi-bin</code> folder, create a new file. Lets name it <code>test.py</code> for now.</li>
+<li>Paste in the following:</li>
+</ol>
+<pre><code class="language-python"><span class="comment">#!/usr/bin/env python</span>
+
+<span class="keyword">print</span> <span class="string">"Content-type: text/html"</span>
+<span class="keyword">print</span> <span class="string">""</span>
+
+<span class="keyword">print</span> <span class="string">"""
+&lt;html&gt;
+
+&lt;head&gt;&lt;title&gt;Sample CGI Script&lt;/title&gt;&lt;/head&gt;
+
+&lt;body&gt;
+  &lt;h3&gt; Sample CGI Script &lt;/h3&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+"""</span></code></pre>
+<p>Now, once we have a file we want to serve, lets start up the Apache web server. We can do that by creating a new runner. You can create a new runner by clicking on the + icon on the right of the tabs like shown below:</p>
+<p><img src="./resources/images/newRunConfiguration-new.png" alt="New Run Configuration" width="" height=""></p>
+<p>then select Apache httpd (PHP, HTML)</p>
+<p><img src="./resources/images/apacheRunConfiguration.png" alt="Select Apache Run Configuration" width="" height=""></p>
+<p>You can save this configuration by entering a name to the right of the <code>Command:</code> label like shown below.</p>
+<p><img src="./resources/images/saveRunConfiguration.png" alt="Save Run Configuration" width="" height=""></p>
+<p>Click on the Run button and the apache server is ready to go. Click on the link that reads something like: <code>https://&lt;workspace-name&gt;-&lt;your-username&gt;.c9.io/</code> and you should see a browser come up with your folder listing. Clicking on the <code>cgi-bin</code> link and then the <code>test.py</code> link just shows up the text of the python file we wrote. Now that we have the server running, lets enable CGI on it.</p>
+<p>The first thing we want to do is to enable CGI mode. We can do that by typing the following within the Terminal:</p>
+<pre><code class="language-bash">sudo a2enmod cgi</code></pre>
+<p>Next, we need to tell Apache where our CGI files are present. We can do that by editing the <code>serve-cgi-bin.conf</code> file. Do the following:</p>
+<pre><code class="language-bash">sudo vi /etc/apache2/conf-available/serve-cgi-bin.conf</code></pre>
+<p>The file should read something like this:</p>
+<pre><code><span class="tag">&lt;<span class="title">IfModule</span> <span class="attribute">mod_alias.c</span>&gt;</span>
+        <span class="tag">&lt;<span class="title">IfModule</span> <span class="attribute">mod_cgi.c</span>&gt;</span>
+                Define ENABLE_USR_LIB_CGI_BIN
+        <span class="tag">&lt;/<span class="title">IfModule</span>&gt;</span>
+
+        <span class="tag">&lt;<span class="title">IfModule</span> <span class="attribute">mod_cgid.c</span>&gt;</span>
+                Define ENABLE_USR_LIB_CGI_BIN
+        <span class="tag">&lt;/<span class="title">IfModule</span>&gt;</span>
+
+        <span class="tag">&lt;<span class="title">IfDefine</span> <span class="attribute">ENABLE_USR_LIB_CGI_BIN</span>&gt;</span>
+                ScriptAlias /cgi-bin/ /usr/lib/cgi-bin/
+                <span class="tag">&lt;<span class="title">Directory</span> "/<span class="attribute">usr</span>/<span class="attribute">lib</span>/<span class="attribute">cgi-bin</span>"&gt;</span>
+                        AllowOverride None
+                        Options +ExecCGI -MultiViews +SymLinksIfOwnerMatch
+                        Require all granted
+                <span class="tag">&lt;/<span class="title">Directory</span>&gt;</span>
+        <span class="tag">&lt;/<span class="title">IfDefine</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">IfModule</span>&gt;</span></code></pre>
+<p>We just need to modify the following section from:</p>
+<pre><code><span class="tag">&lt;<span class="title">IfDefine</span> <span class="attribute">ENABLE_USR_LIB_CGI_BIN</span>&gt;</span>
+    ScriptAlias /cgi-bin/ /usr/lib/cgi-bin/
+    <span class="tag">&lt;<span class="title">Directory</span> "/<span class="attribute">usr</span>/<span class="attribute">lib</span>/<span class="attribute">cgi-bin</span>"&gt;</span>
+        AllowOverride None
+        Options +ExecCGI -MultiViews +SymLinksIfOwnerMatch
+        Require all granted
+    <span class="tag">&lt;/<span class="title">Directory</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">IfDefine</span>&gt;</span></code></pre>
+<p>to </p>
+<pre><code><span class="tag">&lt;<span class="title">IfDefine</span> <span class="attribute">ENABLE_USR_LIB_CGI_BIN</span>&gt;</span>
+    ScriptAlias /cgi-bin/ /home/ubuntu/workspace/cgi-bin/
+    <span class="tag">&lt;<span class="title">Directory</span> "/<span class="attribute">home</span>/<span class="attribute">ubuntu</span>/<span class="attribute">workspace</span>/<span class="attribute">cgi-bin</span>"&gt;</span>
+        AllowOverride None
+        Options +ExecCGI -MultiViews +SymLinksIfOwnerMatch
+        AddHandler cgi-script .cgi .py
+        Require all granted
+    <span class="tag">&lt;/<span class="title">Directory</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">IfDefine</span>&gt;</span></code></pre>
+<p>Save this file and restart Apache.</p>
+<p>Once Apache restarts, navigate to <code>https://&lt;workspace-name&gt;-&lt;your-username&gt;.c9.io/cgi-bin/test.py</code> (replacing <code>&lt;workspace-name&gt;</code> and <code>&lt;your-username&gt;</code> with your workspace name and your username of course) and see what happens? In case you&#39;re seeing something like <strong>Internal Server Error</strong> we need to make the files under cgi-bin to be executable.</p>
+<p>You can do that by typing</p>
+<pre><code class="language-bash">chmod +x -R /home/ubuntu/workspace/cgi-bin</code></pre>
+<p>Restart Apache one last time and you should be able to see <strong>Sample CGI Script</strong>. </p>
 
               </div>
               <div id="disqus_thread"></div>
             </div>
           </div>
-          <div id="tocHolder" class="span2"></li><ol class='tocContainer level_1'><li class='tocItem level_2'><a href='#modifying-phpini'>Modifying php.ini</a></li></ol></li></ol>
+          <div id="tocHolder" class="span2">
           </div>
         </div>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js" type="text/javascript"></script>
