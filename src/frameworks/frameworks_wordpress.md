@@ -1,9 +1,9 @@
-# Getting Started with Wordpress
+# Getting Started with WordPress
 
-Wordpress was made to be simple and Wordpress on Cloud9 is no different. Here are some key docs to getting started with Wordpress.
+WordPress was made to be simple and WordPress on Cloud9 is no different. Here are some key docs to getting started with WordPress.
 ### Run & preview your WordPress site
 
-- [Running WordPress sites](https://docs.c9.io/running_wordpress_on_cloud9.html)
+- [Running WordPress sites](https://docs.c9.io/running_WordPress_on_cloud9.html)
 - [Preview your site](https://docs.c9.io/run_an_application.html#pre-view-your-application)
 
 ### Build & access your database

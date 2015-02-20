@@ -14,7 +14,7 @@ If any relevant process is running you will get a list looking like this:
     COMMAND PID   USER   FD   TYPE   DEVICE SIZE/OFF NODE NAME
     apache2 699 ubuntu    4u  IPv6 83213152      0t0  TCP *:http-alt (LISTEN)
     
-You now can kill that proccess. Make sure you replace PID with the ID of the process.
+You now can kill that process. Make sure you replace PID with the ID of the process.
 
     // Kill the process
     kill -9 PID
