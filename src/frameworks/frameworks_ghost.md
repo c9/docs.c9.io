@@ -25,6 +25,10 @@ Create a Ghost blog as follows:
             }
         }
 
+    (Note: Ghost doesn't like workspaces with underscores;
+     if your username or project name has an underscore, use a different value
+     for url, e.g. `url: http://mysite.com`.)
+
 5. Run Ghost by typing `npm start` in the console or by opening `index.js` and
    hitting the run button.
 6. Click the "Preview" button in the top menu in the IDE, and choose 
