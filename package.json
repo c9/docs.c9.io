@@ -2,6 +2,7 @@
     "name": "docs.c9.io",
     "version": "0.1.70",
     "private": true,
+    "license": "CC-BY-NC-SA-3.0",
     "repository": {
         "type": "git",
         "url": "git://github.com/c9/docs.c9.io.git"
